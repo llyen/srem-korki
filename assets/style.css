@@ -209,6 +209,7 @@ main { padding-bottom: 40px; }
 }
 .stopka p { margin: 2px 0; }
 .stopka a { color: var(--akcent); }
+.stopka-prywatnosc { margin-top: 8px !important; max-width: 62ch; }
 
 @media (prefers-reduced-motion: no-preference) {
   .karta { transition: border-color .2s ease; }

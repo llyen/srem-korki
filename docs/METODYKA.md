@@ -442,3 +442,41 @@ Sensowny profil powstanie dopiero po kilku tygodniach zbierania danych.
 - Nie mierzy ruchu pieszego i rowerowego przez most.
 - Nie obejmuje objazdów drogami powiatowymi i gminnymi, którymi część kierowców
   faktycznie jeździ.
+
+## 7. Statystyki odwiedzin
+
+Strona liczy odwiedziny przez **Cloudflare Web Analytics**. Powód jest prosty:
+bez żadnego licznika nie da się stwierdzić, czy projekt komukolwiek służy, a to
+jedyna przesłanka do decyzji, czy go rozwijać.
+
+**Dlaczego nie wystarczy to, co daje GitHub.** Zakładka *Insights → Traffic*
+w repozytorium liczy wyłącznie wejścia na stronę projektu na github.com oraz
+klony, a nie ruch na `llyen.github.io`. Potwierdza to odpowiedź GitHub Support:
+*„The traffic insights inside your repository only relate to views of your
+repository on GitHub.com, not views of your Pages site"*. Sprawdzone też
+empirycznie — po kilkudziesięciu odsłonach strony `traffic/views` zwracało
+`count=0`. GitHub Pages nie ma wbudowanej statystyki odwiedzin.
+
+**Co zostało wybrane i dlaczego.** Cloudflare Web Analytics działa bez zmiany
+DNS i bez przepuszczania ruchu przez Cloudflare — wystarczy jeden znacznik
+`<script>` w `index.html`. Dokumentacja opisuje usługę jako *„free,
+privacy-first analytics for your website without changing your DNS or using
+Cloudflare's proxy"* i deklaruje: *„Cloudflare Web Analytics does not collect or
+use your visitors' personal data"*.
+
+Skrypt ładuje się z `static.cloudflareinsights.com/beacon.min.js`, a dane
+trafiają do `cloudflareinsights.com/cdn-cgi/rum` (adres dla witryn nieobsługiwanych
+przez proxy Cloudflare). Token w kodzie strony nie jest sekretem — identyfikuje
+witrynę i z założenia jest publiczny.
+
+**Czego nie twierdzę.** W dokumentacji Cloudflare nie znalazłem wprost zdania,
+że licznik nie używa ciasteczek, choć taka formuła krąży po internecie. Dlatego
+stopka strony mówi dokładnie tyle, ile deklaruje dostawca — że nie zbiera danych
+osobowych — i ani słowa więcej. Ocena, czy w tej sytuacji potrzebna jest zgoda
+odwiedzającego, wykracza poza tę metodykę; przesłanką za jej brakiem jest
+deklarowany brak danych osobowych i brak profilowania.
+
+**Odrzucona alternatywa.** GoatCounter (otwarty kod, możliwość postawienia
+u siebie) był drugim kandydatem. Odpadł, bo jego darmowy plan jest ograniczony
+do zastosowań niekomercyjnych o warunkach, których nie udało się potwierdzić
+w dokumentacji dostawcy — a Cloudflare nie stawia takiego warunku wprost.
