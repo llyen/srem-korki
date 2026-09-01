@@ -106,7 +106,7 @@ mniej więcej 7 km od centrum” jest to bez znaczenia — sąsiednie węzły OS
 drogach dzieli i tak kilkadziesiąt metrów.
 
 **To nie są odległości pokazywane na stronie.** Kilometry widoczne przy każdej
-trasie (7,8 km, 8,9 km, 17,9 km itd.) to `lengthInMeters` z odpowiedzi TomTom,
+trasie (2,1 km, 7,8 km, 8,9 km itd.) to `lengthInMeters` z odpowiedzi TomTom,
 czyli rzeczywista długość przejazdu po drogach. Jest ona zawsze większa od
 odległości w linii prostej i to ona ma znaczenie praktyczne. Odległość prosta
 posłużyła wyłącznie do wyboru punktów pomiarowych.
@@ -116,22 +116,17 @@ OSM, bez ruchu), przed pierwszym zapytaniem do TomTom:
 
 | Trasa | Długość po drogach (OSRM) |
 |---|---|
-| obwodnica-centrum | 2,3 km (TomTom: 2,46 km) |
+| obwodnica-plac20 | 2,10 km |
 | od-poznania | 7,7 km |
 | od-srody | 7,3 km |
 | od-gostynia | 7,8 km |
 | od-leszna-most | 7,4 km |
 | od-czempinia | 8,2 km |
-| objazd-obwodnica | 17,9 km |
+| objazd-gostynska | 4,82 km |
 | wyjazd-na-poznan | 7,7 km |
 
-Zgodność długości objazdu w OSRM (17,9 km) i w TomTom (17,902 km) potwierdza, że
-punkt pośredni faktycznie wymusza przejazd obwodnicą, a nie skrótem przez miasto.
-
-Trasa „objazd obwodnicą” prowadzi z punktu północnego na DW434 przez punkt
-pośredni na obwodnicy (`52.09198, 17.04189`) do punktu południowo-zachodniego na
-DW432. Punkt pośredni jest konieczny, ponieważ silnik wyznaczania trasy nie musi
-uwzględniać tymczasowej organizacji ruchu na moście.
+Dwie trasy startujące przy stacji BP opisano osobno w sekcji 3b — tam też
+znajduje się rozkład ich długości na poszczególne odcinki.
 
 ## 3. Pomiar czasu przejazdu
 
@@ -155,43 +150,57 @@ druga (81 s) — wobec typowego ruchu w środę rano. Strona pokazuje wielkość
 `czas − czas_bez_ruchu`, bo to ona odpowiada opisowi „dłużej niż przy pustej
 drodze”. Wartość TomTom zapisujemy osobno jako `opoznienie_wzgl_typowego_s`.
 
-## 3b. Co oznacza 17,9 km trasy „objazd obwodnicą”
+## 3b. Dwie trasy z ronda przy stacji BP
 
-To najczęściej mylona liczba na stronie, więc rozpisujemy ją jawnie. **Nie jest
-to długość obwodnicy Śremu.** Obwodnica ma ok. 4 km — suma długości wszystkich
-jezdni o `ref = "432;434"` w OSM to 4,06 km, a jej rozpiętość północ–południe
-3,83 km.
+Obie startują w tym samym miejscu — **Rondo Premiera Stanisława Mikołajczyka**
+(`52.10643, 17.04321`, OSM `ref = "432;434"`), przy którym stoi stacja BP.
+Rondo jest węzłem obwodnicy z ul. Średzką i leży 2,03 km od Starego Rynku.
 
-17,9 km to długość całego mierzonego przejazdu tranzytowego:
+| Trasa | Cel | Długość (OSRM) | Czas bez ruchu |
+|---|---|---|---|
+| Z obwodnicy do centrum | Plac 20 Października | 2,10 km | 3,2 min |
+| Objazd obwodnicą na Gostyńską | Gostyńska × Staszica | 4,82 km | 4,8 min |
 
-| Składowa | Ok. |
+**Cel pierwszej trasy.** Plac 20 Października jest w OSM siedmioma odcinkami
+jezdni (`highway=residential`) tworzącymi obrys placu; jako punkt przyjęto ich
+centroid `52.09485, 17.02137`. Trasa prowadzi ul. Średzką, **mostem Majora
+Stefana Chosłowskiego** (`52.10385, 17.03572`) i ul. Poznańską. To inny most niż
+remontowany most Daniela Kęszyckiego (`52.09208, 17.01927`) — obiekty
+potwierdzone w OSM jako osobne.
+
+**Cel drugiej trasy.** Skrzyżowanie ul. Gostyńskiej z ul. Stanisława Staszica
+wyznaczono jednoznacznie: zapytanie Overpass o wspólne węzły odcinków obu ulic
+zwróciło **dokładnie jeden** wynik — `node 270295855`, `52.0786487, 17.0288189`.
+
+Rozkład drugiej trasy według kroków OSRM:
+
+| Odcinek | Długość |
 |---|---|
-| dojazd DW434 z punktu 7 km na północ od Śremu | 7 km |
-| obwodnica Śremu | 4 km |
-| dalej DW432 do punktu 7 km na południowy zachód | 7 km |
+| wyjazd z ronda Mikołajczyka | 79 m |
+| obwodnica (odcinki bez nazwy własnej) | 3 908 m |
+| ul. Gostyńska do skrzyżowania ze Staszica | 832 m |
 
-Punkty skrajne to `52.15470, 17.03502` (DW434 od strony Kórnika) oraz
-`52.04938, 16.94743` (DW432 w stronę Krzywinia i Leszna) — te same, których
-używają trasy „Od Poznania” i „Od Leszna”. Dzięki temu liczby są porównywalne
-między sobą, ale **nie** z trasami wjazdowymi, które kończą się na Starym Rynku.
+3,91 km obwodnicy zgadza się z niezależnym pomiarem jej długości: suma jezdni
+o `ref = "432;434"` w OSM daje 4,06 km. Trasa pokrywa więc niemal całą
+obwodnicę i jest tym samym ciągiem, którym prowadzony jest objazd zamkniętego
+kierunku na moście. Dodano punkt pośredni `52.09198, 17.04189`; nie zmienia on
+geometrii (4,82 km z waypointem i bez), ale zabezpiecza przed sytuacją, w której
+silnik przy zatorze na obwodnicy przełączyłby trasę na przejazd przez miasto
+i pomiar zacząłby dotyczyć czegoś innego.
 
-Ile faktycznie nadkłada objazd? Porównanie w OSRM (ten sam silnik, ta sama para
-punktów skrajnych):
+**Co zastąpiły te trasy.** Do 1 września 2026 mierzone były: „Z obwodnicy do
+centrum” z celem na Starym Rynku (2,30 km) oraz „Objazd obwodnicą
+(Poznań → Leszno)” — przejazd tranzytowy o długości 17,9 km, z czego 14 km
+stanowiły dojazdy po 7 km z obu stron miasta. Ta druga trasa była mylona
+z długością samej obwodnicy i rozmywała sygnał: kilkuminutowy zator na 4 km
+obwodnicy ginął w 14 km swobodnej jazdy poza miastem. Obie zastąpiono trasami
+z tabeli powyżej.
 
-| Wariant | Długość | Czas bez ruchu |
-|---|---|---|
-| przez obwodnicę (stan obecny) | 17,9 km | 20 min |
-| trasa swobodna przez miasto i most | 15,1 km | 18 min |
-
-Objazd nadkłada więc ok. **2,8 km**. Sam dystans nie jest dużym problemem —
-dolegliwy jest czas, bo cały ruch tranzytowy i lokalny spotyka się na jednym
-ciągu. W pomiarze z 1 września 2026 objazd zajmował 25 min przy 17 min bez ruchu.
-
-**Zastrzeżenie:** wariant „przez miasto i most” policzono w OSRM na danych OSM,
-które w chwili pomiaru nie zawierały tymczasowego ruchu jednokierunkowego na
-moście. Ta liczba opisuje więc stan sprzed remontu, a nie dostępną dziś
-alternatywę. Traktuj ją jako punkt odniesienia, nie jako podpowiedź nawigacyjną.
-
+Ponieważ zmieniła się geometria, a nie tylko opis, **nadano nowe identyfikatory**
+(`obwodnica-plac20`, `objazd-gostynska`). Pomiary sprzed zmiany zostają
+w historii pod dawnymi identyfikatorami (`obwodnica-centrum` — 1 pomiar,
+`objazd-obwodnica` — 6 pomiarów) i nie są mieszane z nowymi przy liczeniu
+profilu godzinowego.
 ## 3c. Zużycie darmowego limitu
 
 Darmowy próg Routing API to **20 000 zapytań miesięcznie**

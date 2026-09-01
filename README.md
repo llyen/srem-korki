@@ -25,13 +25,13 @@ Actions i nigdy nie trafia do przeglądarki.
 
 | Trasa | Droga |
 |---|---|
-| Z obwodnicy do centrum | rondo Mikołajczyka (BP) → Stary Rynek |
+| Z obwodnicy do centrum | rondo Mikołajczyka (BP) → Plac 20 Października |
 | Od Poznania / Kórnika | DW434 |
 | Od Środy Wielkopolskiej | DW432 |
 | Od Gostynia (ul. Gostyńska) | DW434 |
 | Od Leszna / Krzywinia przez most | DW432 + most Kęszyckiego |
 | Od Czempinia / Kościana | DW310 |
-| Objazd obwodnicą (Poznań → Leszno) | DW434 / obwodnica |
+| Objazd obwodnicą na Gostyńską | obwodnica + Gostyńska |
 | Wyjazd ze Śremu na Poznań | DW434 |
 
 Współrzędne punktów pochodzą z OpenStreetMap — szczegóły w
