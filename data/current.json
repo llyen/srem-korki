@@ -1,12 +1,28 @@
 {
-  "pobrano_utc": "2026-09-01T08:04:31+00:00",
-  "pobrano_lokalnie": "2026-09-01T10:04:31+02:00",
+  "pobrano_utc": "2026-09-01T08:04:57+00:00",
+  "pobrano_lokalnie": "2026-09-01T10:04:57+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 35,
+    "zapytan": 43,
     "budzet": 18500
   },
   "trasy": [
+    {
+      "id": "obwodnica-centrum",
+      "nazwa": "Z obwodnicy do centrum",
+      "opis": "Krótki odcinek od ronda Mikołajczyka przy stacji BP przez most Chosłowskiego do Starego Rynku — najczulszy wskaźnik zatoru na samym wjeździe do miasta.",
+      "droga": "obwodnica",
+      "skad": "rondo Mikołajczyka (przy BP)",
+      "dokad": "Stary Rynek",
+      "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,3 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
+      "czas_s": 312,
+      "czas_bez_ruchu_s": 276,
+      "opoznienie_s": 36,
+      "opoznienie_wzgl_typowego_s": 0,
+      "dlugosc_m": 2457,
+      "ratio": 1.13,
+      "poziom": "plynnie"
+    },
     {
       "id": "od-poznania",
       "nazwa": "Od Poznania / Kórnika",
@@ -15,12 +31,12 @@
       "skad": "DW434 za Rudunkiem (od Zaniemyśla i Kórnika)",
       "dokad": "Stary Rynek",
       "uwaga": "",
-      "czas_s": 562,
+      "czas_s": 560,
       "czas_bez_ruchu_s": 501,
-      "opoznienie_s": 61,
+      "opoznienie_s": 59,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7821,
-      "ratio": 1.122,
+      "ratio": 1.118,
       "poziom": "plynnie"
     },
     {
@@ -63,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "wschodni wylot mostu",
       "uwaga": "",
-      "czas_s": 684,
+      "czas_s": 683,
       "czas_bez_ruchu_s": 470,
-      "opoznienie_s": 214,
+      "opoznienie_s": 213,
       "opoznienie_wzgl_typowego_s": 128,
       "dlugosc_m": 7425,
-      "ratio": 1.455,
+      "ratio": 1.453,
       "poziom": "utrudnienia"
     },
     {
@@ -111,12 +127,12 @@
       "skad": "Stary Rynek",
       "dokad": "DW434 za Rudunkiem, w stronę Zaniemyśla",
       "uwaga": "",
-      "czas_s": 467,
+      "czas_s": 469,
       "czas_bez_ruchu_s": 410,
-      "opoznienie_s": 57,
+      "opoznienie_s": 59,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7697,
-      "ratio": 1.139,
+      "ratio": 1.144,
       "poziom": "plynnie"
     }
   ],
