@@ -360,12 +360,18 @@ Kolor jest heurystyką, nie pomiarem. Wynika z ostrzejszego z dwóch kryteriów:
 stosunku czasu przejazdu do czasu przy pustej drodze oraz bezwzględnego
 opóźnienia w minutach.
 
-| Poziom | Stosunek czasu | Opóźnienie | Wymagana realna strata |
-|---|---|---|---|
-| płynnie | ≤ 1,15 | ≤ 3 min | — |
-| lekko wolniej | ≤ 1,40 | ≤ 8 min | — |
-| utrudnienia | ≤ 1,80 | ≤ 15 min | ≥ 2,5 min |
-| korek | powyżej | powyżej | ≥ 5 min |
+| Poziom (na stronie) | Nazwa w danych | Stosunek czasu | Opóźnienie | Wymagana realna strata |
+|---|---|---|---|---|
+| płynnie | `plynnie` | ≤ 1,15 | ≤ 3 min | — |
+| lekko wolniej | `umiarkowanie` | ≤ 1,40 | ≤ 8 min | — |
+| utrudnienia | `utrudnienia` | ≤ 1,80 | ≤ 15 min | ≥ 2,5 min |
+| korek | `korek` | powyżej | powyżej | ≥ 5 min |
+
+Druga kolumna to identyfikator zapisywany w `data/current.json` i w historii CSV.
+Różni się od napisu widocznego na stronie tylko w jednym przypadku: poziom
+`umiarkowanie` wyświetlany jest jako **„lekko wolniej”**, bo tak brzmi
+naturalniej. Mapowanie znajduje się w stałej `ETYKIETY` w `assets/app.js` i przy
+zmianie nazw trzeba poprawić je razem z legendą w `index.html`.
 
 ### Dlaczego doszła kolumna „wymagana realna strata”
 

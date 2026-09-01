@@ -40,6 +40,12 @@ function odmianaMinut(n) {
   return 'minut';
 }
 
+// Kolor slupka na wykresie profilu godzinowego. Uzywa wylacznie bezwzglednego
+// opoznienia, bo profil agreguje mediany z wielu pomiarow i nie przechowuje
+// czasu przejazdu przy pustej drodze, wiec proporcji nie da sie odtworzyc.
+// Progi sa te same, co kolumna "Opoznienie" w progach z config.json, a bramka
+// minimalnej straty (2,5 i 5 min) nie zmienia tu wyniku: kazde opoznienie
+// przekraczajace 8 minut i tak ja spelnia.
 function poziomZOpoznienia(opoznienieMin) {
   if (opoznienieMin <= 3) return 'plynnie';
   if (opoznienieMin <= 8) return 'umiarkowanie';
