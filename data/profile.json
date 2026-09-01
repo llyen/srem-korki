@@ -1,35 +1,55 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 43,
+  "pomiarow_lacznie": 51,
   "profil": {
     "od-poznania": {
       "1-9": {
         "mediana_opoznienia_s": 56,
         "probek": 4
+      },
+      "1-10": {
+        "mediana_opoznienia_s": 61,
+        "probek": 3
       }
     },
     "od-srody": {
       "1-9": {
         "mediana_opoznienia_s": 52,
         "probek": 4
+      },
+      "1-10": {
+        "mediana_opoznienia_s": 54,
+        "probek": 3
       }
     },
     "od-gostynia": {
       "1-9": {
         "mediana_opoznienia_s": 89,
         "probek": 4
+      },
+      "1-10": {
+        "mediana_opoznienia_s": 70,
+        "probek": 3
       }
     },
     "od-leszna-most": {
       "1-9": {
         "mediana_opoznienia_s": 155,
         "probek": 4
+      },
+      "1-10": {
+        "mediana_opoznienia_s": 214,
+        "probek": 3
       }
     },
     "od-czempinia": {
       "1-9": {
         "mediana_opoznienia_s": 88,
         "probek": 4
+      },
+      "1-10": {
+        "mediana_opoznienia_s": 67,
+        "probek": 3
       }
     },
     "objazd-obwodnica": {
@@ -42,6 +62,10 @@
       "1-9": {
         "mediana_opoznienia_s": 60,
         "probek": 4
+      },
+      "1-10": {
+        "mediana_opoznienia_s": 59,
+        "probek": 3
       }
     }
   }
