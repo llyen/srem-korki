@@ -11,3 +11,6 @@ node_modules/
 # Blokada wersji zaleznosci nie jest tu potrzebna - jedyna zaleznosc to
 # narzedzie wdrozeniowe, ktore nie trafia do uruchamianego kodu.
 package-lock.json
+
+# Sekret endpointu wyzwalajacego - nigdy do repozytorium.
+worker/.klucz-wyzwalacza.txt

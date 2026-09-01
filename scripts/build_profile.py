@@ -18,25 +18,47 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 HISTORY = ROOT / "data" / "history"
 WYJSCIE = ROOT / "data" / "profile.json"
+KONFIG = ROOT / "scripts" / "config.json"
 
 MIN_PROBEK = 3
 
 
+def aktualne_trasy() -> list[str]:
+    """Identyfikatory tras, ktore strona rzeczywiscie pokazuje.
+
+    Historia zawiera takze trasy wycofane: zmiana geometrii oznacza w tym
+    projekcie nowe id, wiec stare pomiary opisuja inny przejazd. Wpuszczenie
+    ich do profilu podstawialoby pod aktualna trase wynik z innej drogi.
+    """
+    konfig = json.loads(KONFIG.read_text(encoding="utf-8"))
+    return [t["id"] for t in konfig["trasy"]]
+
+
 def main() -> int:
+    trasy = aktualne_trasy()
     kubelki: dict[tuple[str, int, int], list[int]] = defaultdict(list)
     liczba_wierszy = 0
+    pominietych = 0
+    pomiarow_trasy: dict[str, int] = {t: 0 for t in trasy}
 
     for plik in sorted(HISTORY.glob("*.csv")):
         with plik.open(newline="", encoding="utf-8") as fh:
             for wiersz in csv.DictReader(fh):
                 try:
-                    klucz = (wiersz["trasa"], int(wiersz["dzien_tygodnia"]), int(wiersz["godzina"]))
-                    kubelki[klucz].append(int(wiersz["opoznienie_s"]))
-                    liczba_wierszy += 1
+                    trasa = wiersz["trasa"]
+                    dzien = int(wiersz["dzien_tygodnia"])
+                    godzina = int(wiersz["godzina"])
+                    opoznienie = int(wiersz["opoznienie_s"])
                 except (KeyError, ValueError):
                     continue
+                liczba_wierszy += 1
+                if trasa not in pomiarow_trasy:
+                    pominietych += 1
+                    continue
+                kubelki[(trasa, dzien, godzina)].append(opoznienie)
+                pomiarow_trasy[trasa] += 1
 
-    profil: dict[str, dict[str, dict[str, object]]] = defaultdict(dict)
+    profil: dict[str, dict[str, dict[str, object]]] = {t: {} for t in trasy}
     for (trasa, dzien, godzina), wartosci in kubelki.items():
         if len(wartosci) < MIN_PROBEK:
             continue
@@ -50,6 +72,8 @@ def main() -> int:
             {
                 "min_probek": MIN_PROBEK,
                 "pomiarow_lacznie": liczba_wierszy,
+                "pomiarow_trasy_wycofane": pominietych,
+                "pomiarow_trasy": pomiarow_trasy,
                 "profil": profil,
             },
             ensure_ascii=False,
@@ -57,7 +81,10 @@ def main() -> int:
         ),
         encoding="utf-8",
     )
-    print(f"OK: {liczba_wierszy} pomiarow, {sum(len(v) for v in profil.values())} komorek profilu")
+    print(
+        f"OK: {liczba_wierszy} pomiarow w historii, {pominietych} z tras wycofanych, "
+        f"{sum(len(v) for v in profil.values())} komorek profilu"
+    )
     return 0
 
 

@@ -5,10 +5,12 @@ name = "srem-korki-cron"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
 
-# Worker nie ma publicznego adresu i nie jest do niczego potrzebny z zewnatrz -
-# uruchamia go wylacznie harmonogram. Bez tej linii wrangler probuje opublikowac
-# go na *.workers.dev i przerywa wdrozenie, gdy konto nie ma subdomeny.
-workers_dev = false
+# Worker jest wystawiony pod adresem *.workers.dev z dwoch powodow. Po pierwsze
+# bez tego wdrozenie konczy sie komunikatem "No targets deployed". Po drugie -
+# i wazniejsze - to wlasnie ten adres jest kanalem, ktorym zewnetrzny zegar
+# zamawia pomiar, odkad ustalono, ze harmonogram Cloudflare nie budzi Workera.
+# Endpoint wyzwalajacy chroni sekret KLUCZ_WYZWALACZA (patrz README).
+workers_dev = true
 
 # Logi widoczne w panelu Cloudflare (Workers > srem-korki-cron > Logs).
 # Bez tego nie da sie sprawdzic, czy wyzwolenie sie powiodlo.
@@ -16,9 +18,16 @@ workers_dev = false
 enabled = true
 
 [triggers]
-# Harmonogram przeniesiony bez zmian z pliku .github/workflows/update-traffic.yml.
-# Cloudflare uruchamia crony w czasie UTC - tak samo jak robil to GitHub,
-# wiec pory pomiarow pozostaja identyczne.
+# UWAGA: ten harmonogram jest NIECZYNNY i zostaje wylacznie jako zapis
+# zamierzonych por pomiarow. Cloudflare przyjmuje te wyrazenia (widac je w
+# panelu i w API), ale nie uruchamia Workera - sprawdzone 1 wrzesnia 2026
+# testem z cronem "* * * * *": przez 5 kolejnych terminow licznik zapytan do
+# API GitHuba nie drgnal, przy dzialajacej kontroli pozytywnej (reczne wejscie
+# na adres Workera bylo widoczne natychmiast). Faktyczny zegar stoi poza
+# Cloudflare i wola endpoint ?wyzwol=<klucz>.
+#
+# Cloudflare uruchamialby crony w czasie UTC - tak samo jak robil to GitHub,
+# wiec zamierzone pory pomiarow pozostaja identyczne.
 #
 # Szczyt, co 10 minut: 04:00-07:59 i 12:00-15:59 UTC.
 #   Lato (UTC+2): 06:00-09:59 i 14:00-17:59 czasu lokalnego.

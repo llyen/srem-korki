@@ -211,6 +211,20 @@ function renderProfil() {
   wykres.hidden = !maPomiary;
   wykres.innerHTML = '';
 
+  if (!maPomiary) {
+    // Zamiast samego "za malo danych" mowimy, ile pomiarow juz jest i czego
+    // brakuje - inaczej pusta sekcja wyglada jak awaria strony.
+    const zebrano = (profil.pomiarow_trasy || {})[trasa];
+    const prog = profil.min_probek || 3;
+    const nazwa = (trasyMeta.find(function (t) { return t.id === trasa; }) || {}).nazwa;
+    brak.textContent = typeof zebrano === 'number'
+      ? 'Za mało pomiarów dla trasy „' + (nazwa || trasa) + '”. Zebraliśmy ich na razie ' +
+        zebrano + ', a żeby pokazać słupek dla danej godziny potrzebujemy co najmniej ' +
+        prog + ' pomiarów z tej samej godziny i tego samego dnia tygodnia. Wróć za kilka dni.'
+      : 'Za mało pomiarów dla tego dnia. Wróć za kilka dni.';
+    return;
+  }
+
   godziny.forEach(function (x) {
     const kol = document.createElement('div');
     kol.className = 'slupek';
