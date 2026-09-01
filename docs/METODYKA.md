@@ -122,7 +122,7 @@ OSM, bez ruchu), przed pierwszym zapytaniem do TomTom:
 | od-poznania-plac20 | 7,48 km |
 | od-srody-plac20 | 7,13 km |
 | od-gostynia-staszica | 5,52 km |
-| od-leszna-most | 7,4 km |
+| od-leszna-most-bp | 9,68 km |
 | od-czempinia-rondo-ak | 7,35 km |
 | objazd-gostynska | 4,82 km |
 | wyjazd-plac20-poznan | 7,52 km |
@@ -143,11 +143,19 @@ miejsca, a każdy wjazd ma inne naturalne zakończenie. Obecne cele:
 | od Środy Wlkp. | Plac 20 Października | `52.09485, 17.02137` | jw. |
 | od Gostynia | Gostyńska × Staszica | `52.0786487, 17.0288189` | `node 270295855` — jedyny wspólny węzeł obu ulic |
 | od Czempinia / Kościana | rondo Armii Krajowej | `52.088824, 17.015192` | `way 29092946`, `junction=roundabout` |
+| od Leszna / Krzywinia | rondo Mikołajczyka (przy BP) | `52.10643, 17.04321` | `node` z `ref="432;434"` przy stacji BP |
 | wyjazd na Poznań (start) | Plac 20 Października | `52.09485, 17.02137` | jw. |
 
-Trasa od Leszna przez most nadal kończy się na wschodnim wylocie mostu
-im. Kęszyckiego — jej sensem jest zmierzenie samego przejazdu przez most,
-a nie dojazdu w głąb miasta.
+Trasa od Leszna prowadzi przez **oba mosty**: najpierw remontowany most
+im. Kęszyckiego (przejezdny wyłącznie w stronę Poznania), potem przez miasto
+i most Majora Stefana Chosłowskiego na obwodnicę. Jest to więc pełny przejazd
+tranzytowy z kierunku Leszna w stronę Poznania, a nie sam przejazd przez most.
+Wschodni wylot mostu Kęszyckiego (`52.09274, 17.02061`) pozostał w trasie jako
+**punkt pośredni** — bez niego przy zatorze w mieście silnik mógłby
+przekierować pomiar na obwodnicę i mierzylibyśmy zupełnie inną drogę.
+Weryfikacja w OSRM: wariant z punktem pośrednim i bez niego dają identyczne
+9,68 km i 13,0 min, a przebieg obejmuje ulice Śremską, Kilińskiego, most
+Kęszyckiego, Piłsudskiego, most Chosłowskiego i Średzką.
 
 **Rondo „przy jednostce wojskowej”** zidentyfikowano tak: w OSM w promieniu
 gminy istnieje jeden teren `landuse=military` o nazwie *6 Batalion Dowodzenia

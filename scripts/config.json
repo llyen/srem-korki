@@ -58,15 +58,17 @@
       ]
     },
     {
-      "id": "od-leszna-most",
+      "id": "od-leszna-most-bp",
       "nazwa": "Od Leszna / Krzywinia przez most",
-      "opis": "DW432 od południowego zachodu przez most im. D. Kęszyckiego — jedyny dozwolony kierunek przejazdu mostem.",
+      "opis": "DW432 od południowego zachodu przez most im. D. Kęszyckiego, dalej przez miasto i most Chosłowskiego do ronda Mikołajczyka przy stacji BP — pełny przejazd tranzytowy w stronę Poznania.",
       "droga": "DW432 + most Kęszyckiego",
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
-      "dokad": "wschodni wylot mostu",
+      "dokad": "rondo Mikołajczyka (przy BP)",
+      "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
       "punkty": [
         { "lat": 52.04938, "lon": 16.94743, "opis": "DW432, ok. 7 km na południowy zachód od Śremu" },
-        { "lat": 52.09274, "lon": 17.02061, "opis": "wschodni wylot mostu im. D. Kęszyckiego" }
+        { "lat": 52.09274, "lon": 17.02061, "opis": "wschodni wylot mostu im. D. Kęszyckiego (punkt pośredni)" },
+        { "lat": 52.10643, "lon": 17.04321, "opis": "Rondo Premiera Stanisława Mikołajczyka przy stacji BP (OSM ref 432;434)" }
       ]
     },
     {
