@@ -1,6 +1,6 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 59,
+  "pomiarow_lacznie": 67,
   "profil": {
     "od-poznania": {
       "1-9": {
@@ -39,7 +39,7 @@
       },
       "1-10": {
         "mediana_opoznienia_s": 213,
-        "probek": 4
+        "probek": 5
       }
     },
     "od-czempinia": {
@@ -66,6 +66,18 @@
       "1-10": {
         "mediana_opoznienia_s": 60,
         "probek": 4
+      }
+    },
+    "obwodnica-plac20": {
+      "1-10": {
+        "mediana_opoznienia_s": 15,
+        "probek": 3
+      }
+    },
+    "objazd-gostynska": {
+      "1-10": {
+        "mediana_opoznienia_s": 422,
+        "probek": 3
       }
     }
   }
