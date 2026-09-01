@@ -94,6 +94,7 @@ Strona pojawi się pod adresem `https://llyen.github.io/srem-korki/`.
 index.html              strona
 assets/                 style i skrypt frontendu
 scripts/config.json     definicje tras i progi kolorów
+scripts/wyznacz_punkty.py  odtwarza współrzędne punktów z OpenStreetMap
 scripts/fetch_traffic.py  pomiar (TomTom → data/)
 scripts/build_profile.py  profil godzinowy z historii
 scripts/mock_data.py    dane przykładowe do podglądu

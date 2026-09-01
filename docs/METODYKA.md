@@ -42,17 +42,56 @@ Ustalenia:
   (Nominatim, zapytanie `Rynek, Śrem, Polska`).
 
 Punkty startowe tras wybrano algorytmicznie: spośród wszystkich węzłów danej
-drogi wojewódzkiej wybrano ten, którego odległość od Starego Rynku jest
-najbliższa 7 km, w zadanym zakresie azymutu. Dzięki temu każdy punkt leży na
-rzeczywistej jezdni, a nie „mniej więcej tam”.
+drogi wojewódzkiej wybrano ten, którego **odległość w linii prostej** od Starego
+Rynku jest najbliższa 7 km, w zadanym zakresie azymutu. Dzięki temu każdy punkt
+leży na rzeczywistej jezdni, a nie „mniej więcej tam”.
 
-| Trasa | Punkt startowy | Odległość od Rynku |
+| Trasa | Punkt startowy | W linii prostej od Rynku |
 |---|---|---|
-| Od Poznania / Kórnika (DW434) | 52.15470, 17.03502 | 7,0 km |
-| Od Środy Wlkp. (DW432) | 52.13573, 17.09824 | 7,1 km |
-| Od Gostynia (DW434) | 52.03303, 17.05592 | 7,0 km |
-| Od Leszna / Krzywinia (DW432) | 52.04938, 16.94743 | 7,0 km |
-| Od Czempinia / Kościana (DW310) | 52.11414, 16.92563 | 7,0 km |
+| Od Poznania / Kórnika (DW434) | 52.15470, 17.03502 | 6,99 km |
+| Od Środy Wlkp. (DW432) | 52.13573, 17.09824 | 7,10 km |
+| Od Gostynia (DW434) | 52.03303, 17.05592 | 7,00 km |
+| Od Leszna / Krzywinia (DW432) | 52.04938, 16.94743 | 7,02 km |
+| Od Czempinia / Kościana (DW310) | 52.11414, 16.92563 | 7,05 km |
+
+**Jak policzono te odległości.** Wzorem równoprostokątnym (rzut walcowy
+równoodległościowy) na kuli o promieniu 6371 km, z korekcją południków przez
+cosinus średniej szerokości geograficznej. To przybliżenie, więc sprawdzono jego
+błąd względem dokładnego wzoru Vincentego na elipsoidzie WGS84:
+
+| Trasa | Wzór równoprostokątny | Haversine | WGS84 (Vincenty) | Błąd |
+|---|---|---|---|---|
+| Od Poznania | 6,984 km | 6,984 km | 6,989 km | 5 m |
+| Od Środy | 7,082 km | 7,082 km | 7,096 km | 14 m |
+| Od Gostynia | 6,989 km | 6,989 km | 6,996 km | 7 m |
+| Od Leszna | 7,002 km | 7,002 km | 7,016 km | 14 m |
+| Od Czempinia | 7,029 km | 7,029 km | 7,050 km | 21 m |
+
+Największy błąd to 21 m na 7 km, czyli 0,3%. Dla zadania „wybierz węzeł drogi
+mniej więcej 7 km od centrum” jest to bez znaczenia — sąsiednie węzły OSM na tych
+drogach dzieli i tak kilkadziesiąt metrów.
+
+**To nie są odległości pokazywane na stronie.** Kilometry widoczne przy każdej
+trasie (7,8 km, 8,9 km, 17,9 km itd.) to `lengthInMeters` z odpowiedzi TomTom,
+czyli rzeczywista długość przejazdu po drogach. Jest ona zawsze większa od
+odległości w linii prostej i to ona ma znaczenie praktyczne. Odległość prosta
+posłużyła wyłącznie do wyboru punktów pomiarowych.
+
+Poprawność geograficzną tras zweryfikowano niezależnie w OSRM (silnik na danych
+OSM, bez ruchu), przed pierwszym zapytaniem do TomTom:
+
+| Trasa | Długość po drogach (OSRM) |
+|---|---|
+| od-poznania | 7,7 km |
+| od-srody | 7,3 km |
+| od-gostynia | 7,8 km |
+| od-leszna-most | 7,4 km |
+| od-czempinia | 8,2 km |
+| objazd-obwodnica | 17,9 km |
+| wyjazd-na-poznan | 7,7 km |
+
+Zgodność długości objazdu w OSRM (17,9 km) i w TomTom (17,902 km) potwierdza, że
+punkt pośredni faktycznie wymusza przejazd obwodnicą, a nie skrótem przez miasto.
 
 Trasa „objazd obwodnicą” prowadzi z punktu północnego na DW434 przez punkt
 pośredni na obwodnicy (`52.09198, 17.04189`) do punktu południowo-zachodniego na
