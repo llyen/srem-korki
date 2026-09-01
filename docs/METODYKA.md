@@ -38,8 +38,10 @@ Ustalenia:
   w OSM sklasyfikowany jako `highway=tertiary`.
 - Obwodnica Śremu: ciąg o `ref = "432;434"` przebiegający wschodnią stroną miasta
   wzdłuż ok. `lon 17.042`.
-- Punkt odniesienia w mieście: Stary Rynek, `52.09238, 17.02226`
-  (Nominatim, zapytanie `Rynek, Śrem, Polska`).
+- Punkt odniesienia przy wyborze punktów startowych: Stary Rynek,
+  `52.09238, 17.02226` (Nominatim, zapytanie `Rynek, Śrem, Polska`).
+  Służy wyłącznie jako środek okręgu o promieniu 7 km — cele tras są inne
+  i opisano je w sekcji 2b.
 
 Punkty startowe tras wybrano algorytmicznie: spośród wszystkich węzłów danej
 drogi wojewódzkiej wybrano ten, którego **odległość w linii prostej** od Starego
@@ -106,7 +108,7 @@ mniej więcej 7 km od centrum” jest to bez znaczenia — sąsiednie węzły OS
 drogach dzieli i tak kilkadziesiąt metrów.
 
 **To nie są odległości pokazywane na stronie.** Kilometry widoczne przy każdej
-trasie (2,1 km, 7,8 km, 8,9 km itd.) to `lengthInMeters` z odpowiedzi TomTom,
+trasie (2,1 km, 5,5 km, 7,5 km itd.) to `lengthInMeters` z odpowiedzi TomTom,
 czyli rzeczywista długość przejazdu po drogach. Jest ona zawsze większa od
 odległości w linii prostej i to ona ma znaczenie praktyczne. Odległość prosta
 posłużyła wyłącznie do wyboru punktów pomiarowych.

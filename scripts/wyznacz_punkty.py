@@ -27,13 +27,17 @@ UA = "srem-korki/1.0 (projekt niekomercyjny)"
 CENTRUM = (52.09238, 17.02226)  # Stary Rynek w Sremie, zrodlo: Nominatim
 CEL_KM = 7.0
 
+# Uwaga: CENTRUM sluzy wylacznie do wyboru punktow STARTOWYCH tras (srodek
+# okregu o promieniu 7 km). Punkty docelowe w miescie sa inne - patrz
+# docs/METODYKA.md, sekcja 2b.
+
 # (nazwa, ref drogi, zakres azymutu w stopniach od centrum)
 KIERUNKI = [
-    ("od-poznania (DW434, polnoc)", "434", (330.0, 30.0)),
-    ("od-srody (DW432, polnocny wschod)", "432", (35.0, 80.0)),
-    ("od-gostynia (DW434, poludnie)", "434", (150.0, 200.0)),
-    ("od-leszna (DW432, poludniowy zachod)", "432", (200.0, 250.0)),
-    ("od-czempinia (DW310, zachod)", "310", (260.0, 310.0)),
+    ("od-poznania-plac20 (DW434, polnoc)", "434", (330.0, 30.0)),
+    ("od-srody-plac20 (DW432, polnocny wschod)", "432", (35.0, 80.0)),
+    ("od-gostynia-staszica (DW434, poludnie)", "434", (150.0, 200.0)),
+    ("od-leszna-most (DW432, poludniowy zachod)", "432", (200.0, 250.0)),
+    ("od-czempinia-rondo-ak (DW310, zachod)", "310", (260.0, 310.0)),
 ]
 
 BBOX = (51.95, 16.75, 52.25, 17.25)
