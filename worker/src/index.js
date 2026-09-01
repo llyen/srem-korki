@@ -105,9 +105,10 @@ export default {
   },
 
   /**
-   * Worker nie musi mieć publicznego adresu, ale jeśli ktoś na niego trafi,
-   * niech dostanie zrozumiałą odpowiedź. Ten kanał świadomie NIE wyzwala
-   * pomiaru - inaczej dowolna osoba mogłaby wyczerpać limit zapytań TomTom.
+   * Worker nie ma publicznego adresu (workers_dev = false w wrangler.toml),
+   * więc ten kanał jest w praktyce nieosiągalny z internetu. Zostaje na wypadek
+   * wystawienia Workera pod adresem w przyszłości - i wtedy też świadomie NIE
+   * wyzwala pomiaru, bo inaczej dowolna osoba mogłaby wyczerpać limit TomTom.
    */
   async fetch() {
     return new Response(

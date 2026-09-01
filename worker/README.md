@@ -43,6 +43,25 @@ prywatnych repozytoriów — ma tylko uruchamiać ten jeden workflow.
 
 Skopiuj wartość tokenu, bo GitHub pokaże ją tylko raz.
 
+#### Ważność tokenu — trzeba pilnować
+
+Token użyty przy pierwszym wdrożeniu (1 września 2026) jest ważny **8 dni**.
+Po wygaśnięciu Worker zacznie dostawać `HTTP 401`, pomiary się zatrzymają,
+a strona pokaże ostatni udany odczyt wraz z jego wiekiem — nic nie zawiadomi
+o tym samo z siebie.
+
+Odnowienie to wygenerowanie nowego tokenu i jedno polecenie:
+
+```powershell
+npx wrangler secret put GITHUB_TOKEN
+```
+
+Ponowne wdrożenie nie jest potrzebne. Trwałą alternatywą, która nie wymaga
+rotacji, jest **GitHub App** — jej klucz prywatny nie wygasa, a Worker wymienia
+go na krótkotrwały token instalacyjny przy każdym wywołaniu. Wymaga to około
+50 dodatkowych linii kodu (podpis JWT przez WebCrypto) i jednorazowej
+konfiguracji aplikacji. Nie zostało to wdrożone.
+
 ### 2. Wdrożenie Workera
 
 W tym katalogu (`worker/`):
@@ -56,6 +75,17 @@ npx wrangler secret put GITHUB_TOKEN   # wklej token z kroku 1
 
 Sekret trafia do Cloudflare i **nie jest zapisany w tym repozytorium**.
 Po jego ustawieniu nie trzeba wdrażać ponownie.
+
+#### Pułapka: subdomena workers.dev
+
+Cloudflare odmówi zapisania cron triggerów, dopóki konto nie ma subdomeny
+`workers.dev` — nawet gdy Worker jej nie używa (`workers_dev = false`):
+
+> You need a workers.dev subdomain in order to proceed. Please go to the
+> dashboard and open the Workers menu. `[code: 10063]`
+
+Wystarczy raz otworzyć w panelu **Workers & Pages**; subdomena tworzy się
+wtedy automatycznie. Potem `wrangler deploy` przechodzi.
 
 #### Pułapka: Windows na ARM64
 

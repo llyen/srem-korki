@@ -5,6 +5,11 @@ name = "srem-korki-cron"
 main = "src/index.js"
 compatibility_date = "2026-09-01"
 
+# Worker nie ma publicznego adresu i nie jest do niczego potrzebny z zewnatrz -
+# uruchamia go wylacznie harmonogram. Bez tej linii wrangler probuje opublikowac
+# go na *.workers.dev i przerywa wdrozenie, gdy konto nie ma subdomeny.
+workers_dev = false
+
 # Logi widoczne w panelu Cloudflare (Workers > srem-korki-cron > Logs).
 # Bez tego nie da sie sprawdzic, czy wyzwolenie sie powiodlo.
 [observability]
