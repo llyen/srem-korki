@@ -186,6 +186,38 @@ i urządzeń nawigacyjnych. Na drogach wojewódzkich w mniejszym mieście próbk
 mniejsza niż na autostradzie, więc pomiar może reagować z opóźnieniem i wygładzać
 krótkie zatory. Strona nie jest źródłem urzędowym i tak jest opisana.
 
+## 3d. Jak świeże są dane widoczne w przeglądarce
+
+Na wiek liczby na ekranie składają się trzy niezależne opóźnienia:
+
+| Składnik | Wartość | Uwaga |
+| --- | --- | --- |
+| Cykl pomiaru | 10 min w szczycie, 30 min poza nim | harmonogram z sekcji 3c |
+| Cache CDN | do 10 min (GitHub Pages) lub do 5 min (raw.githubusercontent.com) | patrz niżej |
+| Odpytywanie przez stronę | 2 min | `ODSWIEZANIE_MS` w `assets/app.js` |
+
+**Zmierzone zachowanie cache.** GitHub Pages serwuje `data/current.json`
+z nagłówkiem `Cache-Control: max-age=600` przez CDN Fastly. Sprawdzono serią
+żądań z *różnymi* losowymi parametrami query: pierwsze żądanie zwróciło
+`X-Cache: MISS`, `Age: 0`, kolejne — `X-Cache: HIT` z rosnącym `Age`
+(4, 8, 13 s). Oznacza to, że **query string nie jest częścią klucza cache**,
+więc popularny zabieg `?t=Date.now()` nie wymusza świeżej odpowiedzi.
+Ten sam plik serwowany z `raw.githubusercontent.com` ma `Cache-Control:
+max-age=300` i nagłówek `Access-Control-Allow-Origin: *`, czyli daje się
+pobrać z przeglądarki i jest cachowany o połowę krócej.
+
+**Rozwiązanie.** Strona odpytuje oba adresy równolegle
+(`Promise.allSettled`) i wyświetla ten wynik, który ma nowszy znacznik
+`pobrano_utc`. Jeśli jedno źródło zawiedzie (np. blokada sieciowa), drugie
+nadal działa. Nie jest to obejście limitu cache — to wybór świeższej
+z dwóch dostępnych kopii.
+
+**Konsekwencja dla użytkownika.** W najgorszym przypadku liczba na ekranie
+może pochodzić sprzed ok. 15 min w szczycie. Dlatego strona pokazuje wiek
+danych wprost („Pomiar o 09:16 — 4 minuty temu”), aktualizowany co 20 s, oraz
+ostrzega, gdy pomiar jest starszy niż 50 min. Próg 50 min dobrano tak, aby nie
+alarmował fałszywie poza szczytem (30 min cyklu + 10 min cache + margines).
+
 ## 4. Klasyfikacja kolorystyczna
 
 Kolor jest heurystyką, nie pomiarem. Wynika z ostrzejszego z dwóch kryteriów:

@@ -113,6 +113,12 @@ docs/METODYKA.md        źródła danych i sposób liczenia
 - Progi kolorów to wartości wyjściowe, nie skalibrowane na danych ze Śremu.
   Warto je skorygować po kilku tygodniach zbierania historii.
 - Profil godzinowy wymaga kilku tygodni pomiarów, zanim zacznie coś znaczyć.
+- Strona odświeża się sama co 2 minuty (oraz po powrocie do karty), ale liczba
+  na ekranie może być starsza od rzeczywistości nawet o kilkanaście minut:
+  składa się na to cykl pomiaru (10 min w szczycie) i cache CDN GitHub Pages
+  (`max-age=600`, którego nie da się ominąć parametrem `?t=`). Dlatego strona
+  zawsze pokazuje wiek danych wprost. Szczegóły i pomiary — `docs/METODYKA.md`,
+  sekcja 3d.
 
 ## Licencja
 
