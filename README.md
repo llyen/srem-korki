@@ -9,7 +9,7 @@ Projekt niekomercyjny, bez reklam, bez śledzenia użytkowników.
 ## Jak to działa
 
 ```
-GitHub Actions (co 10 min w szczycie, co godzinę poza nim)
+GitHub Actions (co 10 min w szczycie, co 30 min poza nim, w nocy nic)
         │  TomTom Routing API — czas przejazdu z uwzględnieniem ruchu
         ▼
 data/current.json  +  data/history/YYYY-MM.csv
@@ -50,8 +50,8 @@ Współrzędne punktów pochodzą z OpenStreetMap — szczegóły w
 „Routing API… Free 20K monthly”). Nie mylić z *Matrix* Routing API, który ma
 próg 2,5 tys./mies.
 
-Ten projekt zużywa ok. **504 zapytania na dobę ≈ 15 300 miesięcznie** — mieści
-się w progu z zapasem ok. 23%. Dodatkowo `fetch_traffic.py` sam przerywa pomiary
+Ten projekt zużywa **480 zapytań na dobę = 14 880 miesięcznie** (31 dni) — mieści
+się w progu z zapasem ok. 26%. Dodatkowo `fetch_traffic.py` sam przerywa pomiary
 po przekroczeniu 18 500 zapytań w miesiącu, licząc je z plików historii.
 
 Klucza **nie zapisuj w repozytorium**. Dodaj go jako sekret:

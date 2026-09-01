@@ -259,41 +259,45 @@ Harmonogram dobrano tak, żeby zmieścić się z zapasem:
 | Okno (UTC) | Czas letni (CEST) | Czas zimowy (CET) | Częstotliwość | Przebiegów/dobę |
 |---|---|---|---|---|
 | 04:00–07:59 | 06:00–09:59 | 05:00–08:59 | co 10 min | 24 |
-| 12:00–16:59 | 14:00–18:59 | 13:00–17:59 | co 10 min | 30 |
-| 08:00–11:59 | 10:00–13:59 | 09:00–12:59 | co godzinę | 4 |
-| 17:00–21:59 | 19:00–23:59 | 18:00–22:59 | co godzinę | 5 |
-| 22:00–03:59 | 00:00–05:59 | 23:00–04:59 | **brak pomiarów** | 0 |
+| 12:00–15:59 | 14:00–17:59 | 13:00–16:59 | co 10 min | 24 |
+| 08:00–11:59 | 10:00–13:59 | 09:00–12:59 | co 30 min | 8 |
+| 16:00–17:59 | 18:00–19:59 | 17:00–18:59 | co 30 min | 4 |
+| 18:00–03:59 | 20:00–05:59 | 19:00–04:59 | **brak pomiarów** | 0 |
 
-63 przebiegi × 8 tras = **504 zapytania na dobę ≈ 15 600 miesięcznie**
-(31 dni), czyli ok. 22% zapasu do progu.
+60 przebiegów × 8 tras = **480 zapytań na dobę = 14 880 miesięcznie**
+(31 dni), czyli 80% wewnętrznego budżetu 18 500. Zostaje zapas na 14 dodatkowych
+przebiegów dziennie.
 
-W nocy pomiarów nie ma świadomie: ruch jest wtedy swobodny, a każde zapytanie
-zużywa ten sam limit, co zapytanie w szczycie. Konsekwencja jest taka, że nad
-ranem strona pokaże pomiar sprzed kilku godzin — dlatego wiek danych jest na
-niej wypisany wprost, a ostrzeżenie o nieaktualności pojawia się po 80 minutach.
+Rachunek jest odtwarzalny — wyrażenia cron rozwija się na listę godzin
+i minut, zamiast liczyć w pamięci. Pomyłka w tym miejscu kosztuje wyczerpanie
+limitu w połowie miesiąca i zatrzymanie strony.
 
-Dodanie ósmej trasy („Z obwodnicy do centrum”) wymagało korekty: przy
-dotychczasowych 72 przebiegach dawałoby 17 856 zapytań miesięcznie, a więc
-zaledwie 12% zapasu — zbyt blisko progu, przy którym twardy limit w skrypcie
-zatrzymałby pomiary przed końcem miesiąca. Zamiast rozrzedzać szczyt (gdzie
-rozdzielczość 10 min jest najbardziej potrzebna) zmniejszono częstotliwość poza
-szczytem z 30 do 60 minut. Dobowe zużycie pozostało dokładnie takie samo jak
-przy siedmiu trasach.
+W nocy pomiarów nie ma świadomie: między 20:00 a 6:00 czasu lokalnego na tych
+drogach nie ma zatorów, które warto pokazywać, a każde zapytanie zużywa ten sam
+limit co zapytanie w szczycie. Konsekwencja jest taka, że nad ranem strona
+pokaże pomiar sprzed kilku godzin — dlatego wiek danych jest na niej wypisany
+wprost, a ostrzeżenie o nieaktualności pojawia się po 80 minutach.
+
+Popołudniowy szczyt kończy się o 18:00 czasu letniego, a nie o 19:00 jak
+w pierwszej wersji. Ruch powrotny do Śremu rozkłada się wcześniej, więc ostatnia
+godzina dawała pomiary o małej wartości informacyjnej przy pełnym koszcie.
+Godziny 18:00–20:00 obsługuje tryb rzadszy.
 
 Okna w UTC są celowo szersze niż polski szczyt, bo cron nie zna czasu letniego —
-ten sam zapis musi działać przy UTC+1 i UTC+2.
+ten sam zapis musi działać przy UTC+1 i UTC+2. Skutek uboczny: **zimą cała siatka
+przesuwa się o godzinę wcześniej**, więc pomiary kończą się o 18:59 zamiast
+o 19:59. Uznano to za akceptowalne, bo zimą i tak wcześniej robi się ciemno,
+a ruch popołudniowy zaczyna się wcześniej.
 
 ### Dlaczego minuty nie są okrągłe
 
 Pierwsza wersja harmonogramu używała zapisów `*/10` i `0`, czyli uruchamiała się
-o pełnej godzinie i co dziesięć minut od niej. Przez pierwsze trzy godziny
-istnienia repozytorium **nie wykonał się ani jeden przebieg z harmonogramu** —
-osiem uruchomień w historii pochodziło wyłącznie z ręcznego `workflow_dispatch`,
-a zapytanie `GET /repos/.../actions/runs?event=schedule` zwracało
-`total_count=0`. Konfiguracja była przy tym poprawna: repozytorium publiczne,
-workflow `active`, Actions włączone, plik na gałęzi domyślnej.
+o pełnej godzinie i co dziesięć minut od niej. Przez pierwsze godziny istnienia
+repozytorium **nie wykonał się ani jeden przebieg z harmonogramu** — wszystkie
+uruchomienia w historii pochodziły z ręcznego `workflow_dispatch`, a zapytanie
+`GET /repos/.../actions/runs?event=schedule` zwracało `total_count=0`.
 
-Przyczynę opisuje dokumentacja GitHuba w sekcji `schedule`:
+Dokumentacja GitHuba w sekcji `schedule` mówi:
 
 > The schedule event can be delayed during periods of high loads of GitHub
 > Actions workflow runs. High load times include the start of every hour. If the
@@ -303,12 +307,26 @@ Przyczynę opisuje dokumentacja GitHuba w sekcji `schedule`:
 >
 > — [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 
-Oba crony trafiały dokładnie w minutę zerową, czyli w moment największego
-obciążenia platformy. Po korekcie uruchamiają się w minutach `4, 14, 24, 34, 44,
-54` (szczyt) oraz `27` (poza szczytem). Liczba przebiegów i zużycie limitu nie
-zmieniły się ani o jedno zapytanie — zmienił się wyłącznie moment startu.
+Minuty omijają więc zero i wielokrotności dziesięciu. **Nie znaczy to jednak, że
+przyczyna braku uruchomień została udowodniona** — i warto to zapisać uczciwie,
+bo pierwotna wersja tej sekcji twierdziła inaczej.
 
-Wniosek praktyczny: harmonogram GitHub Actions **nie jest gwarancją**, tylko
+Konfigurację sprawdzono punkt po punkcie i była poprawna: gałąź domyślna `main`
+zgodna z lokalizacją pliku, workflow `active`, repozytorium publiczne i nie
+zarchiwizowane, blok `on:` z poprawnie zagnieżdżonym `schedule`. Pozostaje
+drugie wyjaśnienie, którego wtedy nie sprawdzono: GitHub rejestruje harmonogram
+asynchronicznie **po każdej zmianie pliku workflow** — od kilkunastu minut do
+ponad godziny — i nie uruchamia zadań wstecz. Repozytorium miało wtedy niecałe
+cztery godziny, a plik był w tym czasie edytowany kilkakrotnie, ostatnio na
+trzynaście minut przed najbliższym terminem. Każda taka edycja mogła przesuwać
+start.
+
+Praktyczny wniosek jest ważniejszy niż rozstrzygnięcie, które wyjaśnienie jest
+prawdziwe: **diagnozując brak uruchomień, nie wolno w kółko poprawiać pliku
+workflow**, bo każda poprawka unieważnia test. Właściwa procedura to jedna
+zmiana, a potem godzina bez dotykania pliku.
+
+Niezależnie od tego harmonogram GitHub Actions **nie jest gwarancją**, tylko
 prośbą. Dlatego strona pokazuje wiek danych wprost i ostrzega, gdy pomiar jest
 starszy niż 80 minut, zamiast udawać, że liczba jest zawsze świeża.
 
