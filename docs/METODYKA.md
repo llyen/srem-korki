@@ -116,7 +116,7 @@ OSM, bez ruchu), przed pierwszym zapytaniem do TomTom:
 
 | Trasa | Długość po drogach (OSRM) |
 |---|---|
-| obwodnica-centrum | 2,3 km |
+| obwodnica-centrum | 2,3 km (TomTom: 2,46 km) |
 | od-poznania | 7,7 km |
 | od-srody | 7,3 km |
 | od-gostynia | 7,8 km |
