@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-01T07:37:34+00:00",
-  "pobrano_lokalnie": "2026-09-01T09:37:34+02:00",
+  "pobrano_utc": "2026-09-01T08:04:31+00:00",
+  "pobrano_lokalnie": "2026-09-01T10:04:31+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 28,
+    "zapytan": 35,
     "budzet": 18500
   },
   "trasy": [
@@ -15,12 +15,12 @@
       "skad": "DW434 za Rudunkiem (od Zaniemyśla i Kórnika)",
       "dokad": "Stary Rynek",
       "uwaga": "",
-      "czas_s": 559,
+      "czas_s": 562,
       "czas_bez_ruchu_s": 501,
-      "opoznienie_s": 58,
+      "opoznienie_s": 61,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7821,
-      "ratio": 1.116,
+      "ratio": 1.122,
       "poziom": "plynnie"
     },
     {
@@ -31,12 +31,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Stary Rynek",
       "uwaga": "",
-      "czas_s": 546,
+      "czas_s": 547,
       "czas_bez_ruchu_s": 493,
-      "opoznienie_s": 53,
+      "opoznienie_s": 54,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7469,
-      "ratio": 1.108,
+      "ratio": 1.11,
       "poziom": "plynnie"
     },
     {
@@ -47,13 +47,13 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Stary Rynek",
       "uwaga": "",
-      "czas_s": 658,
-      "czas_bez_ruchu_s": 551,
-      "opoznienie_s": 107,
+      "czas_s": 699,
+      "czas_bez_ruchu_s": 629,
+      "opoznienie_s": 70,
       "opoznienie_wzgl_typowego_s": 0,
-      "dlugosc_m": 7763,
-      "ratio": 1.194,
-      "poziom": "umiarkowanie"
+      "dlugosc_m": 8927,
+      "ratio": 1.111,
+      "poziom": "plynnie"
     },
     {
       "id": "od-leszna-most",
@@ -63,13 +63,13 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "wschodni wylot mostu",
       "uwaga": "",
-      "czas_s": 599,
+      "czas_s": 684,
       "czas_bez_ruchu_s": 470,
-      "opoznienie_s": 129,
-      "opoznienie_wzgl_typowego_s": 0,
+      "opoznienie_s": 214,
+      "opoznienie_wzgl_typowego_s": 128,
       "dlugosc_m": 7425,
-      "ratio": 1.274,
-      "poziom": "umiarkowanie"
+      "ratio": 1.455,
+      "poziom": "utrudnienia"
     },
     {
       "id": "od-czempinia",
@@ -95,13 +95,13 @@
       "skad": "DW434 za Rudunkiem, na północ od Śremu",
       "dokad": "DW432 przy Wyrzece, w stronę Krzywinia i Leszna",
       "uwaga": "To trasa tranzytowa przez cały Śrem, a nie wjazd do miasta — nie porównuj jej z pozostałymi kartami. Sama obwodnica ma ok. 4 km; resztę stanowią dojazdy po 7 km z obu stron.",
-      "czas_s": 1151,
-      "czas_bez_ruchu_s": 1026,
-      "opoznienie_s": 125,
-      "opoznienie_wzgl_typowego_s": 0,
-      "dlugosc_m": 17902,
-      "ratio": 1.122,
-      "poziom": "plynnie"
+      "czas_s": 1624,
+      "czas_bez_ruchu_s": 1052,
+      "opoznienie_s": 572,
+      "opoznienie_wzgl_typowego_s": 372,
+      "dlugosc_m": 18589,
+      "ratio": 1.544,
+      "poziom": "utrudnienia"
     },
     {
       "id": "wyjazd-na-poznan",
