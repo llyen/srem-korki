@@ -117,16 +117,52 @@ OSM, bez ruchu), przed pierwszym zapytaniem do TomTom:
 | Trasa | Długość po drogach (OSRM) |
 |---|---|
 | obwodnica-plac20 | 2,10 km |
-| od-poznania | 7,7 km |
-| od-srody | 7,3 km |
-| od-gostynia | 7,8 km |
+| od-poznania-plac20 | 7,48 km |
+| od-srody-plac20 | 7,13 km |
+| od-gostynia-staszica | 5,52 km |
 | od-leszna-most | 7,4 km |
-| od-czempinia | 8,2 km |
+| od-czempinia-rondo-ak | 7,35 km |
 | objazd-gostynska | 4,82 km |
-| wyjazd-na-poznan | 7,7 km |
+| wyjazd-plac20-poznan | 7,52 km |
 
 Dwie trasy startujące przy stacji BP opisano osobno w sekcji 3b — tam też
 znajduje się rozkład ich długości na poszczególne odcinki.
+
+## 2b. Punkty docelowe w mieście
+
+Pierwsza wersja kierowała wszystkie trasy dojazdowe na Stary Rynek
+(`52.09238, 17.02226`, Nominatim). Zostało to zmienione na wniosek autora
+projektu: kierowca nie jedzie „do centrum” w ogóle, tylko do konkretnego
+miejsca, a każdy wjazd ma inne naturalne zakończenie. Obecne cele:
+
+| Trasa | Punkt docelowy | Współrzędne | Źródło w OSM |
+|---|---|---|---|
+| od Poznania / Kórnika | Plac 20 Października | `52.09485, 17.02137` | centroid 7 odcinków `highway=residential` tworzących obrys placu |
+| od Środy Wlkp. | Plac 20 Października | `52.09485, 17.02137` | jw. |
+| od Gostynia | Gostyńska × Staszica | `52.0786487, 17.0288189` | `node 270295855` — jedyny wspólny węzeł obu ulic |
+| od Czempinia / Kościana | rondo Armii Krajowej | `52.088824, 17.015192` | `way 29092946`, `junction=roundabout` |
+| wyjazd na Poznań (start) | Plac 20 Października | `52.09485, 17.02137` | jw. |
+
+Trasa od Leszna przez most nadal kończy się na wschodnim wylocie mostu
+im. Kęszyckiego — jej sensem jest zmierzenie samego przejazdu przez most,
+a nie dojazdu w głąb miasta.
+
+**Rondo „przy jednostce wojskowej”** zidentyfikowano tak: w OSM w promieniu
+gminy istnieje jeden teren `landuse=military` o nazwie *6 Batalion Dowodzenia
+Sił Powietrznych (JW 4430)* (`way 293800724`). Zmierzono odległość od jego
+granicy do centroidów wszystkich rond w okolicy:
+
+| Rondo | Odległość od ogrodzenia jednostki |
+|---|---|
+| **Armii Krajowej** | **56 m** |
+| Powstańców Wielkopolskich | 296 m |
+| Jana Pawła II | 487 m |
+
+Różnica jest na tyle duża, że przypisanie nie budzi wątpliwości.
+
+Zmiana punktu docelowego zmienia geometrię trasy, więc — zgodnie z zasadą
+opisaną w sekcji 3b — każda z tych tras dostała **nowe `id`**. Pomiary spod
+starych identyfikatorów zostają w historii, ale nie są już zasilane.
 
 ## 3. Pomiar czasu przejazdu
 
@@ -210,13 +246,21 @@ Maps). Próg 2,5 tys./mies. dotyczy *Matrix* Routing API, czyli innego produktu.
 
 Harmonogram dobrano tak, żeby zmieścić się z zapasem:
 
-| Okno (UTC) | Częstotliwość | Przebiegów/dobę |
-|---|---|---|
-| 04:00–07:59 i 12:00–16:59 | co 10 min | 54 |
-| 08:00–11:59 i 17:00–21:59 | co godzinę | 9 |
+| Okno (UTC) | Czas letni (CEST) | Czas zimowy (CET) | Częstotliwość | Przebiegów/dobę |
+|---|---|---|---|---|
+| 04:00–07:59 | 06:00–09:59 | 05:00–08:59 | co 10 min | 24 |
+| 12:00–16:59 | 14:00–18:59 | 13:00–17:59 | co 10 min | 30 |
+| 08:00–11:59 | 10:00–13:59 | 09:00–12:59 | co godzinę | 4 |
+| 17:00–21:59 | 19:00–23:59 | 18:00–22:59 | co godzinę | 5 |
+| 22:00–03:59 | 00:00–05:59 | 23:00–04:59 | **brak pomiarów** | 0 |
 
 63 przebiegi × 8 tras = **504 zapytania na dobę ≈ 15 600 miesięcznie**
 (31 dni), czyli ok. 22% zapasu do progu.
+
+W nocy pomiarów nie ma świadomie: ruch jest wtedy swobodny, a każde zapytanie
+zużywa ten sam limit, co zapytanie w szczycie. Konsekwencja jest taka, że nad
+ranem strona pokaże pomiar sprzed kilku godzin — dlatego wiek danych jest na
+niej wypisany wprost, a ostrzeżenie o nieaktualności pojawia się po 80 minutach.
 
 Dodanie ósmej trasy („Z obwodnicy do centrum”) wymagało korekty: przy
 dotychczasowych 72 przebiegach dawałoby 17 856 zapytań miesięcznie, a więc
@@ -277,12 +321,35 @@ Kolor jest heurystyką, nie pomiarem. Wynika z ostrzejszego z dwóch kryteriów:
 stosunku czasu przejazdu do czasu przy pustej drodze oraz bezwzględnego
 opóźnienia w minutach.
 
-| Poziom | Stosunek czasu | Opóźnienie |
-|---|---|---|
-| płynnie | ≤ 1,15 | ≤ 3 min |
-| lekko wolniej | ≤ 1,40 | ≤ 8 min |
-| utrudnienia | ≤ 1,80 | ≤ 15 min |
-| korek | powyżej | powyżej |
+| Poziom | Stosunek czasu | Opóźnienie | Wymagana realna strata |
+|---|---|---|---|
+| płynnie | ≤ 1,15 | ≤ 3 min | — |
+| lekko wolniej | ≤ 1,40 | ≤ 8 min | — |
+| utrudnienia | ≤ 1,80 | ≤ 15 min | ≥ 2,5 min |
+| korek | powyżej | powyżej | ≥ 5 min |
+
+### Dlaczego doszła kolumna „wymagana realna strata”
+
+Pierwsza wersja opierała ostrzeżenia wyłącznie na dwóch pierwszych kryteriach.
+Po dodaniu tras krótkich (2,1 km z obwodnicy na Plac 20 Października i 4,8 km
+objazdu) okazało się, że sam stosunek czasu daje wyniki nieporównywalne między
+trasami — próg „korka” zależał od tego, jak długa jest trasa:
+
+| Trasa | Czas przy pustej drodze | „Korek” od straty (przed) | Po poprawce |
+|---|---|---|---|
+| obwodnica → Plac 20 Października | 3,4 min | **2,7 min** | 5,1 min |
+| objazd na Gostyńską | 4,5 min | 3,6 min | 5,1 min |
+| od Gostynia | 10,5 min | **8,4 min** | 8,4 min |
+
+Trzykrotny rozrzut oznaczał, że strona krzyczała „korek” przy stracie niecałych
+trzech minut, zachęcając do objazdu droższego niż samo stanie. Dlatego poziomy
+`utrudnienia` i `korek` wymagają teraz **jednocześnie** przekroczenia proporcji
+i minimalnej realnej straty czasu (`progi.min_strata_min` w `scripts/config.json`).
+Rozrzut progu „korka” spadł z 2,7–8,4 min do 5,1–8,5 min.
+
+Sprawdzenie tej kalibracji na bieżących danych: `python scripts/test_progi.py`.
+Skrypt niczego nie zapisuje — wypisuje, przy jakiej stracie czasu każda trasa
+zmienia kolor.
 
 Progi znajdują się w `scripts/config.json` i można je skorygować po zebraniu
 pierwszych tygodni pomiarów — obecne wartości są punktem wyjścia, a nie wynikiem

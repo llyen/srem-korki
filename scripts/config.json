@@ -2,9 +2,10 @@
   "_zrodlo_wspolrzednych": "OpenStreetMap (Overpass API), zapytania udokumentowane w docs/METODYKA.md. Punkty startowe to rzeczywiste węzły dróg wojewódzkich ok. 7 km od Starego Rynku w Śremie.",
   "centrum": { "lat": 52.09238, "lon": 17.02226, "nazwa": "Stary Rynek, Śrem" },
   "progi": {
-    "_opis": "Heurystyka koloru oparta na stosunku czasu przejazdu do czasu bez ruchu (ratio) ORAZ na bezwzględnym opóźnieniu w minutach. Kolor wynika z ostrzejszego z dwóch kryteriów.",
+    "_opis": "Heurystyka koloru oparta na stosunku czasu przejazdu do czasu bez ruchu (ratio) ORAZ na bezwzględnym opóźnieniu w minutach. Kolor wynika z ostrzejszego z dwóch kryteriów, ale poziomy 'utrudnienia' i 'korek' dodatkowo wymagają minimalnej realnej straty czasu — bez tego krótkie trasy (2-5 km) osiągałyby czerwień przy stracie 2-3 minut, podczas gdy trasy 9-kilometrowe potrzebowały na to 8 minut.",
     "ratio": { "zielony": 1.15, "zolty": 1.4, "czerwony": 1.8 },
-    "opoznienie_min": { "zielony": 3, "zolty": 8, "czerwony": 15 }
+    "opoznienie_min": { "zielony": 3, "zolty": 8, "czerwony": 15 },
+    "min_strata_min": { "utrudnienia": 2.5, "korek": 5.0 }
   },
   "trasy": [
     {
@@ -21,39 +22,39 @@
       ]
     },
     {
-      "id": "od-poznania",
+      "id": "od-poznania-plac20",
       "nazwa": "Od Poznania / Kórnika",
-      "opis": "DW434 od strony Kórnika i Zaniemyśla do centrum Śremu.",
+      "opis": "DW434 od strony Kórnika i Zaniemyśla na Plac 20 Października.",
       "droga": "DW434",
       "skad": "DW434 za Rudunkiem (od Zaniemyśla i Kórnika)",
-      "dokad": "Stary Rynek",
+      "dokad": "Plac 20 Października",
       "punkty": [
         { "lat": 52.15470, "lon": 17.03502, "opis": "DW434, ok. 7 km na północ od Śremu" },
-        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" }
+        { "lat": 52.09485, "lon": 17.02137, "opis": "Plac 20 Października (centroid obrysu placu w OSM)" }
       ]
     },
     {
-      "id": "od-srody",
+      "id": "od-srody-plac20",
       "nazwa": "Od Środy Wielkopolskiej",
-      "opis": "DW432 od strony Środy Wielkopolskiej do centrum Śremu.",
+      "opis": "DW432 od strony Środy Wielkopolskiej na Plac 20 Października.",
       "droga": "DW432",
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
-      "dokad": "Stary Rynek",
+      "dokad": "Plac 20 Października",
       "punkty": [
         { "lat": 52.13573, "lon": 17.09824, "opis": "DW432, ok. 7 km na północny wschód od Śremu" },
-        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" }
+        { "lat": 52.09485, "lon": 17.02137, "opis": "Plac 20 Października (centroid obrysu placu w OSM)" }
       ]
     },
     {
-      "id": "od-gostynia",
+      "id": "od-gostynia-staszica",
       "nazwa": "Od Gostynia (ul. Gostyńska)",
-      "opis": "DW434 od południa, wjazd ulicą Gostyńską — odcinek najbardziej obciążony objazdem.",
+      "opis": "DW434 od południa, wjazd ulicą Gostyńską do skrzyżowania ze Staszica — odcinek najbardziej obciążony objazdem.",
       "droga": "DW434",
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
-      "dokad": "Stary Rynek",
+      "dokad": "Gostyńska × Staszica",
       "punkty": [
         { "lat": 52.03303, "lon": 17.05592, "opis": "DW434, ok. 7 km na południe od Śremu" },
-        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" }
+        { "lat": 52.0786487, "lon": 17.0288189, "opis": "skrzyżowanie ul. Gostyńskiej ze Staszica (OSM node 270295855)" }
       ]
     },
     {
@@ -69,15 +70,15 @@
       ]
     },
     {
-      "id": "od-czempinia",
+      "id": "od-czempinia-rondo-ak",
       "nazwa": "Od Czempinia / Kościana",
-      "opis": "DW310 od zachodu do centrum Śremu.",
+      "opis": "DW310 od zachodu do ronda Armii Krajowej przy jednostce wojskowej.",
       "droga": "DW310",
       "skad": "DW310 przy Manieczkach (od Czempinia)",
-      "dokad": "Stary Rynek",
+      "dokad": "rondo Armii Krajowej (przy jednostce)",
       "punkty": [
         { "lat": 52.11414, "lon": 16.92563, "opis": "DW310, ok. 7 km na zachód od Śremu" },
-        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" }
+        { "lat": 52.088824, "lon": 17.015192, "opis": "Rondo Armii Krajowej, 56 m od ogrodzenia 6 Batalionu Dowodzenia Sił Powietrznych (OSM way 29092946)" }
       ]
     },
     {
@@ -95,14 +96,14 @@
       ]
     },
     {
-      "id": "wyjazd-na-poznan",
+      "id": "wyjazd-plac20-poznan",
       "nazwa": "Wyjazd ze Śremu na Poznań",
-      "opis": "Z centrum Śremu DW434 na północ, w kierunku Kórnika i Poznania.",
+      "opis": "Z Placu 20 Października DW434 na północ, w kierunku Kórnika i Poznania.",
       "droga": "DW434",
-      "skad": "Stary Rynek",
+      "skad": "Plac 20 Października",
       "dokad": "DW434 za Rudunkiem, w stronę Zaniemyśla",
       "punkty": [
-        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" },
+        { "lat": 52.09485, "lon": 17.02137, "opis": "Plac 20 Października (centroid obrysu placu w OSM)" },
         { "lat": 52.15470, "lon": 17.03502, "opis": "DW434, ok. 7 km na północ od Śremu" }
       ]
     }

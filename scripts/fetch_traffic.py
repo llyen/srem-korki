@@ -92,6 +92,7 @@ def zapytaj_tomtom(punkty: list[dict], klucz: str) -> dict:
 def ocen_poziom(ratio: float, opoznienie_min: float, progi: dict) -> str:
     pr = progi["ratio"]
     po = progi["opoznienie_min"]
+    ms = progi.get("min_strata_min", {})
 
     def wg(wartosc, prog):
         if wartosc <= prog["zielony"]:
@@ -103,6 +104,13 @@ def ocen_poziom(ratio: float, opoznienie_min: float, progi: dict) -> str:
         return 3
 
     poziom = max(wg(ratio, pr), wg(opoznienie_min, po))
+
+    # Bramka realnej straty: samo ratio nie wystarcza do ostrzezenia, bo na trasie
+    # 2-kilometrowej przekracza prog juz przy dwoch minutach postoju.
+    bramki = {2: ms.get("utrudnienia", 0), 3: ms.get("korek", 0)}
+    while poziom >= 2 and opoznienie_min < bramki[poziom]:
+        poziom -= 1
+
     return ["plynnie", "umiarkowanie", "utrudnienia", "korek"][poziom]
 
 
