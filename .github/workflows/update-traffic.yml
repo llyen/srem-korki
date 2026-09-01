@@ -57,11 +57,17 @@ jobs:
       - name: Przelicz profil godzinowy
         run: python scripts/build_profile.py
 
+      # Zabezpieczenie przed sytuacja, w ktorej uzytkownik dostaje nowy HTML ze
+      # starym CSS lub JS z pamieci podrecznej przegladarki. Skrypt jest
+      # idempotentny - gdy zasoby sie nie zmienily, nie rusza pliku.
+      - name: Odswiez wersje zasobow w index.html
+        run: python scripts/wersjonuj_zasoby.py
+
       - name: Zapisz wyniki
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add data/ index.html
           if git diff --staged --quiet; then
             echo "Brak zmian w danych."
           else

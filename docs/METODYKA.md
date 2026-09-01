@@ -324,6 +324,34 @@ krótkie zatory. Strona nie jest źródłem urzędowym i tak jest opisana.
 
 ## 3d. Jak świeże są dane widoczne w przeglądarce
 
+### Wersjonowanie CSS i JavaScriptu
+
+GitHub Pages serwuje wszystkie pliki z nagłówkiem `Cache-Control: max-age=600`
+i nie pozwala tego zmienić. W praktyce oznacza to, że po wydaniu poprawki
+przeglądarka może pobrać nowy `index.html`, ale zostać przy starym
+`assets/style.css` — a wtedy użytkownik widzi albo rozjechany układ, albo (jak
+w przypadku poprawionej legendy kolorów) po prostu starą treść, mimo że serwer
+ma już nową.
+
+Dlatego odnośniki do arkusza stylów i skryptu zawierają skrót zawartości pliku:
+
+```html
+<link rel="stylesheet" href="assets/style.css?v=a43c3a04">
+<script src="assets/app.js?v=15bbec7f"></script>
+```
+
+Skrót wylicza `scripts/wersjonuj_zasoby.py` (pierwsze 8 znaków SHA-256).
+Zmiana choćby jednego znaku w pliku zmienia adres, więc przeglądarka pobiera go
+ponownie; gdy plik jest nietknięty, skrót zostaje ten sam i cache działa
+normalnie. Skrypt jest idempotentny i uruchamia się automatycznie w workflow
+przy każdym pomiarze, więc nie trzeba o nim pamiętać przy ręcznej edycji.
+
+**Czego to nie naprawia:** sam `index.html` nadal podlega dziesięciominutowemu
+cache'owi i tu nic nie da się zrobić bez własnego serwera. Po wydaniu zmiany
+w treści strony trzeba więc albo odczekać do 10 minut, albo wymusić odświeżenie
+(Ctrl+F5). Dotyczy to wyglądu i tekstów — nie liczb, bo te pobierane są osobno
+i opisano je niżej.
+
 Na wiek liczby na ekranie składają się trzy niezależne opóźnienia:
 
 | Składnik | Wartość | Uwaga |
