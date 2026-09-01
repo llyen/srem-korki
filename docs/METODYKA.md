@@ -54,6 +54,26 @@ leży na rzeczywistej jezdni, a nie „mniej więcej tam”.
 | Od Leszna / Krzywinia (DW432) | 52.04938, 16.94743 | 7,02 km |
 | Od Czempinia / Kościana (DW310) | 52.11414, 16.92563 | 7,05 km |
 
+**Jak te punkty nazwano na stronie.** Karty nie podają „7 km”, bo obok widnieje
+kilometraż rzeczywistej trasy (7,3–8,9 km) i zestawienie dwóch różnych liczb
+myliło czytelnika. Zamiast tego każdy punkt opisano najbliższą miejscowością,
+ustaloną przez odwrotne geokodowanie w Nominatim (`/reverse`, `zoom=14`)
+i zweryfikowaną dystansem do centroidu tej miejscowości:
+
+| Trasa | Najbliższa miejscowość | Odległość punktu od niej |
+|---|---|---|
+| Od Poznania / Kórnika | Rudunek (przysiółek Niesłabina), gm. Śrem | 1,18 km |
+| Od Środy Wlkp. | Luciny, gm. Śrem | 830 m |
+| Od Gostynia | Drzonek, gm. Dolsk | 248 m |
+| Od Leszna / Krzywinia | Wyrzeka, gm. Śrem | 450 m |
+| Od Czempinia / Kościana | Manieczki, gm. Brodnica | 317 m |
+
+Punkt północny jest jedynym oddalonym od zabudowy, dlatego opisano go „za
+Rudunkiem”, a nie „przy Rudunku”: leży 1,18 km na północ od niego
+(52.1547 wobec 52.1442), czyli po stronie Zaniemyśla, do którego jest jeszcze
+8,65 km. Pozostałe cztery punkty leżą w granicach 250–830 m od wsi, co
+uzasadnia sformułowanie „przy”.
+
 **Jak policzono te odległości.** Wzorem równoprostokątnym (rzut walcowy
 równoodległościowy) na kuli o promieniu 6371 km, z korekcją południków przez
 cosinus średniej szerokości geograficznej. To przybliżenie, więc sprawdzono jego
