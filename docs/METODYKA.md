@@ -283,6 +283,35 @@ przy siedmiu trasach.
 Okna w UTC są celowo szersze niż polski szczyt, bo cron nie zna czasu letniego —
 ten sam zapis musi działać przy UTC+1 i UTC+2.
 
+### Dlaczego minuty nie są okrągłe
+
+Pierwsza wersja harmonogramu używała zapisów `*/10` i `0`, czyli uruchamiała się
+o pełnej godzinie i co dziesięć minut od niej. Przez pierwsze trzy godziny
+istnienia repozytorium **nie wykonał się ani jeden przebieg z harmonogramu** —
+osiem uruchomień w historii pochodziło wyłącznie z ręcznego `workflow_dispatch`,
+a zapytanie `GET /repos/.../actions/runs?event=schedule` zwracało
+`total_count=0`. Konfiguracja była przy tym poprawna: repozytorium publiczne,
+workflow `active`, Actions włączone, plik na gałęzi domyślnej.
+
+Przyczynę opisuje dokumentacja GitHuba w sekcji `schedule`:
+
+> The schedule event can be delayed during periods of high loads of GitHub
+> Actions workflow runs. High load times include the start of every hour. If the
+> load is sufficiently high enough, **some queued jobs may be dropped**. To
+> decrease the chance of delay, schedule your workflow to run at a different
+> time of the hour.
+>
+> — [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
+
+Oba crony trafiały dokładnie w minutę zerową, czyli w moment największego
+obciążenia platformy. Po korekcie uruchamiają się w minutach `4, 14, 24, 34, 44,
+54` (szczyt) oraz `27` (poza szczytem). Liczba przebiegów i zużycie limitu nie
+zmieniły się ani o jedno zapytanie — zmienił się wyłącznie moment startu.
+
+Wniosek praktyczny: harmonogram GitHub Actions **nie jest gwarancją**, tylko
+prośbą. Dlatego strona pokazuje wiek danych wprost i ostrzega, gdy pomiar jest
+starszy niż 80 minut, zamiast udawać, że liczba jest zawsze świeża.
+
 Niezależnie od harmonogramu `fetch_traffic.py` przed każdym przebiegiem liczy
 zapytania wykonane w bieżącym miesiącu (jeden wiersz historii = jedno zapytanie)
 i przerywa pracę po 18 500. To zabezpieczenie na wypadek ręcznych uruchomień

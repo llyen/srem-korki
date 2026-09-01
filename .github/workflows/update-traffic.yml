@@ -2,6 +2,17 @@ name: Aktualizacja danych o ruchu
 
 on:
   schedule:
+    # UWAGA: minuty celowo NIE sa rowne zeru ani wielokrotnosci 10.
+    # Dokumentacja GitHuba (sekcja "schedule" w events-that-trigger-workflows):
+    #   "The schedule event can be delayed during periods of high loads of
+    #    GitHub Actions workflow runs. High load times include the start of
+    #    every hour. If the load is sufficiently high enough, some queued jobs
+    #    may be dropped. To decrease the chance of delay, schedule your
+    #    workflow to run at a different time of the hour."
+    # Pierwsza wersja uzywala "*/10" i "0", czyli trafiala dokladnie w szczyt
+    # obciazenia platformy - przez pierwsze trzy godziny zycia repozytorium nie
+    # wykonal sie ani jeden przebieg z harmonogramu.
+    #
     # Darmowy prog TomTom dla Routing API to 20 000 zapytan MIESIECZNIE.
     # Kazdy przebieg zuzywa 8 zapytan (po jednym na trase), wiec harmonogram
     # jest zageszczony tylko w godzinach szczytu.
@@ -9,11 +20,11 @@ on:
     # Szczyt (co 10 min): 04:00-07:59 i 12:00-16:59 UTC.
     #   Zakres w UTC celowo szerszy niz polski szczyt, zeby objac zarowno
     #   czas letni (UTC+2), jak i zimowy (UTC+1).
-    - cron: "*/10 4-7,12-16 * * *"
+    - cron: "4,14,24,34,44,54 4-7,12-16 * * *"
     # Poza szczytem (co godzine): 08:00-11:59 i 17:00-21:59 UTC.
     #   Bylo co 30 min przy 7 trasach; po dodaniu osmej trasy czestotliwosc
     #   zmniejszono, zeby utrzymac zuzycie na dotychczasowym poziomie.
-    - cron: "0 8-11,17-21 * * *"
+    - cron: "27 8-11,17-21 * * *"
     #
     # Szczyt: 9 godzin x 6 = 54 przebiegi. Poza szczytem: 9 godzin x 1 = 9.
     # Razem 63 przebiegi/dobe x 8 tras = 504 zapytania/dobe = 15 624/31 dni.
