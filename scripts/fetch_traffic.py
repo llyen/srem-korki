@@ -36,7 +36,12 @@ for strumien in (sys.stdout, sys.stderr):
 API_BASE = "https://api.tomtom.com/routing/1/calculateRoute"
 TIMEOUT = 30
 RETRIES = 3
-TZ_PL = timezone(timedelta(hours=1))  # czas urzedowy zapisujemy jako lokalny offset wyliczony nizej
+
+# Darmowy prog TomTom dla Routing API: 20 000 zapytan miesiecznie
+# (zweryfikowane na https://docs.tomtom.com/pricing, wrzesien 2026).
+# Zostawiamy zapas bezpieczenstwa - po przekroczeniu skrypt przestaje pytac API.
+LIMIT_MIESIECZNY = 20000
+ZAPAS = 1500
 
 
 def czas_lokalny(moment: datetime) -> datetime:
@@ -101,6 +106,18 @@ def ocen_poziom(ratio: float, opoznienie_min: float, progi: dict) -> str:
     return ["plynnie", "umiarkowanie", "utrudnienia", "korek"][poziom]
 
 
+def zuzycie_w_miesiacu(teraz_pl: datetime) -> int:
+    """Liczy zapytania wykonane w biezacym miesiacu na podstawie historii.
+
+    Kazdy wiersz historii odpowiada dokladnie jednemu zapytaniu do API.
+    """
+    plik = HISTORY / f"{teraz_pl:%Y-%m}.csv"
+    if not plik.exists():
+        return 0
+    with plik.open(newline="", encoding="utf-8") as fh:
+        return max(0, sum(1 for _ in fh) - 1)  # bez naglowka
+
+
 def main() -> int:
     klucz = os.environ.get("TOMTOM_API_KEY", "").strip()
     if not klucz:
@@ -111,6 +128,16 @@ def main() -> int:
     teraz_utc = datetime.now(timezone.utc).replace(microsecond=0)
     teraz_pl = czas_lokalny(teraz_utc)
 
+    zuzyte = zuzycie_w_miesiacu(teraz_pl)
+    budzet = LIMIT_MIESIECZNY - ZAPAS
+    if zuzyte + len(cfg["trasy"]) > budzet:
+        print(
+            f"STOP: budzet miesieczny wyczerpany ({zuzyte}/{budzet} zapytan). "
+            "Pomiar pominiety, zeby nie wygenerowac kosztow.",
+            file=sys.stderr,
+        )
+        return 0
+
     wyniki = []
     bledy = []
     for trasa in cfg["trasy"]:
@@ -118,9 +145,12 @@ def main() -> int:
             odp = zapytaj_tomtom(trasa["punkty"], klucz)
             s = odp["routes"][0]["summary"]
             czas = int(s["travelTimeInSeconds"])
-            bez_ruchu = int(s.get("noTrafficTravelTimeInSeconds") or czas)
-            bez_ruchu = max(bez_ruchu, 1)
-            opoznienie = int(s.get("trafficDelayInSeconds") or max(0, czas - bez_ruchu))
+            bez_ruchu = max(1, int(s.get("noTrafficTravelTimeInSeconds") or czas))
+            # Opoznienie pokazywane uzytkownikowi liczymy wzgledem pustej drogi,
+            # bo tak brzmi opis na stronie. trafficDelayInSeconds z TomTom odnosi sie
+            # do ruchu TYPOWEGO dla tej pory, wiec trzymamy je jako osobna wartosc.
+            opoznienie = max(0, czas - bez_ruchu)
+            opoznienie_wzgl_typowego = int(s.get("trafficDelayInSeconds") or 0)
             ratio = czas / bez_ruchu
             wyniki.append(
                 {
@@ -131,6 +161,7 @@ def main() -> int:
                     "czas_s": czas,
                     "czas_bez_ruchu_s": bez_ruchu,
                     "opoznienie_s": opoznienie,
+                    "opoznienie_wzgl_typowego_s": opoznienie_wzgl_typowego,
                     "dlugosc_m": int(s["lengthInMeters"]),
                     "ratio": round(ratio, 3),
                     "poziom": ocen_poziom(ratio, opoznienie / 60, cfg["progi"]),
@@ -151,6 +182,7 @@ def main() -> int:
         "pobrano_utc": teraz_utc.isoformat(),
         "pobrano_lokalnie": teraz_pl.isoformat(),
         "zrodlo": "TomTom Routing API (traffic=true)",
+        "zuzycie_miesieczne": {"zapytan": zuzyte + len(wyniki), "budzet": budzet},
         "trasy": wyniki,
         "bledy": bledy,
     }
@@ -164,7 +196,16 @@ def main() -> int:
         w = csv.writer(fh)
         if nowy:
             w.writerow(
-                ["czas_utc", "dzien_tygodnia", "godzina", "trasa", "czas_s", "czas_bez_ruchu_s", "opoznienie_s"]
+                [
+                    "czas_utc",
+                    "dzien_tygodnia",
+                    "godzina",
+                    "trasa",
+                    "czas_s",
+                    "czas_bez_ruchu_s",
+                    "opoznienie_s",
+                    "opoznienie_wzgl_typowego_s",
+                ]
             )
         for r in wyniki:
             w.writerow(
@@ -176,10 +217,11 @@ def main() -> int:
                     r["czas_s"],
                     r["czas_bez_ruchu_s"],
                     r["opoznienie_s"],
+                    r["opoznienie_wzgl_typowego_s"],
                 ]
             )
 
-    print(f"OK: {len(wyniki)} tras, bledy: {len(bledy)}")
+    print(f"OK: {len(wyniki)} tras, bledy: {len(bledy)}, zuzycie: {zuzyte + len(wyniki)}/{budzet}")
     for r in wyniki:
         print(f"  {r['id']:<20} {r['czas_s'] // 60:>3} min (+{r['opoznienie_s'] // 60} min) {r['poziom']}")
     return 0

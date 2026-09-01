@@ -42,8 +42,16 @@ Współrzędne punktów pochodzą z OpenStreetMap — szczegóły w
 
 1. Załóż darmowe konto na <https://developer.tomtom.com/>.
 2. Utwórz aplikację z włączonym produktem **Routing API**.
-3. Skopiuj klucz. Darmowy próg to 2 500 zapytań na dobę; ten projekt zużywa
-   ok. 756 dziennie.
+3. Skopiuj klucz.
+
+**Limit darmowy: 20 000 zapytań miesięcznie** dla Routing API
+(zweryfikowane na <https://docs.tomtom.com/pricing>, wrzesień 2026 — pozycja
+„Routing API… Free 20K monthly”). Nie mylić z *Matrix* Routing API, który ma
+próg 2,5 tys./mies.
+
+Ten projekt zużywa ok. **504 zapytania na dobę ≈ 15 300 miesięcznie** — mieści
+się w progu z zapasem ok. 23%. Dodatkowo `fetch_traffic.py` sam przerywa pomiary
+po przekroczeniu 18 500 zapytań w miesiącu, licząc je z plików historii.
 
 Klucza **nie zapisuj w repozytorium**. Dodaj go jako sekret:
 

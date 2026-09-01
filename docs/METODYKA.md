@@ -66,15 +66,44 @@ uwzględniać tymczasowej organizacji ruchu na moście.
 Parametry: `traffic=true`, `travelMode=car`, `routeType=fastest`,
 `computeTravelTimeFor=all`, `departAt=now`.
 
-Z odpowiedzi wykorzystywane są pola `summary`:
+Z odpowiedzi `summary` wykorzystywane są pola:
 
 - `travelTimeInSeconds` — czas przejazdu z uwzględnieniem bieżącego ruchu,
 - `noTrafficTravelTimeInSeconds` — czas przy pustej drodze (odniesienie),
-- `trafficDelayInSeconds` — opóźnienie wynikające z ruchu,
+- `trafficDelayInSeconds` — opóźnienie względem **typowego** ruchu o tej porze,
 - `lengthInMeters` — długość trasy.
 
-Częstotliwość: co 10 minut w godzinach 04:00–21:59 UTC. Przy 7 trasach daje to
-ok. 756 zapytań na dobę, poniżej darmowego limitu TomTom (2 500/dobę).
+**Uwaga interpretacyjna.** `trafficDelayInSeconds` nie jest różnicą wobec pustej
+drogi. W pomiarze z 1 września 2026, godz. 8:56, trasa „od Leszna przez most”
+miała `travelTime = 781 s`, `noTrafficTravelTime = 590 s`, ale
+`trafficDelay = 81 s`. Pierwsza różnica (191 s) to strata wobec pustej drogi,
+druga (81 s) — wobec typowego ruchu w środę rano. Strona pokazuje wielkość
+`czas − czas_bez_ruchu`, bo to ona odpowiada opisowi „dłużej niż przy pustej
+drodze”. Wartość TomTom zapisujemy osobno jako `opoznienie_wzgl_typowego_s`.
+
+## 3a. Zużycie darmowego limitu
+
+Darmowy próg Routing API to **20 000 zapytań miesięcznie**
+(źródło: <https://docs.tomtom.com/pricing>, weryfikacja 1 września 2026 —
+wiersz „Routing API … Free 20K monthly”, identyczny dla TomTom Maps i Orbis
+Maps). Próg 2,5 tys./mies. dotyczy *Matrix* Routing API, czyli innego produktu.
+
+Harmonogram dobrano tak, żeby zmieścić się z zapasem:
+
+| Okno (UTC) | Częstotliwość | Przebiegów/dobę |
+|---|---|---|
+| 04:00–07:59 i 12:00–16:59 | co 10 min | 54 |
+| 08:00–11:59 i 17:00–21:59 | co 30 min | 18 |
+
+72 przebiegi × 7 tras = **504 zapytania na dobę ≈ 15 300 miesięcznie**.
+
+Okna w UTC są celowo szersze niż polski szczyt, bo cron nie zna czasu letniego —
+ten sam zapis musi działać przy UTC+1 i UTC+2.
+
+Niezależnie od harmonogramu `fetch_traffic.py` przed każdym przebiegiem liczy
+zapytania wykonane w bieżącym miesiącu (jeden wiersz historii = jedno zapytanie)
+i przerywa pracę po 18 500. To zabezpieczenie na wypadek ręcznych uruchomień
+i zmian w konfiguracji.
 
 **Ograniczenie, o którym trzeba wiedzieć:** dane TomTom pochodzą z floty pojazdów
 i urządzeń nawigacyjnych. Na drogach wojewódzkich w mniejszym mieście próbka jest
