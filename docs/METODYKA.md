@@ -54,6 +54,20 @@ leży na rzeczywistej jezdni, a nie „mniej więcej tam”.
 | Od Leszna / Krzywinia (DW432) | 52.04938, 16.94743 | 7,02 km |
 | Od Czempinia / Kościana (DW310) | 52.11414, 16.92563 | 7,05 km |
 
+Ósma trasa — „Z obwodnicy do centrum” — nie należy do tej grupy. Jej punkt
+startowy to **Rondo Premiera Stanisława Mikołajczyka** (`52.10643, 17.04321`,
+OSM `ref = "432;434"`), przy którym stoi stacja BP. Rondo leży 2,03 km od
+Starego Rynku i jest węzłem obwodnicy z ul. Średzką, czyli faktycznym wjazdem
+do miasta od strony Poznania i Środy Wlkp. Punkt wybrano dlatego, że
+na odcinku 2,3 km kilkuminutowy zator jest widoczny wyraźnie, podczas gdy na
+trasach dojazdowych o długości 7–9 km rozmywa się w czasie jazdy poza miastem.
+
+W rejonie Śremu OSM zna dwie stacje BP — druga (`52.09041, 17.01592`) stoi
+w mieście przy moście Kęszyckiego i **nie** jest tym punktem. Spośród sześciu
+nazwanych rond w rejonie Śremu tylko Rondo Mikołajczyka leży na obwodnicy
+(`ref = "432;434"`); pozostałe znajdują się wewnątrz miasta. Dlatego pozostałym
+wjazdom nie nadano nazw punktów orientacyjnych — nie istnieją.
+
 **Jak te punkty nazwano na stronie.** Karty nie podają „7 km”, bo obok widnieje
 kilometraż rzeczywistej trasy (7,3–8,9 km) i zestawienie dwóch różnych liczb
 myliło czytelnika. Zamiast tego każdy punkt opisano najbliższą miejscowością,
@@ -102,6 +116,7 @@ OSM, bez ruchu), przed pierwszym zapytaniem do TomTom:
 
 | Trasa | Długość po drogach (OSRM) |
 |---|---|
+| obwodnica-centrum | 2,3 km |
 | od-poznania | 7,7 km |
 | od-srody | 7,3 km |
 | od-gostynia | 7,8 km |
@@ -189,9 +204,18 @@ Harmonogram dobrano tak, żeby zmieścić się z zapasem:
 | Okno (UTC) | Częstotliwość | Przebiegów/dobę |
 |---|---|---|
 | 04:00–07:59 i 12:00–16:59 | co 10 min | 54 |
-| 08:00–11:59 i 17:00–21:59 | co 30 min | 18 |
+| 08:00–11:59 i 17:00–21:59 | co godzinę | 9 |
 
-72 przebiegi × 7 tras = **504 zapytania na dobę ≈ 15 300 miesięcznie**.
+63 przebiegi × 8 tras = **504 zapytania na dobę ≈ 15 600 miesięcznie**
+(31 dni), czyli ok. 22% zapasu do progu.
+
+Dodanie ósmej trasy („Z obwodnicy do centrum”) wymagało korekty: przy
+dotychczasowych 72 przebiegach dawałoby 17 856 zapytań miesięcznie, a więc
+zaledwie 12% zapasu — zbyt blisko progu, przy którym twardy limit w skrypcie
+zatrzymałby pomiary przed końcem miesiąca. Zamiast rozrzedzać szczyt (gdzie
+rozdzielczość 10 min jest najbardziej potrzebna) zmniejszono częstotliwość poza
+szczytem z 30 do 60 minut. Dobowe zużycie pozostało dokładnie takie samo jak
+przy siedmiu trasach.
 
 Okna w UTC są celowo szersze niż polski szczyt, bo cron nie zna czasu letniego —
 ten sam zapis musi działać przy UTC+1 i UTC+2.
@@ -212,7 +236,7 @@ Na wiek liczby na ekranie składają się trzy niezależne opóźnienia:
 
 | Składnik | Wartość | Uwaga |
 | --- | --- | --- |
-| Cykl pomiaru | 10 min w szczycie, 30 min poza nim | harmonogram z sekcji 3c |
+| Cykl pomiaru | 10 min w szczycie, 60 min poza nim | harmonogram z sekcji 3c |
 | Cache CDN | do 10 min (GitHub Pages) lub do 5 min (raw.githubusercontent.com) | patrz niżej |
 | Odpytywanie przez stronę | 2 min | `ODSWIEZANIE_MS` w `assets/app.js` |
 
@@ -235,8 +259,8 @@ z dwóch dostępnych kopii.
 **Konsekwencja dla użytkownika.** W najgorszym przypadku liczba na ekranie
 może pochodzić sprzed ok. 15 min w szczycie. Dlatego strona pokazuje wiek
 danych wprost („Pomiar o 09:16 — 4 minuty temu”), aktualizowany co 20 s, oraz
-ostrzega, gdy pomiar jest starszy niż 50 min. Próg 50 min dobrano tak, aby nie
-alarmował fałszywie poza szczytem (30 min cyklu + 10 min cache + margines).
+ostrzega, gdy pomiar jest starszy niż 80 min. Próg dobrano tak, aby nie
+alarmował fałszywie poza szczytem (60 min cyklu + 10 min cache + margines).
 
 ## 4. Klasyfikacja kolorystyczna
 

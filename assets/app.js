@@ -4,9 +4,9 @@ const ODSWIEZANIE_MS = 120 * 1000;
 // Odswiezenie licznika wieku danych bez ponownego pobierania.
 const ODSWIEZANIE_WIEKU_MS = 20 * 1000;
 
-// Poza szczytem pomiar wykonywany jest co 30 min, a CDN trzyma plik do 10 min,
-// wiec dane starsze niz ~40 min sa normalne. Ostrzegamy dopiero powyzej.
-const PROG_NIEAKTUALNE_MIN = 50;
+// Poza szczytem pomiar wykonywany jest co godzine, a CDN trzyma plik do 10 min,
+// wiec dane starsze niz ~70 min sa tam normalne. Ostrzegamy dopiero powyzej.
+const PROG_NIEAKTUALNE_MIN = 80;
 
 // Dwa zrodla tych samych danych. GitHub Pages serwuje je z naglowkiem
 // max-age=600 i ignoruje parametr query w kluczu cache, wiec potrafi oddac plik
@@ -59,41 +59,41 @@ function renderKarty(dane) {
   dane.trasy.forEach(function (t) {
     const opozn = minuty(t.opoznienie_s);
     const czas = minuty(t.czas_s);
+    const km = (t.dlugosc_m / 1000).toFixed(1).replace('.', ',');
     const karta = document.createElement('article');
     karta.className = 'karta ' + t.poziom;
 
-    const dodatek = opozn > 0
-      ? 'o ' + opozn + ' ' + odmianaMinut(opozn) + ' dłużej niż przy pustej drodze'
-      : 'bez opóźnienia względem pustej drogi';
-
     karta.innerHTML =
-      '<div class="droga"></div>' +
-      '<h3></h3>' +
-      '<p class="odcinek"></p>' +
+      '<div class="karta-tytul"><h3></h3><span class="droga"></span></div>' +
       '<div class="wiersz-czasu">' +
         '<span class="czas"></span><span class="jednostka"></span>' +
         '<span class="etykieta ' + t.poziom + '"></span>' +
       '</div>' +
       '<p class="szczegoly"></p>' +
-      '<p class="opis"></p>' +
-      '<p class="uwaga" hidden></p>';
+      '<details class="wiecej"><summary>szczegóły</summary>' +
+        '<p class="odcinek"></p><p class="opis"></p><p class="uwaga" hidden></p>' +
+      '</details>';
 
-    karta.querySelector('.droga').textContent = t.droga;
     karta.querySelector('h3').textContent = t.nazwa;
+    karta.querySelector('.droga').textContent = t.droga;
+    karta.querySelector('.czas').textContent = String(czas);
+    karta.querySelector('.jednostka').textContent = odmianaMinut(czas);
+    karta.querySelector('.etykieta').textContent = ETYKIETY[t.poziom] || t.poziom;
+
+    karta.querySelector('.szczegoly').textContent =
+      (opozn > 0 ? '+' + opozn + ' min' : 'bez opóźnienia') + ' · ' + km + ' km';
 
     const odcinek = karta.querySelector('.odcinek');
     if (t.skad && t.dokad) {
-      odcinek.textContent = t.skad + ' → ' + t.dokad;
+      odcinek.textContent = t.skad + ' → ' + t.dokad + ', ' + km + ' km';
     } else {
       odcinek.hidden = true;
     }
 
-    karta.querySelector('.czas').textContent = String(czas);
-    karta.querySelector('.jednostka').textContent = odmianaMinut(czas);
-    karta.querySelector('.etykieta').textContent = ETYKIETY[t.poziom] || t.poziom;
-    karta.querySelector('.szczegoly').textContent =
-      dodatek + ' · ' + (t.dlugosc_m / 1000).toFixed(1).replace('.', ',') + ' km trasy';
-    karta.querySelector('.opis').textContent = t.opis;
+    karta.querySelector('.opis').textContent =
+      t.opis + (opozn > 0
+        ? ' Teraz o ' + opozn + ' ' + odmianaMinut(opozn) + ' dłużej niż przy pustej drodze.'
+        : ' Teraz bez opóźnienia względem pustej drogi.');
 
     if (t.uwaga) {
       const uwaga = karta.querySelector('.uwaga');

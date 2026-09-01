@@ -9,7 +9,7 @@ Projekt niekomercyjny, bez reklam, bez śledzenia użytkowników.
 ## Jak to działa
 
 ```
-GitHub Actions (co 10 min)
+GitHub Actions (co 10 min w szczycie, co godzinę poza nim)
         │  TomTom Routing API — czas przejazdu z uwzględnieniem ruchu
         ▼
 data/current.json  +  data/history/YYYY-MM.csv
@@ -25,6 +25,7 @@ Actions i nigdy nie trafia do przeglądarki.
 
 | Trasa | Droga |
 |---|---|
+| Z obwodnicy do centrum | rondo Mikołajczyka (BP) → Stary Rynek |
 | Od Poznania / Kórnika | DW434 |
 | Od Środy Wielkopolskiej | DW432 |
 | Od Gostynia (ul. Gostyńska) | DW434 |

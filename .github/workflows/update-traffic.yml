@@ -3,17 +3,21 @@ name: Aktualizacja danych o ruchu
 on:
   schedule:
     # Darmowy prog TomTom dla Routing API to 20 000 zapytan MIESIECZNIE.
-    # Kazdy przebieg zuzywa 7 zapytan (po jednym na trase), wiec harmonogram
+    # Kazdy przebieg zuzywa 8 zapytan (po jednym na trase), wiec harmonogram
     # jest zageszczony tylko w godzinach szczytu.
     #
     # Szczyt (co 10 min): 04:00-07:59 i 12:00-16:59 UTC.
     #   Zakres w UTC celowo szerszy niz polski szczyt, zeby objac zarowno
     #   czas letni (UTC+2), jak i zimowy (UTC+1).
     - cron: "*/10 4-7,12-16 * * *"
-    # Poza szczytem (co 30 min): 08:00-11:59 i 17:00-21:59 UTC.
-    - cron: "0,30 8-11,17-21 * * *"
+    # Poza szczytem (co godzine): 08:00-11:59 i 17:00-21:59 UTC.
+    #   Bylo co 30 min przy 7 trasach; po dodaniu osmej trasy czestotliwosc
+    #   zmniejszono, zeby utrzymac zuzycie na dotychczasowym poziomie.
+    - cron: "0 8-11,17-21 * * *"
     #
-    # Razem ok. 72 przebiegi/dobe = ok. 504 zapytania/dobe = ok. 15 300/miesiac.
+    # Szczyt: 9 godzin x 6 = 54 przebiegi. Poza szczytem: 9 godzin x 1 = 9.
+    # Razem 63 przebiegi/dobe x 8 tras = 504 zapytania/dobe = 15 624/31 dni.
+    # Zapas do progu 20 000 wynosi ok. 22%.
     # Skrypt dodatkowo pilnuje budzetu i przerywa pomiary po 18 500 zapytaniach.
   workflow_dispatch:
 

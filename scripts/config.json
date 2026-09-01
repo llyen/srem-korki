@@ -8,6 +8,19 @@
   },
   "trasy": [
     {
+      "id": "obwodnica-centrum",
+      "nazwa": "Z obwodnicy do centrum",
+      "opis": "Krótki odcinek od ronda Mikołajczyka przy stacji BP przez most Chosłowskiego do Starego Rynku — najczulszy wskaźnik zatoru na samym wjeździe do miasta.",
+      "droga": "obwodnica",
+      "skad": "rondo Mikołajczyka (przy BP)",
+      "dokad": "Stary Rynek",
+      "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,3 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
+      "punkty": [
+        { "lat": 52.10643, "lon": 17.04321, "opis": "Rondo Premiera Stanisława Mikołajczyka przy stacji BP (OSM ref 432;434)" },
+        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" }
+      ]
+    },
+    {
       "id": "od-poznania",
       "nazwa": "Od Poznania / Kórnika",
       "opis": "DW434 od strony Kórnika i Zaniemyśla do centrum Śremu.",

@@ -76,10 +76,18 @@ main { padding-bottom: 40px; }
 .karta.utrudnienia { border-left-color: var(--pomaranczowy); }
 .karta.korek { border-left-color: var(--czerwony); }
 
-.karta h3 { margin: 0 0 2px; font-size: 1.02rem; }
-.karta .droga { color: var(--tekst-slaby); font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
+.karta-tytul { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.karta h3 { margin: 0; font-size: 1.02rem; flex: 1 1 auto; min-width: 0; }
+.karta .droga {
+  color: var(--tekst-slaby);
+  font-size: .74rem;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
 
-.wiersz-czasu { display: flex; align-items: baseline; gap: 10px; margin: 10px 0 6px; flex-wrap: wrap; }
+.wiersz-czasu { display: flex; align-items: baseline; gap: 10px; margin: 8px 0 4px; flex-wrap: wrap; }
 .czas { font-size: 2.1rem; font-weight: 700; line-height: 1; letter-spacing: -.03em; }
 .jednostka { font-size: .95rem; color: var(--tekst-slaby); }
 
@@ -97,6 +105,22 @@ main { padding-bottom: 40px; }
 .etykieta.korek { background: var(--czerwony); }
 
 .szczegoly { color: var(--tekst-slaby); font-size: .87rem; margin: 4px 0 0; }
+
+.wiecej { margin: 8px 0 0; }
+.wiecej > summary {
+  cursor: pointer;
+  color: var(--tekst-slaby);
+  font-size: .8rem;
+  list-style: none;
+  display: inline-block;
+  padding: 2px 0;
+}
+.wiecej > summary::-webkit-details-marker { display: none; }
+.wiecej > summary::before { content: "▸ "; }
+.wiecej[open] > summary::before { content: "▾ "; }
+.wiecej > summary:hover { color: var(--tekst); text-decoration: underline; }
+.wiecej > summary:focus-visible { outline: 2px solid var(--akcent); outline-offset: 2px; }
+
 .odcinek {
   color: var(--tekst-slaby);
   font-size: .82rem;
