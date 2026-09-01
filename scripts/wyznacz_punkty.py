@@ -30,10 +30,16 @@ CEL_KM = 7.0
 # Uwaga: CENTRUM sluzy wylacznie do wyboru punktow STARTOWYCH tras (srodek
 # okregu o promieniu 7 km). Punkty docelowe w miescie sa inne - patrz
 # docs/METODYKA.md, sekcja 2b.
+#
+# Kierunek polnocny (DW434 na Kornik i Poznan) NIE jest juz wyznaczany tym
+# skryptem: punkt startowy przeniesiono do Czmonia (52.18261, 17.05298), czyli
+# 10,25 km od Rynku, bo wies jest dla jadacych od Poznania czytelnym punktem
+# orientacyjnym. Wyboru dokonano nazwa miejscowosci, nie odlegloscia.
+# Skrypt zostawiono dla pozostalych czterech kierunkow i dla odtworzenia
+# historycznego punktu "za Rudunkiem", gdyby trzeba bylo do niego wrocic.
 
 # (nazwa, ref drogi, zakres azymutu w stopniach od centrum)
 KIERUNKI = [
-    ("od-poznania-plac20 (DW434, polnoc)", "434", (330.0, 30.0)),
     ("od-srody-plac20 (DW432, polnocny wschod)", "432", (35.0, 80.0)),
     ("od-gostynia-staszica (DW434, poludnie)", "434", (150.0, 200.0)),
     ("od-leszna-most (DW432, poludniowy zachod)", "432", (200.0, 250.0)),

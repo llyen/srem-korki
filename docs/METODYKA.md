@@ -50,11 +50,35 @@ leży na rzeczywistej jezdni, a nie „mniej więcej tam”.
 
 | Trasa | Punkt startowy | W linii prostej od Rynku |
 |---|---|---|
-| Od Poznania / Kórnika (DW434) | 52.15470, 17.03502 | 6,99 km |
 | Od Środy Wlkp. (DW432) | 52.13573, 17.09824 | 7,10 km |
 | Od Gostynia (DW434) | 52.03303, 17.05592 | 7,00 km |
 | Od Leszna / Krzywinia (DW432) | 52.04938, 16.94743 | 7,02 km |
 | Od Czempinia / Kościana (DW310) | 52.11414, 16.92563 | 7,05 km |
+
+**Wyjątek: kierunek poznański sięga dalej.** Trasa od Poznania i wyjazd na
+Poznań zaczynają się (odpowiednio kończą) w **Czmoniu** przy DW434,
+`52.18261, 17.05298` — czyli **10,25 km** od Starego Rynku w linii prostej,
+a nie 7 km jak pozostałe. Punkt wybrano nazwą miejscowości, nie algorytmem
+odległości, bo Czmoń jest dla jadących od Poznania naturalnym punktem
+orientacyjnym: to ostatnia wieś przed wjazdem w rejon Śremu i miejsce, w którym
+kierowca realnie podejmuje decyzję o dalszej jeździe.
+
+Weryfikacja, że punkt leży na właściwej drodze i przy właściwej wsi:
+
+- w promieniu kilku kilometrów OSM zna **dwie podobnie brzmiące miejscowości** —
+  Czmoń (`node 31625919`, `52.18262, 17.05353`) i Czmoniec (`node 31625913`,
+  `52.17994, 17.01881`); nazwy różnią się jedną sylabą i łatwo je pomylić,
+- DW434 przechodzi **przez Czmoń**: najbliższy punkt jej geometrii leży **38 m**
+  od centroidu wsi (`way 282496133`, `ref=434`),
+- Czmoniec leży **1,84 km** od DW434, czyli poza nią — gdyby wybrano jego,
+  punkt trafiłby na inną drogę,
+- dotychczasowy punkt „za Rudunkiem” (`52.15470, 17.03502`) leżał 3,34 km bliżej
+  Śremu i nie miał opisowej nazwy, do której mieszkaniec mógłby się odnieść.
+
+Konsekwencja jest taka, że **te dwie trasy są dłuższe od pozostałych**: 10,87 km
+drogą wobec 7,48 km wcześniej. Ma to wpływ na klasyfikację kolorystyczną,
+opisany w sekcji 4 — na dłuższej trasie ten sam postój daje mniejszy stosunek
+czasów, więc próg „korka” wypada przy większej stracie bezwzględnej.
 
 Ósma trasa — „Z obwodnicy do centrum” — nie należy do tej grupy. Jej punkt
 startowy to **Rondo Premiera Stanisława Mikołajczyka** (`52.10643, 17.04321`,
@@ -71,24 +95,26 @@ nazwanych rond w rejonie Śremu tylko Rondo Mikołajczyka leży na obwodnicy
 wjazdom nie nadano nazw punktów orientacyjnych — nie istnieją.
 
 **Jak te punkty nazwano na stronie.** Karty nie podają „7 km”, bo obok widnieje
-kilometraż rzeczywistej trasy (7,3–8,9 km) i zestawienie dwóch różnych liczb
+kilometraż rzeczywistej trasy (5,5–10,9 km) i zestawienie dwóch różnych liczb
 myliło czytelnika. Zamiast tego każdy punkt opisano najbliższą miejscowością,
 ustaloną przez odwrotne geokodowanie w Nominatim (`/reverse`, `zoom=14`)
 i zweryfikowaną dystansem do centroidu tej miejscowości:
 
 | Trasa | Najbliższa miejscowość | Odległość punktu od niej |
 |---|---|---|
-| Od Poznania / Kórnika | Rudunek (przysiółek Niesłabina), gm. Śrem | 1,18 km |
+| Od Poznania / Kórnika | Czmoń, gm. Kórnik | 38 m |
 | Od Środy Wlkp. | Luciny, gm. Śrem | 830 m |
 | Od Gostynia | Drzonek, gm. Dolsk | 248 m |
 | Od Leszna / Krzywinia | Wyrzeka, gm. Śrem | 450 m |
 | Od Czempinia / Kościana | Manieczki, gm. Brodnica | 317 m |
 
-Punkt północny jest jedynym oddalonym od zabudowy, dlatego opisano go „za
-Rudunkiem”, a nie „przy Rudunku”: leży 1,18 km na północ od niego
-(52.1547 wobec 52.1442), czyli po stronie Zaniemyśla, do którego jest jeszcze
-8,65 km. Pozostałe cztery punkty leżą w granicach 250–830 m od wsi, co
-uzasadnia sformułowanie „przy”.
+Punkt poznański jest jedynym leżącym praktycznie w zabudowie wsi (38 m od jej
+centroidu), pozostałe cztery mieszczą się w granicach 250–830 m — co w obu
+wypadkach uzasadnia sformułowanie „przy”.
+
+Wcześniejsza wersja opisywała punkt północny jako „za Rudunkiem”, bo leżał
+1,18 km od tego przysiółka, w otwartym terenie. Po przesunięciu do Czmonia
+zastrzeżenie przestało być potrzebne.
 
 **Jak policzono te odległości.** Wzorem równoprostokątnym (rzut walcowy
 równoodległościowy) na kuli o promieniu 6371 km, z korekcją południków przez
@@ -97,11 +123,15 @@ błąd względem dokładnego wzoru Vincentego na elipsoidzie WGS84:
 
 | Trasa | Wzór równoprostokątny | Haversine | WGS84 (Vincenty) | Błąd |
 |---|---|---|---|---|
-| Od Poznania | 6,984 km | 6,984 km | 6,989 km | 5 m |
+| Od Poznania (dawny punkt) | 6,984 km | 6,984 km | 6,989 km | 5 m |
 | Od Środy | 7,082 km | 7,082 km | 7,096 km | 14 m |
 | Od Gostynia | 6,989 km | 6,989 km | 6,996 km | 7 m |
 | Od Leszna | 7,002 km | 7,002 km | 7,016 km | 14 m |
 | Od Czempinia | 7,029 km | 7,029 km | 7,050 km | 21 m |
+
+Wiersz „Od Poznania” dotyczy punktu sprzed przeniesienia do Czmonia i zostawiono
+go celowo — porównanie służy ocenie **wzoru**, a nie konkretnego punktu, więc
+przeliczanie go po zmianie niczego by nie wniosło.
 
 Największy błąd to 21 m na 7 km, czyli 0,3%. Dla zadania „wybierz węzeł drogi
 mniej więcej 7 km od centrum” jest to bez znaczenia — sąsiednie węzły OSM na tych

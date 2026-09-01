@@ -1,11 +1,27 @@
 {
   "_zrodlo_wspolrzednych": "OpenStreetMap (Overpass API), zapytania udokumentowane w docs/METODYKA.md. Punkty startowe to rzeczywiste węzły dróg wojewódzkich ok. 7 km od Starego Rynku w Śremie.",
-  "centrum": { "lat": 52.09238, "lon": 17.02226, "nazwa": "Stary Rynek, Śrem", "_uwaga": "Wyłącznie punkt odniesienia przy wyznaczaniu punktów startowych oddalonych o 7 km (scripts/wyznacz_punkty.py). Cele tras w mieście są inne — patrz docs/METODYKA.md, sekcja 2b." },
+  "centrum": {
+    "lat": 52.09238,
+    "lon": 17.02226,
+    "nazwa": "Stary Rynek, Śrem",
+    "_uwaga": "Wyłącznie punkt odniesienia przy wyznaczaniu punktów startowych oddalonych o 7 km (scripts/wyznacz_punkty.py). Cele tras w mieście są inne — patrz docs/METODYKA.md, sekcja 2b."
+  },
   "progi": {
     "_opis": "Heurystyka koloru oparta na stosunku czasu przejazdu do czasu bez ruchu (ratio) ORAZ na bezwzględnym opóźnieniu w minutach. Kolor wynika z ostrzejszego z dwóch kryteriów, ale poziomy 'utrudnienia' i 'korek' dodatkowo wymagają minimalnej realnej straty czasu — bez tego krótkie trasy (2-5 km) osiągałyby czerwień przy stracie 2-3 minut, podczas gdy trasy 9-kilometrowe potrzebowały na to 8 minut.",
-    "ratio": { "zielony": 1.15, "zolty": 1.4, "czerwony": 1.8 },
-    "opoznienie_min": { "zielony": 3, "zolty": 8, "czerwony": 15 },
-    "min_strata_min": { "utrudnienia": 2.5, "korek": 5.0 }
+    "ratio": {
+      "zielony": 1.15,
+      "zolty": 1.4,
+      "czerwony": 1.8
+    },
+    "opoznienie_min": {
+      "zielony": 3,
+      "zolty": 8,
+      "czerwony": 15
+    },
+    "min_strata_min": {
+      "utrudnienia": 2.5,
+      "korek": 5.0
+    }
   },
   "trasy": [
     {
@@ -17,20 +33,36 @@
       "dokad": "Plac 20 Października",
       "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
       "punkty": [
-        { "lat": 52.10643, "lon": 17.04321, "opis": "Rondo Premiera Stanisława Mikołajczyka przy stacji BP (OSM ref 432;434)" },
-        { "lat": 52.09485, "lon": 17.02137, "opis": "Plac 20 Października (centroid siedmiu odcinków jezdni placu w OSM)" }
+        {
+          "lat": 52.10643,
+          "lon": 17.04321,
+          "opis": "Rondo Premiera Stanisława Mikołajczyka przy stacji BP (OSM ref 432;434)"
+        },
+        {
+          "lat": 52.09485,
+          "lon": 17.02137,
+          "opis": "Plac 20 Października (centroid siedmiu odcinków jezdni placu w OSM)"
+        }
       ]
     },
     {
-      "id": "od-poznania-plac20",
+      "id": "od-czmonia-plac20",
       "nazwa": "Od Poznania / Kórnika",
-      "opis": "DW434 od strony Kórnika i Zaniemyśla na Plac 20 Października.",
+      "opis": "DW434 z Czmonia, od strony Kórnika i Poznania, na Plac 20 Października.",
       "droga": "DW434",
-      "skad": "DW434 za Rudunkiem (od Zaniemyśla i Kórnika)",
+      "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "punkty": [
-        { "lat": 52.15470, "lon": 17.03502, "opis": "DW434, ok. 7 km na północ od Śremu" },
-        { "lat": 52.09485, "lon": 17.02137, "opis": "Plac 20 Października (centroid obrysu placu w OSM)" }
+        {
+          "lat": 52.18261,
+          "lon": 17.05298,
+          "opis": "DW434 w Czmoniu (37 m od centrum wsi wg OSM)"
+        },
+        {
+          "lat": 52.09485,
+          "lon": 17.02137,
+          "opis": "Plac 20 Października (centroid obrysu placu w OSM)"
+        }
       ]
     },
     {
@@ -41,8 +73,16 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "punkty": [
-        { "lat": 52.13573, "lon": 17.09824, "opis": "DW432, ok. 7 km na północny wschód od Śremu" },
-        { "lat": 52.09485, "lon": 17.02137, "opis": "Plac 20 Października (centroid obrysu placu w OSM)" }
+        {
+          "lat": 52.13573,
+          "lon": 17.09824,
+          "opis": "DW432, ok. 7 km na północny wschód od Śremu"
+        },
+        {
+          "lat": 52.09485,
+          "lon": 17.02137,
+          "opis": "Plac 20 Października (centroid obrysu placu w OSM)"
+        }
       ]
     },
     {
@@ -53,8 +93,16 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "punkty": [
-        { "lat": 52.03303, "lon": 17.05592, "opis": "DW434, ok. 7 km na południe od Śremu" },
-        { "lat": 52.0786487, "lon": 17.0288189, "opis": "skrzyżowanie ul. Gostyńskiej ze Staszica (OSM node 270295855)" }
+        {
+          "lat": 52.03303,
+          "lon": 17.05592,
+          "opis": "DW434, ok. 7 km na południe od Śremu"
+        },
+        {
+          "lat": 52.0786487,
+          "lon": 17.0288189,
+          "opis": "skrzyżowanie ul. Gostyńskiej ze Staszica (OSM node 270295855)"
+        }
       ]
     },
     {
@@ -66,9 +114,21 @@
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
       "punkty": [
-        { "lat": 52.04938, "lon": 16.94743, "opis": "DW432, ok. 7 km na południowy zachód od Śremu" },
-        { "lat": 52.09274, "lon": 17.02061, "opis": "wschodni wylot mostu im. D. Kęszyckiego (punkt pośredni)" },
-        { "lat": 52.10643, "lon": 17.04321, "opis": "Rondo Premiera Stanisława Mikołajczyka przy stacji BP (OSM ref 432;434)" }
+        {
+          "lat": 52.04938,
+          "lon": 16.94743,
+          "opis": "DW432, ok. 7 km na południowy zachód od Śremu"
+        },
+        {
+          "lat": 52.09274,
+          "lon": 17.02061,
+          "opis": "wschodni wylot mostu im. D. Kęszyckiego (punkt pośredni)"
+        },
+        {
+          "lat": 52.10643,
+          "lon": 17.04321,
+          "opis": "Rondo Premiera Stanisława Mikołajczyka przy stacji BP (OSM ref 432;434)"
+        }
       ]
     },
     {
@@ -79,8 +139,16 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "punkty": [
-        { "lat": 52.11414, "lon": 16.92563, "opis": "DW310, ok. 7 km na zachód od Śremu" },
-        { "lat": 52.088824, "lon": 17.015192, "opis": "Rondo Armii Krajowej, 56 m od ogrodzenia 6 Batalionu Dowodzenia Sił Powietrznych (OSM way 29092946)" }
+        {
+          "lat": 52.11414,
+          "lon": 16.92563,
+          "opis": "DW310, ok. 7 km na zachód od Śremu"
+        },
+        {
+          "lat": 52.088824,
+          "lon": 17.015192,
+          "opis": "Rondo Armii Krajowej, 56 m od ogrodzenia 6 Batalionu Dowodzenia Sił Powietrznych (OSM way 29092946)"
+        }
       ]
     },
     {
@@ -92,21 +160,41 @@
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
       "punkty": [
-        { "lat": 52.10643, "lon": 17.04321, "opis": "Rondo Premiera Stanisława Mikołajczyka przy stacji BP (OSM ref 432;434)" },
-        { "lat": 52.09198, "lon": 17.04189, "opis": "obwodnica Śremu (OSM ref 432;434)" },
-        { "lat": 52.07865, "lon": 17.02882, "opis": "skrzyżowanie ul. Gostyńskiej i Staszica (OSM node 270295855)" }
+        {
+          "lat": 52.10643,
+          "lon": 17.04321,
+          "opis": "Rondo Premiera Stanisława Mikołajczyka przy stacji BP (OSM ref 432;434)"
+        },
+        {
+          "lat": 52.09198,
+          "lon": 17.04189,
+          "opis": "obwodnica Śremu (OSM ref 432;434)"
+        },
+        {
+          "lat": 52.07865,
+          "lon": 17.02882,
+          "opis": "skrzyżowanie ul. Gostyńskiej i Staszica (OSM node 270295855)"
+        }
       ]
     },
     {
-      "id": "wyjazd-plac20-poznan",
+      "id": "wyjazd-plac20-czmon",
       "nazwa": "Wyjazd ze Śremu na Poznań",
-      "opis": "Z Placu 20 Października DW434 na północ, w kierunku Kórnika i Poznania.",
+      "opis": "Z Placu 20 Października DW434 na północ, do Czmonia, w kierunku Kórnika i Poznania.",
       "droga": "DW434",
       "skad": "Plac 20 Października",
-      "dokad": "DW434 za Rudunkiem, w stronę Zaniemyśla",
+      "dokad": "Czmoń (DW434)",
       "punkty": [
-        { "lat": 52.09485, "lon": 17.02137, "opis": "Plac 20 Października (centroid obrysu placu w OSM)" },
-        { "lat": 52.15470, "lon": 17.03502, "opis": "DW434, ok. 7 km na północ od Śremu" }
+        {
+          "lat": 52.09485,
+          "lon": 17.02137,
+          "opis": "Plac 20 Października (centroid obrysu placu w OSM)"
+        },
+        {
+          "lat": 52.18261,
+          "lon": 17.05298,
+          "opis": "DW434 w Czmoniu (37 m od centrum wsi wg OSM)"
+        }
       ]
     }
   ]
