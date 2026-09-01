@@ -4,3 +4,10 @@ __pycache__/
 .env
 *.log
 .DS_Store
+
+# Cloudflare Worker (wyzwalacz pomiarow)
+node_modules/
+.wrangler/
+# Blokada wersji zaleznosci nie jest tu potrzebna - jedyna zaleznosc to
+# narzedzie wdrozeniowe, ktore nie trafia do uruchamianego kodu.
+package-lock.json

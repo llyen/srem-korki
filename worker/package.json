@@ -1,0 +1,19 @@
+{
+  "name": "srem-korki-cron",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Wyzwalacz pomiarow ruchu dla strony srem-korki",
+  "scripts": {
+    "wdroz": "wrangler deploy",
+    "sekret": "wrangler secret put GITHUB_TOKEN",
+    "logi": "wrangler tail",
+    "test-lokalny": "wrangler dev --test-scheduled"
+  },
+  "devDependencies": {
+    "wrangler": "^4.125.0"
+  },
+  "dependencies": {
+    "@cloudflare/workerd-windows-64": "^1.20260825.1",
+    "@esbuild/win32-arm64": "^0.28.1"
+  }
+}

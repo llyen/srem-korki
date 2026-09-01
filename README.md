@@ -4,12 +4,16 @@ Prosta, bezpłatna strona pokazująca, ile obecnie trwa wjazd do Śremu główny
 drogami wojewódzkimi — w związku z remontem mostu im. Daniela Kęszyckiego
 i objazdem przez obwodnicę.
 
-Projekt niekomercyjny, bez reklam, bez śledzenia użytkowników.
+Projekt niekomercyjny, bez reklam. Jedyny licznik to Cloudflare Web Analytics,
+który według deklaracji dostawcy nie zbiera danych osobowych odwiedzających.
 
 ## Jak to działa
 
 ```
-GitHub Actions (co 10 min w szczycie, co 30 min poza nim, w nocy nic)
+Cloudflare Worker (harmonogram: co 10 min w szczycie, co 30 min poza nim,
+        │          w nocy nic) — wyzwala workflow przez API GitHuba
+        ▼
+GitHub Actions
         │  TomTom Routing API — czas przejazdu z uwzględnieniem ruchu
         ▼
 data/current.json  +  data/history/YYYY-MM.csv
@@ -20,6 +24,10 @@ GitHub Pages — statyczna strona (index.html) czyta JSON
 
 Nie ma serwera ani bazy danych. Klucz API żyje wyłącznie jako sekret w GitHub
 Actions i nigdy nie trafia do przeglądarki.
+
+Harmonogram stoi po stronie Cloudflare, a nie w pliku workflow, bo wbudowany
+`on: schedule` GitHuba nie uruchomił się w tym repozytorium ani razu — powody
+i przebieg diagnozy opisuje [`worker/README.md`](worker/README.md).
 
 ## Monitorowane trasy
 
@@ -51,8 +59,10 @@ Współrzędne punktów pochodzą z OpenStreetMap — szczegóły w
 próg 2,5 tys./mies.
 
 Ten projekt zużywa **480 zapytań na dobę = 14 880 miesięcznie** (31 dni) — mieści
-się w progu z zapasem ok. 26%. Dodatkowo `fetch_traffic.py` sam przerywa pomiary
-po przekroczeniu 18 500 zapytań w miesiącu, licząc je z plików historii.
+się w progu z zapasem ok. 26%. Liczbę przelicza `scripts/policz_budzet.py`
+z wyrażeń cron w `worker/wrangler.toml`. Dodatkowo `fetch_traffic.py` sam
+przerywa pomiary po przekroczeniu 18 500 zapytań w miesiącu, licząc je z plików
+historii.
 
 Klucza **nie zapisuj w repozytorium**. Dodaj go jako sekret:
 
@@ -89,6 +99,15 @@ ostrzeżenie — to celowe.
 
 Strona pojawi się pod adresem `https://llyen.github.io/srem-korki/`.
 
+### 5. Harmonogram pomiarów
+
+Automatyczne pomiary wyzwala Cloudflare Worker z katalogu `worker/`. Instrukcja
+wdrożenia — token GitHuba, `wrangler deploy`, weryfikacja — jest
+w [`worker/README.md`](worker/README.md).
+
+Bez tego kroku strona działa, ale dane aktualizują się tylko przy ręcznym
+uruchomieniu workflow.
+
 ## Struktura
 
 ```
@@ -98,11 +117,13 @@ scripts/config.json     definicje tras i progi kolorów
 scripts/wyznacz_punkty.py  odtwarza współrzędne punktów z OpenStreetMap
 scripts/fetch_traffic.py  pomiar (TomTom → data/)
 scripts/build_profile.py  profil godzinowy z historii
+scripts/policz_budzet.py  przelicza zużycie limitu TomTom z harmonogramu
 scripts/mock_data.py    dane przykładowe do podglądu
 data/current.json       ostatni pomiar
 data/history/           historia pomiarów (CSV, miesięcznie)
 docs/METODYKA.md        źródła danych i sposób liczenia
-.github/workflows/      harmonogram pomiarów
+worker/                 Cloudflare Worker — harmonogram pomiarów
+.github/workflows/      przebieg pomiaru (uruchamiany przez Workera)
 ```
 
 ## Ograniczenia

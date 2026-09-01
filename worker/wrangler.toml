@@ -1,0 +1,36 @@
+# Konfiguracja Workera, ktory wyzwala pomiary ruchu.
+# Dokumentacja: https://developers.cloudflare.com/workers/wrangler/configuration/
+
+name = "srem-korki-cron"
+main = "src/index.js"
+compatibility_date = "2026-09-01"
+
+# Logi widoczne w panelu Cloudflare (Workers > srem-korki-cron > Logs).
+# Bez tego nie da sie sprawdzic, czy wyzwolenie sie powiodlo.
+[observability]
+enabled = true
+
+[triggers]
+# Harmonogram przeniesiony bez zmian z pliku .github/workflows/update-traffic.yml.
+# Cloudflare uruchamia crony w czasie UTC - tak samo jak robil to GitHub,
+# wiec pory pomiarow pozostaja identyczne.
+#
+# Szczyt, co 10 minut: 04:00-07:59 i 12:00-15:59 UTC.
+#   Lato (UTC+2): 06:00-09:59 i 14:00-17:59 czasu lokalnego.
+#   Zima (UTC+1): 05:00-08:59 i 13:00-16:59.
+#
+# Poza szczytem, co 30 minut: 08:00-11:59 i 16:00-17:59 UTC.
+#   Lato: 10:00-13:59 i 18:00-19:59 czasu lokalnego.
+#   Zima: 09:00-12:59 i 17:00-18:59.
+#
+# Noc (20:00-06:00 lokalnie) jest pominieta swiadomie: nie ma wtedy zatorow,
+# ktore warto pokazywac, a kazde zapytanie kosztuje limit TomTom.
+#
+# Razem 60 przebiegow na dobe x 8 tras = 480 zapytan dziennie.
+# W najdluzszym miesiacu 480 x 31 = 14 880 z budzetu 18 500 (80%).
+#
+# Darmowy plan Workers dopuszcza 5 cron triggerow na konto - zuzywamy 2.
+crons = [
+  "4,14,24,34,44,54 4-7,12-15 * * *",
+  "12,42 8-11,16-17 * * *",
+]

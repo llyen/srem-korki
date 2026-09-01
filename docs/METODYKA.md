@@ -284,7 +284,10 @@ Darmowy próg Routing API to **20 000 zapytań miesięcznie**
 wiersz „Routing API … Free 20K monthly”, identyczny dla TomTom Maps i Orbis
 Maps). Próg 2,5 tys./mies. dotyczy *Matrix* Routing API, czyli innego produktu.
 
-Harmonogram dobrano tak, żeby zmieścić się z zapasem:
+Harmonogram dobrano tak, żeby zmieścić się z zapasem. **Od 1 września 2026 stoi
+on po stronie Cloudflare Workers**, a nie w pliku workflow — powód opisuje
+sekcja „Dlaczego harmonogram wyprowadzono z GitHuba” poniżej. Same pory nie
+zmieniły się, bo Cloudflare również uruchamia crony w czasie UTC.
 
 | Okno (UTC) | Czas letni (CEST) | Czas zimowy (CET) | Częstotliwość | Przebiegów/dobę |
 |---|---|---|---|---|
@@ -299,14 +302,16 @@ Harmonogram dobrano tak, żeby zmieścić się z zapasem:
 przebiegów dziennie.
 
 Rachunek jest odtwarzalny — wyrażenia cron rozwija się na listę godzin
-i minut, zamiast liczyć w pamięci. Pomyłka w tym miejscu kosztuje wyczerpanie
-limitu w połowie miesiąca i zatrzymanie strony.
+i minut, zamiast liczyć w pamięci. Robi to `scripts/policz_budzet.py`, który
+czyta harmonogram wprost z `worker/wrangler.toml` i liczbę tras z
+`scripts/config.json`. Pomyłka w tym miejscu kosztuje wyczerpanie limitu
+w połowie miesiąca i zatrzymanie strony.
 
 W nocy pomiarów nie ma świadomie: między 20:00 a 6:00 czasu lokalnego na tych
 drogach nie ma zatorów, które warto pokazywać, a każde zapytanie zużywa ten sam
 limit co zapytanie w szczycie. Konsekwencja jest taka, że nad ranem strona
 pokaże pomiar sprzed kilku godzin — dlatego wiek danych jest na niej wypisany
-wprost, a ostrzeżenie o nieaktualności pojawia się po 80 minutach.
+wprost, a ostrzeżenie o nieaktualności pojawia się po 50 minutach.
 
 Popołudniowy szczyt kończy się o 18:00 czasu letniego, a nie o 19:00 jak
 w pierwszej wersji. Ruch powrotny do Śremu rozkłada się wcześniej, więc ostatnia
@@ -319,15 +324,17 @@ przesuwa się o godzinę wcześniej**, więc pomiary kończą się o 18:59 zamia
 o 19:59. Uznano to za akceptowalne, bo zimą i tak wcześniej robi się ciemno,
 a ruch popołudniowy zaczyna się wcześniej.
 
-### Dlaczego minuty nie są okrągłe
+### Dlaczego harmonogram wyprowadzono z GitHuba
 
-Pierwsza wersja harmonogramu używała zapisów `*/10` i `0`, czyli uruchamiała się
-o pełnej godzinie i co dziesięć minut od niej. Przez pierwsze godziny istnienia
-repozytorium **nie wykonał się ani jeden przebieg z harmonogramu** — wszystkie
-uruchomienia w historii pochodziły z ręcznego `workflow_dispatch`, a zapytanie
-`GET /repos/.../actions/runs?event=schedule` zwracało `total_count=0`.
+Pierwsza wersja harmonogramu stała w pliku workflow, w bloku `on: schedule`,
+i używała zapisów `*/10` oraz `0` — czyli uruchamiała się o pełnej godzinie
+i co dziesięć minut od niej. **Nie wykonał się ani jeden przebieg**: zapytanie
+`GET /repos/.../actions/runs?event=schedule` uparcie zwracało `total_count=0`,
+podczas gdy wszystkie 39 uruchomień ręcznych (`workflow_dispatch`) kończyło się
+powodzeniem.
 
-Dokumentacja GitHuba w sekcji `schedule` mówi:
+Pierwszym podejrzanym były okrągłe minuty, bo dokumentacja GitHuba w sekcji
+`schedule` mówi:
 
 > The schedule event can be delayed during periods of high loads of GitHub
 > Actions workflow runs. High load times include the start of every hour. If the
@@ -337,28 +344,49 @@ Dokumentacja GitHuba w sekcji `schedule` mówi:
 >
 > — [Events that trigger workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows)
 
-Minuty omijają więc zero i wielokrotności dziesięciu. **Nie znaczy to jednak, że
-przyczyna braku uruchomień została udowodniona** — i warto to zapisać uczciwie,
-bo pierwotna wersja tej sekcji twierdziła inaczej.
+Minuty przestawiono więc tak, by omijały zero i wielokrotności dziesięciu.
+Nie pomogło. **Przyczyna nigdy nie została udowodniona** — i warto to zapisać
+uczciwie, bo pierwotna wersja tej sekcji twierdziła inaczej.
 
-Konfigurację sprawdzono punkt po punkcie i była poprawna: gałąź domyślna `main`
-zgodna z lokalizacją pliku, workflow `active`, repozytorium publiczne i nie
-zarchiwizowane, blok `on:` z poprawnie zagnieżdżonym `schedule`. Pozostaje
-drugie wyjaśnienie, którego wtedy nie sprawdzono: GitHub rejestruje harmonogram
-asynchronicznie **po każdej zmianie pliku workflow** — od kilkunastu minut do
-ponad godziny — i nie uruchamia zadań wstecz. Repozytorium miało wtedy niecałe
-cztery godziny, a plik był w tym czasie edytowany kilkakrotnie, ostatnio na
-trzynaście minut przed najbliższym terminem. Każda taka edycja mogła przesuwać
-start.
+Drugim wyjaśnieniem była asynchroniczna rejestracja harmonogramu: GitHub
+przyjmuje zmiany w pliku workflow z opóźnieniem od kilkunastu minut do ponad
+godziny i nie uruchamia zadań wstecz, a plik był w pierwszych godzinach życia
+repozytorium edytowany kilkakrotnie. Ta hipoteza również upadła — po ostatniej
+edycji minęła ponad godzina, a kolejne cztery terminy przepadły tak samo.
 
-Praktyczny wniosek jest ważniejszy niż rozstrzygnięcie, które wyjaśnienie jest
-prawdziwe: **diagnozując brak uruchomień, nie wolno w kółko poprawiać pliku
+Konfigurację sprawdzono punkt po punkcie i była poprawna:
+
+| Sprawdzone | Wynik |
+|---|---|
+| Gałąź domyślna | `main`, zgodna z lokalizacją pliku workflow |
+| Struktura `on: schedule` | poprawna, zweryfikowana parserem YAML |
+| Uprawnienia Actions | `enabled: true`, `allowed_actions: all` |
+| Stan workflow | `state: active` |
+| Repozytorium | publiczne, nie fork, nie zarchiwizowane |
+| Przebiegi `event=schedule` | **0 z 39** wszystkich uruchomień |
+
+Wniosek jest taki, że wbudowany harmonogram GitHub Actions w tym repozytorium
+po prostu nie działa, a przyczyna leży poza zasięgiem konfiguracji. Zamiast
+dalej zgadywać, harmonogram przeniesiono do **Cloudflare Workers Cron Triggers**
+(katalog `worker/`), który o wyznaczonych porach wywołuje `workflow_dispatch`
+przez API GitHuba — czyli kanał sprawdzony 39 razy bez jednej porażki.
+Darmowy plan Workers dopuszcza 5 cron triggerów na konto, zużywamy 2
+(<https://developers.cloudflare.com/workers/platform/limits/>).
+
+Blok `on: schedule` **usunięto z workflow celowo**. Gdyby harmonogram GitHuba
+kiedyś ożył równolegle z Workerem, pomiary wykonywałyby się podwójnie: 960
+zapytań dziennie zamiast 480, czyli wyczerpanie limitu TomTom około 19 dnia
+miesiąca. Wyrażenia cron zostały w komentarzu w pliku workflow, żeby dało się
+wrócić bez odtwarzania ich z pamięci.
+
+Praktyczny wniosek z całej tej diagnozy: **nie wolno w kółko poprawiać pliku
 workflow**, bo każda poprawka unieważnia test. Właściwa procedura to jedna
 zmiana, a potem godzina bez dotykania pliku.
 
-Niezależnie od tego harmonogram GitHub Actions **nie jest gwarancją**, tylko
-prośbą. Dlatego strona pokazuje wiek danych wprost i ostrzega, gdy pomiar jest
-starszy niż 80 minut, zamiast udawać, że liczba jest zawsze świeża.
+Zmiana wykonawcy nie czyni harmonogramu gwarancją — to nadal prośba, tyle że
+kierowana do dostawcy, który ją realizuje. Dlatego strona nadal pokazuje wiek
+danych wprost i ostrzega, gdy pomiar jest starszy niż 50 minut, zamiast udawać,
+że liczba jest zawsze świeża.
 
 Niezależnie od harmonogramu `fetch_traffic.py` przed każdym przebiegiem liczy
 zapytania wykonane w bieżącym miesiącu (jeden wiersz historii = jedno zapytanie)

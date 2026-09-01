@@ -1,48 +1,44 @@
 name: Aktualizacja danych o ruchu
 
 on:
-  schedule:
-    # --- Zakres doby ---------------------------------------------------------
-    # Pomiary tylko w godzinach 04:00-17:59 UTC. Noc jest pominieta swiadomie:
-    # miedzy 20:00 a 6:00 czasu lokalnego nie ma na tych drogach zatorow, ktore
-    # warto pokazywac, a kazde zapytanie kosztuje limit.
-    #
-    # --- Dlaczego minuty nie sa okragle --------------------------------------
-    # Dokumentacja GitHuba (sekcja "schedule" w events-that-trigger-workflows):
-    #   "The schedule event can be delayed during periods of high loads of
-    #    GitHub Actions workflow runs. High load times include the start of
-    #    every hour. If the load is sufficiently high enough, some queued jobs
-    #    may be dropped. To decrease the chance of delay, schedule your
-    #    workflow to run at a different time of the hour."
-    # Dlatego minuty omijaja zero i wielokrotnosci dziesieciu.
-    #
-    # SPROSTOWANIE wczesniejszej diagnozy: brak przebiegow w pierwszych
-    # godzinach zycia repozytorium zostal wtedy przypisany wlasnie minutom
-    # zerowym, ale nie zostalo to udowodnione. Rownie dobrze tlumaczy go fakt,
-    # ze GitHub rejestruje harmonogram asynchronicznie po KAZDEJ zmianie tego
-    # pliku (od kilkunastu minut do ponad godziny) i nie uruchamia zadan
-    # wstecz - a plik byl wtedy edytowany kilkakrotnie. Nieokragle minuty
-    # zostaja, bo sa zgodne z zaleceniem dokumentacji, ale nie sa lekiem na
-    # brak uruchomien.
-    #
-    # --- Budzet TomTom -------------------------------------------------------
-    # Darmowy prog Routing API to 20 000 zapytan MIESIECZNIE.
-    # Kazdy przebieg zuzywa 8 zapytan (po jednym na trase).
-    #
-    # Szczyt, co 10 min: 04:00-07:59 i 12:00-15:59 UTC.
-    #   Lato (UTC+2): 06:00-09:59 i 14:00-17:59 czasu lokalnego.
-    #   Zima (UTC+1): 05:00-08:59 i 13:00-16:59.
-    - cron: "4,14,24,34,44,54 4-7,12-15 * * *"
-    # Poza szczytem, co 30 min: 08:00-11:59 i 16:00-17:59 UTC.
-    #   Lato: 10:00-13:59 i 18:00-19:59 czasu lokalnego.
-    #   Zima: 09:00-12:59 i 17:00-18:59.
-    - cron: "12,42 8-11,16-17 * * *"
-    #
-    # Szczyt: 8 godzin x 6 = 48 przebiegow. Poza szczytem: 6 godzin x 2 = 12.
-    # Razem 60 przebiegow/dobe x 8 tras = 480 zapytan/dobe.
-    # W najdluzszym miesiacu: 480 x 31 = 14 880, czyli 80% budzetu 18 500.
-    # Zapas to jeszcze 14 dodatkowych przebiegow na dobe.
-    # Skrypt niezaleznie pilnuje budzetu i przerywa pomiary po 18 500 zapytaniach.
+  # --- Dlaczego nie ma tu bloku "schedule" ---------------------------------
+  # Workflow mial wlasny harmonogram, ale GitHub nie uruchomil go ANI RAZU:
+  # 0 przebiegow z harmonogramu przy 39 uruchomieniach recznych, wszystkich
+  # zakonczonych powodzeniem. Sprawdzone i wykluczone jako przyczyna: galaz
+  # domyslna (main), struktura pliku (parser YAML), uprawnienia Actions
+  # (enabled, allowed_actions: all), stan workflow (active), rodzaj
+  # repozytorium (publiczne, nie fork). Przyczyna pozostaje nieznana.
+  #
+  # Pomiary wyzwala teraz Cloudflare Worker z katalogu worker/, ktory wywoluje
+  # workflow_dispatch przez API GitHuba - czyli ten sam kanal, ktory dziala
+  # bezawaryjnie. Harmonogram stoi w worker/wrangler.toml.
+  #
+  # Blok "schedule" zostal usuniety CELOWO. Gdyby harmonogram GitHuba kiedys
+  # ozyl rownolegle z Workerem, pomiary wykonywalyby sie podwojnie: 960
+  # zapytan dziennie zamiast 480, czyli wyczerpanie miesiecznego limitu TomTom
+  # okolo 19 dnia miesiaca.
+  #
+  # Gdyby kiedys wrocic do harmonogramu GitHuba, wystarczy przywrocic:
+  #   schedule:
+  #     - cron: "4,14,24,34,44,54 4-7,12-15 * * *"   # szczyt, co 10 min
+  #     - cron: "12,42 8-11,16-17 * * *"             # poza szczytem, co 30 min
+  # ...i wylaczyc crony w worker/wrangler.toml, zeby nie dublowaly pomiarow.
+  #
+  # Minuty omijaja zero i wielokrotnosci dziesieciu zgodnie z zaleceniem
+  # dokumentacji GitHuba (sekcja "schedule" w events-that-trigger-workflows):
+  #   "The schedule event can be delayed during periods of high loads of
+  #    GitHub Actions workflow runs. High load times include the start of
+  #    every hour."
+  # SPROSTOWANIE: brak uruchomien zostal kiedys przypisany wlasnie okraglym
+  # minutom, ale nigdy tego nie udowodniono. Nieokragle minuty zostaly, bo sa
+  # zgodne z zaleceniem, ale nie byly lekiem na brak przebiegow.
+  #
+  # --- Budzet TomTom -------------------------------------------------------
+  # Darmowy prog Routing API to 20 000 zapytan MIESIECZNIE.
+  # Kazdy przebieg zuzywa 8 zapytan (po jednym na trase).
+  # 60 przebiegow/dobe x 8 = 480 zapytan/dobe; 480 x 31 = 14 880 (80% progu
+  # roboczego 18 500). Przelicza to skrypt scripts/policz_budzet.py.
+  # Skrypt pomiarowy niezaleznie pilnuje budzetu i przerywa po 18 500 zapytaniach.
   workflow_dispatch:
 
 permissions:
