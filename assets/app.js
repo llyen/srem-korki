@@ -54,21 +54,37 @@ function renderKarty(dane) {
     karta.innerHTML =
       '<div class="droga"></div>' +
       '<h3></h3>' +
+      '<p class="odcinek"></p>' +
       '<div class="wiersz-czasu">' +
         '<span class="czas"></span><span class="jednostka"></span>' +
         '<span class="etykieta ' + t.poziom + '"></span>' +
       '</div>' +
       '<p class="szczegoly"></p>' +
-      '<p class="opis"></p>';
+      '<p class="opis"></p>' +
+      '<p class="uwaga" hidden></p>';
 
     karta.querySelector('.droga').textContent = t.droga;
     karta.querySelector('h3').textContent = t.nazwa;
+
+    const odcinek = karta.querySelector('.odcinek');
+    if (t.skad && t.dokad) {
+      odcinek.textContent = t.skad + ' → ' + t.dokad;
+    } else {
+      odcinek.hidden = true;
+    }
+
     karta.querySelector('.czas').textContent = String(czas);
     karta.querySelector('.jednostka').textContent = odmianaMinut(czas);
     karta.querySelector('.etykieta').textContent = ETYKIETY[t.poziom] || t.poziom;
     karta.querySelector('.szczegoly').textContent =
-      dodatek + ' · ' + (t.dlugosc_m / 1000).toFixed(1).replace('.', ',') + ' km';
+      dodatek + ' · ' + (t.dlugosc_m / 1000).toFixed(1).replace('.', ',') + ' km trasy';
     karta.querySelector('.opis').textContent = t.opis;
+
+    if (t.uwaga) {
+      const uwaga = karta.querySelector('.uwaga');
+      uwaga.hidden = false;
+      uwaga.textContent = t.uwaga;
+    }
 
     kontener.appendChild(karta);
   });

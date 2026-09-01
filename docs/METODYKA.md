@@ -120,7 +120,44 @@ druga (81 s) — wobec typowego ruchu w środę rano. Strona pokazuje wielkość
 `czas − czas_bez_ruchu`, bo to ona odpowiada opisowi „dłużej niż przy pustej
 drodze”. Wartość TomTom zapisujemy osobno jako `opoznienie_wzgl_typowego_s`.
 
-## 3a. Zużycie darmowego limitu
+## 3b. Co oznacza 17,9 km trasy „objazd obwodnicą”
+
+To najczęściej mylona liczba na stronie, więc rozpisujemy ją jawnie. **Nie jest
+to długość obwodnicy Śremu.** Obwodnica ma ok. 4 km — suma długości wszystkich
+jezdni o `ref = "432;434"` w OSM to 4,06 km, a jej rozpiętość północ–południe
+3,83 km.
+
+17,9 km to długość całego mierzonego przejazdu tranzytowego:
+
+| Składowa | Ok. |
+|---|---|
+| dojazd DW434 z punktu 7 km na północ od Śremu | 7 km |
+| obwodnica Śremu | 4 km |
+| dalej DW432 do punktu 7 km na południowy zachód | 7 km |
+
+Punkty skrajne to `52.15470, 17.03502` (DW434 od strony Kórnika) oraz
+`52.04938, 16.94743` (DW432 w stronę Krzywinia i Leszna) — te same, których
+używają trasy „Od Poznania” i „Od Leszna”. Dzięki temu liczby są porównywalne
+między sobą, ale **nie** z trasami wjazdowymi, które kończą się na Starym Rynku.
+
+Ile faktycznie nadkłada objazd? Porównanie w OSRM (ten sam silnik, ta sama para
+punktów skrajnych):
+
+| Wariant | Długość | Czas bez ruchu |
+|---|---|---|
+| przez obwodnicę (stan obecny) | 17,9 km | 20 min |
+| trasa swobodna przez miasto i most | 15,1 km | 18 min |
+
+Objazd nadkłada więc ok. **2,8 km**. Sam dystans nie jest dużym problemem —
+dolegliwy jest czas, bo cały ruch tranzytowy i lokalny spotyka się na jednym
+ciągu. W pomiarze z 1 września 2026 objazd zajmował 25 min przy 17 min bez ruchu.
+
+**Zastrzeżenie:** wariant „przez miasto i most” policzono w OSRM na danych OSM,
+które w chwili pomiaru nie zawierały tymczasowego ruchu jednokierunkowego na
+moście. Ta liczba opisuje więc stan sprzed remontu, a nie dostępną dziś
+alternatywę. Traktuj ją jako punkt odniesienia, nie jako podpowiedź nawigacyjną.
+
+## 3c. Zużycie darmowego limitu
 
 Darmowy próg Routing API to **20 000 zapytań miesięcznie**
 (źródło: <https://docs.tomtom.com/pricing>, weryfikacja 1 września 2026 —

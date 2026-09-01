@@ -97,6 +97,22 @@ main { padding-bottom: 40px; }
 .etykieta.korek { background: var(--czerwony); }
 
 .szczegoly { color: var(--tekst-slaby); font-size: .87rem; margin: 4px 0 0; }
+.odcinek {
+  color: var(--tekst-slaby);
+  font-size: .82rem;
+  margin: 3px 0 0;
+  padding-left: 10px;
+  border-left: 2px solid var(--obramowanie);
+}
+.uwaga {
+  background: #fff7e6;
+  border: 1px solid #f0d9a8;
+  border-radius: 6px;
+  padding: 8px 10px;
+  font-size: .84rem;
+  color: #7a5406;
+  margin: 8px 0 0;
+}
 .karta .opis { color: var(--tekst-slaby); font-size: .85rem; margin: 8px 0 0; }
 .karta.bledna { opacity: .65; }
 
