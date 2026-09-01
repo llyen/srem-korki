@@ -1,0 +1,82 @@
+{
+  "_zrodlo_wspolrzednych": "OpenStreetMap (Overpass API), zapytania udokumentowane w docs/METODYKA.md. Punkty startowe to rzeczywiste węzły dróg wojewódzkich ok. 7 km od Starego Rynku w Śremie.",
+  "centrum": { "lat": 52.09238, "lon": 17.02226, "nazwa": "Stary Rynek, Śrem" },
+  "progi": {
+    "_opis": "Heurystyka koloru oparta na stosunku czasu przejazdu do czasu bez ruchu (ratio) ORAZ na bezwzględnym opóźnieniu w minutach. Kolor wynika z ostrzejszego z dwóch kryteriów.",
+    "ratio": { "zielony": 1.15, "zolty": 1.4, "czerwony": 1.8 },
+    "opoznienie_min": { "zielony": 3, "zolty": 8, "czerwony": 15 }
+  },
+  "trasy": [
+    {
+      "id": "od-poznania",
+      "nazwa": "Od Poznania / Kórnika",
+      "opis": "DW434 od strony Kórnika i Zaniemyśla do centrum Śremu.",
+      "droga": "DW434",
+      "punkty": [
+        { "lat": 52.15470, "lon": 17.03502, "opis": "DW434, ok. 7 km na północ od Śremu" },
+        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" }
+      ]
+    },
+    {
+      "id": "od-srody",
+      "nazwa": "Od Środy Wielkopolskiej",
+      "opis": "DW432 od strony Środy Wielkopolskiej do centrum Śremu.",
+      "droga": "DW432",
+      "punkty": [
+        { "lat": 52.13573, "lon": 17.09824, "opis": "DW432, ok. 7 km na północny wschód od Śremu" },
+        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" }
+      ]
+    },
+    {
+      "id": "od-gostynia",
+      "nazwa": "Od Gostynia (ul. Gostyńska)",
+      "opis": "DW434 od południa, wjazd ulicą Gostyńską — odcinek najbardziej obciążony objazdem.",
+      "droga": "DW434",
+      "punkty": [
+        { "lat": 52.03303, "lon": 17.05592, "opis": "DW434, ok. 7 km na południe od Śremu" },
+        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" }
+      ]
+    },
+    {
+      "id": "od-leszna-most",
+      "nazwa": "Od Leszna / Krzywinia przez most",
+      "opis": "DW432 od południowego zachodu przez most im. D. Kęszyckiego — jedyny dozwolony kierunek przejazdu mostem.",
+      "droga": "DW432 + most Kęszyckiego",
+      "punkty": [
+        { "lat": 52.04938, "lon": 16.94743, "opis": "DW432, ok. 7 km na południowy zachód od Śremu" },
+        { "lat": 52.09274, "lon": 17.02061, "opis": "wschodni wylot mostu im. D. Kęszyckiego" }
+      ]
+    },
+    {
+      "id": "od-czempinia",
+      "nazwa": "Od Czempinia / Kościana",
+      "opis": "DW310 od zachodu do centrum Śremu.",
+      "droga": "DW310",
+      "punkty": [
+        { "lat": 52.11414, "lon": 16.92563, "opis": "DW310, ok. 7 km na zachód od Śremu" },
+        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" }
+      ]
+    },
+    {
+      "id": "objazd-obwodnica",
+      "nazwa": "Objazd obwodnicą (Poznań → Leszno)",
+      "opis": "Trasa wymuszona zamknięciem mostu w kierunku południowym: DW434 od północy, obwodnica Śremu, dalej na Leszno. Punkt pośredni wymusza przejazd obwodnicą.",
+      "droga": "DW434 / obwodnica",
+      "punkty": [
+        { "lat": 52.15470, "lon": 17.03502, "opis": "DW434, ok. 7 km na północ od Śremu" },
+        { "lat": 52.09198, "lon": 17.04189, "opis": "obwodnica Śremu (OSM ref 432;434)" },
+        { "lat": 52.04938, "lon": 16.94743, "opis": "DW432 w kierunku Krzywinia i Leszna" }
+      ]
+    },
+    {
+      "id": "wyjazd-na-poznan",
+      "nazwa": "Wyjazd ze Śremu na Poznań",
+      "opis": "Z centrum Śremu DW434 na północ, w kierunku Kórnika i Poznania.",
+      "droga": "DW434",
+      "punkty": [
+        { "lat": 52.09238, "lon": 17.02226, "opis": "Stary Rynek" },
+        { "lat": 52.15470, "lon": 17.03502, "opis": "DW434, ok. 7 km na północ od Śremu" }
+      ]
+    }
+  ]
+}

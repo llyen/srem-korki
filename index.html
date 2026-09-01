@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Korki Śrem — aktualny czas wjazdu do miasta</title>
+<meta name="description" content="Aktualne czasy przejazdu na wjazdach do Śremu w czasie remontu mostu im. Daniela Kęszyckiego. Bezpłatna, niezależna strona dla mieszkańców.">
+<meta name="theme-color" content="#0b6b3a">
+<meta property="og:title" content="Korki Śrem — aktualny czas wjazdu do miasta">
+<meta property="og:description" content="Ile teraz stoi się na wjeździe do Śremu. Pomiar co 10 minut.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🚗</text></svg>">
+</head>
+<body>
+<header class="naglowek">
+  <div class="kontener">
+    <h1>Korki&nbsp;Śrem</h1>
+    <p class="podtytul">Ile teraz jedzie się na wjazdach do miasta</p>
+  </div>
+</header>
+
+<main class="kontener">
+
+  <section class="pasek-remont" aria-label="Informacja o remoncie">
+    <strong>Remont mostu im. Daniela Kęszyckiego.</strong>
+    Most jest jednokierunkowy — przejazd wyłącznie w stronę Poznania.
+    Ruch w stronę Leszna prowadzony jest objazdem przez obwodnicę (DW434) i ul. Gostyńską.
+  </section>
+
+  <div id="stan-ladowania" class="info" role="status">Wczytuję aktualne dane…</div>
+  <div id="stan-bledu" class="alert" hidden role="alert"></div>
+  <div id="stan-nieaktualne" class="ostrzezenie" hidden role="alert"></div>
+
+  <section id="karty" class="karty" aria-label="Czasy przejazdu"></section>
+
+  <p id="aktualizacja" class="aktualizacja" hidden></p>
+
+  <section class="profil" id="sekcja-profil" hidden>
+    <h2>O której jedzie się najgorzej</h2>
+    <p class="opis-sekcji">
+      Mediana opóźnienia w poszczególnych godzinach, policzona z dotychczasowych pomiarów.
+      Puste pola oznaczają, że danych jest za mało, żeby cokolwiek twierdzić.
+    </p>
+    <div class="wybor">
+      <label for="wybor-trasy">Trasa:</label>
+      <select id="wybor-trasy"></select>
+      <label for="wybor-dnia">Dzień:</label>
+      <select id="wybor-dnia">
+        <option value="1">poniedziałek</option>
+        <option value="2">wtorek</option>
+        <option value="3">środa</option>
+        <option value="4">czwartek</option>
+        <option value="5">piątek</option>
+        <option value="6">sobota</option>
+        <option value="0">niedziela</option>
+      </select>
+    </div>
+    <div id="wykres" class="wykres"></div>
+    <p id="profil-brak" class="info" hidden>Za mało pomiarów dla tego dnia. Wróć za kilka dni.</p>
+  </section>
+
+  <section class="oto-strona">
+    <h2>Skąd te liczby</h2>
+    <ul>
+      <li>Czas przejazdu pobierany jest <strong>co 10 minut</strong> z serwisu TomTom, który uwzględnia bieżący ruch.</li>
+      <li>Każda trasa to odcinek o długości ok. 7 km — od punktu na drodze wojewódzkiej do Starego Rynku.</li>
+      <li>„Opóźnienie” to różnica między czasem teraz a czasem przejazdu przy pustej drodze.</li>
+      <li>Współrzędne punktów pochodzą z OpenStreetMap i odpowiadają rzeczywistemu przebiegowi DW434, DW432 i DW310.</li>
+    </ul>
+    <p class="zastrzezenie">
+      To prywatna, bezpłatna strona mieszkańca — <strong>nie jest oficjalnym źródłem informacji</strong>.
+      Dane są szacunkowe i mogą odbiegać od rzeczywistości. Nie obsługuj telefonu podczas jazdy.
+      Oficjalne komunikaty o organizacji ruchu publikuje Urząd Miejski w Śremie i zarządca drogi.
+    </p>
+  </section>
+</main>
+
+<footer class="stopka">
+  <div class="kontener">
+    <p>Projekt niekomercyjny, kod otwarty. Dane o ruchu: TomTom. Mapa i geometria dróg: OpenStreetMap (ODbL).</p>
+    <p id="link-repo"></p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

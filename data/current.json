@@ -1,0 +1,92 @@
+{
+  "pobrano_utc": "2026-09-01T06:50:06+00:00",
+  "pobrano_lokalnie": "2026-09-01T08:50:06+00:00",
+  "zrodlo": "DANE PRZYKŁADOWE - podglad lokalny, nie pomiar ruchu",
+  "trasy": [
+    {
+      "id": "od-poznania",
+      "nazwa": "Od Poznania / Kórnika",
+      "opis": "DW434 od strony Kórnika i Zaniemyśla do centrum Śremu.",
+      "droga": "DW434",
+      "czas_s": 510,
+      "czas_bez_ruchu_s": 480,
+      "opoznienie_s": 30,
+      "dlugosc_m": 7000,
+      "ratio": 1.062,
+      "poziom": "plynnie"
+    },
+    {
+      "id": "od-srody",
+      "nazwa": "Od Środy Wielkopolskiej",
+      "opis": "DW432 od strony Środy Wielkopolskiej do centrum Śremu.",
+      "droga": "DW432",
+      "czas_s": 550,
+      "czas_bez_ruchu_s": 520,
+      "opoznienie_s": 30,
+      "dlugosc_m": 7500,
+      "ratio": 1.058,
+      "poziom": "plynnie"
+    },
+    {
+      "id": "od-gostynia",
+      "nazwa": "Od Gostynia (ul. Gostyńska)",
+      "opis": "DW434 od południa, wjazd ulicą Gostyńską — odcinek najbardziej obciążony objazdem.",
+      "droga": "DW434",
+      "czas_s": 860,
+      "czas_bez_ruchu_s": 560,
+      "opoznienie_s": 300,
+      "dlugosc_m": 8000,
+      "ratio": 1.536,
+      "poziom": "utrudnienia"
+    },
+    {
+      "id": "od-leszna-most",
+      "nazwa": "Od Leszna / Krzywinia przez most",
+      "opis": "DW432 od południowego zachodu przez most im. D. Kęszyckiego — jedyny dozwolony kierunek przejazdu mostem.",
+      "droga": "DW432 + most Kęszyckiego",
+      "czas_s": 720,
+      "czas_bez_ruchu_s": 600,
+      "opoznienie_s": 120,
+      "dlugosc_m": 8500,
+      "ratio": 1.2,
+      "poziom": "umiarkowanie"
+    },
+    {
+      "id": "od-czempinia",
+      "nazwa": "Od Czempinia / Kościana",
+      "opis": "DW310 od zachodu do centrum Śremu.",
+      "droga": "DW310",
+      "czas_s": 760,
+      "czas_bez_ruchu_s": 640,
+      "opoznienie_s": 120,
+      "dlugosc_m": 9000,
+      "ratio": 1.188,
+      "poziom": "umiarkowanie"
+    },
+    {
+      "id": "objazd-obwodnica",
+      "nazwa": "Objazd obwodnicą (Poznań → Leszno)",
+      "opis": "Trasa wymuszona zamknięciem mostu w kierunku południowym: DW434 od północy, obwodnica Śremu, dalej na Leszno. Punkt pośredni wymusza przejazd obwodnicą.",
+      "droga": "DW434 / obwodnica",
+      "czas_s": 800,
+      "czas_bez_ruchu_s": 680,
+      "opoznienie_s": 120,
+      "dlugosc_m": 9500,
+      "ratio": 1.176,
+      "poziom": "umiarkowanie"
+    },
+    {
+      "id": "wyjazd-na-poznan",
+      "nazwa": "Wyjazd ze Śremu na Poznań",
+      "opis": "Z centrum Śremu DW434 na północ, w kierunku Kórnika i Poznania.",
+      "droga": "DW434",
+      "czas_s": 750,
+      "czas_bez_ruchu_s": 720,
+      "opoznienie_s": 30,
+      "dlugosc_m": 10000,
+      "ratio": 1.042,
+      "poziom": "plynnie"
+    }
+  ],
+  "bledy": []
+}

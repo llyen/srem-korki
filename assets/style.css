@@ -1,0 +1,160 @@
+:root {
+  --tlo: #f4f6f8;
+  --karta: #ffffff;
+  --tekst: #1b2733;
+  --tekst-slaby: #5b6b7c;
+  --obramowanie: #dde3ea;
+  --akcent: #0b6b3a;
+  --zielony: #17864a;
+  --zolty: #b8860b;
+  --pomaranczowy: #d2691e;
+  --czerwony: #c02626;
+  --cien: 0 1px 3px rgba(16, 30, 45, .08), 0 6px 18px rgba(16, 30, 45, .05);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--tlo);
+  color: var(--tekst);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+
+.kontener { max-width: 940px; margin: 0 auto; padding: 0 16px; }
+
+.naglowek {
+  background: linear-gradient(135deg, #0b6b3a 0%, #0e8a4a 100%);
+  color: #fff;
+  padding: 22px 0 20px;
+}
+.naglowek h1 { margin: 0; font-size: 1.7rem; letter-spacing: -.02em; }
+.podtytul { margin: 4px 0 0; opacity: .92; font-size: .98rem; }
+
+main { padding-bottom: 40px; }
+
+.pasek-remont {
+  background: #fff7e6;
+  border: 1px solid #f0d9a8;
+  border-left: 5px solid #d99b16;
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 18px 0;
+  font-size: .95rem;
+}
+
+.info, .alert, .ostrzezenie {
+  border-radius: 8px;
+  padding: 12px 14px;
+  margin: 14px 0;
+  font-size: .95rem;
+}
+.info { background: #eef3f8; color: var(--tekst-slaby); }
+.alert { background: #fdecea; border: 1px solid #f5c6c2; color: #8c1d18; }
+.ostrzezenie { background: #fff4e5; border: 1px solid #f2d0a0; color: #7a4a06; }
+
+.karty {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 640px) {
+  .karty { grid-template-columns: 1fr 1fr; }
+}
+
+.karta {
+  background: var(--karta);
+  border: 1px solid var(--obramowanie);
+  border-left: 6px solid var(--obramowanie);
+  border-radius: 10px;
+  padding: 14px 16px;
+  box-shadow: var(--cien);
+}
+.karta.plynnie { border-left-color: var(--zielony); }
+.karta.umiarkowanie { border-left-color: var(--zolty); }
+.karta.utrudnienia { border-left-color: var(--pomaranczowy); }
+.karta.korek { border-left-color: var(--czerwony); }
+
+.karta h3 { margin: 0 0 2px; font-size: 1.02rem; }
+.karta .droga { color: var(--tekst-slaby); font-size: .8rem; text-transform: uppercase; letter-spacing: .04em; }
+
+.wiersz-czasu { display: flex; align-items: baseline; gap: 10px; margin: 10px 0 6px; flex-wrap: wrap; }
+.czas { font-size: 2.1rem; font-weight: 700; line-height: 1; letter-spacing: -.03em; }
+.jednostka { font-size: .95rem; color: var(--tekst-slaby); }
+
+.etykieta {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: .78rem;
+  font-weight: 600;
+  color: #fff;
+}
+.etykieta.plynnie { background: var(--zielony); }
+.etykieta.umiarkowanie { background: var(--zolty); }
+.etykieta.utrudnienia { background: var(--pomaranczowy); }
+.etykieta.korek { background: var(--czerwony); }
+
+.szczegoly { color: var(--tekst-slaby); font-size: .87rem; margin: 4px 0 0; }
+.karta .opis { color: var(--tekst-slaby); font-size: .85rem; margin: 8px 0 0; }
+.karta.bledna { opacity: .65; }
+
+.aktualizacja { color: var(--tekst-slaby); font-size: .86rem; margin: 14px 0 0; text-align: right; }
+
+.profil, .oto-strona {
+  background: var(--karta);
+  border: 1px solid var(--obramowanie);
+  border-radius: 10px;
+  padding: 16px;
+  margin-top: 22px;
+  box-shadow: var(--cien);
+}
+.profil h2, .oto-strona h2 { margin: 0 0 6px; font-size: 1.15rem; }
+.opis-sekcji { color: var(--tekst-slaby); font-size: .9rem; margin: 0 0 12px; }
+
+.wybor { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; font-size: .9rem; }
+.wybor select {
+  padding: 6px 8px;
+  border: 1px solid var(--obramowanie);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--tekst);
+  font: inherit;
+}
+
+.wykres { display: flex; align-items: flex-end; gap: 3px; height: 150px; overflow-x: auto; padding-bottom: 4px; }
+.slupek { flex: 1 0 22px; display: flex; flex-direction: column; justify-content: flex-end; height: 100%; text-align: center; }
+.slupek .pasek { border-radius: 3px 3px 0 0; min-height: 2px; background: var(--obramowanie); }
+.slupek .pasek.plynnie { background: var(--zielony); }
+.slupek .pasek.umiarkowanie { background: var(--zolty); }
+.slupek .pasek.utrudnienia { background: var(--pomaranczowy); }
+.slupek .pasek.korek { background: var(--czerwony); }
+.slupek .godz { font-size: .68rem; color: var(--tekst-slaby); margin-top: 3px; }
+.slupek .wart { font-size: .66rem; color: var(--tekst-slaby); }
+
+.oto-strona ul { margin: 8px 0 12px; padding-left: 20px; font-size: .93rem; }
+.oto-strona li { margin-bottom: 4px; }
+.zastrzezenie {
+  font-size: .87rem;
+  color: var(--tekst-slaby);
+  background: #f7f9fb;
+  border: 1px solid var(--obramowanie);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin: 0;
+}
+
+.stopka {
+  border-top: 1px solid var(--obramowanie);
+  padding: 16px 0 28px;
+  color: var(--tekst-slaby);
+  font-size: .84rem;
+  background: #fff;
+}
+.stopka p { margin: 2px 0; }
+.stopka a { color: var(--akcent); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .karta { transition: border-color .2s ease; }
+}
