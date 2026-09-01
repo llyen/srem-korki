@@ -285,27 +285,33 @@ wiersz „Routing API … Free 20K monthly”, identyczny dla TomTom Maps i Orbi
 Maps). Próg 2,5 tys./mies. dotyczy *Matrix* Routing API, czyli innego produktu.
 
 Harmonogram dobrano tak, żeby zmieścić się z zapasem. **Od 1 września 2026 stoi
-on po stronie Cloudflare Workers**, a nie w pliku workflow — powód opisuje
-sekcja „Dlaczego harmonogram wyprowadzono z GitHuba” poniżej. Same pory nie
-zmieniły się, bo Cloudflare również uruchamia crony w czasie UTC.
+on w serwisie cron-job.org**, a nie w pliku workflow ani w Cloudflare — powód
+opisuje sekcja „Dlaczego zegar stoi poza GitHubem i poza Cloudflare” poniżej.
 
-| Okno (UTC) | Czas letni (CEST) | Czas zimowy (CET) | Częstotliwość | Przebiegów/dobę |
-|---|---|---|---|---|
-| 04:00–07:59 | 06:00–09:59 | 05:00–08:59 | co 10 min | 24 |
-| 12:00–15:59 | 14:00–17:59 | 13:00–16:59 | co 10 min | 24 |
-| 08:00–11:59 | 10:00–13:59 | 09:00–12:59 | co 30 min | 8 |
-| 16:00–17:59 | 18:00–19:59 | 17:00–18:59 | co 30 min | 4 |
-| 18:00–03:59 | 20:00–05:59 | 19:00–04:59 | **brak pomiarów** | 0 |
+Zmiana wykonawcy przyniosła jedną poprawę merytoryczną: cron-job.org przyjmuje
+**strefę czasową**, podczas gdy GitHub i Cloudflare znają wyłącznie UTC.
+Harmonogram jest więc zapisany w `Europe/Warsaw` i **nie przesuwa się przy
+zmianie czasu na zimowy** — wcześniej zimą cała siatka wypadała godzinę
+wcześniej niż lokalny szczyt.
+
+| Okno (czas lokalny, cały rok) | Częstotliwość | Przebiegów/dobę |
+|---|---|---|
+| 06:00–09:59 | co 10 min | 24 |
+| 14:00–17:59 | co 10 min | 24 |
+| 10:00–13:59 | co 30 min | 8 |
+| 18:00–19:59 | co 30 min | 4 |
+| 20:00–05:59 | **brak pomiarów** | 0 |
 
 60 przebiegów × 8 tras = **480 zapytań na dobę = 14 880 miesięcznie**
 (31 dni), czyli 80% wewnętrznego budżetu 18 500. Zostaje zapas na 14 dodatkowych
 przebiegów dziennie.
 
-Rachunek jest odtwarzalny — wyrażenia cron rozwija się na listę godzin
-i minut, zamiast liczyć w pamięci. Robi to `scripts/policz_budzet.py`, który
-czyta harmonogram wprost z `worker/wrangler.toml` i liczbę tras z
-`scripts/config.json`. Pomyłka w tym miejscu kosztuje wyczerpanie limitu
-w połowie miesiąca i zatrzymanie strony.
+Rachunek jest odtwarzalny — godziny i minuty rozwija się na listę terminów,
+zamiast liczyć w pamięci. Robi to `scripts/policz_budzet.py`, który czyta
+definicje zadań wprost z `scripts/konfiguruj_zegar.py` (tego samego pliku,
+z którego konfigurowany jest zegar) i liczbę tras z `scripts/config.json`.
+Pomyłka w tym miejscu kosztuje wyczerpanie limitu w połowie miesiąca
+i zatrzymanie strony.
 
 W nocy pomiarów nie ma świadomie: między 20:00 a 6:00 czasu lokalnego na tych
 drogach nie ma zatorów, które warto pokazywać, a każde zapytanie zużywa ten sam
@@ -313,22 +319,23 @@ limit co zapytanie w szczycie. Konsekwencja jest taka, że nad ranem strona
 pokaże pomiar sprzed kilku godzin — dlatego wiek danych jest na niej wypisany
 wprost, a ostrzeżenie o nieaktualności pojawia się po 50 minutach.
 
-Popołudniowy szczyt kończy się o 18:00 czasu letniego, a nie o 19:00 jak
-w pierwszej wersji. Ruch powrotny do Śremu rozkłada się wcześniej, więc ostatnia
-godzina dawała pomiary o małej wartości informacyjnej przy pełnym koszcie.
-Godziny 18:00–20:00 obsługuje tryb rzadszy.
+Popołudniowy szczyt kończy się o 18:00, a nie o 19:00 jak w pierwszej wersji.
+Ruch powrotny do Śremu rozkłada się wcześniej, więc ostatnia godzina dawała
+pomiary o małej wartości informacyjnej przy pełnym koszcie. Godziny 18:00–20:00
+obsługuje tryb rzadszy.
 
-Okna w UTC są celowo szersze niż polski szczyt, bo cron nie zna czasu letniego —
-ten sam zapis musi działać przy UTC+1 i UTC+2. Skutek uboczny: **zimą cała siatka
-przesuwa się o godzinę wcześniej**, więc pomiary kończą się o 18:59 zamiast
-o 19:59. Uznano to za akceptowalne, bo zimą i tak wcześniej robi się ciemno,
-a ruch popołudniowy zaczyna się wcześniej.
+### Dlaczego zegar stoi poza GitHubem i poza Cloudflare
 
-### Dlaczego harmonogram wyprowadzono z GitHuba
+Harmonogram przeszedł przez trzy platformy. Dwie pierwsze przyjęły
+konfigurację, pokazywały ją w swoich panelach i API — i nie uruchomiły zadania
+ani razu. Poniżej zapis obu awarii, bo bez niego kolejna osoba (albo ja za pół
+roku) zacznie tę drogę od początku.
 
-Pierwsza wersja harmonogramu stała w pliku workflow, w bloku `on: schedule`,
-i używała zapisów `*/10` oraz `0` — czyli uruchamiała się o pełnej godzinie
-i co dziesięć minut od niej. **Nie wykonał się ani jeden przebieg**: zapytanie
+**Awaria pierwsza: `on: schedule` w GitHub Actions**
+
+Pierwsza wersja harmonogramu stała w pliku workflow i używała zapisów `*/10`
+oraz `0` — czyli uruchamiała się o pełnej godzinie i co dziesięć minut od niej.
+**Nie wykonał się ani jeden przebieg**: zapytanie
 `GET /repos/.../actions/runs?event=schedule` uparcie zwracało `total_count=0`,
 podczas gdy wszystkie 39 uruchomień ręcznych (`workflow_dispatch`) kończyło się
 powodzeniem.
@@ -365,23 +372,79 @@ Konfigurację sprawdzono punkt po punkcie i była poprawna:
 | Repozytorium | publiczne, nie fork, nie zarchiwizowane |
 | Przebiegi `event=schedule` | **0 z 39** wszystkich uruchomień |
 
-Wniosek jest taki, że wbudowany harmonogram GitHub Actions w tym repozytorium
-po prostu nie działa, a przyczyna leży poza zasięgiem konfiguracji. Zamiast
-dalej zgadywać, harmonogram przeniesiono do **Cloudflare Workers Cron Triggers**
-(katalog `worker/`), który o wyznaczonych porach wywołuje `workflow_dispatch`
-przez API GitHuba — czyli kanał sprawdzony 39 razy bez jednej porażki.
-Darmowy plan Workers dopuszcza 5 cron triggerów na konto, zużywamy 2
-(<https://developers.cloudflare.com/workers/platform/limits/>).
-
 Blok `on: schedule` **usunięto z workflow celowo**. Gdyby harmonogram GitHuba
-kiedyś ożył równolegle z Workerem, pomiary wykonywałyby się podwójnie: 960
-zapytań dziennie zamiast 480, czyli wyczerpanie limitu TomTom około 19 dnia
-miesiąca. Wyrażenia cron zostały w komentarzu w pliku workflow, żeby dało się
-wrócić bez odtwarzania ich z pamięci.
+kiedyś ożył równolegle z zewnętrznym zegarem, pomiary wykonywałyby się
+podwójnie: 960 zapytań dziennie zamiast 480, czyli wyczerpanie limitu TomTom
+około 19 dnia miesiąca. Wyrażenia cron zostały w komentarzu w pliku workflow,
+żeby dało się wrócić bez odtwarzania ich z pamięci.
 
-Praktyczny wniosek z całej tej diagnozy: **nie wolno w kółko poprawiać pliku
-workflow**, bo każda poprawka unieważnia test. Właściwa procedura to jedna
-zmiana, a potem godzina bez dotykania pliku.
+**Awaria druga: Cron Triggers w Cloudflare Workers**
+
+Harmonogram przeniesiono do Cloudflare Workers, gdzie o wyznaczonych porach
+wywoływałby `workflow_dispatch` przez API GitHuba — czyli kanał sprawdzony
+39 razy bez jednej porażki. Worker wdrożono, crony zapisały się poprawnie
+i **historia powtórzyła się co do joty**: przez 2,5 godziny (około 19 terminów)
+nie uruchomił się ani jeden.
+
+Diagnoza była trudniejsza niż przy GitHubie, bo **własne narzędzia
+obserwacyjne Cloudflare okazały się zawodne**: zapytanie GraphQL
+`workersInvocationsAdaptive` zwróciło zero wywołań w okresie, w którym Worker
+na pewno został wywołany ręcznie. Wniosek oparty na tym źródle trzeba było
+wycofać. Ta pułapka jest tu opisana celowo — statystyka pokazująca zero nie
+dowodzi, że nic się nie wydarzyło.
+
+Rozstrzygnął dopiero test niezależny od telemetrii dostawcy. Ustawiono cron
+`* * * * *`, a kod dla tego wyrażenia wykonywał **odczyt z API GitHuba**, który
+obniża licznik `x-ratelimit-remaining`. Licznik jest widoczny z zewnątrz przez
+endpoint diagnostyczny Workera, więc ślad po uruchomieniu nie zależał od logów
+Cloudflare:
+
+| Godzina (UTC) | Licznik limitu GitHuba | Zużyte przez cron |
+|---|---|---|
+| 19:22:36 | 4993 | — |
+| 19:27:49 | 4992 | **0** (spadek o 1 = własne sprawdzenie) |
+
+Pięć kolejnych terminów, zero zapytań. Równolegle działała **kontrola
+pozytywna**: ręczne wejście na adres Workera pojawiało się w `wrangler tail`
+natychmiast, więc cisza nie wynikała z awarii logowania. Wcześniej potwierdzono
+też każdy inny element łańcucha — sekret widoczny w Workerze, odczyt z API
+GitHuba `HTTP 200`, `POST /dispatches` z tokenem `HTTP 204`, crony obecne
+w API Cloudflare, aktywne wdrożenie na 100% ruchu, subdomena konta założona.
+
+Osobna pułapka wdrożeniowa: przy `workers_dev = false` zapis cronów jest
+**odrzucany** błędem 10063 („You need a workers.dev subdomain”), mimo że Worker
+tej subdomeny nie używa.
+
+**Rozwiązanie: zegar w cron-job.org**
+
+Zegar stoi więc w trzeciej, niezależnej usłudze, która wywołuje adres Workera
+z parametrem `?wyzwol=<klucz>`, a Worker zamawia pomiar w GitHub Actions.
+Zadziałała od razu — dwa wykonania w kolejnych minutach, oba `HTTP 200`,
+sprawdzone zadaniem testowym przed dopuszczeniem konfiguracji produkcyjnej.
+
+Wybrano ją także dlatego, że pozwala **zweryfikować skuteczność w minutę**
+zamiast czekać godzinę: udostępnia historię wykonań przez API. Po dwóch
+awariach, w których platforma deklarowała „następne uruchomienie” i nic nie
+robiła, możliwość szybkiego sprawdzenia była kryterium samym w sobie.
+
+Bezpieczeństwo rozwiązano tak, by usługa zewnętrzna **nie dostała tokenu
+GitHuba**. Zna wyłącznie adres Workera i klucz wyzwalacza, a oba można
+unieważnić w minutę bez ruszania tokenu. Klucz jest porównywany w Workerze
+stałoczasowo, bo adres jest publiczny, a zwykłe porównanie kończy się na
+pierwszej różnicy i pozwalałoby odgadywać klucz znak po znaku. Żądanie bez
+klucza nie uruchamia niczego — każdy pomiar kosztuje 8 zapytań z ograniczonej
+puli TomTom.
+
+Konfiguracja zegara jest **odtwarzalna z kodu**, nie wyklikana w panelu:
+tworzy ją `scripts/konfiguruj_zegar.py` przez API, a ten sam plik jest źródłem
+liczb dla `scripts/policz_budzet.py`.
+
+**Praktyczny wniosek z całej diagnozy.** Po pierwsze: nie wolno w kółko
+poprawiać konfiguracji, bo każda poprawka unieważnia trwający test — właściwa
+procedura to jedna zmiana, a potem odczekanie pełnego okna. Po drugie: hipotezę
+o działaniu harmonogramu trzeba weryfikować **śladem niezależnym od telemetrii
+dostawcy** i zawsze z kontrolą pozytywną, bo inaczej nie odróżni się „nie
+uruchomiło się” od „uruchomiło się, ale nie zostało zapisane”.
 
 Zmiana wykonawcy nie czyni harmonogramu gwarancją — to nadal prośba, tyle że
 kierowana do dostawcy, który ją realizuje. Dlatego strona nadal pokazuje wiek
@@ -432,7 +495,7 @@ Na wiek liczby na ekranie składają się trzy niezależne opóźnienia:
 
 | Składnik | Wartość | Uwaga |
 | --- | --- | --- |
-| Cykl pomiaru | 10 min w szczycie, 60 min poza nim | harmonogram z sekcji 3c |
+| Cykl pomiaru | 10 min w szczycie, 30 min poza nim | harmonogram z sekcji 3c |
 | Cache CDN | do 10 min (GitHub Pages) lub do 5 min (raw.githubusercontent.com) | patrz niżej |
 | Odpytywanie przez stronę | 2 min | `ODSWIEZANIE_MS` w `assets/app.js` |
 
@@ -455,8 +518,8 @@ z dwóch dostępnych kopii.
 **Konsekwencja dla użytkownika.** W najgorszym przypadku liczba na ekranie
 może pochodzić sprzed ok. 15 min w szczycie. Dlatego strona pokazuje wiek
 danych wprost („Pomiar o 09:16 — 4 minuty temu”), aktualizowany co 20 s, oraz
-ostrzega, gdy pomiar jest starszy niż 80 min. Próg dobrano tak, aby nie
-alarmował fałszywie poza szczytem (60 min cyklu + 10 min cache + margines).
+ostrzega, gdy pomiar jest starszy niż 50 min. Próg dobrano tak, aby nie
+alarmował fałszywie poza szczytem (30 min cyklu + 10 min cache + margines).
 
 ## 4. Klasyfikacja kolorystyczna
 
@@ -510,6 +573,19 @@ kalibracji na danych ze Śremu.
 tygodnia i godzinę. Komórki mające mniej niż 3 pomiary są pomijane i wyświetlane
 jako brak danych — celowo, żeby nie sugerować wniosków z pojedynczego pomiaru.
 Sensowny profil powstanie dopiero po kilku tygodniach zbierania danych.
+
+**Pomiary z tras wycofanych są odrzucane.** W tym projekcie zmiana geometrii
+trasy oznacza nowy identyfikator, bo stary pomiar opisuje wtedy inny przejazd —
+trasa z Czmonia ma inną długość niż wcześniejsza trasa „od Poznania”. Profil
+budowany jest więc wyłącznie dla identyfikatorów obecnych w
+`scripts/config.json`, a reszta historii jest liczona osobno (pole
+`pomiarow_trasy_wycofane`) i nieużywana. Przy pierwszym uruchomieniu po zmianie
+tras oznaczało to 62 ze 115 pomiarów. Przypisanie ich do nowych tras dałoby
+gęstszy wykres kosztem prawdziwości liczb, więc tego nie zrobiono.
+
+Skutkiem jest to, że po każdej zmianie geometrii wykres zaczyna się od zera.
+Dlatego komunikat o braku danych podaje, ile pomiarów już zebrano i ile ich
+potrzeba — pusta sekcja bez wyjaśnienia wygląda jak awaria strony.
 
 ## 6. Czego strona nie wie
 

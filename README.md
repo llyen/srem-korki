@@ -10,8 +10,10 @@ który według deklaracji dostawcy nie zbiera danych osobowych odwiedzających.
 ## Jak to działa
 
 ```
-Cloudflare Worker (harmonogram: co 10 min w szczycie, co 30 min poza nim,
-        │          w nocy nic) — wyzwala workflow przez API GitHuba
+cron-job.org (zegar: co 10 min w szczycie, co 30 min poza nim,
+        │     w nocy nic) — wywołuje adres Workera z kluczem
+        ▼
+Cloudflare Worker — zamawia pomiar przez API GitHuba
         ▼
 GitHub Actions
         │  TomTom Routing API — czas przejazdu z uwzględnieniem ruchu
@@ -25,9 +27,13 @@ GitHub Pages — statyczna strona (index.html) czyta JSON
 Nie ma serwera ani bazy danych. Klucz API żyje wyłącznie jako sekret w GitHub
 Actions i nigdy nie trafia do przeglądarki.
 
-Harmonogram stoi po stronie Cloudflare, a nie w pliku workflow, bo wbudowany
-`on: schedule` GitHuba nie uruchomił się w tym repozytorium ani razu — powody
-i przebieg diagnozy opisuje [`worker/README.md`](worker/README.md).
+Ten łańcuch jest dłuższy, niż wypadałoby dla tak prostego zadania, bo **dwie
+platformy przyjęły harmonogram i go nie zrealizowały**: najpierw wbudowany
+`on: schedule` GitHuba, potem cron triggers Cloudflare. Obie awarie
+udokumentowano pomiarami w [`docs/METODYKA.md`](docs/METODYKA.md) (sekcja 3c).
+Rolę zegara pełni więc usługa zewnętrzna, ale token GitHuba zostaje po stronie
+Workera — cron-job.org zna wyłącznie adres i klucz wyzwalacza, które można
+unieważnić bez ruszania tokenu.
 
 ## Monitorowane trasy
 
@@ -60,9 +66,9 @@ próg 2,5 tys./mies.
 
 Ten projekt zużywa **480 zapytań na dobę = 14 880 miesięcznie** (31 dni) — mieści
 się w progu z zapasem ok. 26%. Liczbę przelicza `scripts/policz_budzet.py`
-z wyrażeń cron w `worker/wrangler.toml`. Dodatkowo `fetch_traffic.py` sam
-przerywa pomiary po przekroczeniu 18 500 zapytań w miesiącu, licząc je z plików
-historii.
+z definicji zadań w `scripts/konfiguruj_zegar.py`. Dodatkowo `fetch_traffic.py`
+sam przerywa pomiary po przekroczeniu 18 500 zapytań w miesiącu, licząc je
+z plików historii.
 
 Klucza **nie zapisuj w repozytorium**. Dodaj go jako sekret:
 
@@ -101,9 +107,18 @@ Strona pojawi się pod adresem `https://llyen.github.io/srem-korki/`.
 
 ### 5. Harmonogram pomiarów
 
-Automatyczne pomiary wyzwala Cloudflare Worker z katalogu `worker/`. Instrukcja
-wdrożenia — token GitHuba, `wrangler deploy`, weryfikacja — jest
-w [`worker/README.md`](worker/README.md).
+Zegar stoi w serwisie **cron-job.org** i wywołuje chroniony adres Cloudflare
+Workera z katalogu `worker/`, a Worker zamawia pomiar w GitHub Actions.
+Zadania zegara tworzy skrypt `scripts/konfiguruj_zegar.py` — konfiguracja jest
+odtwarzalna z kodu, a nie wyklikana w panelu:
+
+```powershell
+$env:CRONJOB_API_KEY = "<klucz API z cron-job.org>"
+python scripts/konfiguruj_zegar.py
+```
+
+Instrukcja wdrożenia samego Workera — token GitHuba, klucz wyzwalacza,
+`wrangler deploy`, weryfikacja — jest w [`worker/README.md`](worker/README.md).
 
 Bez tego kroku strona działa, ale dane aktualizują się tylko przy ręcznym
 uruchomieniu workflow.
@@ -117,12 +132,13 @@ scripts/config.json     definicje tras i progi kolorów
 scripts/wyznacz_punkty.py  odtwarza współrzędne punktów z OpenStreetMap
 scripts/fetch_traffic.py  pomiar (TomTom → data/)
 scripts/build_profile.py  profil godzinowy z historii
+scripts/konfiguruj_zegar.py  zadania zegara w cron-job.org (pory pomiarów)
 scripts/policz_budzet.py  przelicza zużycie limitu TomTom z harmonogramu
 scripts/mock_data.py    dane przykładowe do podglądu
 data/current.json       ostatni pomiar
 data/history/           historia pomiarów (CSV, miesięcznie)
 docs/METODYKA.md        źródła danych i sposób liczenia
-worker/                 Cloudflare Worker — harmonogram pomiarów
+worker/                 Cloudflare Worker — przyjmuje sygnał zegara
 .github/workflows/      przebieg pomiaru (uruchamiany przez Workera)
 ```
 

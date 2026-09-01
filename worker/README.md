@@ -1,16 +1,26 @@
 # Wyzwalacz pomiarów (Cloudflare Worker)
 
-Ten katalog zawiera mały program, który o wyznaczonych porach każe GitHubowi
-wykonać pomiar czasów przejazdu. Sam nie odpytuje TomTomu i nie przetwarza
-danych — jedynie naciska przycisk, który wcześniej trzeba było naciskać ręcznie.
+Ten katalog zawiera mały program, który na sygnał z zewnętrznego zegara każe
+GitHubowi wykonać pomiar czasów przejazdu. Sam nie odpytuje TomTomu i nie
+przetwarza danych — jedynie naciska przycisk, który wcześniej trzeba było
+naciskać ręcznie.
 
-## Dlaczego to w ogóle powstało
+**Worker nie jest zegarem.** Zegar stoi w serwisie cron-job.org i wywołuje
+adres Workera z parametrem `?wyzwol=<klucz>`. Powód opisuje sekcja
+„Dlaczego zegar jest na zewnątrz”. Konfigurację zegara tworzy skrypt
+`scripts/konfiguruj_zegar.py` w katalogu głównym projektu.
 
-Workflow `update-traffic.yml` miał własny harmonogram (`on: schedule`).
-GitHub nie uruchomił go **ani razu**: 0 przebiegów z harmonogramu przy 39
+Taki podział ma konkretną zaletę: **token GitHuba nie opuszcza Cloudflare**.
+Usługa zewnętrzna zna wyłącznie adres i klucz wyzwalacza, a oba można
+unieważnić w minutę bez ruszania tokenu.
+
+## Dlaczego zegar jest na zewnątrz
+
+Harmonogram próbowano trzymać kolejno w dwóch miejscach. Obie platformy
+przyjęły konfigurację i nie uruchomiły zadania ani razu.
+
+**GitHub Actions (`on: schedule`)** — 0 przebiegów z harmonogramu przy 39
 uruchomieniach ręcznych, wszystkich zakończonych powodzeniem.
-
-Sprawdzone i wykluczone jako przyczyna:
 
 | Co sprawdzono | Wynik |
 |---|---|
@@ -21,8 +31,17 @@ Sprawdzone i wykluczone jako przyczyna:
 | Repozytorium | publiczne, nie fork, nie zarchiwizowane |
 | Czas od ostatniej edycji pliku | ponad godzina — okno rejestracji harmonogramu minęło |
 
-Przyczyna pozostaje nieznana i leży poza naszym zasięgiem. Kanał
-`workflow_dispatch` działa natomiast bezawaryjnie — i to jego używa ten Worker.
+**Cloudflare Cron Triggers** — to samo, mimo poprawnie zapisanych cronów
+widocznych w panelu i w API. Rozstrzygnął test niezależny od telemetrii
+Cloudflare (której nie dało się zaufać — GraphQL zwracał zero wywołań w okresie,
+gdy Worker na pewno został wywołany): cron ustawiony na każdą minutę wykonywał
+odczyt z API GitHuba, obniżający licznik `x-ratelimit-remaining`. Przez pięć
+kolejnych terminów licznik nie drgnął, przy działającej kontroli pozytywnej.
+
+Pełny zapis obu diagnoz jest w `docs/METODYKA.md`, sekcja 3c.
+
+Kanał `workflow_dispatch` działa natomiast bezawaryjnie — i to jego używa
+ten Worker.
 
 ## Co trzeba zrobić raz
 
@@ -70,11 +89,36 @@ W tym katalogu (`worker/`):
 npm install
 npx wrangler login      # otworzy przeglądarkę, zatwierdź dostęp
 npx wrangler deploy
-npx wrangler secret put GITHUB_TOKEN   # wklej token z kroku 1
+npx wrangler secret put GITHUB_TOKEN        # wklej token z kroku 1
+npx wrangler secret put KLUCZ_WYZWALACZA    # patrz krok 3
 ```
 
-Sekret trafia do Cloudflare i **nie jest zapisany w tym repozytorium**.
-Po jego ustawieniu nie trzeba wdrażać ponownie.
+Sekrety trafiają do Cloudflare i **nie są zapisane w tym repozytorium**.
+Po ich ustawieniu nie trzeba wdrażać ponownie.
+
+### 3. Klucz wyzwalacza
+
+Adres Workera jest publiczny, więc endpoint zamawiający pomiar musi być
+chroniony — każde wywołanie kosztuje 8 zapytań z ograniczonej puli TomTom.
+Klucz jest porównywany stałoczasowo, żeby po publicznym adresie nie dało się
+go odgadywać znak po znaku.
+
+Wygenerowanie i zapisanie:
+
+```powershell
+$bajty = New-Object byte[] 32
+[Security.Cryptography.RandomNumberGenerator]::Create().GetBytes($bajty)
+$klucz = [Convert]::ToBase64String($bajty).Replace('+','-').Replace('/','_').TrimEnd('=')
+[IO.File]::WriteAllText(".klucz-wyzwalacza.txt", $klucz)
+$klucz | npx wrangler secret put KLUCZ_WYZWALACZA
+```
+
+Plik `.klucz-wyzwalacza.txt` jest w `.gitignore` i służy skryptowi
+`scripts/konfiguruj_zegar.py` do zbudowania adresu dla zegara. Nie wypisuj
+klucza na ekran ani do rozmowy — trzymaj go w pliku.
+
+Unieważnienie klucza to wygenerowanie nowego i ponowne uruchomienie
+`scripts/konfiguruj_zegar.py`. Token GitHuba pozostaje wtedy nietknięty.
 
 #### Pułapka: subdomena workers.dev
 
@@ -86,6 +130,9 @@ Cloudflare odmówi zapisania cron triggerów, dopóki konto nie ma subdomeny
 
 Wystarczy raz otworzyć w panelu **Workers & Pages**; subdomena tworzy się
 wtedy automatycznie. Potem `wrangler deploy` przechodzi.
+
+W tym projekcie subdomena jest zresztą konieczna z innego powodu: to właśnie
+pod tym adresem Worker przyjmuje sygnał zegara.
 
 #### Pułapka: Windows na ARM64
 
@@ -109,70 +156,78 @@ npm install "@esbuild/win32-arm64@$((Get-Content node_modules\esbuild\package.js
 Sprawdzone — po tych trzech poleceniach działa i `wrangler deploy --dry-run`,
 i lokalny `wrangler dev`. Na maszynie x64 nie jest to potrzebne.
 
-### 3. Sprawdzenie, czy działa
+### 4. Sprawdzenie, czy działa
 
-Najprostszy test — wymuszenie przebiegu bez czekania na porę pomiaru:
+Worker ma endpoint diagnostyczny, który **nie uruchamia pomiaru** — sprawdza
+tylko, czy widzi sekret i czy dociera do API GitHuba:
+
+```powershell
+Invoke-RestMethod "https://srem-korki-cron.jakub-461.workers.dev/?diag=1"
+```
+
+Oczekiwana odpowiedź: `sekret_widoczny: True`, `odczyt_workflow_http: 200`.
+
+Pełny test łańcucha (uruchomi prawdziwy pomiar i zużyje 8 zapytań TomTom):
+
+```powershell
+$klucz = (Get-Content .klucz-wyzwalacza.txt -Raw).Trim()
+Invoke-WebRequest "https://srem-korki-cron.jakub-461.workers.dev/?wyzwol=$klucz"
+gh run list --repo llyen/srem-korki --limit 3
+```
+
+Oczekiwane: `HTTP 202` z treścią `{"zamowiono_pomiar":true}`, a na liście
+przebiegów nowe uruchomienie `workflow_dispatch` sprzed kilkunastu sekund.
+
+Podgląd logów Workera na żywo:
 
 ```powershell
 npx wrangler tail
 ```
 
-i w drugim oknie:
-
-```powershell
-gh run list --repo llyen/srem-korki --limit 5
-```
-
-Po najbliższej porze z harmonogramu w `wrangler tail` powinien pojawić się
-wpis `Pomiar wyzwolony`, a na liście przebiegów — nowe uruchomienie.
-
-Można też sprawdzić lokalnie, jeszcze przed wdrożeniem:
-
-```powershell
-npx wrangler dev --test-scheduled
-```
-
-a następnie w drugim oknie wywołać `http://localhost:8787/__scheduled`.
-Uwaga: ten tryb naprawdę wyśle żądanie do GitHuba, więc uruchomi pomiar.
-
 ## Harmonogram
 
-Pory pomiarów są w `wrangler.toml`. Cloudflare uruchamia crony w czasie UTC,
-dokładnie tak samo jak robił to GitHub, więc godziny pozostały bez zmian:
+**Pory pomiarów nie są ustawiane tutaj.** Definiuje je
+`scripts/konfiguruj_zegar.py`, a wykonuje cron-job.org — w strefie
+`Europe/Warsaw`, więc bez przesunięcia przy zmianie czasu na zimowy:
 
-| Okno (UTC) | Częstotliwość | Czas lokalny latem |
-|---|---|---|
-| 04:00–07:59 | co 10 minut | 06:00–09:59 |
-| 08:00–11:59 | co 30 minut | 10:00–13:59 |
-| 12:00–15:59 | co 10 minut | 14:00–17:59 |
-| 16:00–17:59 | co 30 minut | 18:00–19:59 |
-| 18:00–03:59 | brak pomiarów | 20:00–05:59 |
+| Okno (czas lokalny) | Częstotliwość |
+|---|---|
+| 06:00–09:59 | co 10 minut |
+| 10:00–13:59 | co 30 minut |
+| 14:00–17:59 | co 10 minut |
+| 18:00–19:59 | co 30 minut |
+| 20:00–05:59 | brak pomiarów |
 
 Razem 60 przebiegów na dobę × 8 tras = **480 zapytań dziennie**.
-W najdłuższym miesiącu 14 880 z budżetu 18 500 (80%).
+W najdłuższym miesiącu 14 880 z budżetu 18 500 (80%). Liczby przelicza
+`python scripts/policz_budzet.py` — nie przepisuj ich z pamięci.
 
-Darmowy plan Workers dopuszcza **5 cron triggerów na konto** — zużywamy 2.
-Źródło: <https://developers.cloudflare.com/workers/platform/limits/>
+Tablica `crons` w `wrangler.toml` jest **nieczynna** i została wyłącznie jako
+zapis zamierzonych pór. Gdyby harmonogram Cloudflare kiedyś ożył, pomiary
+wykonywałyby się podwójnie — przy zmianach pór trzeba pamiętać o obu miejscach.
 
 ## Ważne: dlaczego workflow nie ma już `schedule`
 
 Bloki `on: schedule` zostały z `update-traffic.yml` usunięte. Gdyby harmonogram
-GitHuba kiedyś ożył równolegle z tym Workerem, pomiary wykonywałyby się
+GitHuba kiedyś ożył równolegle z zewnętrznym zegarem, pomiary wykonywałyby się
 podwójnie: 960 zapytań dziennie zamiast 480, czyli wyczerpanie miesięcznego
 limitu TomTom około 19 dnia miesiąca. Jeden wyzwalacz, jedno źródło prawdy.
 
-Jeśli kiedykolwiek zrezygnujesz z Workera, przywróć `schedule` w workflow —
-wyrażenia cron są tam zapisane w komentarzu.
+Jeśli kiedykolwiek zrezygnujesz z tego rozwiązania, przywróć `schedule`
+w workflow — wyrażenia cron są tam zapisane w komentarzu.
 
 ## Zmiana harmonogramu
 
-Po edycji `crons` w `wrangler.toml` trzeba wdrożyć ponownie:
+Pory pomiarów zmienia się w `scripts/konfiguruj_zegar.py` (listy `godziny`
+i `minuty`), a potem uruchamia skrypt ponownie — zaktualizuje istniejące
+zadania zamiast tworzyć nowe:
 
 ```powershell
-npx wrangler deploy
+$env:CRONJOB_API_KEY = "<klucz API z cron-job.org>"
+python scripts/konfiguruj_zegar.py
 ```
 
-Cloudflare zapowiada, że zmiany harmonogramu propagują się **do 15 minut**.
-Źródło: <https://developers.cloudflare.com/workers/configuration/cron-triggers/>
+Ponowne wdrażanie Workera **nie jest** wtedy potrzebne — Worker nie zna pór.
 
-Pamiętaj o przeliczeniu budżetu — pomaga w tym `scripts/policz_budzet.py`.
+Pamiętaj o przeliczeniu budżetu: `python scripts/policz_budzet.py`. Skrypt
+czyta ten sam plik, więc liczby w dokumentacji nie rozjadą się z konfiguracją.

@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
-"""Liczy zuzycie darmowego limitu TomTom na podstawie harmonogramu Workera.
+"""Liczy zuzycie darmowego limitu TomTom na podstawie harmonogramu pomiarow.
 
 Zadna liczba w dokumentacji projektu nie ma byc przepisana z pamieci - ten
-skrypt rozwija wyrazenia cron z worker/wrangler.toml i mnozy liczbe przebiegow
+skrypt czyta definicje zadan z scripts/konfiguruj_zegar.py (to samo zrodlo,
+z ktorego konfigurowany jest zegar w cron-job.org) i mnozy liczbe przebiegow
 przez liczbe tras z scripts/config.json.
+
+Uwaga: harmonogram w worker/wrangler.toml jest NIECZYNNY - Cloudflare nie budzi
+Workera. Zostal tam wylacznie jako zapis historyczny i nie wolno go tu liczyc.
 
 Uzycie:
     python scripts/policz_budzet.py
@@ -12,14 +16,15 @@ Uzycie:
 from __future__ import annotations
 
 import json
-import re
 import sys
 from pathlib import Path
 
 KATALOG = Path(__file__).resolve().parent
 KORZEN = KATALOG.parent
+sys.path.insert(0, str(KATALOG))
 
-PLIK_WRANGLER = KORZEN / "worker" / "wrangler.toml"
+from konfiguruj_zegar import ZADANIA, STREFA  # noqa: E402
+
 PLIK_CONFIG = KATALOG / "config.json"
 
 # Darmowy prog Routing API to 20 000 zapytan miesiecznie. Skrypt pomiarowy
@@ -29,97 +34,31 @@ PROG_ROBOCZY = 18_500
 NAJDLUZSZY_MIESIAC = 31
 
 
-def rozwin_pole(pole: str, zakres: range) -> set[int]:
-    """Zamienia jedno pole wyrazenia cron na zbior wartosci.
-
-    Obsluguje: '*', liczby, listy po przecinku, zakresy 'a-b' i krok '*/n'.
-    """
-    wartosci: set[int] = set()
-
-    for czesc in pole.split(","):
-        czesc = czesc.strip()
-        krok = 1
-
-        if "/" in czesc:
-            czesc, tekst_kroku = czesc.split("/", 1)
-            krok = int(tekst_kroku)
-
-        if czesc == "*":
-            kandydaci = list(zakres)
-        elif "-" in czesc:
-            poczatek, koniec = (int(x) for x in czesc.split("-", 1))
-            kandydaci = list(range(poczatek, koniec + 1))
-        else:
-            kandydaci = [int(czesc)]
-
-        wartosci.update(kandydaci[::krok] if krok > 1 else kandydaci)
-
-    return wartosci
-
-
-def przebiegi_na_dobe(wyrazenie: str) -> tuple[int, set[tuple[int, int]]]:
-    """Zwraca liczbe uruchomien na dobe i zbior par (godzina, minuta).
-
-    Zaklada, ze pola dnia miesiaca, miesiaca i dnia tygodnia to '*'. Gdyby
-    kiedys przestaly nimi byc, skrypt przerwie zamiast podac zla liczbe.
-    """
-    pola = wyrazenie.split()
-    if len(pola) != 5:
-        raise ValueError(f"Wyrazenie cron musi miec 5 pol: {wyrazenie!r}")
-
-    minuta, godzina, dzien_miesiaca, miesiac, dzien_tygodnia = pola
-
-    for nazwa, pole in (
-        ("dzien miesiaca", dzien_miesiaca),
-        ("miesiac", miesiac),
-        ("dzien tygodnia", dzien_tygodnia),
-    ):
-        if pole != "*":
-            raise ValueError(
-                f"Skrypt liczy tylko harmonogramy codzienne, a pole "
-                f"'{nazwa}' to {pole!r}. Popraw skrypt zamiast zgadywac wynik."
-            )
-
-    minuty = rozwin_pole(minuta, range(0, 60))
-    godziny = rozwin_pole(godzina, range(0, 24))
-    terminy = {(g, m) for g in godziny for m in minuty}
-    return len(terminy), terminy
-
-
-def wczytaj_crony(sciezka: Path) -> list[str]:
-    """Wyciaga wyrazenia cron z sekcji [triggers] pliku wrangler.toml.
-
-    Swiadomie bez biblioteki TOML - plik ma jedna tablice crons, a zaleznosc
-    zewnetrzna byla by tu nieproporcjonalna do zadania.
-    """
-    tekst = sciezka.read_text(encoding="utf-8")
-    dopasowanie = re.search(r"crons\s*=\s*\[(.*?)\]", tekst, re.DOTALL)
-    if not dopasowanie:
-        raise ValueError(f"Nie znalazlem tablicy 'crons' w {sciezka}")
-
-    return re.findall(r'"([^"]+)"', dopasowanie.group(1))
+def terminy_zadania(zadanie: dict) -> set[tuple[int, int]]:
+    """Zwraca zbior par (godzina, minuta) dla jednego zadania zegara."""
+    return {(g, m) for g in zadanie["godziny"] for m in zadanie["minuty"]}
 
 
 def main() -> int:
-    crony = wczytaj_crony(PLIK_WRANGLER)
     config = json.loads(PLIK_CONFIG.read_text(encoding="utf-8"))
     trasy = config["trasy"]
 
-    print(f"Plik harmonogramu: {PLIK_WRANGLER.relative_to(KORZEN)}")
+    print("Zrodlo harmonogramu: scripts/konfiguruj_zegar.py (cron-job.org)")
+    print(f"Strefa czasowa: {STREFA}")
     print(f"Liczba tras: {len(trasy)}\n")
 
     wszystkie_terminy: set[tuple[int, int]] = set()
 
-    for wyrazenie in crony:
-        liczba, terminy = przebiegi_na_dobe(wyrazenie)
+    for zadanie in ZADANIA:
+        terminy = terminy_zadania(zadanie)
         nachodzace = wszystkie_terminy & terminy
         wszystkie_terminy |= terminy
 
-        print(f"  {wyrazenie:<36} {liczba:>3} przebiegow/dobe")
+        print(f"  {zadanie['tytul']:<40} {len(terminy):>3} przebiegow/dobe")
         if nachodzace:
             print(
                 f"    UWAGA: {len(nachodzace)} terminow pokrywa sie z "
-                f"wczesniejszym wyrazeniem - policzone raz."
+                f"wczesniejszym zadaniem - policzone raz."
             )
 
     przebiegi = len(wszystkie_terminy)
