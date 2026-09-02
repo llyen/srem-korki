@@ -103,7 +103,8 @@ ostrzeżenie — to celowe.
 
 *Settings → Pages → Source: Deploy from a branch → `main` / `/ (root)`*.
 
-Strona pojawi się pod adresem `https://llyen.github.io/srem-korki/`.
+Strona pojawi się pod adresem `https://korkisrem.pl/` (adres `https://llyen.github.io/srem-korki/`
+przekierowuje na własną domenę — konfiguracja opisana w `docs/DOMENA.md`).
 
 ### 5. Harmonogram pomiarów
 

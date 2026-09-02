@@ -208,7 +208,7 @@ export default {
     }
 
     return new Response(
-      "Wyzwalacz pomiarów dla https://llyen.github.io/srem-korki/\n" +
+      "Wyzwalacz pomiarów dla https://korkisrem.pl/\n" +
         "Pomiar zamawia wyłącznie żądanie z poprawnym kluczem. Bez niego\n" +
         "ten adres nic nie uruchamia.\n",
       { headers: { "Content-Type": "text/plain; charset=utf-8" } }
