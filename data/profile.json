@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 155,
+  "pomiarow_lacznie": 163,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 14,
-    "od-czmonia-plac20": 9,
-    "od-srody-plac20": 12,
-    "od-gostynia-staszica": 12,
-    "od-leszna-most-bp": 11,
-    "od-czempinia-rondo-ak": 12,
-    "objazd-gostynska": 14,
-    "wyjazd-plac20-czmon": 9
+    "obwodnica-plac20": 15,
+    "od-czmonia-plac20": 10,
+    "od-srody-plac20": 13,
+    "od-gostynia-staszica": 13,
+    "od-leszna-most-bp": 12,
+    "od-czempinia-rondo-ak": 13,
+    "objazd-gostynska": 15,
+    "wyjazd-plac20-czmon": 10
   },
   "profil": {
     "obwodnica-plac20": {
@@ -19,38 +19,38 @@
         "probek": 4
       },
       "2-6": {
-        "mediana_opoznienia_s": 17,
-        "probek": 5
+        "mediana_opoznienia_s": 16,
+        "probek": 6
       }
     },
     "od-czmonia-plac20": {
       "2-6": {
-        "mediana_opoznienia_s": 56,
-        "probek": 5
+        "mediana_opoznienia_s": 57,
+        "probek": 6
       }
     },
     "od-srody-plac20": {
       "2-6": {
         "mediana_opoznienia_s": 41,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-gostynia-staszica": {
       "2-6": {
-        "mediana_opoznienia_s": 23,
-        "probek": 5
+        "mediana_opoznienia_s": 25,
+        "probek": 6
       }
     },
     "od-leszna-most-bp": {
       "2-6": {
-        "mediana_opoznienia_s": 103,
-        "probek": 5
+        "mediana_opoznienia_s": 112,
+        "probek": 6
       }
     },
     "od-czempinia-rondo-ak": {
       "2-6": {
-        "mediana_opoznienia_s": 42,
-        "probek": 5
+        "mediana_opoznienia_s": 44,
+        "probek": 6
       }
     },
     "objazd-gostynska": {
@@ -59,14 +59,14 @@
         "probek": 4
       },
       "2-6": {
-        "mediana_opoznienia_s": 26,
-        "probek": 5
+        "mediana_opoznienia_s": 28,
+        "probek": 6
       }
     },
     "wyjazd-plac20-czmon": {
       "2-6": {
-        "mediana_opoznienia_s": 43,
-        "probek": 5
+        "mediana_opoznienia_s": 47,
+        "probek": 6
       }
     }
   }
