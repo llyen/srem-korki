@@ -10,7 +10,7 @@ który według deklaracji dostawcy nie zbiera danych osobowych odwiedzających.
 ## Jak to działa
 
 ```
-cron-job.org (zegar: co 10 min w szczycie, co 30 min poza nim,
+cron-job.org (zegar: co 10 min w szczycie, co 20 min poza nim,
         │     w nocy nic) — wywołuje adres Workera z kluczem
         ▼
 Cloudflare Worker — zamawia pomiar przez API GitHuba
@@ -64,8 +64,8 @@ Współrzędne punktów pochodzą z OpenStreetMap — szczegóły w
 „Routing API… Free 20K monthly”). Nie mylić z *Matrix* Routing API, który ma
 próg 2,5 tys./mies.
 
-Ten projekt zużywa **480 zapytań na dobę = 14 880 miesięcznie** (31 dni) — mieści
-się w progu z zapasem ok. 26%. Liczbę przelicza `scripts/policz_budzet.py`
+Ten projekt zużywa **528 zapytań na dobę = 16 368 miesięcznie** (31 dni) — mieści
+się w progu z zapasem ok. 18%. Liczbę przelicza `scripts/policz_budzet.py`
 z definicji zadań w `scripts/konfiguruj_zegar.py`. Dodatkowo `fetch_traffic.py`
 sam przerywa pomiary po przekroczeniu 18 500 zapytań w miesiącu, licząc je
 z plików historii.

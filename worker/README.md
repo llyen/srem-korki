@@ -200,13 +200,13 @@ npx wrangler tail
 | Okno (czas lokalny) | Częstotliwość |
 |---|---|
 | 06:00–09:59 | co 10 minut |
-| 10:00–13:59 | co 30 minut |
+| 10:00–13:59 | co 20 minut |
 | 14:00–17:59 | co 10 minut |
-| 18:00–19:59 | co 30 minut |
+| 18:00–19:59 | co 20 minut |
 | 20:00–05:59 | brak pomiarów |
 
-Razem 60 przebiegów na dobę × 8 tras = **480 zapytań dziennie**.
-W najdłuższym miesiącu 14 880 z budżetu 18 500 (80%). Liczby przelicza
+Razem 66 przebiegów na dobę × 8 tras = **528 zapytań dziennie**.
+W najdłuższym miesiącu 16 368 z budżetu 18 500 (88,5%). Liczby przelicza
 `python scripts/policz_budzet.py` — nie przepisuj ich z pamięci.
 
 Tablica `crons` w `wrangler.toml` jest **nieczynna** i została wyłącznie jako

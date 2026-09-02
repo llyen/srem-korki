@@ -24,7 +24,7 @@ on:
   # Gdyby kiedys wrocic do harmonogramu GitHuba, wystarczy przywrocic:
   #   schedule:
   #     - cron: "4,14,24,34,44,54 4-7,12-15 * * *"   # szczyt, co 10 min
-  #     - cron: "12,42 8-11,16-17 * * *"             # poza szczytem, co 30 min
+  #     - cron: "12,32,52 8-11,16-17 * * *"          # poza szczytem, co 20 min
   # ...i wylaczyc zadania w cron-job.org, zeby nie dublowaly pomiarow.
   # Uwaga: crony GitHuba znaja tylko UTC, wiec zimą siatka przesunie sie
   # o godzine - zegar zewnetrzny pracuje w strefie Europe/Warsaw.
@@ -41,7 +41,7 @@ on:
   # --- Budzet TomTom -------------------------------------------------------
   # Darmowy prog Routing API to 20 000 zapytan MIESIECZNIE.
   # Kazdy przebieg zuzywa 8 zapytan (po jednym na trase).
-  # 60 przebiegow/dobe x 8 = 480 zapytan/dobe; 480 x 31 = 14 880 (80% progu
+  # 66 przebiegow/dobe x 8 = 528 zapytan/dobe; 528 x 31 = 16 368 (88,5% progu
   # roboczego 18 500). Przelicza to skrypt scripts/policz_budzet.py.
   # Skrypt pomiarowy niezaleznie pilnuje budzetu i przerywa po 18 500 zapytaniach.
   workflow_dispatch:

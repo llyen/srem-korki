@@ -35,9 +35,9 @@ enabled = true
 #
 # Zamierzone pory pomiarow (czas lokalny, caly rok):
 #   06:00-09:59  co 10 minut     24 przebiegi
-#   10:00-13:59  co 30 minut      8 przebiegow
+#   10:00-13:59  co 20 minut     12 przebiegow
 #   14:00-17:59  co 10 minut     24 przebiegi
-#   18:00-19:59  co 30 minut      4 przebiegi
+#   18:00-19:59  co 20 minut      6 przebiegow
 #   20:00-05:59  brak pomiarow
-# Razem 60 przebiegow na dobe x 8 tras = 480 zapytan (80% budzetu 18 500).
+# Razem 66 przebiegow na dobe x 8 tras = 528 zapytan (88,5% budzetu 18 500).
 crons = []

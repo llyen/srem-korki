@@ -41,8 +41,12 @@ API = "https://api.cron-job.org"
 ADRES_WORKERA = "https://srem-korki-cron.jakub-461.workers.dev/"
 STREFA = "Europe/Warsaw"
 
+# Prefiks tytulu. Zadania na koncie zaczynajace sie od niego, ktorych nie ma
+# na liscie ZADANIA, sa kasowane - patrz komentarz przy sprzataniu w main().
+PREFIKS = "srem-korki:"
+
 # Szczyt: co 10 minut. Rano 6:00-9:59, popoludniu 14:00-17:59 czasu lokalnego.
-# Poza szczytem: co 30 minut, 10:00-13:59 i 18:00-19:59.
+# Poza szczytem: co 20 minut, 10:00-13:59 i 18:00-19:59.
 # Noc (20:00-6:00) pominieta swiadomie - nie ma wtedy zatorow, a kazdy pomiar
 # kosztuje 8 zapytan z ograniczonej puli TomTom.
 ZADANIA = [
@@ -52,9 +56,9 @@ ZADANIA = [
         "minuty": [4, 14, 24, 34, 44, 54],
     },
     {
-        "tytul": "srem-korki: poza szczytem (co 30 min)",
+        "tytul": "srem-korki: poza szczytem (co 20 min)",
         "godziny": [10, 11, 12, 13, 18, 19],
-        "minuty": [12, 42],
+        "minuty": [12, 32, 52],
     },
 ]
 
@@ -143,6 +147,24 @@ def main() -> int:
             print(f"  nastepne uruchomienie: {czas}")
 
     laczna = sum(len(z["godziny"]) * len(z["minuty"]) for z in ZADANIA)
+
+    # Zadania sa dopasowywane po tytule, wiec zmiana tytulu (np. gdy zmieni sie
+    # czestotliwosc w nazwie) tworzy nowe zadanie i zostawia stare dzialajace.
+    # Dwa zadania strzelalyby rownolegle i po cichu podwajaly zuzycie TomToma,
+    # dlatego osierocone zadania z naszym prefiksem trzeba skasowac.
+    nasze = {z["tytul"] for z in ZADANIA}
+    osierocone = {
+        tytul: job_id
+        for tytul, job_id in istniejace.items()
+        if tytul and tytul.startswith(PREFIKS) and tytul not in nasze
+    }
+    for tytul, job_id in osierocone.items():
+        if tylko_podglad:
+            print(f"\nDO SKASOWANIA (osierocone): {tytul} [{job_id}]")
+        else:
+            zapytaj("DELETE", f"/jobs/{job_id}", klucz_api)
+            print(f"\nskasowano osierocone zadanie: {tytul} [{job_id}]")
+
     print(f"\nRazem {laczna} pomiarow na dobe x 8 tras = {laczna * 8} zapytan do TomTom.")
     return 0
 

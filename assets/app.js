@@ -8,12 +8,12 @@ const ODSWIEZANIE_ZDARZEN_MS = 5 * 60 * 1000;
 // Odswiezenie licznika wieku danych bez ponownego pobierania.
 const ODSWIEZANIE_WIEKU_MS = 20 * 1000;
 
-// Poza szczytem pomiar wykonywany jest co 30 min, a CDN trzyma plik do 10 min,
-// wiec dane starsze niz ~40 min sa tam normalne. Ostrzegamy dopiero powyzej.
+// Poza szczytem pomiar wykonywany jest co 20 min, a CDN trzyma plik do 10 min,
+// wiec dane starsze niz ~30 min sa tam normalne. Ostrzegamy dopiero powyzej.
 // Wieczorem i noca (po ok. 20:00 czasu lokalnego) pomiarow nie ma wcale, wiec
 // ostrzezenie bedzie wtedy widoczne stale - i tak ma byc, bo liczba jest wtedy
 // faktycznie nieaktualna.
-const PROG_NIEAKTUALNE_MIN = 50;
+const PROG_NIEAKTUALNE_MIN = 40;
 
 // Dwa zrodla tych samych danych. GitHub Pages serwuje je z naglowkiem
 // max-age=600 i ignoruje parametr query w kluczu cache, wiec potrafi oddac plik

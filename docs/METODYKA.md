@@ -298,13 +298,19 @@ wcześniej niż lokalny szczyt.
 |---|---|---|
 | 06:00–09:59 | co 10 min | 24 |
 | 14:00–17:59 | co 10 min | 24 |
-| 10:00–13:59 | co 30 min | 8 |
-| 18:00–19:59 | co 30 min | 4 |
+| 10:00–13:59 | co 20 min | 12 |
+| 18:00–19:59 | co 20 min | 6 |
 | 20:00–05:59 | **brak pomiarów** | 0 |
 
-60 przebiegów × 8 tras = **480 zapytań na dobę = 14 880 miesięcznie**
-(31 dni), czyli 80% wewnętrznego budżetu 18 500. Zostaje zapas na 14 dodatkowych
+66 przebiegów × 8 tras = **528 zapytań na dobę = 16 368 miesięcznie**
+(31 dni), czyli 88,5% wewnętrznego budżetu 18 500. Zostaje zapas na 8 dodatkowych
 przebiegów dziennie.
+
+Odstęp poza szczytem skrócono z 30 do 20 minut, bo przy 30 minutach dane na
+stronie potrafiły mieć — licząc z dziesięciominutową pamięcią podręczną
+GitHub Pages — nawet 40 minut. Dla strony odpowiadającej na pytanie „ile teraz
+stoi się w korku" to za dużo. Ceną jest zejście z zapasem budżetu z 14 do 8
+przebiegów dziennie, co nadal zostawia margines na ręczne uruchomienia.
 
 Rachunek jest odtwarzalny — godziny i minuty rozwija się na listę terminów,
 zamiast liczyć w pamięci. Robi to `scripts/policz_budzet.py`, który czyta
