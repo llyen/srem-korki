@@ -64,7 +64,14 @@ Skopiuj wartość tokenu, bo GitHub pokaże ją tylko raz.
 
 #### Ważność tokenu — trzeba pilnować
 
-Token użyty przy pierwszym wdrożeniu (1 września 2026) jest ważny **8 dni**.
+Token używany produkcyjnie jest ważny **do 30 lipca 2027**. Datę można
+sprawdzić w każdej chwili, bez zaglądania do sekretu — zwraca ją diagnostyka
+Workera w polu `token_wygasa`:
+
+```powershell
+Invoke-RestMethod 'https://srem-korki-cron.jakub-461.workers.dev/?diag=1'
+```
+
 Po wygaśnięciu Worker zacznie dostawać `HTTP 401`, pomiary się zatrzymają,
 a strona pokaże ostatni udany odczyt wraz z jego wiekiem — nic nie zawiadomi
 o tym samo z siebie.
