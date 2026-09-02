@@ -30,6 +30,9 @@ const ETYKIETY = {
 let profil = null;
 let trasyMeta = [];
 let ostatnieDane = null;
+// Czy uzytkownik sam otworzyl lub zamknal sekcje z profilem godzinowym.
+// Jesli tak, przestajemy nia sterowac automatycznie.
+let profilRuszonyRecznie = false;
 
 function minuty(sekundy) {
   return Math.max(0, Math.round(sekundy / 60));
@@ -211,6 +214,17 @@ function renderProfil() {
   wykres.hidden = !maPomiary;
   wykres.innerHTML = '';
 
+  // Sekcja jest zwinieta, dopoki nie ma czego pokazac - pusty wykres zajmowal
+  // pol ekranu i niczego nie wnosil. Rozwija sie sama, gdy pojawia sie dane,
+  // chyba ze uzytkownik juz sam zdecydowal o jej stanie.
+  const podpis = document.getElementById('profil-podpis');
+  if (podpis) {
+    podpis.textContent = maPomiary
+      ? 'mediana opóźnień godzina po godzinie'
+      : 'zbieramy dane — jeszcze za wcześnie na wnioski';
+  }
+  if (!profilRuszonyRecznie) sekcja.open = maPomiary;
+
   if (!maPomiary) {
     // Zamiast samego "za malo danych" mowimy, ile pomiarow juz jest i czego
     // brakuje - inaczej pusta sekcja wyglada jak awaria strony.
@@ -305,6 +319,9 @@ function start() {
   document.getElementById('wybor-dnia').value = String(dzis);
   document.getElementById('wybor-trasy').addEventListener('change', renderProfil);
   document.getElementById('wybor-dnia').addEventListener('change', renderProfil);
+  document.querySelector('#sekcja-profil summary').addEventListener('click', function () {
+    profilRuszonyRecznie = true;
+  });
 
   wczytaj();
   wczytajProfil();

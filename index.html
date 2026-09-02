@@ -9,7 +9,7 @@
 <meta property="og:title" content="Korki Śrem — aktualny czas wjazdu do miasta">
 <meta property="og:description" content="Ile teraz stoi się na wjeździe do Śremu. Pomiar co 10 minut.">
 <meta property="og:type" content="website">
-<link rel="stylesheet" href="assets/style.css?v=eb073ff2">
+<link rel="stylesheet" href="assets/style.css?v=da4e3a74">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🚗</text></svg>">
 </head>
 <body>
@@ -54,8 +54,11 @@
     </p>
   </section>
 
-  <section class="profil" id="sekcja-profil" hidden>
-    <h2>O której jedzie się najgorzej</h2>
+  <details class="profil" id="sekcja-profil" hidden>
+    <summary>
+      <h2>O której jedzie się najgorzej</h2>
+      <span class="podpis-zwiniety" id="profil-podpis"></span>
+    </summary>
     <p class="opis-sekcji">
       Mediana opóźnienia w poszczególnych godzinach, policzona z dotychczasowych pomiarów.
       Puste pola oznaczają, że danych jest za mało, żeby cokolwiek twierdzić.
@@ -76,7 +79,7 @@
     </div>
     <div id="wykres" class="wykres"></div>
     <p id="profil-brak" class="info" hidden>Za mało pomiarów dla tego dnia. Wróć za kilka dni.</p>
-  </section>
+  </details>
 
   <section class="oto-strona">
     <h2>Skąd te liczby</h2>
@@ -108,7 +111,7 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=4bdab9bc"></script>
+<script src="assets/app.js?v=0a10f06d"></script>
 
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0fc6c9dc76a149f79eb11374c2804639"}'></script>

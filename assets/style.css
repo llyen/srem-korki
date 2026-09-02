@@ -153,6 +153,33 @@ main { padding-bottom: 40px; }
 .profil h2, .oto-strona h2 { margin: 0 0 6px; font-size: 1.15rem; }
 .opis-sekcji { color: var(--tekst-slaby); font-size: .9rem; margin: 0 0 12px; }
 
+/* Sekcja z profilem godzinowym jest zwijana, zeby pusty wykres nie zajmowal
+   pol ekranu, zanim uzbiera sie historia pomiarow. */
+.profil > summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.profil > summary::-webkit-details-marker { display: none; }
+.profil > summary h2 { display: inline; margin: 0; }
+.profil > summary::after {
+  content: "pokaż";
+  margin-left: auto;
+  font-size: .85rem;
+  color: var(--tekst-slaby);
+  border: 1px solid var(--obramowanie);
+  border-radius: 6px;
+  padding: 2px 8px;
+  white-space: nowrap;
+}
+.profil[open] > summary::after { content: "ukryj"; }
+.profil[open] > summary { margin-bottom: 10px; }
+.profil > summary:focus-visible { outline: 2px solid var(--tekst); outline-offset: 3px; }
+.podpis-zwiniety { color: var(--tekst-slaby); font-size: .85rem; }
+
 .wybor { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; font-size: .9rem; }
 .wybor select {
   padding: 6px 8px;
