@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-02T10:12:18+00:00",
-  "pobrano_lokalnie": "2026-09-02T12:12:18+02:00",
+  "pobrano_utc": "2026-09-02T10:42:16+00:00",
+  "pobrano_lokalnie": "2026-09-02T12:42:16+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 355,
+    "zapytan": 363,
     "budzet": 18500
   },
   "trasy": [
@@ -63,13 +63,13 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 365,
+      "czas_s": 366,
       "czas_bez_ruchu_s": 318,
-      "opoznienie_s": 47,
+      "opoznienie_s": 48,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.148,
-      "poziom": "plynnie"
+      "ratio": 1.151,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "od-leszna-most-bp",
@@ -111,13 +111,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 477,
+      "czas_s": 324,
       "czas_bez_ruchu_s": 273,
-      "opoznienie_s": 204,
-      "opoznienie_wzgl_typowego_s": 172,
+      "opoznienie_s": 51,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 1.747,
-      "poziom": "utrudnienia"
+      "ratio": 1.187,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "wyjazd-plac20-czmon",
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 618,
+      "czas_s": 617,
       "czas_bez_ruchu_s": 581,
-      "opoznienie_s": 37,
+      "opoznienie_s": 36,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.064,
+      "ratio": 1.062,
       "poziom": "plynnie"
     }
   ],
