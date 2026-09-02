@@ -415,6 +415,41 @@ Osobna pułapka wdrożeniowa: przy `workers_dev = false` zapis cronów jest
 **odrzucany** błędem 10063 („You need a workers.dev subdomain”), mimo że Worker
 tej subdomeny nie używa.
 
+**Sprostowanie z 2 września 2026: crony Cloudflare ożyły po kilkunastu
+godzinach**
+
+Powyższy opis wymaga korekty. Crony nie były trwale nieczynne — **uruchomiły
+się samoistnie po około 14 godzinach ciszy**, długo po tym, jak harmonogram
+przeniesiono na zewnątrz. Objaw był mylący: strona aktualizowała się
+poprawnie, a mimo to GitHub przysyłał powiadomienia o nieudanych przebiegach.
+
+Dowód, że to Cloudflare, a nie zegar zewnętrzny, wysyłał drugie żądanie:
+
+| Obserwacja | Wynik |
+|---|---|
+| Liczba przebiegów na termin | **dwa**, w odstępie ~1 s: jeden `success`, drugi `failure` |
+| Historia wykonań w cron-job.org | **jedno** żądanie na termin, `HTTP 202` |
+| Wcześniejsze ręczne wywołanie (19:32:09) | **jeden** przebieg — Worker nie dubluje |
+| Pierwszy zdublowany termin | **04:04 UTC** — pierwszy wspólny punkt obu siatek |
+
+Drugi przebieg kończył się błędem, bo oba commitowały te same pliki i drugi
+przegrywał `git pull --rebase`. Uboczny skutek był poważniejszy niż
+powiadomienia: **960 zapytań do TomTom na dobę zamiast 480**, czyli dwukrotne
+przekroczenie zaplanowanego budżetu.
+
+Crony usunięto (`crons = []`, potwierdzone w API Cloudflare: zero pozycji).
+Wniosek na przyszłość: deklarowana propagacja konfiguracji wynosi 15 minut,
+ale **brak uruchomień przez kilkanaście godzin nie oznacza, że harmonogram
+jest martwy**. Dlatego tablica cronów musi zostać pusta — wypełnienie jej
+„na wszelki wypadek” przywróci dublowanie.
+
+Przy okazji zweryfikowano zabezpieczenie w workflow. Blok `concurrency`
+**zadziałał** — przebiegi nie nakładały się w czasie (05:44:13–22
+i 05:44:25–33) — a drugi i tak padł. Powód: `actions/checkout` pobiera commit
+z chwili **wyzwolenia**, nie startu, więc przebieg czekający w kolejce
+klonował stan sprzed pomiaru poprzednika. Kolejkowanie nie zastąpi więc
+pojedynczego źródła wyzwalania.
+
 **Rozwiązanie: zegar w cron-job.org**
 
 Zegar stoi więc w trzeciej, niezależnej usłudze, która wywołuje adres Workera

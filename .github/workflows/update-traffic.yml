@@ -9,20 +9,25 @@ on:
   # (enabled, allowed_actions: all), stan workflow (active), rodzaj
   # repozytorium (publiczne, nie fork). Przyczyna pozostaje nieznana.
   #
-  # Pomiary wyzwala teraz Cloudflare Worker z katalogu worker/, ktory wywoluje
+  # Pomiary wyzwala teraz zegar w cron-job.org (scripts/konfiguruj_zegar.py),
+  # ktory wola Cloudflare Workera z katalogu worker/, a ten wywoluje
   # workflow_dispatch przez API GitHuba - czyli ten sam kanal, ktory dziala
-  # bezawaryjnie. Harmonogram stoi w worker/wrangler.toml.
+  # bezawaryjnie.
   #
   # Blok "schedule" zostal usuniety CELOWO. Gdyby harmonogram GitHuba kiedys
-  # ozyl rownolegle z Workerem, pomiary wykonywalyby sie podwojnie: 960
+  # ozyl rownolegle z zegarem, pomiary wykonywalyby sie podwojnie: 960
   # zapytan dziennie zamiast 480, czyli wyczerpanie miesiecznego limitu TomTom
-  # okolo 19 dnia miesiaca.
+  # okolo 19 dnia miesiaca. To nie jest obawa teoretyczna - dokladnie tak
+  # stalo sie 2 wrzesnia 2026, gdy crony Cloudflare ozyly po kilkunastu
+  # godzinach milczenia i zaczely dublowac zegar zewnetrzny.
   #
   # Gdyby kiedys wrocic do harmonogramu GitHuba, wystarczy przywrocic:
   #   schedule:
   #     - cron: "4,14,24,34,44,54 4-7,12-15 * * *"   # szczyt, co 10 min
   #     - cron: "12,42 8-11,16-17 * * *"             # poza szczytem, co 30 min
-  # ...i wylaczyc crony w worker/wrangler.toml, zeby nie dublowaly pomiarow.
+  # ...i wylaczyc zadania w cron-job.org, zeby nie dublowaly pomiarow.
+  # Uwaga: crony GitHuba znaja tylko UTC, wiec zimą siatka przesunie sie
+  # o godzine - zegar zewnetrzny pracuje w strefie Europe/Warsaw.
   #
   # Minuty omijaja zero i wielokrotnosci dziesieciu zgodnie z zaleceniem
   # dokumentacji GitHuba (sekcja "schedule" w events-that-trigger-workflows):
@@ -44,6 +49,17 @@ on:
 permissions:
   contents: write
 
+# Serializuje przebiegi - dwa pomiary nie beda zapisywac danych jednoczesnie.
+# cancel-in-progress: false, bo trwajacy pomiar jest juz oplacony zapytaniami
+# do TomTom; anulowanie zmarnowaloby limit i nie zapisalo danych.
+#
+# UWAGA - to nie chroni przed podwojnym WYZWOLENIEM. Sprawdzone 2 wrzesnia
+# 2026, gdy crony Cloudflare ozyly i dublowaly zegar zewnetrzny: kolejka
+# zadzialala (przebiegi 05:44:13-22 i 05:44:25-33, bez nakladania), a drugi
+# przebieg i tak konczyl sie bledem. Powod: actions/checkout pobiera commit
+# z chwili WYZWOLENIA, a nie startu, wiec drugi przebieg klonowal stan sprzed
+# pomiaru pierwszego i przegrywal rebase na tych samych liniach.
+# Wniosek: jedynym zabezpieczeniem jest jedno zrodlo wyzwalania.
 concurrency:
   group: aktualizacja-ruchu
   cancel-in-progress: false

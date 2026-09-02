@@ -18,33 +18,26 @@ workers_dev = true
 enabled = true
 
 [triggers]
-# UWAGA: ten harmonogram jest NIECZYNNY i zostaje wylacznie jako zapis
-# zamierzonych por pomiarow. Cloudflare przyjmuje te wyrazenia (widac je w
-# panelu i w API), ale nie uruchamia Workera - sprawdzone 1 wrzesnia 2026
-# testem z cronem "* * * * *": przez 5 kolejnych terminow licznik zapytan do
-# API GitHuba nie drgnal, przy dzialajacej kontroli pozytywnej (reczne wejscie
-# na adres Workera bylo widoczne natychmiast). Faktyczny zegar stoi poza
-# Cloudflare i wola endpoint ?wyzwol=<klucz>.
+# Pusta tablica jest tu CELOWO i nie wolno jej wypelnic.
 #
-# Cloudflare uruchamialby crony w czasie UTC - tak samo jak robil to GitHub,
-# wiec zamierzone pory pomiarow pozostaja identyczne.
+# Historia: crony Cloudflare nie uruchamialy Workera przez okolo 14 godzin od
+# zapisania (test 1 wrzesnia 2026 z wyrazeniem "* * * * *" - piec kolejnych
+# terminow bez jednego zapytania do API GitHuba, przy dzialajacej kontroli
+# pozytywnej). Zegar przeniesiono wiec do cron-job.org. Nastepnego dnia crony
+# Cloudflare ozyly i przez dwie godziny wyzwalaly pomiary rownolegle z nowym
+# zegarem: kazdy termin dawal dwa przebiegi, drugi konczyl sie konfliktem
+# przy zapisie danych, a zuzycie limitu TomTom podwoilo sie do 960 zapytan
+# na dobe - czyli wyczerpanie puli okolo 19 dnia miesiaca.
 #
-# Szczyt, co 10 minut: 04:00-07:59 i 12:00-15:59 UTC.
-#   Lato (UTC+2): 06:00-09:59 i 14:00-17:59 czasu lokalnego.
-#   Zima (UTC+1): 05:00-08:59 i 13:00-16:59.
+# Zegar stoi teraz wylacznie w cron-job.org, patrz scripts/konfiguruj_zegar.py.
+# Ma nad Cloudflare przewage merytoryczna: przyjmuje strefe czasowa, wiec
+# harmonogram nie przesuwa sie przy zmianie czasu na zimowy.
 #
-# Poza szczytem, co 30 minut: 08:00-11:59 i 16:00-17:59 UTC.
-#   Lato: 10:00-13:59 i 18:00-19:59 czasu lokalnego.
-#   Zima: 09:00-12:59 i 17:00-18:59.
-#
-# Noc (20:00-06:00 lokalnie) jest pominieta swiadomie: nie ma wtedy zatorow,
-# ktore warto pokazywac, a kazde zapytanie kosztuje limit TomTom.
-#
-# Razem 60 przebiegow na dobe x 8 tras = 480 zapytan dziennie.
-# W najdluzszym miesiacu 480 x 31 = 14 880 z budzetu 18 500 (80%).
-#
-# Darmowy plan Workers dopuszcza 5 cron triggerow na konto - zuzywamy 2.
-crons = [
-  "4,14,24,34,44,54 4-7,12-15 * * *",
-  "12,42 8-11,16-17 * * *",
-]
+# Zamierzone pory pomiarow (czas lokalny, caly rok):
+#   06:00-09:59  co 10 minut     24 przebiegi
+#   10:00-13:59  co 30 minut      8 przebiegow
+#   14:00-17:59  co 10 minut     24 przebiegi
+#   18:00-19:59  co 30 minut      4 przebiegi
+#   20:00-05:59  brak pomiarow
+# Razem 60 przebiegow na dobe x 8 tras = 480 zapytan (80% budzetu 18 500).
+crons = []
