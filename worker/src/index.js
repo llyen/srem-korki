@@ -193,6 +193,12 @@ export default {
           );
           raport.odczyt_workflow_http = odpowiedz.status;
           raport.limit_pozostalo = odpowiedz.headers.get("x-ratelimit-remaining");
+          // GitHub podaje date wygasniecia tokenu w naglowku odpowiedzi. Bez
+          // tego wazność sekretu jest nie do sprawdzenia z zewnatrz, a jego
+          // wygasniecie zatrzymuje pomiary po cichu - strona pokazuje wtedy
+          // ostatni udany odczyt i nic nie sygnalizuje awarii.
+          raport.token_wygasa =
+            odpowiedz.headers.get("github-authentication-token-expiration") || "bez daty wygasniecia";
         } catch (blad) {
           raport.odczyt_workflow_http = `wyjatek: ${blad}`;
         }

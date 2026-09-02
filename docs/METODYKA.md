@@ -622,6 +622,30 @@ Skutkiem jest to, że po każdej zmianie geometrii wykres zaczyna się od zera.
 Dlatego komunikat o braku danych podaje, ile pomiarów już zebrano i ile ich
 potrzeba — pusta sekcja bez wyjaśnienia wygląda jak awaria strony.
 
+Sama sekcja jest **zwijana i domyślnie zamknięta**, dopóki nie ma czego
+pokazać. Otwiera się samoczynnie, gdy dla wybranej trasy i dnia są już
+pomiary, a decyzja użytkownika (kliknięcie nagłówka) wyłącza tę automatykę.
+
+### Sprostowanie: dni tygodnia były przesunięte o jeden
+
+Wykres bywał pusty również z powodu błędu, nie tylko braku danych. Pomiary
+zapisuje Python, gdzie `datetime.weekday()` liczy **poniedziałek jako 0**,
+a filtruje je przeglądarka, gdzie `Date.getDay()` liczy **niedzielę jako 0**.
+Obie liczby wyglądają tak samo, więc niezgodność nie rzucała się w oczy.
+
+Skutek był podwójny: dane trafiały pod **dzień wcześniejszy** niż w
+rzeczywistości (pomiary ze środy 2 września pokazywały się jako wtorkowe),
+a użytkownik oglądający „dziś” widział pustą sekcję, choć pomiary z tego dnia
+były już zebrane. Wykryto to, porównując ostatni wiersz historii
+(`2026-09-02T06:04:19+00:00`, zapisany jako dzień `2`) z faktycznym dniem
+tygodnia tej daty — środą.
+
+Przeliczenie dodano w `scripts/build_profile.py` przy odczycie
+(`(dzien + 1) % 7`), a nie w zapisie, żeby **nie modyfikować już zebranych
+danych surowych**. W `scripts/fetch_traffic.py` została ostrzegawcza adnotacja
+przy zapisie kolumny, bo „poprawienie” konwencji w jednym miejscu bez drugiego
+dałoby przesunięcie podwójne.
+
 ## 6. Czego strona nie wie
 
 - Nie zna przyczyny zatoru (kolizja, roboty, ruch świąteczny).

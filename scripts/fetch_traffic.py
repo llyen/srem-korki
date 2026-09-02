@@ -222,6 +222,11 @@ def main() -> int:
             w.writerow(
                 [
                     teraz_utc.isoformat(),
+                    # UWAGA: konwencja Pythona - poniedzialek=0, niedziela=6.
+                    # Strona uzywa konwencji JavaScriptu (niedziela=0), a roznice
+                    # przelicza scripts/build_profile.py. Nie zmieniaj tego zapisu
+                    # bez rownoczesnej poprawki tam i przeliczenia historii -
+                    # inaczej pojawi sie podwojne przesuniecie dni.
                     teraz_pl.weekday(),
                     teraz_pl.hour,
                     r["id"],

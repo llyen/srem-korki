@@ -46,7 +46,15 @@ def main() -> int:
             for wiersz in csv.DictReader(fh):
                 try:
                     trasa = wiersz["trasa"]
-                    dzien = int(wiersz["dzien_tygodnia"])
+                    # Historia zapisuje dzien tygodnia w konwencji Pythona
+                    # (datetime.weekday(): poniedzialek=0 ... niedziela=6),
+                    # a strona filtruje wpisy wartoscia z Date.getDay()
+                    # (niedziela=0 ... sobota=6). Bez tej zamiany kazdy pomiar
+                    # trafialby pod dzien wczesniejszy - pomiary ze srody
+                    # pokazywaly sie jako wtorkowe.
+                    # Zamiana jest tutaj, a nie w fetch_traffic.py, zeby nie
+                    # ruszac juz zapisanych danych surowych.
+                    dzien = (int(wiersz["dzien_tygodnia"]) + 1) % 7
                     godzina = int(wiersz["godzina"])
                     opoznienie = int(wiersz["opoznienie_s"])
                 except (KeyError, ValueError):
