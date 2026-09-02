@@ -228,6 +228,9 @@ main { padding-bottom: 40px; }
 }
 
 .stopka {
+  /* Prześwit w kolorze tła oddziela szarą treść od białej stopki - bez niego
+     obie plamy stykają się samą kreską i przejście wygląda przypadkowo. */
+  margin-top: 28px;
   border-top: 1px solid var(--obramowanie);
   padding: 16px 0 28px;
   color: var(--tekst-slaby);
