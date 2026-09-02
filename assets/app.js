@@ -1,6 +1,10 @@
 'use strict';
 
 const ODSWIEZANIE_MS = 120 * 1000;
+// Zdarzenia drogowe zmieniaja sie wolniej niz czasy przejazdu, a po stronie
+// serwera i tak sa odswiezane najwyzej co 28 minut - czestsze pobieranie pliku
+// nic by nie dalo.
+const ODSWIEZANIE_ZDARZEN_MS = 5 * 60 * 1000;
 // Odswiezenie licznika wieku danych bez ponownego pobierania.
 const ODSWIEZANIE_WIEKU_MS = 20 * 1000;
 
@@ -268,6 +272,156 @@ function renderProfil() {
   });
 }
 
+// Zdarzenia drogowe pobieramy tak samo dwutorowo jak czasy przejazdu.
+const ZRODLA_ZDARZEN = [
+  'data/incidents.json',
+  'https://raw.githubusercontent.com/llyen/srem-korki/main/data/incidents.json'
+];
+
+// Klucze odpowiadaja polu iconCategory z TomTom Traffic Incidents API.
+const IKONY_ZDARZEN = {
+  1: '⚠️',
+  3: '⚠️',
+  6: '🚗',
+  7: '↔️',
+  8: '⛔',
+  9: '🚧',
+  11: '💧',
+  14: '🚙'
+};
+
+const NAZWY_ZDARZEN = {
+  1: 'wypadek',
+  3: 'niebezpiecznie',
+  6: 'zator',
+  7: 'zwężenie',
+  8: 'zamknięte',
+  9: 'roboty',
+  11: 'zalanie',
+  14: 'awaria pojazdu'
+};
+
+// Kolor etykiety. Zamkniecie drogi zawsze traktujemy jak najciezszy przypadek -
+// TomTom nadaje mu wage 4 ("undefined"), ktora nie znaczy "male opoznienie",
+// tylko "czas postoju nieokreslony".
+function klasaZdarzenia(waga, kategoria) {
+  if (kategoria === 8) return 'korek';
+  if (waga >= 3) return 'korek';
+  if (waga === 2) return 'utrudnienia';
+  if (waga === 1) return 'umiarkowanie';
+  return 'neutralnie';
+}
+
+function trwaOd(iso) {
+  if (!iso) return '';
+  const start = new Date(iso);
+  if (isNaN(start)) return '';
+  const dni = Math.floor((Date.now() - start.getTime()) / 86400000);
+  if (dni < 1) return '';
+  return 'trwa od ' + start.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long' });
+}
+
+function renderZdarzenia(dane) {
+  const sekcja = document.getElementById('sekcja-zdarzenia');
+  const lista = document.getElementById('lista-zdarzen');
+  const podpis = document.getElementById('zdarzenia-czas');
+  const zdarzenia = (dane && dane.zdarzenia) || [];
+
+  lista.textContent = '';
+
+  if (!zdarzenia.length) {
+    const li = document.createElement('li');
+    li.className = 'zdarzenie brak-zdarzen';
+    li.textContent = 'Nie zgłoszono żadnych utrudnień na naszych trasach.';
+    lista.appendChild(li);
+  }
+
+  zdarzenia.forEach(function (z) {
+    const li = document.createElement('li');
+    li.className = 'zdarzenie';
+
+    const ikona = document.createElement('span');
+    ikona.className = 'ikona-zdarzenia';
+    ikona.setAttribute('aria-hidden', 'true');
+    ikona.textContent = IKONY_ZDARZEN[z.kategoria] || '•';
+    li.appendChild(ikona);
+
+    const tresc = document.createElement('div');
+    tresc.className = 'zdarzenie-tresc';
+
+    const naglowek = document.createElement('p');
+    naglowek.className = 'zdarzenie-opis';
+    const etykieta = document.createElement('span');
+    etykieta.className = 'etykieta ' + klasaZdarzenia(z.waga, z.kategoria);
+    etykieta.textContent = NAZWY_ZDARZEN[z.kategoria] || z.kategoria_nazwa || 'zdarzenie';
+    naglowek.appendChild(etykieta);
+    naglowek.appendChild(document.createTextNode(' ' + (z.opis || '')));
+    tresc.appendChild(naglowek);
+
+    if (z.od || z.do) {
+      const gdzie = document.createElement('p');
+      gdzie.className = 'zdarzenie-gdzie';
+      gdzie.textContent = [z.od, z.do].filter(Boolean).join(z.obie_strony ? ' ↔ ' : ' → ');
+      tresc.appendChild(gdzie);
+    }
+
+    const szczegoly = [];
+    if (z.opoznienie_s > 0) {
+      const m = minuty(z.opoznienie_s);
+      szczegoly.push(m >= 1 ? 'strata ok. ' + m + ' ' + odmianaMinut(m) : 'strata poniżej minuty');
+    }
+    if (z.dlugosc_m >= 50) {
+      szczegoly.push(
+        'odcinek ' +
+          (z.dlugosc_m >= 1000
+            ? String(Math.round(z.dlugosc_m / 100) / 10).replace('.', ',') + ' km'
+            : Math.round(z.dlugosc_m / 10) * 10 + ' m')
+      );
+    }
+    const odKiedy = trwaOd(z.od_kiedy);
+    if (odKiedy) szczegoly.push(odKiedy);
+
+    if (szczegoly.length) {
+      const p = document.createElement('p');
+      p.className = 'zdarzenie-szczegoly';
+      p.textContent = szczegoly.join(' · ');
+      tresc.appendChild(p);
+    }
+
+    li.appendChild(tresc);
+    lista.appendChild(li);
+  });
+
+  if (dane && dane.pobrano_lokalnie) {
+    podpis.textContent = 'Zgłoszenia TomTom, stan na ' + formatCzasu(dane.pobrano_lokalnie) + '.';
+  } else {
+    podpis.textContent = '';
+  }
+  sekcja.hidden = false;
+}
+
+async function wczytajZdarzenia() {
+  const proby = ZRODLA_ZDARZEN.map(function (url) {
+    return fetch(url + '?t=' + Date.now(), { cache: 'no-store' }).then(function (odp) {
+      if (!odp.ok) throw new Error('HTTP ' + odp.status);
+      return odp.json();
+    });
+  });
+
+  const wyniki = await Promise.allSettled(proby);
+  const udane = wyniki
+    .filter(function (w) { return w.status === 'fulfilled' && w.value && w.value.pobrano_utc; })
+    .map(function (w) { return w.value; });
+
+  // Sekcja jest dodatkiem - jesli danych nie ma, po prostu jej nie pokazujemy.
+  if (!udane.length) return;
+
+  udane.sort(function (a, b) {
+    return new Date(b.pobrano_utc) - new Date(a.pobrano_utc);
+  });
+  renderZdarzenia(udane[0]);
+}
+
 async function wczytaj() {
   const ladowanie = document.getElementById('stan-ladowania');
   const blad = document.getElementById('stan-bledu');
@@ -325,11 +479,16 @@ function start() {
 
   wczytaj();
   wczytajProfil();
+  wczytajZdarzenia();
   setInterval(wczytaj, ODSWIEZANIE_MS);
+  setInterval(wczytajZdarzenia, ODSWIEZANIE_ZDARZEN_MS);
   setInterval(renderAktualizacja, ODSWIEZANIE_WIEKU_MS);
 
   document.addEventListener('visibilitychange', function () {
-    if (!document.hidden) wczytaj();
+    if (!document.hidden) {
+      wczytaj();
+      wczytajZdarzenia();
+    }
   });
 }
 

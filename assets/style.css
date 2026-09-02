@@ -142,7 +142,7 @@ main { padding-bottom: 40px; }
 
 .aktualizacja { color: var(--tekst-slaby); font-size: .86rem; margin: 14px 0 0; text-align: right; }
 
-.profil, .oto-strona {
+.profil, .oto-strona, .zdarzenia {
   background: var(--karta);
   border: 1px solid var(--obramowanie);
   border-radius: 10px;
@@ -150,8 +150,29 @@ main { padding-bottom: 40px; }
   margin-top: 22px;
   box-shadow: var(--cien);
 }
-.profil h2, .oto-strona h2 { margin: 0 0 6px; font-size: 1.15rem; }
+.profil h2, .oto-strona h2, .zdarzenia h2 { margin: 0 0 6px; font-size: 1.15rem; }
 .opis-sekcji { color: var(--tekst-slaby); font-size: .9rem; margin: 0 0 12px; }
+
+/* Lista utrudnien zgloszonych przez TomTom na naszych trasach. */
+.lista-zdarzen { list-style: none; margin: 0; padding: 0; }
+.zdarzenie {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-top: 1px solid var(--obramowanie);
+}
+.zdarzenie:first-child { border-top: none; padding-top: 2px; }
+.ikona-zdarzenia { font-size: 1.1rem; line-height: 1.3; flex: 0 0 auto; }
+.zdarzenie-tresc { min-width: 0; }
+.zdarzenie-opis { margin: 0; font-size: .95rem; }
+.zdarzenie-opis .etykieta { margin-right: 6px; }
+.zdarzenie-gdzie { margin: 3px 0 0; font-size: .9rem; }
+.zdarzenie-szczegoly { margin: 3px 0 0; color: var(--tekst-slaby); font-size: .84rem; }
+.brak-zdarzen { color: var(--tekst-slaby); font-size: .92rem; }
+/* Roboty i zgloszenia bez okreslonego opoznienia - informacja, nie ostrzezenie. */
+.etykieta.neutralnie { background: var(--tekst-slaby); }
+#zdarzenia-czas { margin: 12px 0 0; }
 
 /* Sekcja z profilem godzinowym jest zwijana, zeby pusty wykres nie zajmowal
    pol ekranu, zanim uzbiera sie historia pomiarow. */

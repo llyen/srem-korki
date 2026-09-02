@@ -646,9 +646,85 @@ danych surowych**. W `scripts/fetch_traffic.py` została ostrzegawcza adnotacja
 przy zapisie kolumny, bo „poprawienie” konwencji w jednym miejscu bez drugiego
 dałoby przesunięcie podwójne.
 
+## 5b. Zdarzenia drogowe
+
+Sekcja „Co się dzieje na drogach" pokazuje utrudnienia zgłoszone przez
+**TomTom Traffic Incidents API v5** (`timeValidityFilter=present`), pobierane
+przez `scripts/fetch_incidents.py` do `data/incidents.json`.
+
+### Dlaczego osobne API i osobny rytm
+
+To inny produkt niż Routing API używane do pomiaru czasów, z **osobnym i dużo
+węższym progiem darmowym: 2 500 zapytań miesięcznie** wobec 20 000 dla Routingu
+(zweryfikowane na https://docs.tomtom.com/pricing, wrzesień 2026).
+
+Zastrzeżenie: to, że progi są rozliczane niezależnie, wynika z układu cennika —
+TomTom **nie zwraca żadnych nagłówków z licznikiem zużycia**, więc nie dało się
+tego potwierdzić empirycznie.
+
+Dlatego skrypt sam pilnuje **minimalnego odstępu 28 minut** liczonego od
+znacznika `pobrano_utc` w zapisanym pliku, niezależnie od tego, jak gęsto
+workflow zostanie wywołany. Przy 48 pobraniach na dobę daje to ok. 1 440
+zapytań miesięcznie, czyli 58% progu. Skrypt prowadzi też licznik miesięczny
+w polu `zuzycie_miesieczne` i przerywa po wyczerpaniu budżetu (2 200).
+
+### Filtr: dlaczego nie po numerach dróg
+
+Prostokąt obejmujący nasze trasy łapie także zdarzenia z okolic Kórnika czy
+Mosiny — na przykład roboty na DW431 pod Rogalinkiem, którymi mieszkaniec Śremu
+nie jedzie. Filtrowanie po numerach dróg byłoby zgadywaniem, bo część zgłoszeń
+w ogóle nie ma wypełnionego pola `roadNumbers` (m.in. zgłoszenie o zamkniętym
+moście).
+
+Zamiast tego `scripts/wyznacz_korytarz.py` pobiera **rzeczywistą geometrię
+wszystkich ośmiu tras** z Routing API (`routeRepresentation=polyline`),
+przerzedza ją co 100 m i zapisuje do `data/korytarz.json` (262 punkty).
+Zdarzenie trafia na stronę tylko wtedy, gdy któryś z wierzchołków jego
+geometrii leży **nie dalej niż 250 m** od tego korytarza.
+
+Korytarz wyznaczany jest ręcznie i rzadko — przebieg dróg się nie zmienia,
+więc plik leży w repozytorium i nie kosztuje zapytań przy każdym pomiarze.
+
+Pierwszy przebieg filtra (2 września 2026, 09:59): **13 zdarzeń w prostokącie
+→ 10 przy trasach**. Odsiane zostały m.in. dwa zgłoszenia o robotach na
+DW431 Rogalinek–Świątniki.
+
+### Co jeszcze robi skrypt
+
+- **Odsiewa kategorie nieistotne dla dojazdu.** API traktuje jako zdarzenia
+  drogowe także deszcz, mgłę i wiatr (`iconCategory` 2, 4, 5, 10). Zostają
+  wypadki, zatory, zwężenia, zamknięcia, roboty, zalania i unieruchomione
+  pojazdy.
+- **Scala kierunki.** „Zamknięto A → B" i „Zamknięto B → A" to dla mieszkańca
+  jedna informacja; wpisy łączone są w jeden z oznaczeniem `obie_strony`.
+- **Naprawia polskie znaki.** TomTom zwraca opisy w formie zdekomponowanej,
+  z błędną diakrytyką: „zamkniȩty" to `e` + U+0327 COMBINING CEDILLA zamiast
+  `e` + U+0328 COMBINING OGONEK. Skrypt podmienia znak łączący i normalizuje
+  tekst do NFC.
+
+### Kolor etykiety
+
+Wynika z pola `magnitudeOfDelay` (0 nieznane, 1 małe, 2 umiarkowane, 3 duże,
+4 nieokreślone). Wyjątek: **zamknięcie drogi zawsze dostaje najcięższy kolor**,
+bo TomTom nadaje mu wagę 4, która nie oznacza „małego opóźnienia", tylko „czas
+postoju nieokreślony". Znaczenie pól potwierdzone w dokumentacji API
+(https://docs.tomtom.com/traffic-api/documentation/tomtom-maps/v1/traffic-incidents/incident-details).
+
+### Ograniczenia
+
+- Zgłoszenia pochodzą od TomTom, a **nie od zarządcy drogi** — nie są
+  urzędową informacją o organizacji ruchu.
+- Pole `delay` nie jest wypełniane dla zamknięć dróg (wprost zastrzeżone
+  w dokumentacji), więc przy nich nie pokazujemy straty czasu.
+- Nazwy odcinków (`from`, `to`) pochodzą z bazy TomTom i bywają nieoczywiste
+  dla mieszkańca („Szkolna → Rondo Powstańców Wielkopolskich" to most
+  Kęszyckiego).
+
 ## 6. Czego strona nie wie
 
-- Nie zna przyczyny zatoru (kolizja, roboty, ruch świąteczny).
+- Nie zna przyczyny zatoru (kolizja, roboty, ruch świąteczny) — sekcja
+  „Co się dzieje na drogach" pokazuje zgłoszenia TomTom, ale nie ma
+  gwarancji, że każdy zator ma tam swój wpis.
 - Nie uwzględnia czasowych zamknięć ogłaszanych przez zarządcę drogi.
 - Nie mierzy ruchu pieszego i rowerowego przez most.
 - Nie obejmuje objazdów drogami powiatowymi i gminnymi, którymi część kierowców

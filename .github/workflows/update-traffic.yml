@@ -79,6 +79,17 @@ jobs:
           TOMTOM_API_KEY: ${{ secrets.TOMTOM_API_KEY }}
         run: python scripts/fetch_traffic.py
 
+      # Zdarzenia drogowe maja osobny, znacznie wezszy prog (2 500 zapytan
+      # miesiecznie), wiec skrypt sam pilnuje minimalnego odstepu 28 minut
+      # i przy czestszych przebiegach po prostu konczy sie komunikatem
+      # "POMINIETO". Blad tego kroku nie moze przerwac pomiaru czasow -
+      # to dodatek, a nie glowna funkcja strony.
+      - name: Pobierz zdarzenia drogowe
+        continue-on-error: true
+        env:
+          TOMTOM_API_KEY: ${{ secrets.TOMTOM_API_KEY }}
+        run: python scripts/fetch_incidents.py
+
       - name: Przelicz profil godzinowy
         run: python scripts/build_profile.py
 

@@ -70,6 +70,12 @@ z definicji zadań w `scripts/konfiguruj_zegar.py`. Dodatkowo `fetch_traffic.py`
 sam przerywa pomiary po przekroczeniu 18 500 zapytań w miesiącu, licząc je
 z plików historii.
 
+**Zdarzenia drogowe idą z osobnego API i mają osobny, węższy próg: 2 500
+zapytań miesięcznie** (Traffic Incidents API Details, to samo źródło cennika).
+`fetch_incidents.py` pyta najwyżej raz na 28 minut, czyli ok. 1 440 razy
+w miesiącu (58% progu), i sam przerywa po 2 200 zapytaniach. Szczegóły
+i zastrzeżenia — `docs/METODYKA.md`, sekcja 5b.
+
 Klucza **nie zapisuj w repozytorium**. Dodaj go jako sekret:
 
 ```powershell
@@ -132,11 +138,15 @@ assets/                 style i skrypt frontendu
 scripts/config.json     definicje tras i progi kolorów
 scripts/wyznacz_punkty.py  odtwarza współrzędne punktów z OpenStreetMap
 scripts/fetch_traffic.py  pomiar (TomTom → data/)
+scripts/fetch_incidents.py  zdarzenia drogowe (TomTom → data/incidents.json)
+scripts/wyznacz_korytarz.py  geometria tras do filtrowania zdarzeń (uruchamiany ręcznie)
 scripts/build_profile.py  profil godzinowy z historii
 scripts/konfiguruj_zegar.py  zadania zegara w cron-job.org (pory pomiarów)
 scripts/policz_budzet.py  przelicza zużycie limitu TomTom z harmonogramu
 scripts/mock_data.py    dane przykładowe do podglądu
 data/current.json       ostatni pomiar
+data/incidents.json     zdarzenia drogowe przy trasach
+data/korytarz.json      punkty na przebiegu tras (filtr zdarzeń)
 data/history/           historia pomiarów (CSV, miesięcznie)
 docs/METODYKA.md        źródła danych i sposób liczenia
 worker/                 Cloudflare Worker — przyjmuje sygnał zegara

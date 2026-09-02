@@ -11,7 +11,7 @@
 <meta property="og:title" content="Korki Śrem — aktualny czas wjazdu do miasta">
 <meta property="og:description" content="Ile teraz stoi się na wjeździe do Śremu. Pomiar co 10 minut.">
 <meta property="og:type" content="website">
-<link rel="stylesheet" href="assets/style.css?v=09d545d3">
+<link rel="stylesheet" href="assets/style.css?v=fa2232da">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🚗</text></svg>">
 </head>
 <body>
@@ -37,6 +37,16 @@
   <section id="karty" class="karty" aria-label="Czasy przejazdu"></section>
 
   <p id="aktualizacja" class="aktualizacja" hidden></p>
+
+  <section id="sekcja-zdarzenia" class="zdarzenia" aria-label="Utrudnienia na trasach" hidden>
+    <h2>Co się dzieje na drogach</h2>
+    <p class="opis-sekcji">
+      Zamknięcia, roboty i zatory zgłoszone na naszych trasach lub tuż przy nich.
+      To wyjaśnia, skąd biorą się czasy podane wyżej.
+    </p>
+    <ul id="lista-zdarzen" class="lista-zdarzen"></ul>
+    <p id="zdarzenia-czas" class="podpis-zwiniety"></p>
+  </section>
 
   <section class="legenda">
     <h2>Co oznaczają kolory</h2>
@@ -92,6 +102,7 @@
       <li><strong>Dwie trasy startują przy stacji BP</strong>, na rondzie Mikołajczyka: krótszą (2,1 km) jedzie się mostem Chosłowskiego na Plac 20 Października, dłuższą (4,8 km) — obwodnicą i ul. Gostyńską do skrzyżowania ze Staszica, czyli trasą objazdu. Są krótkie, więc zator widać na nich wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.</li>
       <li>Kilometry przy każdej trasie to <strong>długość przejazdu drogą</strong>, a nie odległość w linii prostej — dlatego są większe niż podane wyżej 7 i 10 km.</li>
       <li>„Opóźnienie” to różnica między czasem teraz a czasem przejazdu przy pustej drodze.</li>
+      <li><strong>Utrudnienia</strong> („Co się dzieje na drogach”) to zgłoszenia TomTom, a nie komunikaty zarządcy drogi. Pokazujemy tylko te, które leżą <strong>nie dalej niż 250 m od naszych tras</strong> — dzięki temu nie trafiają tu roboty spod Kórnika czy Mosiny. Zdarzenia sprawdzamy rzadziej niż czasy przejazdu, najwyżej co pół godziny, bo to API ma osobny i węższy limit.</li>
       <li>Strona odświeża się sama co 2 minuty, ale pokazana liczba może być starsza od rzeczywistości nawet o kilkanaście minut — składa się na to cykl pomiaru i pamięć podręczna serwera. Dlatego pod kartami zawsze widnieje wiek danych.</li>
       <li>Współrzędne punktów pochodzą z OpenStreetMap i odpowiadają rzeczywistemu przebiegowi DW434, DW432, DW310 i obwodnicy.</li>
     </ul>
@@ -113,7 +124,7 @@
   </div>
 </footer>
 
-<script src="assets/app.js?v=90ce4d4e"></script>
+<script src="assets/app.js?v=53fc7219"></script>
 
 <!-- Cloudflare Web Analytics -->
 <script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "0fc6c9dc76a149f79eb11374c2804639"}'></script>
