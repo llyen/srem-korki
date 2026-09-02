@@ -26,7 +26,14 @@ ZASOBY = ["assets/style.css", "assets/app.js"]
 
 
 def skrot(sciezka: Path) -> str:
-    return hashlib.sha256(sciezka.read_bytes()).hexdigest()[:8]
+    # Konce linii normalizujemy, bo Windows z core.autocrlf=true trzyma pliki
+    # robocze z CRLF, a repozytorium i GitHub Actions (Linux) - z LF. Skrot
+    # liczony wprost z bajtow dawal wtedy dwa rozne wyniki dla tej samej tresci
+    # i index.html zmienial sie w kolko: raz po uruchomieniu lokalnym, raz po
+    # przebiegu w Actions. Zaobserwowane 2 wrzesnia 2026 (?v=53fc7219 lokalnie
+    # wobec ?v=66cde6ba z CI dla identycznego pliku).
+    dane = sciezka.read_bytes().replace(b"\r\n", b"\n")
+    return hashlib.sha256(dane).hexdigest()[:8]
 
 
 def main() -> int:

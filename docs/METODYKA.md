@@ -520,6 +520,13 @@ ponownie; gdy plik jest nietknięty, skrót zostaje ten sam i cache działa
 normalnie. Skrypt jest idempotentny i uruchamia się automatycznie w workflow
 przy każdym pomiarze, więc nie trzeba o nim pamiętać przy ręcznej edycji.
 
+**Skrót liczony jest po normalizacji końców linii.** Bez tego Windows
+z `core.autocrlf=true` (pliki robocze z CRLF) i GitHub Actions na Linuksie
+(pliki z LF) wyliczały dwa różne skróty dla identycznej treści, przez co
+`index.html` zmieniałby się w kółko — raz po uruchomieniu lokalnym, raz po
+przebiegu w CI. Zaobserwowane 2 września 2026: `?v=53fc7219` lokalnie wobec
+`?v=66cde6ba` z Actions dla tego samego pliku.
+
 **Czego to nie naprawia:** sam `index.html` nadal podlega dziesięciominutowemu
 cache'owi i tu nic nie da się zrobić bez własnego serwera. Po wydaniu zmiany
 w treści strony trzeba więc albo odczekać do 10 minut, albo wymusić odświeżenie
