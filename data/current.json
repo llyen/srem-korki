@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-02T06:34:17+00:00",
-  "pobrano_lokalnie": "2026-09-02T08:34:17+02:00",
+  "pobrano_utc": "2026-09-02T06:44:20+00:00",
+  "pobrano_lokalnie": "2026-09-02T08:44:20+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 243,
+    "zapytan": 251,
     "budzet": 18500
   },
   "trasy": [
@@ -15,13 +15,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Plac 20 Października",
       "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
-      "czas_s": 247,
+      "czas_s": 231,
       "czas_bez_ruchu_s": 203,
-      "opoznienie_s": 44,
-      "opoznienie_wzgl_typowego_s": 16,
+      "opoznienie_s": 28,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 2115,
-      "ratio": 1.217,
-      "poziom": "umiarkowanie"
+      "ratio": 1.138,
+      "poziom": "plynnie"
     },
     {
       "id": "od-czmonia-plac20",
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 667,
+      "czas_s": 666,
       "czas_bez_ruchu_s": 618,
-      "opoznienie_s": 49,
+      "opoznienie_s": 48,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10738,
-      "ratio": 1.079,
+      "ratio": 1.078,
       "poziom": "plynnie"
     },
     {
@@ -47,13 +47,13 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 588,
+      "czas_s": 472,
       "czas_bez_ruchu_s": 420,
-      "opoznienie_s": 168,
-      "opoznienie_wzgl_typowego_s": 131,
+      "opoznienie_s": 52,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.4,
-      "poziom": "umiarkowanie"
+      "ratio": 1.124,
+      "poziom": "plynnie"
     },
     {
       "id": "od-gostynia-staszica",
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 371,
+      "czas_s": 370,
       "czas_bez_ruchu_s": 318,
-      "opoznienie_s": 53,
+      "opoznienie_s": 52,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.167,
+      "ratio": 1.164,
       "poziom": "umiarkowanie"
     },
     {
@@ -79,13 +79,13 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 997,
+      "czas_s": 944,
       "czas_bez_ruchu_s": 711,
-      "opoznienie_s": 286,
-      "opoznienie_wzgl_typowego_s": 50,
+      "opoznienie_s": 233,
+      "opoznienie_wzgl_typowego_s": 3,
       "dlugosc_m": 10310,
-      "ratio": 1.402,
-      "poziom": "utrudnienia"
+      "ratio": 1.328,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "od-czempinia-rondo-ak",
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 667,
+      "czas_s": 666,
       "czas_bez_ruchu_s": 595,
-      "opoznienie_s": 72,
+      "opoznienie_s": 71,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7830,
-      "ratio": 1.121,
+      "ratio": 1.119,
       "poziom": "plynnie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1565,
-      "czas_bez_ruchu_s": 377,
-      "opoznienie_s": 1188,
-      "opoznienie_wzgl_typowego_s": 1179,
-      "dlugosc_m": 5532,
-      "ratio": 4.151,
+      "czas_s": 1108,
+      "czas_bez_ruchu_s": 273,
+      "opoznienie_s": 835,
+      "opoznienie_wzgl_typowego_s": 826,
+      "dlugosc_m": 4853,
+      "ratio": 4.059,
       "poziom": "korek"
     },
     {
