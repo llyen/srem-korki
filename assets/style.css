@@ -176,7 +176,7 @@ main { padding-bottom: 40px; }
 
 /* Sekcja z profilem godzinowym jest zwijana, zeby pusty wykres nie zajmowal
    pol ekranu, zanim uzbiera sie historia pomiarow. */
-.profil > summary {
+.profil > summary, .zdarzenia > summary {
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -184,9 +184,9 @@ main { padding-bottom: 40px; }
   gap: 10px;
   flex-wrap: wrap;
 }
-.profil > summary::-webkit-details-marker { display: none; }
-.profil > summary h2 { display: inline; margin: 0; }
-.profil > summary::after {
+.profil > summary::-webkit-details-marker, .zdarzenia > summary::-webkit-details-marker { display: none; }
+.profil > summary h2, .zdarzenia > summary h2 { display: inline; margin: 0; }
+.profil > summary::after, .zdarzenia > summary::after {
   content: "pokaż";
   margin-left: auto;
   font-size: .85rem;
@@ -196,9 +196,9 @@ main { padding-bottom: 40px; }
   padding: 2px 8px;
   white-space: nowrap;
 }
-.profil[open] > summary::after { content: "ukryj"; }
-.profil[open] > summary { margin-bottom: 10px; }
-.profil > summary:focus-visible { outline: 2px solid var(--tekst); outline-offset: 3px; }
+.profil[open] > summary::after, .zdarzenia[open] > summary::after { content: "ukryj"; }
+.profil[open] > summary, .zdarzenia[open] > summary { margin-bottom: 10px; }
+.profil > summary:focus-visible, .zdarzenia > summary:focus-visible { outline: 2px solid var(--tekst); outline-offset: 3px; }
 .podpis-zwiniety { color: var(--tekst-slaby); font-size: .85rem; }
 
 .wybor { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; font-size: .9rem; }

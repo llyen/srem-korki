@@ -709,8 +709,15 @@ DW431 Rogalinek–Świątniki.
   `e` + U+0328 COMBINING OGONEK. Skrypt podmienia znak łączący i normalizuje
   tekst do NFC.
 
-### Kolor etykiety
+### Prezentacja
 
+Sekcja jest **zwinięta domyślnie** — rozwinięta lista potrafiła zająć pół
+ekranu i spychała w dół to, po co ludzie tu przychodzą, czyli czasy przejazdu.
+W nagłówku zostaje sama liczba zgłoszeń wraz z liczbą zamknięć dróg
+(np. „10 zgłoszeń, w tym 4 zamknięcia dróg"), więc po zwinięciu nadal widać,
+czy w ogóle coś się dzieje.
+
+### Kolor etykiety
 Wynika z pola `magnitudeOfDelay` (0 nieznane, 1 małe, 2 umiarkowane, 3 duże,
 4 nieokreślone). Wyjątek: **zamknięcie drogi zawsze dostaje najcięższy kolor**,
 bo TomTom nadaje mu wagę 4, która nie oznacza „małego opóźnienia", tylko „czas

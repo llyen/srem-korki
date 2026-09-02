@@ -43,11 +43,7 @@ function minuty(sekundy) {
 }
 
 function odmianaMinut(n) {
-  if (n === 1) return 'minuta';
-  const dziesiatki = n % 100;
-  const jednosci = n % 10;
-  if (jednosci >= 2 && jednosci <= 4 && !(dziesiatki >= 12 && dziesiatki <= 14)) return 'minuty';
-  return 'minut';
+  return odmiana(n, 'minuta', 'minuty', 'minut');
 }
 
 // Kolor slupka na wykresie profilu godzinowego. Uzywa wylacznie bezwzglednego
@@ -312,6 +308,16 @@ function klasaZdarzenia(waga, kategoria) {
   return 'neutralnie';
 }
 
+// Odmiana rzeczownika przez liczebnik wg reguly polskiej: 1 / 2-4 / 5+,
+// z wyjatkiem nastek (12-14), ktore zawsze biora forme mnoga dopelniacza.
+function odmiana(n, jeden, dwa, piec) {
+  if (n === 1) return jeden;
+  const dziesiatki = n % 100;
+  const jednosci = n % 10;
+  if (jednosci >= 2 && jednosci <= 4 && !(dziesiatki >= 12 && dziesiatki <= 14)) return dwa;
+  return piec;
+}
+
 function trwaOd(iso) {
   if (!iso) return '';
   const start = new Date(iso);
@@ -397,6 +403,31 @@ function renderZdarzenia(dane) {
   } else {
     podpis.textContent = '';
   }
+
+  // Sekcja jest domyslnie zwinieta - lista potrafi zajac pol ekranu. W naglowku
+  // zostaje sama liczba zgloszen, zeby po zwinieciu bylo widac, czy w ogole
+  // cokolwiek sie dzieje.
+  const naglowek = document.getElementById('zdarzenia-podpis');
+  if (naglowek) {
+    if (!zdarzenia.length) {
+      naglowek.textContent = 'brak zgłoszonych utrudnień';
+    } else {
+      const zamkniecia = zdarzenia.filter(function (z) { return z.kategoria === 8; }).length;
+      let tekst =
+        zdarzenia.length + ' ' + odmiana(zdarzenia.length, 'zgłoszenie', 'zgłoszenia', 'zgłoszeń');
+      if (zamkniecia) {
+        tekst +=
+          ', w tym ' +
+          zamkniecia +
+          ' ' +
+          odmiana(zamkniecia, 'zamknięcie', 'zamknięcia', 'zamknięć') +
+          ' ' +
+          odmiana(zamkniecia, 'drogi', 'dróg', 'dróg');
+      }
+      naglowek.textContent = tekst;
+    }
+  }
+
   sekcja.hidden = false;
 }
 
