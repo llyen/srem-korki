@@ -659,6 +659,40 @@ danych surowych**. W `scripts/fetch_traffic.py` została ostrzegawcza adnotacja
 przy zapisie kolumny, bo „poprawienie” konwencji w jednym miejscu bez drugiego
 dałoby przesunięcie podwójne.
 
+Ponieważ pomyłka o jeden nie powoduje żadnego błędu — pokazuje po prostu
+wykres z sąsiedniego dnia — łańcuch przelicza teraz test
+`scripts/test_profil.py`. Sprawdza on trzy rzeczy: mapowanie dla **wszystkich
+siedmiu dni** (nie tylko tych obecnych w danych), zgodność każdego wiersza
+historii z jego własnym `czas_utc` oraz to, czy klucze w `data/profile.json`
+wynikają z dni faktycznie obecnych w historii. Uruchomienie:
+`python scripts/test_profil.py`.
+
+### Próg 3 pomiarów a częstotliwość pomiarów
+
+Wymóg `MIN_PROBEK = 3` wchodzi w interakcję z harmonogramem, co przez pierwsze
+dni dawało dziury w wykresie. Przy odstępie **30 minut** poza szczytem na
+godzinę przypadały tylko **2 pomiary** — próg był nieosiągalny w obrębie
+jednego dnia, więc np. środa 2 września ma dane dla godzin 6–10 i 12–19,
+ale **nie dla 11**.
+
+Skrócenie odstępu do 20 minut (sekcja 4) usunęło ten efekt niejako przy
+okazji: teraz każda godzina poza szczytem ma dokładnie 3 pomiary. „Dokładnie"
+jest tu istotne — jeden nieudany pomiar sprawia, że godzina wypada z profilu
+tego dnia. Z czasem przestanie to mieć znaczenie, bo profil sumuje ten sam
+dzień tygodnia z kolejnych tygodni: po tygodniu będzie 6 próbek, po dwóch 9.
+
+### Co widać pod wykresem
+
+Wykres obejmuje **godziny 6–19**, czyli dokładnie te, w których mierzymy.
+Wcześniej zaczynał się o 5 i kończył o 22, przez co cztery słupki były puste
+zawsze i wyglądały jak brak danych, a nie jak brak pomiarów.
+
+Pod wykresem wyświetlany jest podpis wyjaśniający, że **kreska oznacza brak
+pomiaru o tej godzinie, a nie brak zatorów** — bez tego dziura w wykresie
+mówi coś przeciwnego do prawdy. Podpis podaje też datę pierwszego pomiaru
+i liczbę dni zbierania (`dni_pomiarowe`, `od`, `do` w `data/profile.json`),
+żeby czytelnik wiedział, jak mocne są to podstawy.
+
 ## 5b. Zdarzenia drogowe
 
 Sekcja „Co się dzieje na drogach" pokazuje utrudnienia zgłoszone przez

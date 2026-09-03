@@ -199,7 +199,11 @@ function renderProfil() {
   const dane = profil.profil[trasa] || {};
 
   const godziny = [];
-  for (let g = 5; g <= 22; g++) {
+  // Zakres odpowiada godzinom, w ktorych faktycznie mierzymy (6:00-19:59
+  // czasu lokalnego, patrz harmonogram w scripts/konfiguruj_zegar.py).
+  // Wczesniej wykres zaczynal sie o 5 i konczyl o 22, wiec cztery slupki
+  // byly puste zawsze i wygladaly jak brak danych, a nie jak brak pomiarow.
+  for (let g = 6; g <= 19; g++) {
     const wpis = dane[dzien + '-' + g];
     godziny.push({ g: g, wpis: wpis || null });
   }
@@ -217,13 +221,44 @@ function renderProfil() {
   // Sekcja jest zwinieta, dopoki nie ma czego pokazac - pusty wykres zajmowal
   // pol ekranu i niczego nie wnosil. Rozwija sie sama, gdy pojawia sie dane,
   // chyba ze uzytkownik juz sam zdecydowal o jej stanie.
+  // Mianownika celowo nie podajemy: wykres obejmuje godziny 5-22, a pomiary
+  // wykonujemy tylko miedzy 6:00 a 19:59, wiec "6 z 18" sugerowaloby braki,
+  // ktorych nigdy nie da sie uzupelnic.
+  const zPomiarami = godziny.filter(function (x) { return x.wpis; }).length;
   const podpis = document.getElementById('profil-podpis');
   if (podpis) {
     podpis.textContent = maPomiary
-      ? 'mediana opóźnień godzina po godzinie'
+      ? 'mediana opóźnień · ' + zPomiarami + ' ' +
+        odmiana(zPomiarami, 'godzina', 'godziny', 'godzin') + ' z pomiarami'
       : 'zbieramy dane — jeszcze za wcześnie na wnioski';
   }
   if (!profilRuszonyRecznie) sekcja.open = maPomiary;
+
+  // Brakujacy slupek znaczy "nie mamy pomiaru", a nie "nie ma korka" - bez tego
+  // wyjasnienia dziura w wykresie wyglada jak informacja o pustej drodze.
+  // Profil dla biezacego dnia zapelnia sie dopiero w miare uplywu doby, wiec
+  // podajemy tez, od kiedy w ogole zbieramy dane.
+  const zakres = document.getElementById('profil-zakres');
+  if (zakres) {
+    if (!maPomiary) {
+      zakres.hidden = true;
+    } else {
+      const czesci = ['Kreska oznacza brak pomiarów o tej godzinie, nie brak zatorów.'];
+      // Dwa tygodnie to moment, od ktorego kazdy dzien tygodnia ma juz co
+      // najmniej dwa komplety pomiarow - wczesniej mediana potrafi sie
+      // zauwazalnie zmieniac z dnia na dzien.
+      if ((profil.dni_pomiarowe || 0) < 14) {
+        czesci.push('Profil uzupełnia się z każdym tygodniem pomiarów.');
+      }
+      if (profil.dni_pomiarowe) {
+        czesci.push('Zbieramy dane od ' + dataPl(profil.od) + ' (' +
+          profil.dni_pomiarowe + ' ' +
+          odmiana(profil.dni_pomiarowe, 'dzień', 'dni', 'dni') + ').');
+      }
+      zakres.textContent = czesci.join(' ');
+      zakres.hidden = false;
+    }
+  }
 
   if (!maPomiary) {
     // Zamiast samego "za malo danych" mowimy, ile pomiarow juz jest i czego
@@ -318,8 +353,16 @@ function odmiana(n, jeden, dwa, piec) {
   return piec;
 }
 
-function trwaOd(iso) {
+// Data w formie "1 września" - profil podaje ja jako zwykly YYYY-MM-DD, wiec
+// doklejamy poludnie, zeby strefa czasowa nie cofnela daty o dzien.
+function dataPl(iso) {
   if (!iso) return '';
+  const d = new Date(iso + 'T12:00:00');
+  if (isNaN(d)) return '';
+  return d.toLocaleDateString('pl-PL', { day: 'numeric', month: 'long' });
+}
+
+function trwaOd(iso) {  if (!iso) return '';
   const start = new Date(iso);
   if (isNaN(start)) return '';
   const dni = Math.floor((Date.now() - start.getTime()) / 86400000);

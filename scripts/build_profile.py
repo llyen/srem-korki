@@ -40,6 +40,7 @@ def main() -> int:
     liczba_wierszy = 0
     pominietych = 0
     pomiarow_trasy: dict[str, int] = {t: 0 for t in trasy}
+    daty: set[str] = set()
 
     for plik in sorted(HISTORY.glob("*.csv")):
         with plik.open(newline="", encoding="utf-8") as fh:
@@ -60,6 +61,15 @@ def main() -> int:
                 except (KeyError, ValueError):
                     continue
                 liczba_wierszy += 1
+                # Data dnia pomiarowego brana wprost z czas_utc. Pomiary
+                # wykonujemy tylko miedzy 6:00 a 20:00 czasu lokalnego, czyli
+                # 4:00-18:00 UTC, wiec doba UTC i lokalna zawsze pokrywaja sie
+                # tego samego dnia - nie trzeba tu przeliczac strefy. Gdyby
+                # kiedys doszly pomiary nocne, to zalozenie przestanie
+                # obowiazywac i date trzeba bedzie liczyc ze strefy lokalnej.
+                czas = wiersz.get("czas_utc", "")
+                if len(czas) >= 10:
+                    daty.add(czas[:10])
                 if trasa not in pomiarow_trasy:
                     pominietych += 1
                     continue
@@ -82,6 +92,9 @@ def main() -> int:
                 "pomiarow_lacznie": liczba_wierszy,
                 "pomiarow_trasy_wycofane": pominietych,
                 "pomiarow_trasy": pomiarow_trasy,
+                "dni_pomiarowe": len(daty),
+                "od": min(daty) if daty else None,
+                "do": max(daty) if daty else None,
                 "profil": profil,
             },
             ensure_ascii=False,
