@@ -1,43 +1,43 @@
 {
-  "pobrano_utc": "2026-09-03T14:24:18+00:00",
-  "pobrano_lokalnie": "2026-09-03T16:24:18+02:00",
+  "pobrano_utc": "2026-09-03T14:34:18+00:00",
+  "pobrano_lokalnie": "2026-09-03T16:34:18+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 1040,
+    "zapytan": 1043,
     "budzet": 18500
   },
   "trasy": [
     {
-      "id": "od-srody-plac20",
-      "nazwa": "Od Środy Wielkopolskiej",
-      "opis": "DW432 od strony Środy Wielkopolskiej na Plac 20 Października.",
-      "droga": "DW432",
-      "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
+      "id": "obwodnica-plac20",
+      "nazwa": "Z obwodnicy do centrum",
+      "opis": "Od ronda Mikołajczyka przy stacji BP przez most Chosłowskiego i ul. Poznańską na Plac 20 Października — najczulszy wskaźnik zatoru na samym wjeździe do miasta.",
+      "droga": "obwodnica",
+      "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Plac 20 Października",
-      "uwaga": "",
-      "czas_s": 587,
-      "czas_bez_ruchu_s": 554,
-      "opoznienie_s": 33,
-      "opoznienie_wzgl_typowego_s": 0,
-      "dlugosc_m": 7915,
-      "ratio": 1.06,
-      "poziom": "plynnie"
+      "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
+      "czas_s": 268,
+      "czas_bez_ruchu_s": 203,
+      "opoznienie_s": 65,
+      "opoznienie_wzgl_typowego_s": 45,
+      "dlugosc_m": 2115,
+      "ratio": 1.32,
+      "poziom": "umiarkowanie"
     },
     {
-      "id": "od-gostynia-staszica",
-      "nazwa": "Od Gostynia (ul. Gostyńska)",
-      "opis": "DW434 od południa, wjazd ulicą Gostyńską do skrzyżowania ze Staszica — odcinek najbardziej obciążony objazdem.",
+      "id": "od-czmonia-plac20",
+      "nazwa": "Od Poznania / Kórnika",
+      "opis": "DW434 z Czmonia, od strony Kórnika i Poznania, na Plac 20 Października.",
       "droga": "DW434",
-      "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
-      "dokad": "Gostyńska × Staszica",
+      "skad": "Czmoń (DW434)",
+      "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 413,
-      "czas_bez_ruchu_s": 318,
-      "opoznienie_s": 95,
+      "czas_s": 658,
+      "czas_bez_ruchu_s": 618,
+      "opoznienie_s": 40,
       "opoznienie_wzgl_typowego_s": 0,
-      "dlugosc_m": 5524,
-      "ratio": 1.299,
-      "poziom": "umiarkowanie"
+      "dlugosc_m": 10738,
+      "ratio": 1.065,
+      "poziom": "plynnie"
     },
     {
       "id": "od-leszna-most-bp",
@@ -47,62 +47,40 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 1099,
+      "czas_s": 1027,
       "czas_bez_ruchu_s": 711,
-      "opoznienie_s": 388,
-      "opoznienie_wzgl_typowego_s": 185,
+      "opoznienie_s": 316,
+      "opoznienie_wzgl_typowego_s": 50,
       "dlugosc_m": 10310,
-      "ratio": 1.546,
+      "ratio": 1.444,
       "poziom": "utrudnienia"
-    },
-    {
-      "id": "objazd-gostynska",
-      "nazwa": "Objazd obwodnicą na Gostyńską",
-      "opis": "Odcinek objazdu w stronę Leszna: z ronda Mikołajczyka obwodnicą wokół miasta, dalej ul. Gostyńską do skrzyżowania ze Staszica.",
-      "droga": "obwodnica + Gostyńska",
-      "skad": "rondo Mikołajczyka (przy BP)",
-      "dokad": "Gostyńska × Staszica",
-      "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1392,
-      "czas_bez_ruchu_s": 377,
-      "opoznienie_s": 1015,
-      "opoznienie_wzgl_typowego_s": 994,
-      "dlugosc_m": 5532,
-      "ratio": 3.692,
-      "poziom": "korek"
-    },
-    {
-      "id": "wyjazd-plac20-czmon",
-      "nazwa": "Wyjazd ze Śremu na Poznań",
-      "opis": "Z Placu 20 Października DW434 na północ, do Czmonia, w kierunku Kórnika i Poznania.",
-      "droga": "DW434",
-      "skad": "Plac 20 Października",
-      "dokad": "Czmoń (DW434)",
-      "uwaga": "",
-      "czas_s": 813,
-      "czas_bez_ruchu_s": 639,
-      "opoznienie_s": 174,
-      "opoznienie_wzgl_typowego_s": 116,
-      "dlugosc_m": 10746,
-      "ratio": 1.272,
-      "poziom": "umiarkowanie"
     }
   ],
   "bledy": [
     {
-      "id": "obwodnica-plac20",
-      "nazwa": "Z obwodnicy do centrum",
+      "id": "od-srody-plac20",
+      "nazwa": "Od Środy Wielkopolskiej",
       "blad": "TomTom nie odpowiedzial poprawnie: HTTP 503: no healthy upstream"
     },
     {
-      "id": "od-czmonia-plac20",
-      "nazwa": "Od Poznania / Kórnika",
+      "id": "od-gostynia-staszica",
+      "nazwa": "Od Gostynia (ul. Gostyńska)",
       "blad": "TomTom nie odpowiedzial poprawnie: HTTP 503: no healthy upstream"
     },
     {
       "id": "od-czempinia-rondo-ak",
       "nazwa": "Od Czempinia / Kościana",
-      "blad": "TomTom nie odpowiedzial poprawnie: <urlopen error [Errno 104] Connection reset by peer>"
+      "blad": "TomTom nie odpowiedzial poprawnie: HTTP 503: no healthy upstream"
+    },
+    {
+      "id": "objazd-gostynska",
+      "nazwa": "Objazd obwodnicą na Gostyńską",
+      "blad": "TomTom nie odpowiedzial poprawnie: HTTP 503: no healthy upstream"
+    },
+    {
+      "id": "wyjazd-plac20-czmon",
+      "nazwa": "Wyjazd ze Śremu na Poznań",
+      "blad": "TomTom nie odpowiedzial poprawnie: HTTP 503: no healthy upstream"
     }
   ]
 }
