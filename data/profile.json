@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 1035,
+  "pomiarow_lacznie": 1040,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
     "obwodnica-plac20": 124,
     "od-czmonia-plac20": 119,
-    "od-srody-plac20": 122,
-    "od-gostynia-staszica": 122,
-    "od-leszna-most-bp": 121,
+    "od-srody-plac20": 123,
+    "od-gostynia-staszica": 123,
+    "od-leszna-most-bp": 122,
     "od-czempinia-rondo-ak": 122,
-    "objazd-gostynska": 124,
-    "wyjazd-plac20-czmon": 119
+    "objazd-gostynska": 125,
+    "wyjazd-plac20-czmon": 120
   },
   "dni_pomiarowe": 3,
   "od": "2026-09-01",
@@ -300,6 +300,10 @@
       "4-15": {
         "mediana_opoznienia_s": 72,
         "probek": 6
+      },
+      "4-16": {
+        "mediana_opoznienia_s": 34,
+        "probek": 3
       }
     },
     "od-gostynia-staszica": {
@@ -394,6 +398,10 @@
       "4-15": {
         "mediana_opoznienia_s": 169,
         "probek": 6
+      },
+      "4-16": {
+        "mediana_opoznienia_s": 207,
+        "probek": 3
       }
     },
     "od-leszna-most-bp": {
@@ -488,6 +496,10 @@
       "4-15": {
         "mediana_opoznienia_s": 314,
         "probek": 6
+      },
+      "4-16": {
+        "mediana_opoznienia_s": 381,
+        "probek": 3
       }
     },
     "od-czempinia-rondo-ak": {
@@ -680,6 +692,10 @@
       "4-15": {
         "mediana_opoznienia_s": 928,
         "probek": 6
+      },
+      "4-16": {
+        "mediana_opoznienia_s": 1015,
+        "probek": 3
       }
     },
     "wyjazd-plac20-czmon": {
@@ -774,6 +790,10 @@
       "4-15": {
         "mediana_opoznienia_s": 70,
         "probek": 6
+      },
+      "4-16": {
+        "mediana_opoznienia_s": 73,
+        "probek": 3
       }
     }
   }
