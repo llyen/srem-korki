@@ -1,17 +1,30 @@
 {
-  "pobrano_utc": "2026-09-04T06:34:20+00:00",
-  "pobrano_lokalnie": "2026-09-04T08:34:20+02:00",
+  "pobrano_utc": "2026-09-04T07:04:21+00:00",
+  "pobrano_lokalnie": "2026-09-04T09:04:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 8,
+  "zdarzen_w_prostokacie": 12,
+  "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 50,
+    "zapytan": 51,
     "budzet": 2200
   },
   "zdarzenia": [
+    {
+      "opis": "Most zamknięty",
+      "kategoria": 8,
+      "kategoria_nazwa": "zamkniecie",
+      "waga": 4,
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "do": "Rondo Powstańców Wielkopolskich",
+      "drogi": [],
+      "opoznienie_s": null,
+      "dlugosc_m": 758,
+      "od_kiedy": "2026-07-29T17:40:00Z",
+      "do_kiedy": ""
+    },
     {
       "opis": "Zamknięto",
       "kategoria": 8,
@@ -33,12 +46,12 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Księdza Jerzego Popiełuszki",
-      "do": "Józefa Piłsudskiego",
+      "od": "Józefa Piłsudskiego",
+      "do": "Księdza Jerzego Popiełuszki",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-30T18:13:00Z",
+      "od_kiedy": "2026-07-31T08:21:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -48,12 +61,27 @@
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
       "od": "Poznańska / Księdza Jana Kajetańczyka",
-      "do": "Rondo Powstańców Wielkopolskich",
+      "do": "Szkolna",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 1076,
+      "dlugosc_m": 241,
       "od_kiedy": "2026-07-29T17:40:00Z",
       "do_kiedy": ""
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Astrowa (310)",
+      "do": "Śrem ul. Chełmońskiego (310)",
+      "drogi": [
+        "310"
+      ],
+      "opoznienie_s": 318,
+      "dlugosc_m": 950,
+      "od_kiedy": "2026-09-04T06:50:30Z",
+      "do_kiedy": "2026-09-04T07:25:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -63,41 +91,52 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 993,
-      "dlugosc_m": 609,
+      "opoznienie_s": 303,
+      "dlugosc_m": 301,
       "od_kiedy": "2026-09-04T04:57:00Z",
-      "do_kiedy": "2026-09-04T07:12:30Z"
+      "do_kiedy": "2026-09-04T07:23:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
+      "od": "Tesiny",
+      "do": "Leśna",
+      "drogi": [],
+      "opoznienie_s": 152,
+      "dlugosc_m": 322,
+      "od_kiedy": "2026-09-04T06:57:00Z",
+      "do_kiedy": "2026-09-04T07:23:00Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
       "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 751,
-      "dlugosc_m": 2723,
+      "opoznienie_s": 144,
+      "dlugosc_m": 1758,
       "od_kiedy": "2026-09-04T04:42:30Z",
-      "do_kiedy": "2026-09-04T07:04:30Z"
+      "do_kiedy": "2026-09-04T07:23:00Z"
     },
     {
-      "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
+      "opis": "Roboty drogowe; Nowy układ robót drogowych",
+      "kategoria": 9,
+      "kategoria_nazwa": "roboty",
+      "waga": 0,
       "od": "Śrem ul. Chełmońskiego (310)",
-      "do": "Śrem ul. Astrowa (310)",
-      "drogi": [
-        "310"
-      ],
-      "opoznienie_s": 132,
-      "dlugosc_m": 453,
-      "od_kiedy": "2026-09-04T06:20:00Z",
-      "do_kiedy": "2026-09-04T06:52:30Z"
+      "do": "Śrem Al. Solidarności (310)",
+      "drogi": [],
+      "opoznienie_s": 65,
+      "dlugosc_m": 194,
+      "od_kiedy": "2026-07-21T11:30:00Z",
+      "do_kiedy": ""
     },
     {
       "opis": "Roboty drogowe",
@@ -112,19 +151,6 @@
       "opoznienie_s": null,
       "dlugosc_m": 163,
       "od_kiedy": "2026-08-29T18:19:30Z",
-      "do_kiedy": ""
-    },
-    {
-      "opis": "Roboty drogowe; Nowy układ robót drogowych",
-      "kategoria": 9,
-      "kategoria_nazwa": "roboty",
-      "waga": 0,
-      "od": "Śrem ul. Chełmońskiego (310)",
-      "do": "Śrem Al. Solidarności (310)",
-      "drogi": [],
-      "opoznienie_s": null,
-      "dlugosc_m": 194,
-      "od_kiedy": "2026-07-21T11:30:00Z",
       "do_kiedy": ""
     }
   ]
