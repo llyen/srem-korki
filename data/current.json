@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-05T13:34:19+00:00",
-  "pobrano_lokalnie": "2026-09-05T15:34:19+02:00",
+  "pobrano_utc": "2026-09-05T13:44:17+00:00",
+  "pobrano_lokalnie": "2026-09-05T15:44:17+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2051,
+    "zapytan": 2059,
     "budzet": 18500
   },
   "trasy": [
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 427,
+      "czas_s": 426,
       "czas_bez_ruchu_s": 420,
-      "opoznienie_s": 7,
+      "opoznienie_s": 6,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.017,
+      "ratio": 1.014,
       "poziom": "plynnie"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 600,
+      "czas_s": 599,
       "czas_bez_ruchu_s": 581,
-      "opoznienie_s": 19,
+      "opoznienie_s": 18,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.033,
+      "ratio": 1.031,
       "poziom": "plynnie"
     }
   ],
