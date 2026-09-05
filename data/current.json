@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-05T12:34:19+00:00",
-  "pobrano_lokalnie": "2026-09-05T14:34:19+02:00",
+  "pobrano_utc": "2026-09-05T12:44:17+00:00",
+  "pobrano_lokalnie": "2026-09-05T14:44:17+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2003,
+    "zapytan": 2011,
     "budzet": 18500
   },
   "trasy": [
@@ -15,12 +15,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Plac 20 Października",
       "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
-      "czas_s": 212,
+      "czas_s": 211,
       "czas_bez_ruchu_s": 203,
-      "opoznienie_s": 9,
+      "opoznienie_s": 8,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 2115,
-      "ratio": 1.044,
+      "ratio": 1.039,
       "poziom": "plynnie"
     },
     {
@@ -95,13 +95,13 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 660,
-      "czas_bez_ruchu_s": 595,
-      "opoznienie_s": 65,
-      "opoznienie_wzgl_typowego_s": 0,
-      "dlugosc_m": 7830,
-      "ratio": 1.109,
-      "poziom": "plynnie"
+      "czas_s": 622,
+      "czas_bez_ruchu_s": 497,
+      "opoznienie_s": 125,
+      "opoznienie_wzgl_typowego_s": 61,
+      "dlugosc_m": 7368,
+      "ratio": 1.252,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "objazd-gostynska",
