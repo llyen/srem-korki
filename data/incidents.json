@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-05T08:12:35+00:00",
-  "pobrano_lokalnie": "2026-09-05T10:12:35+02:00",
+  "pobrano_utc": "2026-09-05T08:52:19+00:00",
+  "pobrano_lokalnie": "2026-09-05T10:52:19+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
   "zdarzen_w_prostokacie": 8,
-  "zdarzen_przy_trasach": 6,
+  "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 78,
+    "zapytan": 79,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -56,21 +56,6 @@
       "do_kiedy": ""
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 205,
-      "dlugosc_m": 692,
-      "od_kiedy": "2026-09-05T07:55:30Z",
-      "do_kiedy": "2026-09-05T08:32:00Z"
-    },
-    {
       "opis": "Roboty drogowe",
       "kategoria": 9,
       "kategoria_nazwa": "roboty",
@@ -80,7 +65,7 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 84,
+      "opoznienie_s": null,
       "dlugosc_m": 163,
       "od_kiedy": "2026-08-29T18:19:30Z",
       "do_kiedy": ""
@@ -93,7 +78,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 38,
+      "opoznienie_s": null,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-21T11:30:00Z",
       "do_kiedy": ""
