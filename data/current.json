@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-05T13:04:18+00:00",
-  "pobrano_lokalnie": "2026-09-05T15:04:18+02:00",
+  "pobrano_utc": "2026-09-05T13:14:16+00:00",
+  "pobrano_lokalnie": "2026-09-05T15:14:16+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2027,
+    "zapytan": 2035,
     "budzet": 18500
   },
   "trasy": [
@@ -15,12 +15,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Plac 20 Października",
       "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
-      "czas_s": 210,
+      "czas_s": 209,
       "czas_bez_ruchu_s": 203,
-      "opoznienie_s": 7,
+      "opoznienie_s": 6,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 2115,
-      "ratio": 1.034,
+      "ratio": 1.03,
       "poziom": "plynnie"
     },
     {
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 594,
+      "czas_s": 587,
       "czas_bez_ruchu_s": 577,
-      "opoznienie_s": 17,
+      "opoznienie_s": 10,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.029,
+      "ratio": 1.017,
       "poziom": "plynnie"
     },
     {
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 427,
+      "czas_s": 426,
       "czas_bez_ruchu_s": 420,
-      "opoznienie_s": 7,
+      "opoznienie_s": 6,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.017,
+      "ratio": 1.014,
       "poziom": "plynnie"
     },
     {
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 342,
+      "czas_s": 338,
       "czas_bez_ruchu_s": 318,
-      "opoznienie_s": 24,
+      "opoznienie_s": 20,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.075,
+      "ratio": 1.063,
       "poziom": "plynnie"
     },
     {
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 757,
+      "czas_s": 744,
       "czas_bez_ruchu_s": 624,
-      "opoznienie_s": 133,
+      "opoznienie_s": 120,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 1.213,
+      "ratio": 1.192,
       "poziom": "umiarkowanie"
     },
     {
@@ -95,13 +95,13 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 625,
+      "czas_s": 555,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 128,
-      "opoznienie_wzgl_typowego_s": 72,
+      "opoznienie_s": 58,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.258,
-      "poziom": "umiarkowanie"
+      "ratio": 1.117,
+      "poziom": "plynnie"
     },
     {
       "id": "objazd-gostynska",
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 298,
+      "czas_s": 295,
       "czas_bez_ruchu_s": 273,
-      "opoznienie_s": 25,
+      "opoznienie_s": 22,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 1.092,
+      "ratio": 1.081,
       "poziom": "plynnie"
     },
     {
