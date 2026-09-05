@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-05T12:04:20+00:00",
-  "pobrano_lokalnie": "2026-09-05T14:04:20+02:00",
+  "pobrano_utc": "2026-09-05T12:34:20+00:00",
+  "pobrano_lokalnie": "2026-09-05T14:34:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
+  "zdarzen_w_prostokacie": 8,
   "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 84,
+    "zapytan": 85,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -69,19 +69,6 @@
       "do_kiedy": ""
     },
     {
-      "opis": "Roboty drogowe; Nowy układ robót drogowych",
-      "kategoria": 9,
-      "kategoria_nazwa": "roboty",
-      "waga": 0,
-      "od": "Śrem ul. Chełmońskiego (310)",
-      "do": "Śrem Al. Solidarności (310)",
-      "drogi": [],
-      "opoznienie_s": 45,
-      "dlugosc_m": 194,
-      "od_kiedy": "2026-07-21T11:30:00Z",
-      "do_kiedy": ""
-    },
-    {
       "opis": "Roboty drogowe",
       "kategoria": 9,
       "kategoria_nazwa": "roboty",
@@ -91,9 +78,22 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 39,
+      "opoznienie_s": 96,
       "dlugosc_m": 163,
       "od_kiedy": "2026-08-29T18:19:30Z",
+      "do_kiedy": ""
+    },
+    {
+      "opis": "Roboty drogowe; Nowy układ robót drogowych",
+      "kategoria": 9,
+      "kategoria_nazwa": "roboty",
+      "waga": 0,
+      "od": "Śrem ul. Chełmońskiego (310)",
+      "do": "Śrem Al. Solidarności (310)",
+      "drogi": [],
+      "opoznienie_s": 77,
+      "dlugosc_m": 194,
+      "od_kiedy": "2026-07-21T11:30:00Z",
       "do_kiedy": ""
     }
   ]

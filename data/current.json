@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-05T12:24:18+00:00",
-  "pobrano_lokalnie": "2026-09-05T14:24:18+02:00",
+  "pobrano_utc": "2026-09-05T12:34:19+00:00",
+  "pobrano_lokalnie": "2026-09-05T14:34:19+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 1995,
+    "zapytan": 2003,
     "budzet": 18500
   },
   "trasy": [
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 432,
+      "czas_s": 431,
       "czas_bez_ruchu_s": 420,
-      "opoznienie_s": 12,
+      "opoznienie_s": 11,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.029,
+      "ratio": 1.026,
       "poziom": "plynnie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 297,
+      "czas_s": 298,
       "czas_bez_ruchu_s": 273,
-      "opoznienie_s": 24,
+      "opoznienie_s": 25,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 1.088,
+      "ratio": 1.092,
       "poziom": "plynnie"
     },
     {
