@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 2091,
+  "pomiarow_lacznie": 2099,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 256,
-    "od-czmonia-plac20": 251,
-    "od-srody-plac20": 254,
-    "od-gostynia-staszica": 254,
-    "od-leszna-most-bp": 254,
-    "od-czempinia-rondo-ak": 253,
-    "objazd-gostynska": 256,
-    "wyjazd-plac20-czmon": 251
+    "obwodnica-plac20": 257,
+    "od-czmonia-plac20": 252,
+    "od-srody-plac20": 255,
+    "od-gostynia-staszica": 255,
+    "od-leszna-most-bp": 255,
+    "od-czempinia-rondo-ak": 254,
+    "objazd-gostynska": 257,
+    "wyjazd-plac20-czmon": 252
   },
   "dni_pomiarowe": 5,
   "od": "2026-09-01",
@@ -227,7 +227,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 5,
-        "probek": 3
+        "probek": 4
       }
     },
     "od-czmonia-plac20": {
@@ -437,7 +437,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 5,
-        "probek": 3
+        "probek": 4
       }
     },
     "od-srody-plac20": {
@@ -647,7 +647,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 3,
-        "probek": 3
+        "probek": 4
       }
     },
     "od-gostynia-staszica": {
@@ -857,7 +857,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 19,
-        "probek": 3
+        "probek": 4
       }
     },
     "od-leszna-most-bp": {
@@ -1067,7 +1067,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 104,
-        "probek": 3
+        "probek": 4
       }
     },
     "od-czempinia-rondo-ak": {
@@ -1277,7 +1277,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 52,
-        "probek": 3
+        "probek": 4
       }
     },
     "objazd-gostynska": {
@@ -1491,7 +1491,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 18,
-        "probek": 3
+        "probek": 4
       }
     },
     "wyjazd-plac20-czmon": {
@@ -1701,7 +1701,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 11,
-        "probek": 3
+        "probek": 4
       }
     }
   }
