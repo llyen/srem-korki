@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-05T13:24:18+00:00",
-  "pobrano_lokalnie": "2026-09-05T15:24:18+02:00",
+  "pobrano_utc": "2026-09-05T13:34:19+00:00",
+  "pobrano_lokalnie": "2026-09-05T15:34:19+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2043,
+    "zapytan": 2051,
     "budzet": 18500
   },
   "trasy": [
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 599,
+      "czas_s": 600,
       "czas_bez_ruchu_s": 581,
-      "opoznienie_s": 18,
+      "opoznienie_s": 19,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.031,
+      "ratio": 1.033,
       "poziom": "plynnie"
     }
   ],
