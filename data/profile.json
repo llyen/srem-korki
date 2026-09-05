@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 2107,
+  "pomiarow_lacznie": 2115,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 258,
-    "od-czmonia-plac20": 253,
-    "od-srody-plac20": 256,
-    "od-gostynia-staszica": 256,
-    "od-leszna-most-bp": 256,
-    "od-czempinia-rondo-ak": 255,
-    "objazd-gostynska": 258,
-    "wyjazd-plac20-czmon": 253
+    "obwodnica-plac20": 259,
+    "od-czmonia-plac20": 254,
+    "od-srody-plac20": 257,
+    "od-gostynia-staszica": 257,
+    "od-leszna-most-bp": 257,
+    "od-czempinia-rondo-ak": 256,
+    "objazd-gostynska": 259,
+    "wyjazd-plac20-czmon": 254
   },
   "dni_pomiarowe": 5,
   "od": "2026-09-01",
@@ -227,7 +227,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 5,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-czmonia-plac20": {
@@ -437,7 +437,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 6,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-srody-plac20": {
@@ -647,7 +647,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 3,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-gostynia-staszica": {
@@ -857,7 +857,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 19,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-leszna-most-bp": {
@@ -1067,7 +1067,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 105,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-czempinia-rondo-ak": {
@@ -1276,8 +1276,8 @@
         "probek": 6
       },
       "6-16": {
-        "mediana_opoznienia_s": 52,
-        "probek": 5
+        "mediana_opoznienia_s": 48,
+        "probek": 6
       }
     },
     "objazd-gostynska": {
@@ -1491,7 +1491,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 18,
-        "probek": 5
+        "probek": 6
       }
     },
     "wyjazd-plac20-czmon": {
@@ -1701,7 +1701,7 @@
       },
       "6-16": {
         "mediana_opoznienia_s": 11,
-        "probek": 5
+        "probek": 6
       }
     }
   }
