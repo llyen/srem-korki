@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-05T15:54:17+00:00",
-  "pobrano_lokalnie": "2026-09-05T17:54:17+02:00",
+  "pobrano_utc": "2026-09-05T16:12:17+00:00",
+  "pobrano_lokalnie": "2026-09-05T18:12:17+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2163,
+    "zapytan": 2171,
     "budzet": 18500
   },
   "trasy": [
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 341,
+      "czas_s": 339,
       "czas_bez_ruchu_s": 318,
-      "opoznienie_s": 23,
+      "opoznienie_s": 21,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.072,
+      "ratio": 1.066,
       "poziom": "plynnie"
     },
     {
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 724,
+      "czas_s": 720,
       "czas_bez_ruchu_s": 624,
-      "opoznienie_s": 100,
+      "opoznienie_s": 96,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 1.16,
+      "ratio": 1.154,
       "poziom": "umiarkowanie"
     },
     {
@@ -95,13 +95,13 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 549,
+      "czas_s": 608,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 52,
-      "opoznienie_wzgl_typowego_s": 0,
+      "opoznienie_s": 111,
+      "opoznienie_wzgl_typowego_s": 61,
       "dlugosc_m": 7368,
-      "ratio": 1.105,
-      "poziom": "plynnie"
+      "ratio": 1.223,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "objazd-gostynska",
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 597,
+      "czas_s": 596,
       "czas_bez_ruchu_s": 581,
-      "opoznienie_s": 16,
+      "opoznienie_s": 15,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.028,
+      "ratio": 1.026,
       "poziom": "plynnie"
     }
   ],
