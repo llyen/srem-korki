@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-06T10:52:17+00:00",
-  "pobrano_lokalnie": "2026-09-06T12:52:17+02:00",
+  "pobrano_utc": "2026-09-06T11:12:17+00:00",
+  "pobrano_lokalnie": "2026-09-06T13:12:17+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2475,
+    "zapytan": 2483,
     "budzet": 18500
   },
   "trasy": [
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 279,
+      "czas_s": 280,
       "czas_bez_ruchu_s": 273,
-      "opoznienie_s": 6,
+      "opoznienie_s": 7,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 1.022,
+      "ratio": 1.026,
       "poziom": "plynnie"
     },
     {
