@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 2395,
+  "pomiarow_lacznie": 2403,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 294,
-    "od-czmonia-plac20": 289,
-    "od-srody-plac20": 292,
-    "od-gostynia-staszica": 292,
-    "od-leszna-most-bp": 292,
-    "od-czempinia-rondo-ak": 291,
-    "objazd-gostynska": 294,
-    "wyjazd-plac20-czmon": 289
+    "obwodnica-plac20": 295,
+    "od-czmonia-plac20": 290,
+    "od-srody-plac20": 293,
+    "od-gostynia-staszica": 293,
+    "od-leszna-most-bp": 293,
+    "od-czempinia-rondo-ak": 292,
+    "objazd-gostynska": 295,
+    "wyjazd-plac20-czmon": 290
   },
   "dni_pomiarowe": 6,
   "od": "2026-09-01",
@@ -255,7 +255,7 @@
       },
       "0-9": {
         "mediana_opoznienia_s": 0,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-czmonia-plac20": {
@@ -493,7 +493,7 @@
       },
       "0-9": {
         "mediana_opoznienia_s": 0,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-srody-plac20": {
@@ -731,7 +731,7 @@
       },
       "0-9": {
         "mediana_opoznienia_s": 0,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-gostynia-staszica": {
@@ -969,7 +969,7 @@
       },
       "0-9": {
         "mediana_opoznienia_s": 0,
-        "probek": 5
+        "probek": 6
       }
     },
     "od-leszna-most-bp": {
@@ -1206,8 +1206,8 @@
         "probek": 6
       },
       "0-9": {
-        "mediana_opoznienia_s": 29,
-        "probek": 5
+        "mediana_opoznienia_s": 30,
+        "probek": 6
       }
     },
     "od-czempinia-rondo-ak": {
@@ -1445,7 +1445,7 @@
       },
       "0-9": {
         "mediana_opoznienia_s": 10,
-        "probek": 5
+        "probek": 6
       }
     },
     "objazd-gostynska": {
@@ -1687,7 +1687,7 @@
       },
       "0-9": {
         "mediana_opoznienia_s": 0,
-        "probek": 5
+        "probek": 6
       }
     },
     "wyjazd-plac20-czmon": {
@@ -1925,7 +1925,7 @@
       },
       "0-9": {
         "mediana_opoznienia_s": 0,
-        "probek": 5
+        "probek": 6
       }
     }
   }
