@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-06T04:44:19+00:00",
-  "pobrano_lokalnie": "2026-09-06T06:44:19+02:00",
+  "pobrano_utc": "2026-09-06T04:54:18+00:00",
+  "pobrano_lokalnie": "2026-09-06T06:54:18+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2251,
+    "zapytan": 2259,
     "budzet": 18500
   },
   "trasy": [
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 619,
+      "czas_s": 621,
       "czas_bez_ruchu_s": 624,
       "opoznienie_s": 0,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 0.992,
+      "ratio": 0.995,
       "poziom": "plynnie"
     },
     {
