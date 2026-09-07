@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-07T06:04:20+00:00",
-  "pobrano_lokalnie": "2026-09-07T08:04:20+02:00",
+  "pobrano_utc": "2026-09-07T06:34:22+00:00",
+  "pobrano_lokalnie": "2026-09-07T08:34:22+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 15,
-  "zdarzen_przy_trasach": 13,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 124,
+    "zapytan": 125,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -73,103 +73,31 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 1424,
-      "dlugosc_m": 3939,
-      "od_kiedy": "2026-09-07T05:23:00Z",
-      "do_kiedy": "2026-09-07T07:18:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 546,
-      "dlugosc_m": 1207,
-      "od_kiedy": "2026-09-07T05:20:00Z",
-      "do_kiedy": "2026-09-07T06:35:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 388,
-      "dlugosc_m": 301,
-      "od_kiedy": "2026-09-07T05:14:00Z",
-      "do_kiedy": "2026-09-07T06:22:30Z"
+      "opoznienie_s": 810,
+      "dlugosc_m": 2837,
+      "od_kiedy": "2026-09-07T06:15:00Z",
+      "do_kiedy": "2026-09-07T07:08:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Grottgera (310)",
+      "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem ul. Astrowa (310)",
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 194,
-      "dlugosc_m": 579,
-      "od_kiedy": "2026-09-07T05:54:30Z",
-      "do_kiedy": "2026-09-07T06:22:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Sosnowiec (436)",
-      "do": "Grzymisław (434) (436)",
-      "drogi": [
-        "436"
-      ],
-      "opoznienie_s": 173,
-      "dlugosc_m": 325,
-      "od_kiedy": "2026-09-07T05:36:30Z",
-      "do_kiedy": "2026-09-07T06:29:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Piłsudskiego (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 153,
-      "dlugosc_m": 229,
-      "od_kiedy": "2026-09-07T06:01:30Z",
-      "do_kiedy": "2026-09-07T06:24:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Tytusa Działyńskiego",
-      "do": "Rondo Powstańców Wielkopolskich",
-      "drogi": [],
-      "opoznienie_s": 145,
-      "dlugosc_m": 346,
-      "od_kiedy": "2026-09-07T05:55:30Z",
-      "do_kiedy": "2026-09-07T06:22:30Z"
+      "opoznienie_s": 198,
+      "dlugosc_m": 539,
+      "od_kiedy": "2026-09-07T06:27:00Z",
+      "do_kiedy": "2026-09-07T06:52:30Z"
     },
     {
       "opis": "Roboty drogowe",
@@ -181,7 +109,7 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 63,
+      "opoznienie_s": null,
       "dlugosc_m": 163,
       "od_kiedy": "2026-08-29T18:19:30Z",
       "do_kiedy": ""
