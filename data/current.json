@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-07T07:44:20+00:00",
-  "pobrano_lokalnie": "2026-09-07T09:44:20+02:00",
+  "pobrano_utc": "2026-09-07T07:54:36+00:00",
+  "pobrano_lokalnie": "2026-09-07T09:54:36+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2923,
+    "zapytan": 2931,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 627,
+      "czas_s": 628,
       "czas_bez_ruchu_s": 577,
-      "opoznienie_s": 50,
+      "opoznienie_s": 51,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.087,
+      "ratio": 1.088,
       "poziom": "plynnie"
     },
     {
@@ -95,13 +95,13 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 642,
-      "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 145,
-      "opoznienie_wzgl_typowego_s": 53,
-      "dlugosc_m": 7368,
-      "ratio": 1.292,
-      "poziom": "umiarkowanie"
+      "czas_s": 658,
+      "czas_bez_ruchu_s": 595,
+      "opoznienie_s": 63,
+      "opoznienie_wzgl_typowego_s": 0,
+      "dlugosc_m": 7830,
+      "ratio": 1.106,
+      "poziom": "plynnie"
     },
     {
       "id": "objazd-gostynska",
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 317,
+      "czas_s": 316,
       "czas_bez_ruchu_s": 273,
-      "opoznienie_s": 44,
+      "opoznienie_s": 43,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 1.161,
+      "ratio": 1.158,
       "poziom": "umiarkowanie"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 620,
+      "czas_s": 619,
       "czas_bez_ruchu_s": 581,
-      "opoznienie_s": 39,
+      "opoznienie_s": 38,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.067,
+      "ratio": 1.065,
       "poziom": "plynnie"
     }
   ],
