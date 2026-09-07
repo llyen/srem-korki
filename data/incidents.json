@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-07T11:32:23+00:00",
-  "pobrano_lokalnie": "2026-09-07T13:32:23+02:00",
+  "pobrano_utc": "2026-09-07T12:04:23+00:00",
+  "pobrano_lokalnie": "2026-09-07T14:04:23+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
   "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 9,
+  "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 133,
+    "zapytan": 134,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,31 +60,16 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Szkolna (432)",
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 289,
-      "dlugosc_m": 1299,
+      "opoznienie_s": 1338,
+      "dlugosc_m": 3285,
       "od_kiedy": "2026-09-07T11:27:00Z",
-      "do_kiedy": "2026-09-07T11:54:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Gostyńska (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 178,
-      "dlugosc_m": 800,
-      "od_kiedy": "2026-09-07T11:29:30Z",
-      "do_kiedy": "2026-09-07T11:51:00Z"
+      "do_kiedy": "2026-09-07T13:02:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -94,25 +79,26 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 178,
+      "opoznienie_s": 365,
       "dlugosc_m": 301,
       "od_kiedy": "2026-09-07T11:23:00Z",
-      "do_kiedy": "2026-09-07T11:51:00Z"
+      "do_kiedy": "2026-09-07T12:28:00Z"
     },
     {
-      "opis": "Korek",
+      "opis": "Korek; Roboty drogowe",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 2,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
+      "od": "Śrem ul. Astrowa (310)",
+      "do": "Śrem ul. Chełmońskiego (310)",
       "drogi": [
-        "432"
+        "310"
       ],
-      "opoznienie_s": 192,
-      "dlugosc_m": 1089,
-      "od_kiedy": "2026-09-07T11:23:00Z",
-      "do_kiedy": "2026-09-07T11:53:00Z"
+      "opoznienie_s": 129,
+      "dlugosc_m": 701,
+      "od_kiedy": "2026-09-07T11:55:30Z",
+      "do_kiedy": "2026-09-07T12:23:00Z",
+      "obie_strony": true
     },
     {
       "opis": "Roboty drogowe",
@@ -124,7 +110,7 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 108,
+      "opoznienie_s": null,
       "dlugosc_m": 163,
       "od_kiedy": "2026-08-29T18:19:30Z",
       "do_kiedy": ""
@@ -137,7 +123,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 73,
+      "opoznienie_s": null,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-21T11:30:00Z",
       "do_kiedy": ""
