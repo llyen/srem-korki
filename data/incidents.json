@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-09-08T07:34:20+00:00",
-  "pobrano_lokalnie": "2026-09-08T09:34:20+02:00",
+  "pobrano_utc": "2026-09-08T08:12:21+00:00",
+  "pobrano_lokalnie": "2026-09-08T10:12:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 152,
+    "zapytan": 153,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -21,7 +21,7 @@
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 596,
+      "dlugosc_m": 758,
       "od_kiedy": "2026-07-29T17:39:30Z",
       "do_kiedy": ""
     },
@@ -69,33 +69,34 @@
       "do_kiedy": ""
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
+      "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 163,
-      "dlugosc_m": 301,
-      "od_kiedy": "2026-09-08T05:31:00Z",
-      "do_kiedy": "2026-09-08T07:52:30Z"
+      "od": "Śrem ul. Astrowa (310)",
+      "do": "Śrem Al. Solidarności (310)",
+      "drogi": [
+        "310"
+      ],
+      "opoznienie_s": 218,
+      "dlugosc_m": 344,
+      "od_kiedy": "2026-09-08T08:07:30Z",
+      "do_kiedy": "2026-09-08T08:30:30Z"
     },
     {
-      "opis": "Korek",
+      "opis": "Korek; Roboty drogowe",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 2,
-      "od": "Śrem ul. Szkolna (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
+      "od": "Śrem ul. Chełmońskiego (310)",
+      "do": "Śrem ul. Astrowa (310)",
       "drogi": [
-        "432",
-        "434"
+        "310"
       ],
-      "opoznienie_s": 264,
-      "dlugosc_m": 2197,
-      "od_kiedy": "2026-09-08T04:41:30Z",
-      "do_kiedy": "2026-09-08T07:52:30Z"
+      "opoznienie_s": 124,
+      "dlugosc_m": 533,
+      "od_kiedy": "2026-09-08T08:05:30Z",
+      "do_kiedy": "2026-09-08T08:30:30Z"
     },
     {
       "opis": "Roboty drogowe",
