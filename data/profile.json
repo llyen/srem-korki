@@ -1,20 +1,20 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 3267,
+  "pomiarow_lacznie": 3275,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 403,
-    "od-czmonia-plac20": 398,
-    "od-srody-plac20": 401,
-    "od-gostynia-staszica": 401,
-    "od-leszna-most-bp": 401,
-    "od-czempinia-rondo-ak": 400,
-    "objazd-gostynska": 403,
-    "wyjazd-plac20-czmon": 398
+    "obwodnica-plac20": 404,
+    "od-czmonia-plac20": 399,
+    "od-srody-plac20": 402,
+    "od-gostynia-staszica": 402,
+    "od-leszna-most-bp": 402,
+    "od-czempinia-rondo-ak": 401,
+    "objazd-gostynska": 404,
+    "wyjazd-plac20-czmon": 399
   },
-  "dni_pomiarowe": 7,
+  "dni_pomiarowe": 8,
   "od": "2026-09-01",
-  "do": "2026-09-07",
+  "do": "2026-09-08",
   "profil": {
     "obwodnica-plac20": {
       "2-10": {
