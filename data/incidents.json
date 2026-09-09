@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-09T11:32:21+00:00",
-  "pobrano_lokalnie": "2026-09-09T13:32:21+02:00",
+  "pobrano_utc": "2026-09-09T12:04:20+00:00",
+  "pobrano_lokalnie": "2026-09-09T14:04:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
-  "zdarzen_przy_trasach": 7,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 9,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 183,
+    "zapytan": 184,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Al. Solidarności (Sikorskiego)",
-      "do": "Kilińskiego (Sikorskiego)",
+      "od": "Kilińskiego (Sikorskiego)",
+      "do": "Al. Solidarności (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 94,
-      "od_kiedy": "2026-03-31T04:33:30Z",
+      "dlugosc_m": 111,
+      "od_kiedy": "2026-03-31T04:47:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -73,15 +73,46 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 1032,
+      "dlugosc_m": 2765,
+      "od_kiedy": "2026-09-09T11:49:00Z",
+      "do_kiedy": "2026-09-09T12:48:00Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Astrowa (310)",
+      "do": "Śrem ul. Chełmońskiego (310)",
+      "drogi": [
+        "310"
+      ],
+      "opoznienie_s": 250,
+      "dlugosc_m": 756,
+      "od_kiedy": "2026-09-09T11:47:30Z",
+      "do_kiedy": "2026-09-09T12:23:00Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
       "od": "Borgowo (434)",
       "do": "Śrem ul. Gostyńska (432) (434)",
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 171,
-      "dlugosc_m": 647,
-      "od_kiedy": "2026-09-09T11:29:00Z",
-      "do_kiedy": "2026-09-09T11:52:00Z"
+      "opoznienie_s": 121,
+      "dlugosc_m": 617,
+      "od_kiedy": "2026-09-09T12:03:00Z",
+      "do_kiedy": "2026-09-09T12:23:00Z"
     },
     {
       "opis": "Roboty drogowe",
@@ -93,7 +124,7 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 120,
+      "opoznienie_s": null,
       "dlugosc_m": 163,
       "od_kiedy": "2026-08-29T18:20:30Z",
       "do_kiedy": ""
@@ -106,7 +137,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 75,
+      "opoznienie_s": null,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-14T07:32:30Z",
       "do_kiedy": ""
