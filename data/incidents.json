@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-09T14:04:21+00:00",
-  "pobrano_lokalnie": "2026-09-09T16:04:21+02:00",
+  "pobrano_utc": "2026-09-09T14:34:20+00:00",
+  "pobrano_lokalnie": "2026-09-09T16:34:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 17,
-  "zdarzen_przy_trasach": 13,
+  "zdarzen_w_prostokacie": 16,
+  "zdarzen_przy_trasach": 12,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 188,
+    "zapytan": 189,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Al. Solidarności (Sikorskiego)",
-      "do": "Kilińskiego (Sikorskiego)",
+      "od": "Kilińskiego (Sikorskiego)",
+      "do": "Al. Solidarności (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 94,
-      "od_kiedy": "2026-03-31T04:33:30Z",
+      "dlugosc_m": 111,
+      "od_kiedy": "2026-03-31T04:47:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -46,56 +46,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Józefa Piłsudskiego",
-      "do": "Księdza Jerzego Popiełuszki",
+      "od": "Księdza Jerzego Popiełuszki",
+      "do": "Józefa Piłsudskiego",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-31T08:11:30Z",
+      "od_kiedy": "2026-07-30T18:09:30Z",
       "do_kiedy": "",
       "obie_strony": true
-    },
-    {
-      "opis": "Zamknięto",
-      "kategoria": 8,
-      "kategoria_nazwa": "zamkniecie",
-      "waga": 4,
-      "od": "Poznańska / Księdza Jana Kajetańczyka",
-      "do": "Szkolna",
-      "drogi": [],
-      "opoznienie_s": null,
-      "dlugosc_m": 241,
-      "od_kiedy": "2026-09-09T07:57:00Z",
-      "do_kiedy": ""
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 1141,
-      "dlugosc_m": 609,
-      "od_kiedy": "2026-09-09T12:11:30Z",
-      "do_kiedy": "2026-09-09T15:09:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Piłsudskiego (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 1105,
-      "dlugosc_m": 940,
-      "od_kiedy": "2026-09-09T12:58:30Z",
-      "do_kiedy": "2026-09-09T14:55:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -108,10 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 929,
+      "opoznienie_s": 1216,
       "dlugosc_m": 3939,
       "od_kiedy": "2026-09-09T11:49:00Z",
-      "do_kiedy": "2026-09-09T14:58:30Z"
+      "do_kiedy": "2026-09-09T15:13:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -123,10 +81,52 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 518,
-      "dlugosc_m": 586,
+      "opoznienie_s": 1138,
+      "dlugosc_m": 865,
       "od_kiedy": "2026-09-09T12:15:00Z",
-      "do_kiedy": "2026-09-09T14:25:30Z"
+      "do_kiedy": "2026-09-09T15:33:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 970,
+      "dlugosc_m": 609,
+      "od_kiedy": "2026-09-09T12:11:30Z",
+      "do_kiedy": "2026-09-09T15:13:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Piłsudskiego (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 797,
+      "dlugosc_m": 940,
+      "od_kiedy": "2026-09-09T12:58:30Z",
+      "do_kiedy": "2026-09-09T15:24:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem gmina",
+      "do": "Kasztanowa",
+      "drogi": [],
+      "opoznienie_s": 241,
+      "dlugosc_m": 129,
+      "od_kiedy": "2026-09-09T14:26:30Z",
+      "do_kiedy": "2026-09-09T14:52:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -136,40 +136,25 @@
       "od": "Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 422,
-      "dlugosc_m": 468,
+      "opoznienie_s": 239,
+      "dlugosc_m": 409,
       "od_kiedy": "2026-09-09T12:40:00Z",
-      "do_kiedy": "2026-09-09T14:27:30Z"
+      "do_kiedy": "2026-09-09T14:53:30Z"
     },
     {
-      "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
+      "opis": "Korek; Roboty drogowe",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 3,
+      "waga": 2,
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem ul. Astrowa (310)",
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 137,
-      "dlugosc_m": 453,
+      "opoznienie_s": 110,
+      "dlugosc_m": 533,
       "od_kiedy": "2026-09-09T13:51:30Z",
-      "do_kiedy": "2026-09-09T14:22:30Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 134,
-      "dlugosc_m": 799,
-      "od_kiedy": "2026-09-09T13:47:30Z",
-      "do_kiedy": "2026-09-09T14:24:30Z"
+      "do_kiedy": "2026-09-09T14:52:30Z"
     },
     {
       "opis": "Roboty drogowe",
@@ -181,7 +166,7 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 46,
+      "opoznienie_s": null,
       "dlugosc_m": 163,
       "od_kiedy": "2026-08-29T18:20:30Z",
       "do_kiedy": ""
