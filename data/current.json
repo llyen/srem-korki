@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-09T09:52:57+00:00",
-  "pobrano_lokalnie": "2026-09-09T11:52:57+02:00",
+  "pobrano_utc": "2026-09-09T10:12:21+00:00",
+  "pobrano_lokalnie": "2026-09-09T12:12:21+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 4035,
+    "zapytan": 4043,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 615,
+      "czas_s": 614,
       "czas_bez_ruchu_s": 577,
-      "opoznienie_s": 38,
+      "opoznienie_s": 37,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.066,
+      "ratio": 1.064,
       "poziom": "plynnie"
     },
     {
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 446,
+      "czas_s": 445,
       "czas_bez_ruchu_s": 420,
-      "opoznienie_s": 26,
+      "opoznienie_s": 25,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.062,
+      "ratio": 1.06,
       "poziom": "plynnie"
     },
     {
@@ -82,7 +82,7 @@
       "czas_s": 817,
       "czas_bez_ruchu_s": 624,
       "opoznienie_s": 193,
-      "opoznienie_wzgl_typowego_s": 2,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
       "ratio": 1.309,
       "poziom": "umiarkowanie"
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 597,
+      "czas_s": 596,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 100,
+      "opoznienie_s": 99,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.201,
+      "ratio": 1.199,
       "poziom": "umiarkowanie"
     },
     {
