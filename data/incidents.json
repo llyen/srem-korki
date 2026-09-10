@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-10T08:12:22+00:00",
-  "pobrano_lokalnie": "2026-09-10T10:12:22+02:00",
+  "pobrano_utc": "2026-09-10T08:52:21+00:00",
+  "pobrano_lokalnie": "2026-09-10T10:52:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 8,
-  "zdarzen_przy_trasach": 6,
+  "zdarzen_w_prostokacie": 7,
+  "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 203,
+    "zapytan": 204,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -21,7 +21,7 @@
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 731,
+      "dlugosc_m": 758,
       "od_kiedy": "2026-07-29T17:39:30Z",
       "do_kiedy": ""
     },
@@ -56,19 +56,6 @@
       "obie_strony": true
     },
     {
-      "opis": "Zamknięto",
-      "kategoria": 8,
-      "kategoria_nazwa": "zamkniecie",
-      "waga": 4,
-      "od": "Poznańska / Księdza Jana Kajetańczyka",
-      "do": "Szkolna",
-      "drogi": [],
-      "opoznienie_s": null,
-      "dlugosc_m": 241,
-      "od_kiedy": "2026-09-09T16:26:30Z",
-      "do_kiedy": ""
-    },
-    {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
@@ -78,10 +65,10 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 245,
-      "dlugosc_m": 477,
-      "od_kiedy": "2026-09-10T08:06:30Z",
-      "do_kiedy": "2026-09-10T08:30:30Z"
+      "opoznienie_s": 173,
+      "dlugosc_m": 344,
+      "od_kiedy": "2026-09-10T08:49:00Z",
+      "do_kiedy": "2026-09-10T09:10:30Z"
     },
     {
       "opis": "Roboty drogowe; Nowy układ robót drogowych",
@@ -91,7 +78,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": null,
+      "opoznienie_s": 95,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-14T07:32:30Z",
       "do_kiedy": ""
