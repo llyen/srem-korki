@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-09-10T09:32:22+00:00",
-  "pobrano_lokalnie": "2026-09-10T11:32:22+02:00",
+  "pobrano_utc": "2026-09-10T10:12:22+00:00",
+  "pobrano_lokalnie": "2026-09-10T12:12:22+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 205,
+    "zapytan": 206,
     "budzet": 2200
   },
   "zdarzenia": [
