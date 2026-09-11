@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-11T07:14:19+00:00",
-  "pobrano_lokalnie": "2026-09-11T09:14:19+02:00",
+  "pobrano_utc": "2026-09-11T07:24:21+00:00",
+  "pobrano_lokalnie": "2026-09-11T09:24:21+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 5011,
+    "zapytan": 5019,
     "budzet": 18500
   },
   "trasy": [
@@ -111,13 +111,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 794,
+      "czas_s": 561,
       "czas_bez_ruchu_s": 273,
-      "opoznienie_s": 521,
-      "opoznienie_wzgl_typowego_s": 505,
+      "opoznienie_s": 288,
+      "opoznienie_wzgl_typowego_s": 265,
       "dlugosc_m": 4853,
-      "ratio": 2.908,
-      "poziom": "korek"
+      "ratio": 2.055,
+      "poziom": "utrudnienia"
     },
     {
       "id": "wyjazd-plac20-czmon",
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 623,
+      "czas_s": 622,
       "czas_bez_ruchu_s": 581,
-      "opoznienie_s": 42,
+      "opoznienie_s": 41,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.072,
+      "ratio": 1.071,
       "poziom": "plynnie"
     }
   ],
