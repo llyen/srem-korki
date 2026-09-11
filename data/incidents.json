@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-09-11T05:04:20+00:00",
-  "pobrano_lokalnie": "2026-09-11T07:04:20+02:00",
+  "pobrano_utc": "2026-09-11T05:34:19+00:00",
+  "pobrano_lokalnie": "2026-09-11T07:34:19+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 222,
+    "zapytan": 223,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -61,12 +61,12 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Józefa Piłsudskiego",
-      "do": "Księdza Jerzego Popiełuszki",
+      "od": "Księdza Jerzego Popiełuszki",
+      "do": "Józefa Piłsudskiego",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-31T08:11:30Z",
+      "od_kiedy": "2026-07-30T18:09:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -94,25 +94,23 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 424,
-      "dlugosc_m": 1719,
+      "opoznienie_s": 853,
+      "dlugosc_m": 3712,
       "od_kiedy": "2026-09-11T04:46:00Z",
-      "do_kiedy": "2026-09-11T05:32:30Z"
+      "do_kiedy": "2026-09-11T06:17:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 198,
-      "dlugosc_m": 1054,
-      "od_kiedy": "2026-09-11T04:45:30Z",
-      "do_kiedy": "2026-09-11T05:24:30Z"
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 293,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-09-11T05:29:00Z",
+      "do_kiedy": "2026-09-11T05:56:30Z"
     },
     {
       "opis": "Roboty drogowe; Nowy układ robót drogowych",
@@ -122,7 +120,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 42,
+      "opoznienie_s": 79,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-14T07:32:30Z",
       "do_kiedy": ""
