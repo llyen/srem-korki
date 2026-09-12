@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-12T08:12:23+00:00",
-  "pobrano_lokalnie": "2026-09-12T10:12:23+02:00",
+  "pobrano_utc": "2026-09-12T08:52:22+00:00",
+  "pobrano_lokalnie": "2026-09-12T10:52:22+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 10,
-  "zdarzen_przy_trasach": 7,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 9,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 253,
+    "zapytan": 254,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -45,14 +45,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Kilińskiego (Sikorskiego)",
-      "do": "Al. Solidarności (Sikorskiego)",
+      "od": "Al. Solidarności (Sikorskiego)",
+      "do": "Kilińskiego (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 111,
-      "od_kiedy": "2026-03-31T04:47:30Z",
+      "dlugosc_m": 94,
+      "od_kiedy": "2026-03-31T04:33:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -71,6 +71,21 @@
       "obie_strony": true
     },
     {
+      "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Astrowa (310)",
+      "do": "Śrem Al. Solidarności (310)",
+      "drogi": [
+        "310"
+      ],
+      "opoznienie_s": 163,
+      "dlugosc_m": 243,
+      "od_kiedy": "2026-09-12T08:50:00Z",
+      "do_kiedy": "2026-09-12T09:11:00Z"
+    },
+    {
       "opis": "Korek",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
@@ -80,10 +95,25 @@
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 150,
+      "opoznienie_s": 183,
       "dlugosc_m": 692,
-      "od_kiedy": "2026-09-12T07:41:30Z",
-      "do_kiedy": "2026-09-12T08:33:00Z"
+      "od_kiedy": "2026-09-12T08:34:30Z",
+      "do_kiedy": "2026-09-12T09:12:00Z"
+    },
+    {
+      "opis": "Powolny ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 1,
+      "od": "Śrem ul. 1 Maja (432)",
+      "do": "Śrem ul. Bora-Komorowskiego (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 112,
+      "dlugosc_m": 900,
+      "od_kiedy": "2026-09-12T08:40:30Z",
+      "do_kiedy": "2026-09-12T09:11:00Z"
     },
     {
       "opis": "Roboty drogowe; Nowy układ robót drogowych",
@@ -93,7 +123,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 40,
+      "opoznienie_s": 31,
       "dlugosc_m": 53,
       "od_kiedy": "2026-07-14T07:32:30Z",
       "do_kiedy": ""
