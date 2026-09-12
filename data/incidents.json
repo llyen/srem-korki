@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-09-12T14:04:21+00:00",
-  "pobrano_lokalnie": "2026-09-12T16:04:21+02:00",
+  "pobrano_utc": "2026-09-12T14:34:23+00:00",
+  "pobrano_lokalnie": "2026-09-12T16:34:23+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 263,
+    "zapytan": 264,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -45,14 +45,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Kilińskiego (Sikorskiego)",
-      "do": "Al. Solidarności (Sikorskiego)",
+      "od": "Al. Solidarności (Sikorskiego)",
+      "do": "Kilińskiego (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 111,
-      "od_kiedy": "2026-03-31T04:47:30Z",
+      "dlugosc_m": 94,
+      "od_kiedy": "2026-03-31T04:33:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -93,7 +93,7 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": null,
+      "opoznienie_s": 56,
       "dlugosc_m": 163,
       "od_kiedy": "2026-09-11T18:22:30Z",
       "do_kiedy": ""
