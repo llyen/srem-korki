@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-12T07:04:21+00:00",
-  "pobrano_lokalnie": "2026-09-12T09:04:21+02:00",
+  "pobrano_utc": "2026-09-12T07:34:20+00:00",
+  "pobrano_lokalnie": "2026-09-12T09:34:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
-  "zdarzen_przy_trasach": 7,
+  "zdarzen_w_prostokacie": 8,
+  "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 251,
+    "zapytan": 252,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -71,22 +71,6 @@
       "obie_strony": true
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Szkolna (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 158,
-      "dlugosc_m": 896,
-      "od_kiedy": "2026-09-12T07:02:00Z",
-      "do_kiedy": "2026-09-12T07:23:00Z"
-    },
-    {
       "opis": "Roboty drogowe",
       "kategoria": 9,
       "kategoria_nazwa": "roboty",
@@ -96,7 +80,7 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": null,
+      "opoznienie_s": 109,
       "dlugosc_m": 163,
       "od_kiedy": "2026-09-11T18:22:30Z",
       "do_kiedy": ""
