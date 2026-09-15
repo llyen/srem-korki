@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-15T13:44:21+00:00",
-  "pobrano_lokalnie": "2026-09-15T15:44:21+02:00",
+  "pobrano_utc": "2026-09-15T13:54:19+00:00",
+  "pobrano_lokalnie": "2026-09-15T15:54:19+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 6811,
+    "zapytan": 6819,
     "budzet": 18500
   },
   "trasy": [
@@ -15,12 +15,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Plac 20 Października",
       "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
-      "czas_s": 239,
+      "czas_s": 249,
       "czas_bez_ruchu_s": 201,
-      "opoznienie_s": 38,
-      "opoznienie_wzgl_typowego_s": 10,
+      "opoznienie_s": 48,
+      "opoznienie_wzgl_typowego_s": 20,
       "dlugosc_m": 2115,
-      "ratio": 1.189,
+      "ratio": 1.239,
       "poziom": "umiarkowanie"
     },
     {
@@ -47,13 +47,13 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 604,
-      "czas_bez_ruchu_s": 417,
-      "opoznienie_s": 187,
-      "opoznienie_wzgl_typowego_s": 151,
-      "dlugosc_m": 7127,
-      "ratio": 1.448,
-      "poziom": "utrudnienia"
+      "czas_s": 591,
+      "czas_bez_ruchu_s": 551,
+      "opoznienie_s": 40,
+      "opoznienie_wzgl_typowego_s": 0,
+      "dlugosc_m": 7915,
+      "ratio": 1.073,
+      "poziom": "plynnie"
     },
     {
       "id": "od-gostynia-staszica",
@@ -63,13 +63,13 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 483,
+      "czas_s": 803,
       "czas_bez_ruchu_s": 316,
-      "opoznienie_s": 167,
-      "opoznienie_wzgl_typowego_s": 90,
+      "opoznienie_s": 487,
+      "opoznienie_wzgl_typowego_s": 453,
       "dlugosc_m": 5524,
-      "ratio": 1.528,
-      "poziom": "utrudnienia"
+      "ratio": 2.541,
+      "poziom": "korek"
     },
     {
       "id": "od-leszna-most-bp",
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 1097,
+      "czas_s": 1003,
       "czas_bez_ruchu_s": 709,
-      "opoznienie_s": 388,
-      "opoznienie_wzgl_typowego_s": 161,
+      "opoznienie_s": 294,
+      "opoznienie_wzgl_typowego_s": 42,
       "dlugosc_m": 10310,
-      "ratio": 1.547,
+      "ratio": 1.415,
       "poziom": "utrudnienia"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1246,
-      "czas_bez_ruchu_s": 379,
-      "opoznienie_s": 867,
-      "opoznienie_wzgl_typowego_s": 843,
-      "dlugosc_m": 5532,
-      "ratio": 3.288,
+      "czas_s": 1419,
+      "czas_bez_ruchu_s": 275,
+      "opoznienie_s": 1144,
+      "opoznienie_wzgl_typowego_s": 1121,
+      "dlugosc_m": 4853,
+      "ratio": 5.16,
       "poziom": "korek"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 727,
+      "czas_s": 729,
       "czas_bez_ruchu_s": 651,
-      "opoznienie_s": 76,
-      "opoznienie_wzgl_typowego_s": 20,
+      "opoznienie_s": 78,
+      "opoznienie_wzgl_typowego_s": 22,
       "dlugosc_m": 11434,
-      "ratio": 1.117,
+      "ratio": 1.12,
       "poziom": "plynnie"
     }
   ],
