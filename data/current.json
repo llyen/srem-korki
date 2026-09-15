@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-15T10:32:19+00:00",
-  "pobrano_lokalnie": "2026-09-15T12:32:19+02:00",
+  "pobrano_utc": "2026-09-15T10:52:18+00:00",
+  "pobrano_lokalnie": "2026-09-15T12:52:18+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 6691,
+    "zapytan": 6699,
     "budzet": 18500
   },
   "trasy": [
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 365,
+      "czas_s": 366,
       "czas_bez_ruchu_s": 316,
-      "opoznienie_s": 49,
+      "opoznienie_s": 50,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.155,
+      "ratio": 1.158,
       "poziom": "umiarkowanie"
     },
     {
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 797,
+      "czas_s": 798,
       "czas_bez_ruchu_s": 622,
-      "opoznienie_s": 175,
+      "opoznienie_s": 176,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 1.281,
+      "ratio": 1.283,
       "poziom": "umiarkowanie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 761,
+      "czas_s": 661,
       "czas_bez_ruchu_s": 275,
-      "opoznienie_s": 486,
-      "opoznienie_wzgl_typowego_s": 469,
+      "opoznienie_s": 386,
+      "opoznienie_wzgl_typowego_s": 366,
       "dlugosc_m": 4853,
-      "ratio": 2.767,
+      "ratio": 2.404,
       "poziom": "korek"
     },
     {
