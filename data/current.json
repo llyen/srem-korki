@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-18T07:24:19+00:00",
-  "pobrano_lokalnie": "2026-09-18T09:24:19+02:00",
+  "pobrano_utc": "2026-09-18T07:34:18+00:00",
+  "pobrano_lokalnie": "2026-09-18T09:34:18+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 8187,
+    "zapytan": 8195,
     "budzet": 18500
   },
   "trasy": [
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 806,
+      "czas_s": 805,
       "czas_bez_ruchu_s": 622,
-      "opoznienie_s": 184,
+      "opoznienie_s": 183,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 1.296,
+      "ratio": 1.294,
       "poziom": "umiarkowanie"
     },
     {
@@ -95,13 +95,13 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 594,
-      "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 97,
+      "czas_s": 659,
+      "czas_bez_ruchu_s": 587,
+      "opoznienie_s": 72,
       "opoznienie_wzgl_typowego_s": 0,
-      "dlugosc_m": 7368,
-      "ratio": 1.195,
-      "poziom": "umiarkowanie"
+      "dlugosc_m": 7830,
+      "ratio": 1.123,
+      "poziom": "plynnie"
     },
     {
       "id": "objazd-gostynska",
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 330,
+      "czas_s": 329,
       "czas_bez_ruchu_s": 275,
-      "opoznienie_s": 55,
+      "opoznienie_s": 54,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 1.2,
+      "ratio": 1.196,
       "poziom": "umiarkowanie"
     },
     {
