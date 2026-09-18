@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-18T06:34:18+00:00",
-  "pobrano_lokalnie": "2026-09-18T08:34:18+02:00",
+  "pobrano_utc": "2026-09-18T07:04:20+00:00",
+  "pobrano_lokalnie": "2026-09-18T09:04:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 12,
-  "zdarzen_przy_trasach": 8,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 376,
+    "zapytan": 377,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -71,33 +71,20 @@
       "obie_strony": true
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Księdza Jana Kajetańczyka",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 143,
-      "dlugosc_m": 142,
-      "od_kiedy": "2026-09-18T05:28:00Z",
-      "do_kiedy": "2026-09-18T07:01:00Z"
-    },
-    {
       "opis": "Korek",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 2,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "od": "Śrem ul. Szkolna (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 319,
-      "dlugosc_m": 2727,
-      "od_kiedy": "2026-09-18T06:16:06Z",
-      "do_kiedy": "2026-09-18T06:53:00Z"
+      "opoznienie_s": 208,
+      "dlugosc_m": 2226,
+      "od_kiedy": "2026-09-18T06:53:30Z",
+      "do_kiedy": "2026-09-18T07:22:30Z"
     },
     {
       "opis": "Roboty drogowe; Nowy układ robót drogowych",
@@ -107,7 +94,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 56,
+      "opoznienie_s": 32,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-21T11:30:00Z",
       "do_kiedy": ""
@@ -122,7 +109,7 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": null,
+      "opoznienie_s": 31,
       "dlugosc_m": 163,
       "od_kiedy": "2026-09-11T18:21:30Z",
       "do_kiedy": ""
