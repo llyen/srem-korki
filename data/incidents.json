@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-18T15:04:23+00:00",
-  "pobrano_lokalnie": "2026-09-18T17:04:23+02:00",
+  "pobrano_utc": "2026-09-18T15:34:21+00:00",
+  "pobrano_lokalnie": "2026-09-18T17:34:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 17,
-  "zdarzen_przy_trasach": 12,
+  "zdarzen_w_prostokacie": 15,
+  "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 391,
+    "zapytan": 392,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -88,44 +88,29 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 978,
-      "dlugosc_m": 623,
-      "od_kiedy": "2026-09-18T11:10:30Z",
-      "do_kiedy": "2026-09-18T15:33:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
       "od": "Mechlin (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 863,
-      "dlugosc_m": 3639,
+      "opoznienie_s": 803,
+      "dlugosc_m": 2931,
       "od_kiedy": "2026-09-18T14:48:30Z",
-      "do_kiedy": "2026-09-18T15:51:30Z"
+      "do_kiedy": "2026-09-18T16:09:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 576,
-      "dlugosc_m": 586,
-      "od_kiedy": "2026-09-18T11:55:30Z",
-      "do_kiedy": "2026-09-18T15:42:30Z"
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 734,
+      "dlugosc_m": 609,
+      "od_kiedy": "2026-09-18T11:10:30Z",
+      "do_kiedy": "2026-09-18T16:13:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -135,25 +120,10 @@
       "od": "Marszałka Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 166,
-      "dlugosc_m": 277,
-      "od_kiedy": "2026-09-18T12:02:30Z",
-      "do_kiedy": "2026-09-18T15:25:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Astrowa (310)",
-      "do": "Śrem Al. Solidarności (310)",
-      "drogi": [
-        "310"
-      ],
-      "opoznienie_s": 166,
-      "dlugosc_m": 243,
-      "od_kiedy": "2026-09-18T15:02:00Z",
-      "do_kiedy": "2026-09-18T15:22:30Z"
+      "opoznienie_s": 177,
+      "dlugosc_m": 268,
+      "od_kiedy": "2026-09-18T15:32:30Z",
+      "do_kiedy": "2026-09-18T15:52:30Z"
     },
     {
       "opis": "Roboty drogowe; Nowy układ robót drogowych",
@@ -163,7 +133,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 37,
+      "opoznienie_s": 43,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-21T11:30:00Z",
       "do_kiedy": ""
