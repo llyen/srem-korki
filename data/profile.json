@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 9019,
+  "pomiarow_lacznie": 9027,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 1122,
-    "od-czmonia-plac20": 1117,
-    "od-srody-plac20": 1120,
-    "od-gostynia-staszica": 1120,
-    "od-leszna-most-bp": 1120,
-    "od-czempinia-rondo-ak": 1119,
-    "objazd-gostynska": 1122,
-    "wyjazd-plac20-czmon": 1117
+    "obwodnica-plac20": 1123,
+    "od-czmonia-plac20": 1118,
+    "od-srody-plac20": 1121,
+    "od-gostynia-staszica": 1121,
+    "od-leszna-most-bp": 1121,
+    "od-czempinia-rondo-ak": 1120,
+    "objazd-gostynska": 1123,
+    "wyjazd-plac20-czmon": 1118
   },
   "dni_pomiarowe": 19,
   "od": "2026-09-01",
@@ -251,7 +251,7 @@
       },
       "6-17": {
         "mediana_opoznienia_s": 9,
-        "probek": 17
+        "probek": 18
       },
       "6-18": {
         "mediana_opoznienia_s": 8,
@@ -637,7 +637,7 @@
       },
       "6-17": {
         "mediana_opoznienia_s": 13,
-        "probek": 17
+        "probek": 18
       },
       "6-18": {
         "mediana_opoznienia_s": 9,
@@ -1039,7 +1039,7 @@
       },
       "6-17": {
         "mediana_opoznienia_s": 8,
-        "probek": 17
+        "probek": 18
       },
       "6-18": {
         "mediana_opoznienia_s": 6,
@@ -1433,7 +1433,7 @@
       },
       "6-17": {
         "mediana_opoznienia_s": 23,
-        "probek": 17
+        "probek": 18
       },
       "6-18": {
         "mediana_opoznienia_s": 18,
@@ -1827,7 +1827,7 @@
       },
       "6-17": {
         "mediana_opoznienia_s": 105,
-        "probek": 17
+        "probek": 18
       },
       "6-18": {
         "mediana_opoznienia_s": 84,
@@ -2220,8 +2220,8 @@
         "probek": 18
       },
       "6-17": {
-        "mediana_opoznienia_s": 55,
-        "probek": 17
+        "mediana_opoznienia_s": 54,
+        "probek": 18
       },
       "6-18": {
         "mediana_opoznienia_s": 67,
@@ -2615,7 +2615,7 @@
       },
       "6-17": {
         "mediana_opoznienia_s": 20,
-        "probek": 17
+        "probek": 18
       },
       "6-18": {
         "mediana_opoznienia_s": 16,
@@ -3001,7 +3001,7 @@
       },
       "6-17": {
         "mediana_opoznienia_s": 17,
-        "probek": 17
+        "probek": 18
       },
       "6-18": {
         "mediana_opoznienia_s": 10,
