@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-19T04:04:18+00:00",
-  "pobrano_lokalnie": "2026-09-19T06:04:18+02:00",
+  "pobrano_utc": "2026-09-19T04:14:18+00:00",
+  "pobrano_lokalnie": "2026-09-19T06:14:18+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 8555,
+    "zapytan": 8563,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 586,
+      "czas_s": 585,
       "czas_bez_ruchu_s": 572,
-      "opoznienie_s": 14,
+      "opoznienie_s": 13,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.024,
+      "ratio": 1.023,
       "poziom": "plynnie"
     },
     {
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 630,
+      "czas_s": 633,
       "czas_bez_ruchu_s": 622,
-      "opoznienie_s": 8,
+      "opoznienie_s": 11,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 1.013,
+      "ratio": 1.018,
       "poziom": "plynnie"
     },
     {
