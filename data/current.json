@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-19T07:14:18+00:00",
-  "pobrano_lokalnie": "2026-09-19T09:14:18+02:00",
+  "pobrano_utc": "2026-09-19T07:24:19+00:00",
+  "pobrano_lokalnie": "2026-09-19T09:24:19+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 8707,
+    "zapytan": 8715,
     "budzet": 18500
   },
   "trasy": [
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 336,
+      "czas_s": 337,
       "czas_bez_ruchu_s": 316,
-      "opoznienie_s": 20,
+      "opoznienie_s": 21,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.063,
+      "ratio": 1.066,
       "poziom": "plynnie"
     },
     {
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 731,
+      "czas_s": 736,
       "czas_bez_ruchu_s": 622,
-      "opoznienie_s": 109,
+      "opoznienie_s": 114,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 1.175,
+      "ratio": 1.183,
       "poziom": "umiarkowanie"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 545,
+      "czas_s": 548,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 48,
+      "opoznienie_s": 51,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.097,
+      "ratio": 1.103,
       "poziom": "plynnie"
     },
     {
