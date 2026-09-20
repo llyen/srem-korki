@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-09-20T16:12:24+00:00",
-  "pobrano_lokalnie": "2026-09-20T18:12:24+02:00",
+  "pobrano_utc": "2026-09-20T16:52:21+00:00",
+  "pobrano_lokalnie": "2026-09-20T18:52:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 443,
+    "zapytan": 444,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -76,7 +76,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": null,
+      "opoznienie_s": 59,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-21T11:30:00Z",
       "do_kiedy": ""
