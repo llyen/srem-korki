@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-21T06:24:18+00:00",
-  "pobrano_lokalnie": "2026-09-21T08:24:18+02:00",
+  "pobrano_utc": "2026-09-21T06:34:17+00:00",
+  "pobrano_lokalnie": "2026-09-21T08:34:17+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 9723,
+    "zapytan": 9731,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 656,
+      "czas_s": 654,
       "czas_bez_ruchu_s": 572,
-      "opoznienie_s": 84,
+      "opoznienie_s": 82,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.147,
+      "ratio": 1.143,
       "poziom": "plynnie"
     },
     {
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 486,
+      "czas_s": 484,
       "czas_bez_ruchu_s": 417,
-      "opoznienie_s": 69,
+      "opoznienie_s": 67,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.165,
+      "ratio": 1.161,
       "poziom": "umiarkowanie"
     },
     {
@@ -63,13 +63,13 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 563,
+      "czas_s": 389,
       "czas_bez_ruchu_s": 316,
-      "opoznienie_s": 247,
-      "opoznienie_wzgl_typowego_s": 188,
+      "opoznienie_s": 73,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.782,
-      "poziom": "utrudnienia"
+      "ratio": 1.231,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "od-leszna-most-bp",
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 855,
+      "czas_s": 853,
       "czas_bez_ruchu_s": 622,
-      "opoznienie_s": 233,
-      "opoznienie_wzgl_typowego_s": 1,
+      "opoznienie_s": 231,
+      "opoznienie_wzgl_typowego_s": 3,
       "dlugosc_m": 9670,
-      "ratio": 1.375,
+      "ratio": 1.371,
       "poziom": "umiarkowanie"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 623,
-      "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 126,
+      "czas_s": 692,
+      "czas_bez_ruchu_s": 587,
+      "opoznienie_s": 105,
       "opoznienie_wzgl_typowego_s": 0,
-      "dlugosc_m": 7368,
-      "ratio": 1.254,
+      "dlugosc_m": 7830,
+      "ratio": 1.179,
       "poziom": "umiarkowanie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1190,
+      "czas_s": 987,
       "czas_bez_ruchu_s": 275,
-      "opoznienie_s": 915,
-      "opoznienie_wzgl_typowego_s": 902,
+      "opoznienie_s": 712,
+      "opoznienie_wzgl_typowego_s": 698,
       "dlugosc_m": 4853,
-      "ratio": 4.327,
+      "ratio": 3.589,
       "poziom": "korek"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 652,
+      "czas_s": 649,
       "czas_bez_ruchu_s": 577,
-      "opoznienie_s": 75,
+      "opoznienie_s": 72,
       "opoznienie_wzgl_typowego_s": 1,
       "dlugosc_m": 10898,
-      "ratio": 1.13,
+      "ratio": 1.125,
       "poziom": "plynnie"
     }
   ],
