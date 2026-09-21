@@ -1,30 +1,17 @@
 {
-  "pobrano_utc": "2026-09-21T05:04:20+00:00",
-  "pobrano_lokalnie": "2026-09-21T07:04:20+02:00",
+  "pobrano_utc": "2026-09-21T05:34:21+00:00",
+  "pobrano_lokalnie": "2026-09-21T07:34:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 13,
-  "zdarzen_przy_trasach": 8,
+  "zdarzen_w_prostokacie": 14,
+  "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 448,
+    "zapytan": 449,
     "budzet": 2200
   },
   "zdarzenia": [
-    {
-      "opis": "Most zamknięty",
-      "kategoria": 8,
-      "kategoria_nazwa": "zamkniecie",
-      "waga": 4,
-      "od": "Poznańska / Księdza Jana Kajetańczyka",
-      "do": "Rondo Powstańców Wielkopolskich",
-      "drogi": [],
-      "opoznienie_s": null,
-      "dlugosc_m": 758,
-      "od_kiedy": "2026-07-29T17:40:00Z",
-      "do_kiedy": ""
-    },
     {
       "opis": "Zamknięto",
       "kategoria": 8,
@@ -61,11 +48,11 @@
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
       "od": "Poznańska / Księdza Jana Kajetańczyka",
-      "do": "Szkolna",
+      "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 241,
-      "od_kiedy": "2026-09-20T15:45:00Z",
+      "dlugosc_m": 1076,
+      "od_kiedy": "2026-07-29T17:40:00Z",
       "do_kiedy": ""
     },
     {
@@ -73,29 +60,71 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "od": "Mechlin (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 596,
-      "dlugosc_m": 3727,
+      "opoznienie_s": 910,
+      "dlugosc_m": 3939,
       "od_kiedy": "2026-09-21T04:40:30Z",
-      "do_kiedy": "2026-09-21T05:28:00Z"
+      "do_kiedy": "2026-09-21T06:14:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Księdza Jana Kajetańczyka",
+      "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 151,
-      "dlugosc_m": 142,
-      "od_kiedy": "2026-09-21T04:59:00Z",
-      "do_kiedy": "2026-09-21T05:23:00Z"
+      "opoznienie_s": 491,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-09-21T05:26:30Z",
+      "do_kiedy": "2026-09-21T06:02:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Józefa Piłsudskiego",
+      "do": "Rondo Premiera Stanisława Mikołajczyka",
+      "drogi": [],
+      "opoznienie_s": 258,
+      "dlugosc_m": 409,
+      "od_kiedy": "2026-09-21T05:20:00Z",
+      "do_kiedy": "2026-09-21T05:57:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Piłsudskiego (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 131,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-09-21T05:20:00Z",
+      "do_kiedy": "2026-09-21T05:55:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Leśna",
+      "do": "Średzka",
+      "drogi": [],
+      "opoznienie_s": 122,
+      "dlugosc_m": 176,
+      "od_kiedy": "2026-09-21T05:23:00Z",
+      "do_kiedy": "2026-09-21T05:52:30Z"
     },
     {
       "opis": "Roboty drogowe; Nowy układ robót drogowych",
@@ -105,7 +134,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 52,
+      "opoznienie_s": 47,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-21T11:30:00Z",
       "do_kiedy": ""
