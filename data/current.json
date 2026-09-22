@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-22T05:24:18+00:00",
-  "pobrano_lokalnie": "2026-09-22T07:24:18+02:00",
+  "pobrano_utc": "2026-09-22T05:34:52+00:00",
+  "pobrano_lokalnie": "2026-09-22T07:34:52+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 10203,
+    "zapytan": 10211,
     "budzet": 18500
   },
   "trasy": [
@@ -15,13 +15,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Plac 20 Października",
       "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
-      "czas_s": 229,
+      "czas_s": 239,
       "czas_bez_ruchu_s": 201,
-      "opoznienie_s": 28,
-      "opoznienie_wzgl_typowego_s": 14,
+      "opoznienie_s": 38,
+      "opoznienie_wzgl_typowego_s": 20,
       "dlugosc_m": 2115,
-      "ratio": 1.139,
-      "poziom": "plynnie"
+      "ratio": 1.189,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "od-czmonia-plac20",
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 655,
+      "czas_s": 656,
       "czas_bez_ruchu_s": 613,
-      "opoznienie_s": 42,
+      "opoznienie_s": 43,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10738,
-      "ratio": 1.069,
+      "ratio": 1.07,
       "poziom": "plynnie"
     },
     {
@@ -47,13 +47,13 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 561,
+      "czas_s": 607,
       "czas_bez_ruchu_s": 417,
-      "opoznienie_s": 144,
-      "opoznienie_wzgl_typowego_s": 112,
+      "opoznienie_s": 190,
+      "opoznienie_wzgl_typowego_s": 157,
       "dlugosc_m": 7127,
-      "ratio": 1.345,
-      "poziom": "umiarkowanie"
+      "ratio": 1.456,
+      "poziom": "utrudnienia"
     },
     {
       "id": "od-gostynia-staszica",
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 360,
+      "czas_s": 363,
       "czas_bez_ruchu_s": 316,
-      "opoznienie_s": 44,
+      "opoznienie_s": 47,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.139,
+      "ratio": 1.149,
       "poziom": "plynnie"
     },
     {
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 957,
+      "czas_s": 1002,
       "czas_bez_ruchu_s": 622,
-      "opoznienie_s": 335,
-      "opoznienie_wzgl_typowego_s": 142,
+      "opoznienie_s": 380,
+      "opoznienie_wzgl_typowego_s": 175,
       "dlugosc_m": 9670,
-      "ratio": 1.539,
+      "ratio": 1.611,
       "poziom": "utrudnienia"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 648,
+      "czas_s": 653,
       "czas_bez_ruchu_s": 587,
-      "opoznienie_s": 61,
+      "opoznienie_s": 66,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7830,
-      "ratio": 1.104,
+      "ratio": 1.112,
       "poziom": "plynnie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 947,
+      "czas_s": 1301,
       "czas_bez_ruchu_s": 275,
-      "opoznienie_s": 672,
-      "opoznienie_wzgl_typowego_s": 659,
+      "opoznienie_s": 1026,
+      "opoznienie_wzgl_typowego_s": 1013,
       "dlugosc_m": 4853,
-      "ratio": 3.444,
+      "ratio": 4.731,
       "poziom": "korek"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 697,
+      "czas_s": 695,
       "czas_bez_ruchu_s": 634,
-      "opoznienie_s": 63,
+      "opoznienie_s": 61,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10746,
-      "ratio": 1.099,
+      "ratio": 1.096,
       "poziom": "plynnie"
     }
   ],
