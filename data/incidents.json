@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-23T10:52:20+00:00",
-  "pobrano_lokalnie": "2026-09-23T12:52:20+02:00",
+  "pobrano_utc": "2026-09-23T11:32:22+00:00",
+  "pobrano_lokalnie": "2026-09-23T13:32:22+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
-  "zdarzen_przy_trasach": 5,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 508,
+    "zapytan": 509,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -56,6 +56,37 @@
       "obie_strony": true
     },
     {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Szkolna (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 422,
+      "dlugosc_m": 1974,
+      "od_kiedy": "2026-09-23T11:11:00Z",
+      "do_kiedy": "2026-09-23T11:57:30Z"
+    },
+    {
+      "opis": "Powolny ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 1,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Staszica (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 152,
+      "dlugosc_m": 1049,
+      "od_kiedy": "2026-09-23T11:20:00Z",
+      "do_kiedy": "2026-09-23T11:51:30Z"
+    },
+    {
       "opis": "Roboty drogowe",
       "kategoria": 9,
       "kategoria_nazwa": "roboty",
@@ -65,7 +96,7 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 82,
+      "opoznienie_s": 79,
       "dlugosc_m": 163,
       "od_kiedy": "2026-09-20T18:24:30Z",
       "do_kiedy": ""
@@ -78,7 +109,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 70,
+      "opoznienie_s": 35,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-14T07:32:30Z",
       "do_kiedy": ""
