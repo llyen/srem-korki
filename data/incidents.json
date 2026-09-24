@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-24T10:52:21+00:00",
-  "pobrano_lokalnie": "2026-09-24T12:52:21+02:00",
+  "pobrano_utc": "2026-09-24T11:32:24+00:00",
+  "pobrano_lokalnie": "2026-09-24T13:32:24+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
   "zdarzen_w_prostokacie": 13,
-  "zdarzen_przy_trasach": 9,
+  "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 533,
+    "zapytan": 534,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -73,42 +73,29 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 241,
-      "dlugosc_m": 301,
-      "od_kiedy": "2026-09-24T10:46:30Z",
-      "do_kiedy": "2026-09-24T11:11:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Grunwaldzka (310) (432)",
-      "do": "Śrem ul. 1 Maja (432)",
-      "drogi": [],
-      "opoznienie_s": 158,
-      "dlugosc_m": 235,
-      "od_kiedy": "2026-09-24T10:48:00Z",
-      "do_kiedy": "2026-09-24T11:10:30Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
       "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 408,
+      "opoznienie_s": 499,
       "dlugosc_m": 3285,
-      "od_kiedy": "2026-09-24T10:02:30Z",
-      "do_kiedy": "2026-09-24T11:21:30Z"
+      "od_kiedy": "2026-09-24T11:20:00Z",
+      "do_kiedy": "2026-09-24T12:02:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 255,
+      "dlugosc_m": 609,
+      "od_kiedy": "2026-09-24T10:46:30Z",
+      "do_kiedy": "2026-09-24T11:50:30Z"
     },
     {
       "opis": "Roboty drogowe; Nowy układ robót drogowych",
@@ -118,7 +105,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 54,
+      "opoznienie_s": 57,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-14T07:32:30Z",
       "do_kiedy": ""
