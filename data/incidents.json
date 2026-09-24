@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-24T12:34:22+00:00",
-  "pobrano_lokalnie": "2026-09-24T14:34:22+02:00",
+  "pobrano_utc": "2026-09-24T13:04:20+00:00",
+  "pobrano_lokalnie": "2026-09-24T15:04:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
   "zdarzen_w_prostokacie": 13,
-  "zdarzen_przy_trasach": 9,
+  "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 536,
+    "zapytan": 537,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -17,11 +17,11 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "od": "Szkolna",
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 758,
+      "dlugosc_m": 557,
       "od_kiedy": "2026-07-29T17:39:30Z",
       "do_kiedy": ""
     },
@@ -60,16 +60,16 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 1282,
-      "dlugosc_m": 2931,
-      "od_kiedy": "2026-09-24T11:20:00Z",
-      "do_kiedy": "2026-09-24T13:31:30Z"
+      "opoznienie_s": 554,
+      "dlugosc_m": 3712,
+      "od_kiedy": "2026-09-24T12:44:00Z",
+      "do_kiedy": "2026-09-24T13:29:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,38 +79,25 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 292,
+      "opoznienie_s": 281,
       "dlugosc_m": 301,
       "od_kiedy": "2026-09-24T12:29:00Z",
-      "do_kiedy": "2026-09-24T12:53:30Z"
+      "do_kiedy": "2026-09-24T13:25:30Z"
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
+      "opis": "Powolny ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Elizy Orzeszkowej",
-      "do": "Jana Kilińskiego / Zielona",
-      "drogi": [],
-      "opoznienie_s": 184,
-      "dlugosc_m": 195,
-      "od_kiedy": "2026-09-24T12:05:30Z",
-      "do_kiedy": "2026-09-24T12:52:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Astrowa (310)",
-      "do": "Śrem Al. Solidarności (310)",
+      "waga": 1,
+      "od": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Bora-Komorowskiego (432)",
       "drogi": [
-        "310"
+        "432"
       ],
-      "opoznienie_s": 125,
-      "dlugosc_m": 320,
-      "od_kiedy": "2026-09-24T12:11:00Z",
-      "do_kiedy": "2026-09-24T12:53:30Z"
+      "opoznienie_s": 179,
+      "dlugosc_m": 1131,
+      "od_kiedy": "2026-09-24T12:52:00Z",
+      "do_kiedy": "2026-09-24T13:22:30Z"
     },
     {
       "opis": "Roboty drogowe; Nowy układ robót drogowych",
@@ -120,7 +107,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 76,
+      "opoznienie_s": 52,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-14T07:32:30Z",
       "do_kiedy": ""
