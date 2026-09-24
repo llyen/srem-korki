@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-23T17:32:21+00:00",
-  "pobrano_lokalnie": "2026-09-23T19:32:21+02:00",
+  "pobrano_utc": "2026-09-24T04:04:19+00:00",
+  "pobrano_lokalnie": "2026-09-24T06:04:19+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
-  "zdarzen_przy_trasach": 5,
+  "zdarzen_w_prostokacie": 10,
+  "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 520,
+    "zapytan": 521,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -56,16 +56,16 @@
       "obie_strony": true
     },
     {
-      "opis": "Roboty drogowe; Nowy układ robót drogowych",
-      "kategoria": 9,
-      "kategoria_nazwa": "roboty",
-      "waga": 0,
-      "od": "Śrem ul. Chełmońskiego (310)",
-      "do": "Śrem Al. Solidarności (310)",
+      "opis": "Zamknięto",
+      "kategoria": 8,
+      "kategoria_nazwa": "zamkniecie",
+      "waga": 4,
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "do": "Szkolna",
       "drogi": [],
-      "opoznienie_s": 69,
-      "dlugosc_m": 194,
-      "od_kiedy": "2026-07-14T07:32:30Z",
+      "opoznienie_s": null,
+      "dlugosc_m": 241,
+      "od_kiedy": "2026-09-23T18:48:30Z",
       "do_kiedy": ""
     },
     {
@@ -78,9 +78,22 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 66,
+      "opoznienie_s": null,
       "dlugosc_m": 163,
       "od_kiedy": "2026-09-20T18:24:30Z",
+      "do_kiedy": ""
+    },
+    {
+      "opis": "Roboty drogowe; Nowy układ robót drogowych",
+      "kategoria": 9,
+      "kategoria_nazwa": "roboty",
+      "waga": 0,
+      "od": "Śrem ul. Chełmońskiego (310)",
+      "do": "Śrem Al. Solidarności (310)",
+      "drogi": [],
+      "opoznienie_s": null,
+      "dlugosc_m": 194,
+      "od_kiedy": "2026-07-14T07:32:30Z",
       "do_kiedy": ""
     }
   ]
