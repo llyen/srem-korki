@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-24T12:04:22+00:00",
-  "pobrano_lokalnie": "2026-09-24T14:04:22+02:00",
+  "pobrano_utc": "2026-09-24T12:34:22+00:00",
+  "pobrano_lokalnie": "2026-09-24T14:34:22+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 15,
-  "zdarzen_przy_trasach": 11,
+  "zdarzen_w_prostokacie": 13,
+  "zdarzen_przy_trasach": 9,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 535,
+    "zapytan": 536,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Al. Solidarności (Sikorskiego)",
-      "do": "Kilińskiego (Sikorskiego)",
+      "od": "Kilińskiego (Sikorskiego)",
+      "do": "Al. Solidarności (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 94,
-      "od_kiedy": "2026-03-31T04:33:30Z",
+      "dlugosc_m": 111,
+      "od_kiedy": "2026-03-31T04:47:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -66,40 +66,36 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 780,
-      "dlugosc_m": 3939,
+      "opoznienie_s": 1282,
+      "dlugosc_m": 2931,
       "od_kiedy": "2026-09-24T11:20:00Z",
-      "do_kiedy": "2026-09-24T12:43:00Z"
+      "do_kiedy": "2026-09-24T13:31:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 285,
-      "dlugosc_m": 799,
-      "od_kiedy": "2026-09-24T11:47:00Z",
-      "do_kiedy": "2026-09-24T12:27:00Z"
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 292,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-09-24T12:29:00Z",
+      "do_kiedy": "2026-09-24T12:53:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 173,
-      "dlugosc_m": 542,
-      "od_kiedy": "2026-09-24T11:56:30Z",
-      "do_kiedy": "2026-09-24T12:23:00Z"
+      "od": "Elizy Orzeszkowej",
+      "do": "Jana Kilińskiego / Zielona",
+      "drogi": [],
+      "opoznienie_s": 184,
+      "dlugosc_m": 195,
+      "od_kiedy": "2026-09-24T12:05:30Z",
+      "do_kiedy": "2026-09-24T12:52:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
@@ -111,36 +107,10 @@
       "drogi": [
         "310"
       ],
-      "opoznienie_s": 156,
-      "dlugosc_m": 344,
-      "od_kiedy": "2026-09-24T12:02:00Z",
-      "do_kiedy": "2026-09-24T12:23:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 142,
-      "dlugosc_m": 187,
-      "od_kiedy": "2026-09-24T10:46:30Z",
-      "do_kiedy": "2026-09-24T12:23:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Marszałka Józefa Piłsudskiego",
-      "do": "Rondo Premiera Stanisława Mikołajczyka",
-      "drogi": [],
-      "opoznienie_s": 98,
-      "dlugosc_m": 244,
-      "od_kiedy": "2026-09-24T11:59:00Z",
-      "do_kiedy": "2026-09-24T12:24:00Z"
+      "opoznienie_s": 125,
+      "dlugosc_m": 320,
+      "od_kiedy": "2026-09-24T12:11:00Z",
+      "do_kiedy": "2026-09-24T12:53:30Z"
     },
     {
       "opis": "Roboty drogowe; Nowy układ robót drogowych",
@@ -150,7 +120,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 47,
+      "opoznienie_s": 76,
       "dlugosc_m": 194,
       "od_kiedy": "2026-07-14T07:32:30Z",
       "do_kiedy": ""
