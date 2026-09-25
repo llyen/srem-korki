@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-25T12:04:57+00:00",
-  "pobrano_lokalnie": "2026-09-25T14:04:57+02:00",
+  "pobrano_utc": "2026-09-25T12:34:19+00:00",
+  "pobrano_lokalnie": "2026-09-25T14:34:19+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 15,
-  "zdarzen_przy_trasach": 11,
+  "zdarzen_w_prostokacie": 20,
+  "zdarzen_przy_trasach": 15,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 560,
+    "zapytan": 561,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -21,7 +21,7 @@
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 731,
+      "dlugosc_m": 758,
       "od_kiedy": "2026-07-29T17:39:30Z",
       "do_kiedy": ""
     },
@@ -81,25 +81,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1130,
+      "opoznienie_s": 1287,
       "dlugosc_m": 3939,
       "od_kiedy": "2026-09-25T10:46:00Z",
-      "do_kiedy": "2026-09-25T13:04:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Sosnowiec (436)",
-      "do": "Grzymisław (434) (436)",
-      "drogi": [
-        "436"
-      ],
-      "opoznienie_s": 319,
-      "dlugosc_m": 508,
-      "od_kiedy": "2026-09-25T11:53:30Z",
-      "do_kiedy": "2026-09-25T12:30:30Z"
+      "do_kiedy": "2026-09-25T13:37:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -109,10 +94,10 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 281,
-      "dlugosc_m": 187,
+      "opoznienie_s": 853,
+      "dlugosc_m": 609,
       "od_kiedy": "2026-09-25T10:43:30Z",
-      "do_kiedy": "2026-09-25T12:25:30Z"
+      "do_kiedy": "2026-09-25T13:30:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -124,25 +109,97 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 205,
-      "dlugosc_m": 775,
+      "opoznienie_s": 610,
+      "dlugosc_m": 1207,
       "od_kiedy": "2026-09-25T11:46:00Z",
-      "do_kiedy": "2026-09-25T12:27:30Z"
+      "do_kiedy": "2026-09-25T13:00:30Z"
     },
     {
-      "opis": "Powolny ruch drogowy",
+      "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 1,
+      "waga": 3,
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Piłsudskiego (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 394,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-09-25T12:14:00Z",
+      "do_kiedy": "2026-09-25T12:54:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Zbrudzewo (434)",
+      "do": "Śrem ul. Piłsudskiego (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 298,
+      "dlugosc_m": 586,
+      "od_kiedy": "2026-09-25T12:14:00Z",
+      "do_kiedy": "2026-09-25T12:56:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Józefa Piłsudskiego",
+      "do": "Rondo Premiera Stanisława Mikołajczyka",
+      "drogi": [],
+      "opoznienie_s": 295,
+      "dlugosc_m": 409,
+      "od_kiedy": "2026-09-25T12:21:00Z",
+      "do_kiedy": "2026-09-25T12:59:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Słoneczna",
+      "do": "Średzka",
+      "drogi": [],
+      "opoznienie_s": 209,
+      "dlugosc_m": 1107,
+      "od_kiedy": "2026-09-25T12:14:00Z",
+      "do_kiedy": "2026-09-25T12:52:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
       "od": "Śrem ul. Staszica (432)",
       "do": "Śrem ul. Bora-Komorowskiego (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 151,
+      "opoznienie_s": 192,
       "dlugosc_m": 1073,
-      "od_kiedy": "2026-09-25T11:55:30Z",
-      "do_kiedy": "2026-09-25T12:23:30Z"
+      "od_kiedy": "2026-09-25T12:26:30Z",
+      "do_kiedy": "2026-09-25T12:52:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 144,
+      "dlugosc_m": 692,
+      "od_kiedy": "2026-09-25T12:28:00Z",
+      "do_kiedy": "2026-09-25T12:52:30Z"
     },
     {
       "opis": "Roboty drogowe",
