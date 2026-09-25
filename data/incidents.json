@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-25T15:04:23+00:00",
-  "pobrano_lokalnie": "2026-09-25T17:04:23+02:00",
+  "pobrano_utc": "2026-09-25T15:34:22+00:00",
+  "pobrano_lokalnie": "2026-09-25T17:34:22+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 15,
-  "zdarzen_przy_trasach": 11,
+  "zdarzen_w_prostokacie": 14,
+  "zdarzen_przy_trasach": 9,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 566,
+    "zapytan": 567,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -61,12 +61,12 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Księdza Jerzego Popiełuszki",
-      "do": "Józefa Piłsudskiego",
+      "od": "Józefa Piłsudskiego",
+      "do": "Księdza Jerzego Popiełuszki",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-30T18:09:30Z",
+      "od_kiedy": "2026-07-31T08:11:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -75,15 +75,13 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 1528,
-      "dlugosc_m": 985,
-      "od_kiedy": "2026-09-25T12:14:00Z",
-      "do_kiedy": "2026-09-25T16:27:30Z"
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 466,
+      "dlugosc_m": 609,
+      "od_kiedy": "2026-09-25T15:15:00Z",
+      "do_kiedy": "2026-09-25T15:59:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -96,52 +94,23 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 890,
-      "dlugosc_m": 3939,
+      "opoznienie_s": 291,
+      "dlugosc_m": 1973,
       "od_kiedy": "2026-09-25T13:40:00Z",
-      "do_kiedy": "2026-09-25T15:33:30Z"
+      "do_kiedy": "2026-09-25T15:52:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Piłsudskiego (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 519,
-      "dlugosc_m": 517,
-      "od_kiedy": "2026-09-25T13:12:00Z",
-      "do_kiedy": "2026-09-25T15:43:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Leśna",
-      "do": "Średzka",
-      "drogi": [],
-      "opoznienie_s": 167,
-      "dlugosc_m": 176,
-      "od_kiedy": "2026-09-25T14:58:30Z",
-      "do_kiedy": "2026-09-25T15:22:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Marszałka Józefa Piłsudskiego",
+      "od": "Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 136,
-      "dlugosc_m": 196,
-      "od_kiedy": "2026-09-25T12:47:30Z",
-      "do_kiedy": "2026-09-25T15:22:30Z"
+      "opoznienie_s": 125,
+      "dlugosc_m": 409,
+      "od_kiedy": "2026-09-25T15:30:30Z",
+      "do_kiedy": "2026-09-25T15:52:30Z"
     },
     {
       "opis": "Roboty drogowe",
