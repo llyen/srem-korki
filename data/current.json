@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-09-26T12:04:18+00:00",
-  "pobrano_lokalnie": "2026-09-26T14:04:18+02:00",
+  "pobrano_utc": "2026-09-26T12:14:17+00:00",
+  "pobrano_lokalnie": "2026-09-26T14:14:17+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 12531,
+    "zapytan": 12539,
     "budzet": 18500
   },
   "trasy": [
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 425,
+      "czas_s": 424,
       "czas_bez_ruchu_s": 417,
-      "opoznienie_s": 8,
+      "opoznienie_s": 7,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.019,
+      "ratio": 1.017,
       "poziom": "plynnie"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 559,
+      "czas_s": 558,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 62,
+      "opoznienie_s": 61,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.125,
+      "ratio": 1.123,
       "poziom": "plynnie"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 596,
+      "czas_s": 597,
       "czas_bez_ruchu_s": 577,
-      "opoznienie_s": 19,
+      "opoznienie_s": 20,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.033,
+      "ratio": 1.035,
       "poziom": "plynnie"
     }
   ],
