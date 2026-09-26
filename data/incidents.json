@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-26T07:34:21+00:00",
-  "pobrano_lokalnie": "2026-09-26T09:34:21+02:00",
+  "pobrano_utc": "2026-09-26T08:12:21+00:00",
+  "pobrano_lokalnie": "2026-09-26T10:12:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 7,
+  "zdarzen_w_prostokacie": 13,
+  "zdarzen_przy_trasach": 9,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 578,
+    "zapytan": 579,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -82,6 +82,36 @@
       "dlugosc_m": 241,
       "od_kiedy": "2026-09-25T16:55:00Z",
       "do_kiedy": ""
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 245,
+      "dlugosc_m": 542,
+      "od_kiedy": "2026-09-26T08:06:00Z",
+      "do_kiedy": "2026-09-26T08:31:00Z"
+    },
+    {
+      "opis": "Powolny ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 1,
+      "od": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Bora-Komorowskiego (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 119,
+      "dlugosc_m": 955,
+      "od_kiedy": "2026-09-26T08:07:30Z",
+      "do_kiedy": "2026-09-26T08:31:00Z"
     },
     {
       "opis": "Roboty drogowe",
