@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 14083,
+  "pomiarow_lacznie": 14091,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 1755,
-    "od-czmonia-plac20": 1750,
-    "od-srody-plac20": 1753,
-    "od-gostynia-staszica": 1753,
-    "od-leszna-most-bp": 1753,
-    "od-czempinia-rondo-ak": 1752,
-    "objazd-gostynska": 1755,
-    "wyjazd-plac20-czmon": 1750
+    "obwodnica-plac20": 1756,
+    "od-czmonia-plac20": 1751,
+    "od-srody-plac20": 1754,
+    "od-gostynia-staszica": 1754,
+    "od-leszna-most-bp": 1754,
+    "od-czempinia-rondo-ak": 1753,
+    "objazd-gostynska": 1756,
+    "wyjazd-plac20-czmon": 1751
   },
   "dni_pomiarowe": 29,
   "od": "2026-09-01",
@@ -27,7 +27,7 @@
       },
       "2-13": {
         "mediana_opoznienia_s": 17,
-        "probek": 10
+        "probek": 11
       },
       "2-16": {
         "mediana_opoznienia_s": 43,
@@ -413,7 +413,7 @@
     "od-czmonia-plac20": {
       "2-13": {
         "mediana_opoznienia_s": 45,
-        "probek": 10
+        "probek": 11
       },
       "2-16": {
         "mediana_opoznienia_s": 61,
@@ -815,7 +815,7 @@
       },
       "2-13": {
         "mediana_opoznienia_s": 30,
-        "probek": 10
+        "probek": 11
       },
       "2-16": {
         "mediana_opoznienia_s": 49,
@@ -1209,7 +1209,7 @@
       },
       "2-13": {
         "mediana_opoznienia_s": 54,
-        "probek": 10
+        "probek": 11
       },
       "2-16": {
         "mediana_opoznienia_s": 180,
@@ -1602,8 +1602,8 @@
         "probek": 13
       },
       "2-13": {
-        "mediana_opoznienia_s": 183,
-        "probek": 10
+        "mediana_opoznienia_s": 184,
+        "probek": 11
       },
       "2-16": {
         "mediana_opoznienia_s": 346,
@@ -1996,8 +1996,8 @@
         "probek": 13
       },
       "2-13": {
-        "mediana_opoznienia_s": 83,
-        "probek": 10
+        "mediana_opoznienia_s": 84,
+        "probek": 11
       },
       "2-16": {
         "mediana_opoznienia_s": 126,
@@ -2390,8 +2390,8 @@
         "probek": 13
       },
       "2-13": {
-        "mediana_opoznienia_s": 219,
-        "probek": 10
+        "mediana_opoznienia_s": 210,
+        "probek": 11
       },
       "2-16": {
         "mediana_opoznienia_s": 952,
@@ -2776,8 +2776,8 @@
     },
     "wyjazd-plac20-czmon": {
       "2-13": {
-        "mediana_opoznienia_s": 41,
-        "probek": 10
+        "mediana_opoznienia_s": 42,
+        "probek": 11
       },
       "2-16": {
         "mediana_opoznienia_s": 68,
