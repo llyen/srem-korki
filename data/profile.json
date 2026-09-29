@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 14323,
+  "pomiarow_lacznie": 14331,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 1785,
-    "od-czmonia-plac20": 1780,
-    "od-srody-plac20": 1783,
-    "od-gostynia-staszica": 1783,
-    "od-leszna-most-bp": 1783,
-    "od-czempinia-rondo-ak": 1782,
-    "objazd-gostynska": 1785,
-    "wyjazd-plac20-czmon": 1780
+    "obwodnica-plac20": 1786,
+    "od-czmonia-plac20": 1781,
+    "od-srody-plac20": 1784,
+    "od-gostynia-staszica": 1784,
+    "od-leszna-most-bp": 1784,
+    "od-czempinia-rondo-ak": 1783,
+    "objazd-gostynska": 1786,
+    "wyjazd-plac20-czmon": 1781
   },
   "dni_pomiarowe": 29,
   "od": "2026-09-01",
@@ -407,7 +407,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 8,
-        "probek": 9
+        "probek": 10
       }
     },
     "od-czmonia-plac20": {
@@ -801,7 +801,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 14,
-        "probek": 9
+        "probek": 10
       }
     },
     "od-srody-plac20": {
@@ -1195,7 +1195,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 11,
-        "probek": 9
+        "probek": 10
       }
     },
     "od-gostynia-staszica": {
@@ -1589,7 +1589,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 19,
-        "probek": 9
+        "probek": 10
       }
     },
     "od-leszna-most-bp": {
@@ -1982,8 +1982,8 @@
         "probek": 24
       },
       "2-19": {
-        "mediana_opoznienia_s": 84,
-        "probek": 9
+        "mediana_opoznienia_s": 85,
+        "probek": 10
       }
     },
     "od-czempinia-rondo-ak": {
@@ -2376,8 +2376,8 @@
         "probek": 24
       },
       "2-19": {
-        "mediana_opoznienia_s": 38,
-        "probek": 9
+        "mediana_opoznienia_s": 41,
+        "probek": 10
       }
     },
     "objazd-gostynska": {
@@ -2771,7 +2771,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 25,
-        "probek": 9
+        "probek": 10
       }
     },
     "wyjazd-plac20-czmon": {
@@ -3165,7 +3165,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 15,
-        "probek": 9
+        "probek": 10
       }
     }
   }
