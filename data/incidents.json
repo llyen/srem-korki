@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-09-30T05:04:20+00:00",
-  "pobrano_lokalnie": "2026-09-30T07:04:20+02:00",
+  "pobrano_utc": "2026-09-30T05:34:20+00:00",
+  "pobrano_lokalnie": "2026-09-30T07:34:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,10 +8,23 @@
   "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 673,
+    "zapytan": 674,
     "budzet": 2200
   },
   "zdarzenia": [
+    {
+      "opis": "Most zamknięty",
+      "kategoria": 8,
+      "kategoria_nazwa": "zamkniecie",
+      "waga": 4,
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "do": "Rondo Powstańców Wielkopolskich",
+      "drogi": [],
+      "opoznienie_s": null,
+      "dlugosc_m": 758,
+      "od_kiedy": "2026-07-29T17:40:00Z",
+      "do_kiedy": ""
+    },
     {
       "opis": "Zamknięto",
       "kategoria": 8,
@@ -48,10 +61,10 @@
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
       "od": "Poznańska / Księdza Jana Kajetańczyka",
-      "do": "Rondo Powstańców Wielkopolskich",
+      "do": "Szkolna",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 1076,
+      "dlugosc_m": 241,
       "od_kiedy": "2026-07-29T17:40:00Z",
       "do_kiedy": ""
     },
@@ -60,46 +73,31 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 558,
-      "dlugosc_m": 1256,
-      "od_kiedy": "2026-09-30T04:49:00Z",
-      "do_kiedy": "2026-09-30T05:41:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Sosnowiec (436)",
-      "do": "Grzymisław (434) (436)",
-      "drogi": [
-        "436"
-      ],
-      "opoznienie_s": 146,
-      "dlugosc_m": 162,
-      "od_kiedy": "2026-09-30T04:55:30Z",
-      "do_kiedy": "2026-09-30T05:22:30Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "od": "Mechlin (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 238,
-      "dlugosc_m": 2207,
-      "od_kiedy": "2026-09-30T04:55:00Z",
-      "do_kiedy": "2026-09-30T05:26:30Z"
+      "opoznienie_s": 867,
+      "dlugosc_m": 3928,
+      "od_kiedy": "2026-09-30T05:16:00Z",
+      "do_kiedy": "2026-09-30T06:19:30Z"
+    },
+    {
+      "opis": "Powolny ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 1,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Staszica (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 127,
+      "dlugosc_m": 946,
+      "od_kiedy": "2026-09-30T05:30:30Z",
+      "do_kiedy": "2026-09-30T05:52:30Z"
     },
     {
       "opis": "Roboty drogowe",
