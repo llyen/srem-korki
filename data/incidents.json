@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-09-30T11:32:20+00:00",
-  "pobrano_lokalnie": "2026-09-30T13:32:20+02:00",
+  "pobrano_utc": "2026-09-30T12:05:30+00:00",
+  "pobrano_lokalnie": "2026-09-30T14:05:30+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 13,
+  "zdarzen_w_prostokacie": 12,
   "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-09",
-    "zapytan": 684,
+    "zapytan": 685,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -56,19 +56,6 @@
       "obie_strony": true
     },
     {
-      "opis": "Zamknięto",
-      "kategoria": 8,
-      "kategoria_nazwa": "zamkniecie",
-      "waga": 4,
-      "od": "Poznańska / Księdza Jana Kajetańczyka",
-      "do": "Szkolna",
-      "drogi": [],
-      "opoznienie_s": null,
-      "dlugosc_m": 241,
-      "od_kiedy": "2026-09-30T10:37:00Z",
-      "do_kiedy": ""
-    },
-    {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
@@ -79,25 +66,38 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 468,
-      "dlugosc_m": 2727,
+      "opoznienie_s": 482,
+      "dlugosc_m": 2765,
       "od_kiedy": "2026-09-30T10:51:30Z",
-      "do_kiedy": "2026-09-30T11:59:30Z"
+      "do_kiedy": "2026-09-30T12:31:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "od": "Borgowo (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
       "drogi": [
-        "432"
+        "434"
       ],
-      "opoznienie_s": 143,
-      "dlugosc_m": 542,
-      "od_kiedy": "2026-09-30T11:30:00Z",
-      "do_kiedy": "2026-09-30T11:50:30Z"
+      "opoznienie_s": 246,
+      "dlugosc_m": 647,
+      "od_kiedy": "2026-09-30T11:58:30Z",
+      "do_kiedy": "2026-09-30T12:27:00Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 172,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-09-30T11:48:30Z",
+      "do_kiedy": "2026-09-30T12:24:00Z"
     },
     {
       "opis": "Roboty drogowe",
