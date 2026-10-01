@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-01T10:52:21+00:00",
-  "pobrano_lokalnie": "2026-10-01T12:52:21+02:00",
+  "pobrano_utc": "2026-10-01T11:32:19+00:00",
+  "pobrano_lokalnie": "2026-10-01T13:32:19+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
-  "zdarzen_przy_trasach": 5,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 13,
+    "zapytan": 14,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -67,6 +67,35 @@
       "dlugosc_m": 241,
       "od_kiedy": "2026-09-30T17:07:30Z",
       "do_kiedy": ""
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Szkolna (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 607,
+      "dlugosc_m": 2264,
+      "od_kiedy": "2026-10-01T11:24:30Z",
+      "do_kiedy": "2026-10-01T12:04:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "drogi": [],
+      "opoznienie_s": 144,
+      "dlugosc_m": 702,
+      "od_kiedy": "2026-10-01T11:30:30Z",
+      "do_kiedy": "2026-10-01T11:50:30Z"
     },
     {
       "opis": "Roboty drogowe",
