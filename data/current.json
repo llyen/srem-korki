@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-02T13:24:18+00:00",
-  "pobrano_lokalnie": "2026-10-02T15:24:18+02:00",
+  "pobrano_utc": "2026-10-02T13:34:18+00:00",
+  "pobrano_lokalnie": "2026-10-02T15:34:18+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 888,
+    "zapytan": 896,
     "budzet": 18500
   },
   "trasy": [
@@ -63,13 +63,13 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 952,
-      "czas_bez_ruchu_s": 882,
-      "opoznienie_s": 70,
-      "opoznienie_wzgl_typowego_s": 0,
-      "dlugosc_m": 13292,
-      "ratio": 1.079,
-      "poziom": "plynnie"
+      "czas_s": 715,
+      "czas_bez_ruchu_s": 316,
+      "opoznienie_s": 399,
+      "opoznienie_wzgl_typowego_s": 357,
+      "dlugosc_m": 5524,
+      "ratio": 2.263,
+      "poziom": "korek"
     },
     {
       "id": "od-leszna-most-bp",
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 1252,
+      "czas_s": 1039,
       "czas_bez_ruchu_s": 709,
-      "opoznienie_s": 543,
-      "opoznienie_wzgl_typowego_s": 340,
+      "opoznienie_s": 330,
+      "opoznienie_wzgl_typowego_s": 55,
       "dlugosc_m": 10310,
-      "ratio": 1.766,
+      "ratio": 1.465,
       "poziom": "utrudnienia"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1279,
+      "czas_s": 695,
       "czas_bez_ruchu_s": 379,
-      "opoznienie_s": 900,
-      "opoznienie_wzgl_typowego_s": 878,
+      "opoznienie_s": 316,
+      "opoznienie_wzgl_typowego_s": 182,
       "dlugosc_m": 5532,
-      "ratio": 3.375,
+      "ratio": 1.834,
       "poziom": "korek"
     },
     {
@@ -127,13 +127,13 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 957,
-      "czas_bez_ruchu_s": 634,
-      "opoznienie_s": 323,
-      "opoznienie_wzgl_typowego_s": 258,
-      "dlugosc_m": 10746,
-      "ratio": 1.509,
-      "poziom": "utrudnienia"
+      "czas_s": 723,
+      "czas_bez_ruchu_s": 651,
+      "opoznienie_s": 72,
+      "opoznienie_wzgl_typowego_s": 8,
+      "dlugosc_m": 11434,
+      "ratio": 1.111,
+      "poziom": "plynnie"
     }
   ],
   "bledy": []
