@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-10-02T17:32:19+00:00",
-  "pobrano_lokalnie": "2026-10-02T19:32:19+02:00",
+  "pobrano_utc": "2026-10-03T04:04:21+00:00",
+  "pobrano_lokalnie": "2026-10-03T06:04:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 50,
+    "zapytan": 51,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Al. Solidarności (Sikorskiego)",
-      "do": "Kilińskiego (Sikorskiego)",
+      "od": "Kilińskiego (Sikorskiego)",
+      "do": "Al. Solidarności (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 94,
-      "od_kiedy": "2026-03-31T04:33:30Z",
+      "dlugosc_m": 111,
+      "od_kiedy": "2026-03-31T04:47:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -46,30 +46,27 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Józefa Piłsudskiego",
-      "do": "Księdza Jerzego Popiełuszki",
+      "od": "Księdza Jerzego Popiełuszki",
+      "do": "Józefa Piłsudskiego",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-31T08:21:30Z",
+      "od_kiedy": "2026-07-30T18:13:00Z",
       "do_kiedy": "",
       "obie_strony": true
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 412,
-      "dlugosc_m": 2765,
-      "od_kiedy": "2026-10-02T17:26:30Z",
-      "do_kiedy": "2026-10-02T17:51:30Z"
+      "opis": "Zamknięto",
+      "kategoria": 8,
+      "kategoria_nazwa": "zamkniecie",
+      "waga": 4,
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "do": "Szkolna",
+      "drogi": [],
+      "opoznienie_s": null,
+      "dlugosc_m": 241,
+      "od_kiedy": "2026-10-02T18:59:00Z",
+      "do_kiedy": ""
     },
     {
       "opis": "Roboty drogowe",
