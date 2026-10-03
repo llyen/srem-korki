@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-03T14:44:17+00:00",
-  "pobrano_lokalnie": "2026-10-03T16:44:17+02:00",
+  "pobrano_utc": "2026-10-03T14:54:18+00:00",
+  "pobrano_lokalnie": "2026-10-03T16:54:18+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 1480,
+    "zapytan": 1488,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 582,
+      "czas_s": 583,
       "czas_bez_ruchu_s": 572,
-      "opoznienie_s": 10,
+      "opoznienie_s": 11,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.017,
+      "ratio": 1.019,
       "poziom": "plynnie"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 546,
+      "czas_s": 547,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 49,
+      "opoznienie_s": 50,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.099,
+      "ratio": 1.101,
       "poziom": "plynnie"
     },
     {
