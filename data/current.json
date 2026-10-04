@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-04T05:44:17+00:00",
-  "pobrano_lokalnie": "2026-10-04T07:44:17+02:00",
+  "pobrano_utc": "2026-10-04T05:54:16+00:00",
+  "pobrano_lokalnie": "2026-10-04T07:54:16+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 1672,
+    "zapytan": 1680,
     "budzet": 18500
   },
   "trasy": [
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 658,
+      "czas_s": 661,
       "czas_bez_ruchu_s": 622,
-      "opoznienie_s": 36,
+      "opoznienie_s": 39,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 1.058,
+      "ratio": 1.063,
       "poziom": "plynnie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 279,
+      "czas_s": 280,
       "czas_bez_ruchu_s": 275,
-      "opoznienie_s": 4,
+      "opoznienie_s": 5,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 1.015,
+      "ratio": 1.018,
       "poziom": "plynnie"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 582,
+      "czas_s": 583,
       "czas_bez_ruchu_s": 577,
-      "opoznienie_s": 5,
+      "opoznienie_s": 6,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.009,
+      "ratio": 1.01,
       "poziom": "plynnie"
     }
   ],
