@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-04T14:54:19+00:00",
-  "pobrano_lokalnie": "2026-10-04T16:54:19+02:00",
+  "pobrano_utc": "2026-10-04T15:04:17+00:00",
+  "pobrano_lokalnie": "2026-10-04T17:04:17+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2016,
+    "zapytan": 2024,
     "budzet": 18500
   },
   "trasy": [
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 337,
+      "czas_s": 338,
       "czas_bez_ruchu_s": 316,
-      "opoznienie_s": 21,
+      "opoznienie_s": 22,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.066,
+      "ratio": 1.07,
       "poziom": "plynnie"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 602,
+      "czas_s": 605,
       "czas_bez_ruchu_s": 577,
-      "opoznienie_s": 25,
+      "opoznienie_s": 28,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.043,
+      "ratio": 1.049,
       "poziom": "plynnie"
     }
   ],
