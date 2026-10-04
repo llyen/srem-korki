@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-04T06:24:19+00:00",
-  "pobrano_lokalnie": "2026-10-04T08:24:19+02:00",
+  "pobrano_utc": "2026-10-04T06:34:18+00:00",
+  "pobrano_lokalnie": "2026-10-04T08:34:18+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 1704,
+    "zapytan": 1712,
     "budzet": 18500
   },
   "trasy": [
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 503,
+      "czas_s": 504,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 6,
+      "opoznienie_s": 7,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.012,
+      "ratio": 1.014,
       "poziom": "plynnie"
     },
     {
