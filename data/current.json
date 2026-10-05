@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-05T13:44:18+00:00",
-  "pobrano_lokalnie": "2026-10-05T15:44:18+02:00",
+  "pobrano_utc": "2026-10-05T13:54:19+00:00",
+  "pobrano_lokalnie": "2026-10-05T15:54:19+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 2488,
+    "zapytan": 2496,
     "budzet": 18500
   },
   "trasy": [
@@ -47,13 +47,13 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 722,
+      "czas_s": 792,
       "czas_bez_ruchu_s": 417,
-      "opoznienie_s": 305,
-      "opoznienie_wzgl_typowego_s": 267,
+      "opoznienie_s": 375,
+      "opoznienie_wzgl_typowego_s": 338,
       "dlugosc_m": 7127,
-      "ratio": 1.731,
-      "poziom": "utrudnienia"
+      "ratio": 1.899,
+      "poziom": "korek"
     },
     {
       "id": "od-gostynia-staszica",
@@ -63,13 +63,13 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 570,
+      "czas_s": 830,
       "czas_bez_ruchu_s": 316,
-      "opoznienie_s": 254,
-      "opoznienie_wzgl_typowego_s": 208,
+      "opoznienie_s": 514,
+      "opoznienie_wzgl_typowego_s": 489,
       "dlugosc_m": 5524,
-      "ratio": 1.804,
-      "poziom": "utrudnienia"
+      "ratio": 2.627,
+      "poziom": "korek"
     },
     {
       "id": "od-leszna-most-bp",
@@ -79,13 +79,13 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 1077,
+      "czas_s": 988,
       "czas_bez_ruchu_s": 709,
-      "opoznienie_s": 368,
-      "opoznienie_wzgl_typowego_s": 184,
+      "opoznienie_s": 279,
+      "opoznienie_wzgl_typowego_s": 31,
       "dlugosc_m": 10310,
-      "ratio": 1.519,
-      "poziom": "utrudnienia"
+      "ratio": 1.394,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "od-czempinia-rondo-ak",
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1424,
+      "czas_s": 1420,
       "czas_bez_ruchu_s": 275,
-      "opoznienie_s": 1149,
-      "opoznienie_wzgl_typowego_s": 1126,
+      "opoznienie_s": 1145,
+      "opoznienie_wzgl_typowego_s": 1122,
       "dlugosc_m": 4853,
-      "ratio": 5.178,
+      "ratio": 5.164,
       "poziom": "korek"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 687,
+      "czas_s": 707,
       "czas_bez_ruchu_s": 634,
-      "opoznienie_s": 53,
-      "opoznienie_wzgl_typowego_s": 0,
+      "opoznienie_s": 73,
+      "opoznienie_wzgl_typowego_s": 20,
       "dlugosc_m": 10746,
-      "ratio": 1.084,
+      "ratio": 1.115,
       "poziom": "plynnie"
     }
   ],
