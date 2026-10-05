@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-05T14:34:23+00:00",
-  "pobrano_lokalnie": "2026-10-05T16:34:23+02:00",
+  "pobrano_utc": "2026-10-05T15:04:22+00:00",
+  "pobrano_lokalnie": "2026-10-05T17:04:22+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 18,
-  "zdarzen_przy_trasach": 14,
+  "zdarzen_w_prostokacie": 14,
+  "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 120,
+    "zapytan": 121,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,10 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 937,
-      "dlugosc_m": 3939,
+      "opoznienie_s": 1093,
+      "dlugosc_m": 3928,
       "od_kiedy": "2026-10-05T12:46:00Z",
-      "do_kiedy": "2026-10-05T15:07:30Z"
+      "do_kiedy": "2026-10-05T15:54:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,10 +79,10 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 754,
+      "opoznienie_s": 774,
       "dlugosc_m": 609,
       "od_kiedy": "2026-10-05T13:34:00Z",
-      "do_kiedy": "2026-10-05T14:59:30Z"
+      "do_kiedy": "2026-10-05T15:51:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -94,23 +94,38 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 392,
+      "opoznienie_s": 384,
       "dlugosc_m": 586,
       "od_kiedy": "2026-10-05T13:26:30Z",
-      "do_kiedy": "2026-10-05T14:55:30Z"
+      "do_kiedy": "2026-10-05T15:24:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Chełmońskiego (310)",
-      "do": "Śrem ul. Kilińskiego (432) (310)",
+      "od": "Marszałka Józefa Piłsudskiego",
+      "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 309,
-      "dlugosc_m": 791,
-      "od_kiedy": "2026-10-05T13:36:00Z",
-      "do_kiedy": "2026-10-05T14:53:30Z"
+      "opoznienie_s": 269,
+      "dlugosc_m": 268,
+      "od_kiedy": "2026-10-05T11:50:00Z",
+      "do_kiedy": "2026-10-05T15:23:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 244,
+      "dlugosc_m": 876,
+      "od_kiedy": "2026-10-05T14:29:30Z",
+      "do_kiedy": "2026-10-05T15:24:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -123,81 +138,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 309,
-      "dlugosc_m": 343,
-      "od_kiedy": "2026-10-05T14:10:30Z",
-      "do_kiedy": "2026-10-05T14:59:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Kadzewo (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 256,
-      "dlugosc_m": 1017,
-      "od_kiedy": "2026-10-05T14:29:30Z",
-      "do_kiedy": "2026-10-05T14:56:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Leśna",
-      "do": "Średzka",
-      "drogi": [],
-      "opoznienie_s": 198,
-      "dlugosc_m": 176,
-      "od_kiedy": "2026-10-05T14:25:00Z",
-      "do_kiedy": "2026-10-05T14:52:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Marszałka Józefa Piłsudskiego",
-      "do": "Rondo Premiera Stanisława Mikołajczyka",
-      "drogi": [],
-      "opoznienie_s": 187,
-      "dlugosc_m": 268,
-      "od_kiedy": "2026-10-05T11:50:00Z",
-      "do_kiedy": "2026-10-05T14:53:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Grzymisław (436) (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 151,
-      "dlugosc_m": 476,
-      "od_kiedy": "2026-10-05T14:28:30Z",
-      "do_kiedy": "2026-10-05T14:53:30Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. 1 Maja (432)",
-      "do": "Śrem ul. Bora-Komorowskiego (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 204,
-      "dlugosc_m": 900,
-      "od_kiedy": "2026-10-05T14:06:00Z",
-      "do_kiedy": "2026-10-05T14:52:30Z"
+      "opoznienie_s": 94,
+      "dlugosc_m": 175,
+      "od_kiedy": "2026-10-05T14:56:30Z",
+      "do_kiedy": "2026-10-05T15:22:30Z"
     },
     {
       "opis": "Roboty drogowe",
