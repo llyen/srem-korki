@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-06T14:34:21+00:00",
-  "pobrano_lokalnie": "2026-10-06T16:34:21+02:00",
+  "pobrano_utc": "2026-10-06T15:04:21+00:00",
+  "pobrano_lokalnie": "2026-10-06T17:04:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 10,
+  "zdarzen_w_prostokacie": 11,
   "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 145,
+    "zapytan": 146,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,15 +60,15 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "od": "Mechlin (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 1434,
-      "dlugosc_m": 3883,
-      "od_kiedy": "2026-10-06T12:01:30Z",
+      "opoznienie_s": 797,
+      "dlugosc_m": 3928,
+      "od_kiedy": "2026-10-06T14:49:00Z",
       "do_kiedy": "2026-10-06T15:35:30Z"
     },
     {
@@ -79,10 +79,10 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 283,
+      "opoznienie_s": 194,
       "dlugosc_m": 301,
       "od_kiedy": "2026-10-06T14:07:00Z",
-      "do_kiedy": "2026-10-06T14:57:30Z"
+      "do_kiedy": "2026-10-06T15:25:30Z"
     },
     {
       "opis": "Roboty drogowe",
