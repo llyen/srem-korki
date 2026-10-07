@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-07T10:12:23+00:00",
-  "pobrano_lokalnie": "2026-10-07T12:12:23+02:00",
+  "pobrano_utc": "2026-10-07T10:52:20+00:00",
+  "pobrano_lokalnie": "2026-10-07T12:52:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 12,
-  "zdarzen_przy_trasach": 7,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 162,
+    "zapytan": 163,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -56,33 +56,20 @@
       "obie_strony": true
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
+      "opis": "Korek",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 513,
-      "dlugosc_m": 609,
-      "od_kiedy": "2026-10-07T09:33:30Z",
-      "do_kiedy": "2026-10-07T10:46:30Z"
-    },
-    {
-      "opis": "Powolny ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 1,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "waga": 2,
+      "od": "Śrem ul. Szkolna (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 172,
-      "dlugosc_m": 2277,
-      "od_kiedy": "2026-10-07T08:26:00Z",
-      "do_kiedy": "2026-10-07T10:35:30Z"
+      "opoznienie_s": 245,
+      "dlugosc_m": 1974,
+      "od_kiedy": "2026-10-07T10:32:30Z",
+      "do_kiedy": "2026-10-07T11:11:30Z"
     },
     {
       "opis": "Powolny ruch drogowy",
@@ -94,10 +81,10 @@
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 126,
+      "opoznienie_s": 167,
       "dlugosc_m": 1049,
-      "od_kiedy": "2026-10-07T10:03:00Z",
-      "do_kiedy": "2026-10-07T10:30:30Z"
+      "od_kiedy": "2026-10-07T10:50:30Z",
+      "do_kiedy": "2026-10-07T11:10:30Z"
     },
     {
       "opis": "Roboty drogowe",
