@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-07T09:32:21+00:00",
-  "pobrano_lokalnie": "2026-10-07T11:32:21+02:00",
+  "pobrano_utc": "2026-10-07T09:52:20+00:00",
+  "pobrano_lokalnie": "2026-10-07T11:52:20+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 3400,
+    "zapytan": 3408,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 615,
+      "czas_s": 613,
       "czas_bez_ruchu_s": 572,
-      "opoznienie_s": 43,
+      "opoznienie_s": 41,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.075,
+      "ratio": 1.072,
       "poziom": "plynnie"
     },
     {
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 447,
+      "czas_s": 446,
       "czas_bez_ruchu_s": 417,
-      "opoznienie_s": 30,
+      "opoznienie_s": 29,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.072,
+      "ratio": 1.07,
       "poziom": "plynnie"
     },
     {
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 362,
+      "czas_s": 363,
       "czas_bez_ruchu_s": 316,
-      "opoznienie_s": 46,
+      "opoznienie_s": 47,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.146,
+      "ratio": 1.149,
       "poziom": "plynnie"
     },
     {
@@ -82,7 +82,7 @@
       "czas_s": 814,
       "czas_bez_ruchu_s": 622,
       "opoznienie_s": 192,
-      "opoznienie_wzgl_typowego_s": 1,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
       "ratio": 1.309,
       "poziom": "umiarkowanie"
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 599,
+      "czas_s": 597,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 102,
+      "opoznienie_s": 100,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.205,
+      "ratio": 1.201,
       "poziom": "umiarkowanie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 599,
+      "czas_s": 816,
       "czas_bez_ruchu_s": 275,
-      "opoznienie_s": 324,
-      "opoznienie_wzgl_typowego_s": 301,
+      "opoznienie_s": 541,
+      "opoznienie_wzgl_typowego_s": 525,
       "dlugosc_m": 4853,
-      "ratio": 2.178,
+      "ratio": 2.967,
       "poziom": "korek"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 618,
+      "czas_s": 614,
       "czas_bez_ruchu_s": 577,
-      "opoznienie_s": 41,
+      "opoznienie_s": 37,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.071,
+      "ratio": 1.064,
       "poziom": "plynnie"
     }
   ],
