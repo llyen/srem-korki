@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-10-07T17:13:29+00:00",
-  "pobrano_lokalnie": "2026-10-07T19:13:29+02:00",
+  "pobrano_utc": "2026-10-07T17:52:23+00:00",
+  "pobrano_lokalnie": "2026-10-07T19:52:23+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 4,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 174,
+    "zapytan": 175,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -21,7 +21,7 @@
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 731,
+      "dlugosc_m": 758,
       "od_kiedy": "2026-07-29T17:39:30Z",
       "do_kiedy": ""
     },
