@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-10-08T14:34:21+00:00",
-  "pobrano_lokalnie": "2026-10-08T16:34:21+02:00",
+  "pobrano_utc": "2026-10-08T15:04:27+00:00",
+  "pobrano_lokalnie": "2026-10-08T17:04:27+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 195,
+    "zapytan": 196,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,31 +60,15 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 1352,
-      "dlugosc_m": 3939,
-      "od_kiedy": "2026-10-08T13:37:00Z",
-      "do_kiedy": "2026-10-08T15:10:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
       "od": "Zbrudzewo (434)",
       "do": "Śrem ul. Piłsudskiego (432) (434)",
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 1068,
-      "dlugosc_m": 865,
+      "opoznienie_s": 1661,
+      "dlugosc_m": 985,
       "od_kiedy": "2026-10-08T12:16:00Z",
-      "do_kiedy": "2026-10-08T15:31:30Z"
+      "do_kiedy": "2026-10-08T16:26:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -97,23 +81,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1038,
+      "opoznienie_s": 961,
       "dlugosc_m": 940,
       "od_kiedy": "2026-10-08T12:06:30Z",
-      "do_kiedy": "2026-10-08T15:37:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 585,
-      "dlugosc_m": 609,
-      "od_kiedy": "2026-10-08T11:55:30Z",
-      "do_kiedy": "2026-10-08T15:14:30Z"
+      "do_kiedy": "2026-10-08T15:40:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -123,23 +94,56 @@
       "od": "Leśna",
       "do": "Średzka",
       "drogi": [],
-      "opoznienie_s": 427,
+      "opoznienie_s": 657,
       "dlugosc_m": 233,
       "od_kiedy": "2026-10-08T14:06:30Z",
-      "do_kiedy": "2026-10-08T15:05:30Z"
+      "do_kiedy": "2026-10-08T15:34:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Józefa Piłsudskiego",
-      "do": "Rondo Premiera Stanisława Mikołajczyka",
-      "drogi": [],
-      "opoznienie_s": 395,
-      "dlugosc_m": 702,
-      "od_kiedy": "2026-10-08T14:05:30Z",
-      "do_kiedy": "2026-10-08T15:00:30Z"
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 588,
+      "dlugosc_m": 3939,
+      "od_kiedy": "2026-10-08T13:37:00Z",
+      "do_kiedy": "2026-10-08T15:23:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 293,
+      "dlugosc_m": 1027,
+      "od_kiedy": "2026-10-08T15:02:00Z",
+      "do_kiedy": "2026-10-08T15:25:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Gostyńska (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 172,
+      "dlugosc_m": 756,
+      "od_kiedy": "2026-10-08T15:01:30Z",
+      "do_kiedy": "2026-10-08T15:22:30Z"
     },
     {
       "opis": "Roboty drogowe",
