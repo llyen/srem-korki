@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-10T12:04:15+00:00",
-  "pobrano_lokalnie": "2026-10-10T14:04:15+02:00",
+  "pobrano_utc": "2026-10-10T12:14:16+00:00",
+  "pobrano_lokalnie": "2026-10-10T14:14:16+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 5032,
+    "zapytan": 5040,
     "budzet": 18500
   },
   "trasy": [
@@ -111,13 +111,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 522,
+      "czas_s": 316,
       "czas_bez_ruchu_s": 278,
-      "opoznienie_s": 244,
-      "opoznienie_wzgl_typowego_s": 214,
+      "opoznienie_s": 38,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 1.878,
-      "poziom": "utrudnienia"
+      "ratio": 1.137,
+      "poziom": "plynnie"
     },
     {
       "id": "wyjazd-plac20-czmon",
