@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-10T15:34:16+00:00",
-  "pobrano_lokalnie": "2026-10-10T17:34:16+02:00",
+  "pobrano_utc": "2026-10-10T15:44:16+00:00",
+  "pobrano_lokalnie": "2026-10-10T17:44:16+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 5200,
+    "zapytan": 5208,
     "budzet": 18500
   },
   "trasy": [
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 424,
+      "czas_s": 425,
       "czas_bez_ruchu_s": 417,
-      "opoznienie_s": 7,
+      "opoznienie_s": 8,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.017,
+      "ratio": 1.019,
       "poziom": "plynnie"
     },
     {
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 339,
+      "czas_s": 340,
       "czas_bez_ruchu_s": 317,
-      "opoznienie_s": 22,
+      "opoznienie_s": 23,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.069,
+      "ratio": 1.073,
       "poziom": "plynnie"
     },
     {
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 722,
+      "czas_s": 720,
       "czas_bez_ruchu_s": 622,
-      "opoznienie_s": 100,
+      "opoznienie_s": 98,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 1.161,
+      "ratio": 1.158,
       "poziom": "umiarkowanie"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 543,
+      "czas_s": 542,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 46,
+      "opoznienie_s": 45,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.093,
+      "ratio": 1.091,
       "poziom": "plynnie"
     },
     {
