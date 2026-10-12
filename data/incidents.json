@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-12T04:34:21+00:00",
-  "pobrano_lokalnie": "2026-10-12T06:34:21+02:00",
+  "pobrano_utc": "2026-10-12T05:04:19+00:00",
+  "pobrano_lokalnie": "2026-10-12T07:04:19+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 7,
-  "zdarzen_przy_trasach": 3,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 277,
+    "zapytan": 278,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -54,6 +54,67 @@
       "od_kiedy": "2026-07-30T18:09:30Z",
       "do_kiedy": "",
       "obie_strony": true
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 481,
+      "dlugosc_m": 3400,
+      "od_kiedy": "2026-10-12T04:46:00Z",
+      "do_kiedy": "2026-10-12T05:34:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Borgowo (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 323,
+      "dlugosc_m": 799,
+      "od_kiedy": "2026-10-12T04:43:00Z",
+      "do_kiedy": "2026-10-12T05:24:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Sosnowiec (436)",
+      "do": "Grzymisław (434) (436)",
+      "drogi": [
+        "436"
+      ],
+      "opoznienie_s": 162,
+      "dlugosc_m": 285,
+      "od_kiedy": "2026-10-12T04:54:30Z",
+      "do_kiedy": "2026-10-12T05:22:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Stanisława Staszica",
+      "do": "Letnia",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 64,
+      "dlugosc_m": 71,
+      "od_kiedy": "2026-10-12T05:02:30Z",
+      "do_kiedy": "2026-10-12T05:22:30Z"
     }
   ]
 }
