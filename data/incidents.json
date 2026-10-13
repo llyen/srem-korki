@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-13T05:04:20+00:00",
-  "pobrano_lokalnie": "2026-10-13T07:04:20+02:00",
+  "pobrano_utc": "2026-10-13T05:34:18+00:00",
+  "pobrano_lokalnie": "2026-10-13T07:34:18+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 10,
-  "zdarzen_przy_trasach": 6,
+  "zdarzen_w_prostokacie": 12,
+  "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 303,
+    "zapytan": 304,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -73,31 +73,58 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 535,
-      "dlugosc_m": 3400,
-      "od_kiedy": "2026-10-13T04:46:00Z",
-      "do_kiedy": "2026-10-13T05:34:30Z"
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 286,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-10-13T05:25:00Z",
+      "do_kiedy": "2026-10-13T05:55:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
+      "od": "Leśna",
+      "do": "Średzka",
+      "drogi": [],
+      "opoznienie_s": 233,
+      "dlugosc_m": 176,
+      "od_kiedy": "2026-10-13T05:27:30Z",
+      "do_kiedy": "2026-10-13T05:52:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Piłsudskiego (434) (432)",
       "drogi": [
+        "432",
         "434"
       ],
-      "opoznienie_s": 226,
-      "dlugosc_m": 617,
-      "od_kiedy": "2026-10-13T04:52:00Z",
-      "do_kiedy": "2026-10-13T05:22:30Z"
+      "opoznienie_s": 192,
+      "dlugosc_m": 940,
+      "od_kiedy": "2026-10-13T05:17:30Z",
+      "do_kiedy": "2026-10-13T06:00:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 551,
+      "dlugosc_m": 3939,
+      "od_kiedy": "2026-10-13T04:46:00Z",
+      "do_kiedy": "2026-10-13T06:00:30Z"
     }
   ]
 }
