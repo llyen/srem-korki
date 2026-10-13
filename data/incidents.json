@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-13T12:34:22+00:00",
-  "pobrano_lokalnie": "2026-10-13T14:34:22+02:00",
+  "pobrano_utc": "2026-10-13T13:04:23+00:00",
+  "pobrano_lokalnie": "2026-10-13T15:04:23+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 13,
-  "zdarzen_przy_trasach": 9,
+  "zdarzen_w_prostokacie": 15,
+  "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 316,
+    "zapytan": 317,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,74 +60,86 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 836,
+      "dlugosc_m": 609,
+      "od_kiedy": "2026-10-13T12:24:00Z",
+      "do_kiedy": "2026-10-13T13:59:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Zbrudzewo (434)",
+      "do": "Śrem ul. Piłsudskiego (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 794,
+      "dlugosc_m": 865,
+      "od_kiedy": "2026-10-13T12:33:00Z",
+      "do_kiedy": "2026-10-13T13:45:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
       "od": "Mechlin (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 1900,
+      "opoznienie_s": 677,
       "dlugosc_m": 3939,
       "od_kiedy": "2026-10-13T11:49:30Z",
-      "do_kiedy": "2026-10-13T14:06:30Z"
+      "do_kiedy": "2026-10-13T13:22:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
+      "od": "Józefa Piłsudskiego",
+      "do": "Rondo Premiera Stanisława Mikołajczyka",
+      "drogi": [],
+      "opoznienie_s": 411,
+      "dlugosc_m": 409,
+      "od_kiedy": "2026-10-13T12:39:30Z",
+      "do_kiedy": "2026-10-13T13:32:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Piłsudskiego (434) (432)",
       "drogi": [
+        "432",
         "434"
       ],
-      "opoznienie_s": 316,
-      "dlugosc_m": 719,
-      "od_kiedy": "2026-10-13T12:05:30Z",
-      "do_kiedy": "2026-10-13T12:57:30Z"
+      "opoznienie_s": 221,
+      "dlugosc_m": 343,
+      "od_kiedy": "2026-10-13T12:45:00Z",
+      "do_kiedy": "2026-10-13T13:26:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
+      "od": "Śrem gmina",
+      "do": "Księdza Jana Kajetańczyka",
       "drogi": [],
-      "opoznienie_s": 169,
-      "dlugosc_m": 301,
-      "od_kiedy": "2026-10-13T12:24:00Z",
-      "do_kiedy": "2026-10-13T12:52:30Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Gostyńska (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 136,
-      "dlugosc_m": 800,
-      "od_kiedy": "2026-10-13T12:09:30Z",
-      "do_kiedy": "2026-10-13T12:52:30Z"
-    },
-    {
-      "opis": "Powolny ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 1,
-      "od": "Śrem ul. Staszica (432)",
-      "do": "Śrem ul. Bora-Komorowskiego (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 179,
-      "dlugosc_m": 1131,
-      "od_kiedy": "2026-10-13T12:18:00Z",
-      "do_kiedy": "2026-10-13T12:52:30Z"
+      "opoznienie_s": 140,
+      "dlugosc_m": 271,
+      "od_kiedy": "2026-10-13T12:42:00Z",
+      "do_kiedy": "2026-10-13T13:22:30Z"
     },
     {
       "opis": "Roboty drogowe",
