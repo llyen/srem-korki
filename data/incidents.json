@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-13T07:34:20+00:00",
-  "pobrano_lokalnie": "2026-10-13T09:34:20+02:00",
+  "pobrano_utc": "2026-10-13T08:12:17+00:00",
+  "pobrano_lokalnie": "2026-10-13T10:12:17+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 7,
-  "zdarzen_przy_trasach": 3,
+  "zdarzen_w_prostokacie": 10,
+  "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 308,
+    "zapytan": 309,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -17,11 +17,11 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Szkolna",
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 557,
+      "dlugosc_m": 596,
       "od_kiedy": "2026-07-29T17:40:00Z",
       "do_kiedy": ""
     },
@@ -46,14 +46,57 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Józefa Piłsudskiego",
-      "do": "Księdza Jerzego Popiełuszki",
+      "od": "Księdza Jerzego Popiełuszki",
+      "do": "Józefa Piłsudskiego",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-31T08:21:30Z",
+      "od_kiedy": "2026-07-30T18:13:00Z",
       "do_kiedy": "",
       "obie_strony": true
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy; Roboty drogowe",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Astrowa (310)",
+      "do": "Śrem Al. Solidarności (310)",
+      "drogi": [
+        "310"
+      ],
+      "opoznienie_s": 171,
+      "dlugosc_m": 226,
+      "od_kiedy": "2026-10-13T08:09:30Z",
+      "do_kiedy": "2026-10-13T08:30:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "drogi": [],
+      "opoznienie_s": 132,
+      "dlugosc_m": 738,
+      "od_kiedy": "2026-10-13T07:59:30Z",
+      "do_kiedy": "2026-10-13T08:30:30Z"
+    },
+    {
+      "opis": "Roboty drogowe",
+      "kategoria": 9,
+      "kategoria_nazwa": "roboty",
+      "waga": 0,
+      "od": "Śrem ul. Astrowa (310)",
+      "do": "Śrem Al. Solidarności (310)",
+      "drogi": [
+        "310"
+      ],
+      "opoznienie_s": null,
+      "dlugosc_m": 163,
+      "od_kiedy": "2026-10-13T07:57:00Z",
+      "do_kiedy": ""
     }
   ]
 }
