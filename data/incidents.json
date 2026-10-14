@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-14T09:32:20+00:00",
-  "pobrano_lokalnie": "2026-10-14T11:32:20+02:00",
+  "pobrano_utc": "2026-10-14T10:12:22+00:00",
+  "pobrano_lokalnie": "2026-10-14T12:12:22+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 13,
-  "zdarzen_przy_trasach": 8,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 336,
+    "zapytan": 337,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,10 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 656,
-      "dlugosc_m": 3712,
+      "opoznienie_s": 885,
+      "dlugosc_m": 3285,
       "od_kiedy": "2026-10-14T08:35:00Z",
-      "do_kiedy": "2026-10-14T10:08:30Z"
+      "do_kiedy": "2026-10-14T10:49:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,25 +79,10 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 448,
+      "opoznienie_s": 657,
       "dlugosc_m": 609,
       "od_kiedy": "2026-10-14T09:05:00Z",
-      "do_kiedy": "2026-10-14T09:59:30Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 147,
-      "dlugosc_m": 692,
-      "od_kiedy": "2026-10-14T09:27:00Z",
-      "do_kiedy": "2026-10-14T09:50:30Z"
+      "do_kiedy": "2026-10-14T10:43:30Z"
     },
     {
       "opis": "Roboty drogowe",
@@ -107,8 +92,8 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": 61,
-      "dlugosc_m": 274,
+      "opoznienie_s": 31,
+      "dlugosc_m": 220,
       "od_kiedy": "2026-10-13T14:57:30Z",
       "do_kiedy": ""
     },
@@ -123,7 +108,7 @@
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 163,
+      "dlugosc_m": 197,
       "od_kiedy": "2026-10-13T07:57:00Z",
       "do_kiedy": ""
     }
