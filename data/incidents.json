@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-15T06:04:19+00:00",
-  "pobrano_lokalnie": "2026-10-15T08:04:19+02:00",
+  "pobrano_utc": "2026-10-15T06:34:20+00:00",
+  "pobrano_lokalnie": "2026-10-15T08:34:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 9,
+  "zdarzen_w_prostokacie": 7,
+  "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 355,
+    "zapytan": 356,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Kilińskiego (Sikorskiego)",
-      "do": "Al. Solidarności (Sikorskiego)",
+      "od": "Al. Solidarności (Sikorskiego)",
+      "do": "Kilińskiego (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 111,
-      "od_kiedy": "2026-03-31T04:47:30Z",
+      "dlugosc_m": 94,
+      "od_kiedy": "2026-03-31T04:33:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -56,62 +56,6 @@
       "obie_strony": true
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Tytusa Działyńskiego",
-      "do": "Rondo Powstańców Wielkopolskich",
-      "drogi": [],
-      "opoznienie_s": 210,
-      "dlugosc_m": 268,
-      "od_kiedy": "2026-10-15T05:54:30Z",
-      "do_kiedy": "2026-10-15T06:22:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Rondo Armii Krajowej",
-      "do": "Most 23 Stycznia",
-      "drogi": [],
-      "opoznienie_s": 156,
-      "dlugosc_m": 324,
-      "od_kiedy": "2026-10-15T05:54:30Z",
-      "do_kiedy": "2026-10-15T06:22:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 141,
-      "dlugosc_m": 300,
-      "od_kiedy": "2026-10-15T05:38:30Z",
-      "do_kiedy": "2026-10-15T06:23:30Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Gostyńska (Powstańców Wielkopolskich)",
-      "do": "Kilińskiego (Powstańców Wielkopolskich)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 130,
-      "dlugosc_m": 540,
-      "od_kiedy": "2026-10-15T05:58:00Z",
-      "do_kiedy": "2026-10-15T06:22:30Z"
-    },
-    {
       "opis": "Roboty drogowe",
       "kategoria": 9,
       "kategoria_nazwa": "roboty",
@@ -119,7 +63,7 @@
       "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
       "drogi": [],
-      "opoznienie_s": null,
+      "opoznienie_s": 74,
       "dlugosc_m": 220,
       "od_kiedy": "2026-10-13T14:57:30Z",
       "do_kiedy": ""
@@ -135,7 +79,7 @@
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 197,
+      "dlugosc_m": 33,
       "od_kiedy": "2026-10-13T07:57:00Z",
       "do_kiedy": ""
     }
