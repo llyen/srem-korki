@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-15T13:14:18+00:00",
-  "pobrano_lokalnie": "2026-10-15T15:14:18+02:00",
+  "pobrano_utc": "2026-10-15T13:24:20+00:00",
+  "pobrano_lokalnie": "2026-10-15T15:24:20+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 7728,
+    "zapytan": 7736,
     "budzet": 18500
   },
   "trasy": [
@@ -15,13 +15,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Plac 20 Października",
       "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
-      "czas_s": 225,
+      "czas_s": 236,
       "czas_bez_ruchu_s": 202,
-      "opoznienie_s": 23,
-      "opoznienie_wzgl_typowego_s": 0,
+      "opoznienie_s": 34,
+      "opoznienie_wzgl_typowego_s": 17,
       "dlugosc_m": 2115,
-      "ratio": 1.114,
-      "poziom": "plynnie"
+      "ratio": 1.168,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "od-czmonia-plac20",
@@ -31,13 +31,13 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 647,
+      "czas_s": 659,
       "czas_bez_ruchu_s": 572,
-      "opoznienie_s": 75,
-      "opoznienie_wzgl_typowego_s": 0,
+      "opoznienie_s": 87,
+      "opoznienie_wzgl_typowego_s": 17,
       "dlugosc_m": 10862,
-      "ratio": 1.131,
-      "poziom": "plynnie"
+      "ratio": 1.152,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "od-srody-plac20",
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 466,
+      "czas_s": 478,
       "czas_bez_ruchu_s": 417,
-      "opoznienie_s": 49,
-      "opoznienie_wzgl_typowego_s": 0,
+      "opoznienie_s": 61,
+      "opoznienie_wzgl_typowego_s": 17,
       "dlugosc_m": 7127,
-      "ratio": 1.118,
+      "ratio": 1.146,
       "poziom": "plynnie"
     },
     {
@@ -63,13 +63,13 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 497,
+      "czas_s": 797,
       "czas_bez_ruchu_s": 317,
-      "opoznienie_s": 180,
-      "opoznienie_wzgl_typowego_s": 109,
+      "opoznienie_s": 480,
+      "opoznienie_wzgl_typowego_s": 426,
       "dlugosc_m": 5524,
-      "ratio": 1.568,
-      "poziom": "utrudnienia"
+      "ratio": 2.514,
+      "poziom": "korek"
     },
     {
       "id": "od-leszna-most-bp",
@@ -79,13 +79,13 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 968,
+      "czas_s": 1085,
       "czas_bez_ruchu_s": 709,
-      "opoznienie_s": 259,
-      "opoznienie_wzgl_typowego_s": 3,
+      "opoznienie_s": 376,
+      "opoznienie_wzgl_typowego_s": 201,
       "dlugosc_m": 10310,
-      "ratio": 1.365,
-      "poziom": "umiarkowanie"
+      "ratio": 1.53,
+      "poziom": "utrudnienia"
     },
     {
       "id": "od-czempinia-rondo-ak",
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1220,
+      "czas_s": 1255,
       "czas_bez_ruchu_s": 438,
-      "opoznienie_s": 782,
-      "opoznienie_wzgl_typowego_s": 664,
+      "opoznienie_s": 817,
+      "opoznienie_wzgl_typowego_s": 690,
       "dlugosc_m": 6019,
-      "ratio": 2.785,
+      "ratio": 2.865,
       "poziom": "korek"
     },
     {
