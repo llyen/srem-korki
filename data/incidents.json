@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-10-15T07:04:19+00:00",
-  "pobrano_lokalnie": "2026-10-15T09:04:19+02:00",
+  "pobrano_utc": "2026-10-15T07:34:19+00:00",
+  "pobrano_lokalnie": "2026-10-15T09:34:19+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 357,
+    "zapytan": 358,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,14 +60,12 @@
       "kategoria": 9,
       "kategoria_nazwa": "roboty",
       "waga": 0,
-      "od": "Śrem ul. Astrowa (310)",
+      "od": "Śrem ul. Chełmońskiego (310)",
       "do": "Śrem Al. Solidarności (310)",
-      "drogi": [
-        "310"
-      ],
-      "opoznienie_s": 53,
-      "dlugosc_m": 33,
-      "od_kiedy": "2026-10-13T07:57:00Z",
+      "drogi": [],
+      "opoznienie_s": 63,
+      "dlugosc_m": 220,
+      "od_kiedy": "2026-10-13T14:57:30Z",
       "do_kiedy": ""
     },
     {
@@ -75,12 +73,14 @@
       "kategoria": 9,
       "kategoria_nazwa": "roboty",
       "waga": 0,
-      "od": "Śrem ul. Chełmońskiego (310)",
+      "od": "Śrem ul. Astrowa (310)",
       "do": "Śrem Al. Solidarności (310)",
-      "drogi": [],
-      "opoznienie_s": 38,
-      "dlugosc_m": 220,
-      "od_kiedy": "2026-10-13T14:57:30Z",
+      "drogi": [
+        "310"
+      ],
+      "opoznienie_s": null,
+      "dlugosc_m": 33,
+      "od_kiedy": "2026-10-13T07:57:00Z",
       "do_kiedy": ""
     }
   ]
