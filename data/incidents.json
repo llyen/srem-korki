@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-16T14:04:21+00:00",
-  "pobrano_lokalnie": "2026-10-16T16:04:21+02:00",
+  "pobrano_utc": "2026-10-16T14:34:21+00:00",
+  "pobrano_lokalnie": "2026-10-16T16:34:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 8,
+  "zdarzen_w_prostokacie": 14,
+  "zdarzen_przy_trasach": 11,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 394,
+    "zapytan": 395,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,54 +66,95 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1253,
+      "opoznienie_s": 890,
       "dlugosc_m": 3939,
       "od_kiedy": "2026-10-16T09:18:00Z",
-      "do_kiedy": "2026-10-16T15:05:30Z"
+      "do_kiedy": "2026-10-16T15:00:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
+      "od": "Borgowo (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 123,
-      "dlugosc_m": 190,
-      "od_kiedy": "2026-10-16T13:55:30Z",
-      "do_kiedy": "2026-10-16T14:24:30Z"
+      "opoznienie_s": 353,
+      "dlugosc_m": 799,
+      "od_kiedy": "2026-10-16T14:12:00Z",
+      "do_kiedy": "2026-10-16T14:53:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Marszałka Józefa Piłsudskiego",
+      "od": "Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 122,
-      "dlugosc_m": 277,
+      "opoznienie_s": 285,
+      "dlugosc_m": 468,
       "od_kiedy": "2026-10-16T13:49:00Z",
-      "do_kiedy": "2026-10-16T14:24:30Z"
+      "do_kiedy": "2026-10-16T14:57:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
+      "od": "Tytusa Działyńskiego",
+      "do": "Rondo Powstańców Wielkopolskich",
+      "drogi": [],
+      "opoznienie_s": 204,
+      "dlugosc_m": 175,
+      "od_kiedy": "2026-10-16T14:30:00Z",
+      "do_kiedy": "2026-10-16T14:52:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Grottgera (310)",
+      "do": "Śrem ul. Kilińskiego (432) (310)",
+      "drogi": [],
+      "opoznienie_s": 151,
+      "dlugosc_m": 625,
+      "od_kiedy": "2026-10-16T14:31:30Z",
+      "do_kiedy": "2026-10-16T14:52:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Gostyńska (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 126,
+      "dlugosc_m": 779,
+      "od_kiedy": "2026-10-16T14:28:30Z",
+      "do_kiedy": "2026-10-16T14:52:30Z"
+    },
+    {
+      "opis": "Powolny ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 1,
       "od": "Mechlin (432)",
       "do": "Śrem ul. Piłsudskiego (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 116,
-      "dlugosc_m": 175,
-      "od_kiedy": "2026-10-16T13:56:00Z",
-      "do_kiedy": "2026-10-16T14:23:30Z"
+      "opoznienie_s": 85,
+      "dlugosc_m": 940,
+      "od_kiedy": "2026-10-16T14:19:30Z",
+      "do_kiedy": "2026-10-16T14:53:30Z"
     },
     {
       "opis": "Roboty drogowe",
