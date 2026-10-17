@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-17T13:04:19+00:00",
-  "pobrano_lokalnie": "2026-10-17T15:04:19+02:00",
+  "pobrano_utc": "2026-10-17T13:14:20+00:00",
+  "pobrano_lokalnie": "2026-10-17T15:14:20+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 8776,
+    "zapytan": 8784,
     "budzet": 18500
   },
   "trasy": [
@@ -15,12 +15,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Plac 20 Października",
       "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
-      "czas_s": 210,
+      "czas_s": 209,
       "czas_bez_ruchu_s": 202,
-      "opoznienie_s": 8,
+      "opoznienie_s": 7,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 2115,
-      "ratio": 1.04,
+      "ratio": 1.035,
       "poziom": "plynnie"
     },
     {
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 584,
+      "czas_s": 585,
       "czas_bez_ruchu_s": 572,
-      "opoznienie_s": 12,
+      "opoznienie_s": 13,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.021,
+      "ratio": 1.023,
       "poziom": "plynnie"
     },
     {
