@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-17T13:24:21+00:00",
-  "pobrano_lokalnie": "2026-10-17T15:24:21+02:00",
+  "pobrano_utc": "2026-10-17T13:34:19+00:00",
+  "pobrano_lokalnie": "2026-10-17T15:34:19+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 8792,
+    "zapytan": 8800,
     "budzet": 18500
   },
   "trasy": [
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 426,
+      "czas_s": 427,
       "czas_bez_ruchu_s": 417,
-      "opoznienie_s": 9,
+      "opoznienie_s": 10,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.022,
+      "ratio": 1.024,
       "poziom": "plynnie"
     },
     {
