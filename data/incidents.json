@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-18T13:34:36+00:00",
-  "pobrano_lokalnie": "2026-10-18T15:34:36+02:00",
+  "pobrano_utc": "2026-10-18T14:04:18+00:00",
+  "pobrano_lokalnie": "2026-10-18T16:04:18+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 5,
+  "zdarzen_w_prostokacie": 7,
   "zdarzen_przy_trasach": 3,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 443,
+    "zapytan": 444,
     "budzet": 2200
   },
   "zdarzenia": [
