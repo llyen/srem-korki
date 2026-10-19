@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-19T06:04:22+00:00",
-  "pobrano_lokalnie": "2026-10-19T08:04:22+02:00",
+  "pobrano_utc": "2026-10-19T06:34:23+00:00",
+  "pobrano_lokalnie": "2026-10-19T08:34:23+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 8,
+  "zdarzen_w_prostokacie": 6,
+  "zdarzen_przy_trasach": 4,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 455,
+    "zapytan": 456,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,68 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 836,
-      "dlugosc_m": 3712,
+      "opoznienie_s": 570,
+      "dlugosc_m": 3285,
       "od_kiedy": "2026-10-19T05:10:00Z",
-      "do_kiedy": "2026-10-19T06:43:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 622,
-      "dlugosc_m": 1256,
-      "od_kiedy": "2026-10-19T04:42:00Z",
-      "do_kiedy": "2026-10-19T06:34:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 191,
-      "dlugosc_m": 564,
-      "od_kiedy": "2026-10-19T05:39:30Z",
-      "do_kiedy": "2026-10-19T06:22:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 110,
-      "dlugosc_m": 301,
-      "od_kiedy": "2026-10-19T05:24:30Z",
-      "do_kiedy": "2026-10-19T06:22:30Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Staszica (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 181,
-      "dlugosc_m": 821,
-      "od_kiedy": "2026-10-19T05:54:00Z",
-      "do_kiedy": "2026-10-19T06:22:30Z"
+      "do_kiedy": "2026-10-19T06:53:30Z"
     }
   ]
 }
