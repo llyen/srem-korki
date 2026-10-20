@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 25075,
+  "pomiarow_lacznie": 25083,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 3129,
-    "od-czmonia-plac20": 3124,
-    "od-srody-plac20": 3127,
-    "od-gostynia-staszica": 3127,
-    "od-leszna-most-bp": 3127,
-    "od-czempinia-rondo-ak": 3126,
-    "objazd-gostynska": 3129,
-    "wyjazd-plac20-czmon": 3124
+    "obwodnica-plac20": 3130,
+    "od-czmonia-plac20": 3125,
+    "od-srody-plac20": 3128,
+    "od-gostynia-staszica": 3128,
+    "od-leszna-most-bp": 3128,
+    "od-czempinia-rondo-ak": 3127,
+    "objazd-gostynska": 3130,
+    "wyjazd-plac20-czmon": 3125
   },
   "dni_pomiarowe": 50,
   "od": "2026-09-01",
@@ -19,7 +19,7 @@
     "obwodnica-plac20": {
       "2-10": {
         "mediana_opoznienia_s": 14,
-        "probek": 22
+        "probek": 23
       },
       "2-12": {
         "mediana_opoznienia_s": 16,
@@ -777,7 +777,7 @@
       },
       "2-10": {
         "mediana_opoznienia_s": 43,
-        "probek": 18
+        "probek": 19
       },
       "2-11": {
         "mediana_opoznienia_s": 43,
@@ -807,7 +807,7 @@
     "od-srody-plac20": {
       "2-10": {
         "mediana_opoznienia_s": 29,
-        "probek": 20
+        "probek": 21
       },
       "2-12": {
         "mediana_opoznienia_s": 28,
@@ -1201,7 +1201,7 @@
     "od-gostynia-staszica": {
       "2-10": {
         "mediana_opoznienia_s": 42,
-        "probek": 20
+        "probek": 21
       },
       "2-12": {
         "mediana_opoznienia_s": 50,
@@ -1594,8 +1594,8 @@
     },
     "od-leszna-most-bp": {
       "2-10": {
-        "mediana_opoznienia_s": 171,
-        "probek": 19
+        "mediana_opoznienia_s": 170,
+        "probek": 20
       },
       "2-12": {
         "mediana_opoznienia_s": 176,
@@ -1989,7 +1989,7 @@
     "od-czempinia-rondo-ak": {
       "2-10": {
         "mediana_opoznienia_s": 91,
-        "probek": 20
+        "probek": 21
       },
       "2-12": {
         "mediana_opoznienia_s": 93,
@@ -2383,7 +2383,7 @@
     "objazd-gostynska": {
       "2-10": {
         "mediana_opoznienia_s": 51,
-        "probek": 22
+        "probek": 23
       },
       "2-12": {
         "mediana_opoznienia_s": 62,
@@ -3141,7 +3141,7 @@
       },
       "2-10": {
         "mediana_opoznienia_s": 39,
-        "probek": 18
+        "probek": 19
       },
       "2-11": {
         "mediana_opoznienia_s": 39,
