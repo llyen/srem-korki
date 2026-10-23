@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-23T05:04:18+00:00",
-  "pobrano_lokalnie": "2026-10-23T07:04:18+02:00",
+  "pobrano_utc": "2026-10-23T05:34:17+00:00",
+  "pobrano_lokalnie": "2026-10-23T07:34:17+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
+  "zdarzen_w_prostokacie": 10,
   "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 553,
+    "zapytan": 554,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -78,26 +78,26 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 345,
+      "opoznienie_s": 493,
       "dlugosc_m": 799,
-      "od_kiedy": "2026-10-23T04:49:30Z",
-      "do_kiedy": "2026-10-23T05:31:30Z"
+      "od_kiedy": "2026-10-23T05:14:30Z",
+      "do_kiedy": "2026-10-23T06:02:30Z"
     },
     {
       "opis": "Korek",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 2,
-      "od": "Śrem ul. Szkolna (432)",
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 188,
-      "dlugosc_m": 1974,
+      "opoznienie_s": 500,
+      "dlugosc_m": 3815,
       "od_kiedy": "2026-10-23T04:51:00Z",
-      "do_kiedy": "2026-10-23T05:22:30Z"
+      "do_kiedy": "2026-10-23T06:00:30Z"
     }
   ]
 }
