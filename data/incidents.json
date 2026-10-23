@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-23T05:34:17+00:00",
-  "pobrano_lokalnie": "2026-10-23T07:34:17+02:00",
+  "pobrano_utc": "2026-10-23T06:04:20+00:00",
+  "pobrano_lokalnie": "2026-10-23T08:04:20+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 10,
-  "zdarzen_przy_trasach": 6,
+  "zdarzen_w_prostokacie": 12,
+  "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 554,
+    "zapytan": 555,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -73,31 +73,59 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 493,
-      "dlugosc_m": 799,
-      "od_kiedy": "2026-10-23T05:14:30Z",
-      "do_kiedy": "2026-10-23T06:02:30Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
       "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 500,
-      "dlugosc_m": 3815,
+      "opoznienie_s": 743,
+      "dlugosc_m": 3285,
       "od_kiedy": "2026-10-23T04:51:00Z",
-      "do_kiedy": "2026-10-23T06:00:30Z"
+      "do_kiedy": "2026-10-23T06:38:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "drogi": [],
+      "opoznienie_s": 188,
+      "dlugosc_m": 738,
+      "od_kiedy": "2026-10-23T06:01:30Z",
+      "do_kiedy": "2026-10-23T06:22:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Gostyńska (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 165,
+      "dlugosc_m": 800,
+      "od_kiedy": "2026-10-23T05:52:30Z",
+      "do_kiedy": "2026-10-23T06:22:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Borgowo (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 158,
+      "dlugosc_m": 1054,
+      "od_kiedy": "2026-10-23T05:14:30Z",
+      "do_kiedy": "2026-10-23T06:28:30Z"
     }
   ]
 }
