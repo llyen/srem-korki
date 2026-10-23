@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-23T15:04:19+00:00",
-  "pobrano_lokalnie": "2026-10-23T17:04:19+02:00",
+  "pobrano_utc": "2026-10-23T15:34:21+00:00",
+  "pobrano_lokalnie": "2026-10-23T17:34:21+02:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
-  "zdarzen_przy_trasach": 6,
+  "zdarzen_w_prostokacie": 8,
+  "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 571,
+    "zapytan": 572,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,46 +60,29 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 592,
-      "dlugosc_m": 3928,
+      "opoznienie_s": 499,
+      "dlugosc_m": 2723,
       "od_kiedy": "2026-10-23T14:33:00Z",
-      "do_kiedy": "2026-10-23T15:39:30Z"
+      "do_kiedy": "2026-10-23T15:57:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 263,
-      "dlugosc_m": 586,
-      "od_kiedy": "2026-10-23T12:01:30Z",
-      "do_kiedy": "2026-10-23T15:24:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Grzymisław (436) (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 180,
-      "dlugosc_m": 476,
-      "od_kiedy": "2026-10-23T14:50:00Z",
-      "do_kiedy": "2026-10-23T15:22:30Z"
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 194,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-10-23T15:12:30Z",
+      "do_kiedy": "2026-10-23T15:53:30Z"
     }
   ]
 }
