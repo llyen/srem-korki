@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-24T12:24:17+00:00",
-  "pobrano_lokalnie": "2026-10-24T14:24:17+02:00",
+  "pobrano_utc": "2026-10-24T12:34:17+00:00",
+  "pobrano_lokalnie": "2026-10-24T14:34:17+02:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 12440,
+    "zapytan": 12448,
     "budzet": 18500
   },
   "trasy": [
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 340,
+      "czas_s": 341,
       "czas_bez_ruchu_s": 317,
-      "opoznienie_s": 23,
+      "opoznienie_s": 24,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.073,
+      "ratio": 1.076,
       "poziom": "plynnie"
     },
     {
