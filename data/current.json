@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-26T10:52:19+00:00",
-  "pobrano_lokalnie": "2026-10-26T11:52:19+01:00",
+  "pobrano_utc": "2026-10-26T11:12:19+00:00",
+  "pobrano_lokalnie": "2026-10-26T12:12:19+01:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 13424,
+    "zapytan": 13432,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 622,
+      "czas_s": 621,
       "czas_bez_ruchu_s": 572,
-      "opoznienie_s": 50,
+      "opoznienie_s": 49,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.087,
+      "ratio": 1.086,
       "poziom": "plynnie"
     },
     {
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 377,
+      "czas_s": 378,
       "czas_bez_ruchu_s": 317,
-      "opoznienie_s": 60,
+      "opoznienie_s": 61,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.189,
+      "ratio": 1.192,
       "poziom": "umiarkowanie"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 593,
+      "czas_s": 591,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 96,
+      "opoznienie_s": 94,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.193,
+      "ratio": 1.189,
       "poziom": "umiarkowanie"
     },
     {
@@ -111,13 +111,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 532,
+      "czas_s": 578,
       "czas_bez_ruchu_s": 278,
-      "opoznienie_s": 254,
-      "opoznienie_wzgl_typowego_s": 199,
+      "opoznienie_s": 300,
+      "opoznienie_wzgl_typowego_s": 265,
       "dlugosc_m": 4853,
-      "ratio": 1.914,
-      "poziom": "utrudnienia"
+      "ratio": 2.079,
+      "poziom": "korek"
     },
     {
       "id": "wyjazd-plac20-czmon",
