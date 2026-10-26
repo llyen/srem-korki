@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-26T15:04:23+00:00",
-  "pobrano_lokalnie": "2026-10-26T16:04:23+01:00",
+  "pobrano_utc": "2026-10-26T15:34:20+00:00",
+  "pobrano_lokalnie": "2026-10-26T16:34:20+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 13,
+  "zdarzen_w_prostokacie": 14,
   "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 644,
+    "zapytan": 645,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,10 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1118,
+      "opoznienie_s": 1316,
       "dlugosc_m": 3939,
       "od_kiedy": "2026-10-26T14:14:30Z",
-      "do_kiedy": "2026-10-26T15:49:30Z"
+      "do_kiedy": "2026-10-26T16:27:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,25 +79,10 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 772,
+      "opoznienie_s": 939,
       "dlugosc_m": 609,
       "od_kiedy": "2026-10-26T13:18:00Z",
-      "do_kiedy": "2026-10-26T15:42:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 674,
-      "dlugosc_m": 1332,
-      "od_kiedy": "2026-10-26T14:40:30Z",
-      "do_kiedy": "2026-10-26T15:29:30Z"
+      "do_kiedy": "2026-10-26T16:26:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -110,23 +95,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 511,
+      "opoznienie_s": 660,
       "dlugosc_m": 940,
       "od_kiedy": "2026-10-26T13:09:30Z",
-      "do_kiedy": "2026-10-26T15:37:30Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Marszałka Józefa Piłsudskiego",
-      "do": "Rondo Premiera Stanisława Mikołajczyka",
-      "drogi": [],
-      "opoznienie_s": 191,
-      "dlugosc_m": 352,
-      "od_kiedy": "2026-10-26T13:13:00Z",
-      "do_kiedy": "2026-10-26T15:23:30Z"
+      "do_kiedy": "2026-10-26T16:10:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -138,25 +110,51 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 142,
+      "opoznienie_s": 557,
       "dlugosc_m": 586,
       "od_kiedy": "2026-10-26T14:58:30Z",
-      "do_kiedy": "2026-10-26T15:26:30Z"
+      "do_kiedy": "2026-10-26T16:12:30Z"
     },
     {
-      "opis": "Korek",
+      "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Gostyńska (432)",
+      "waga": 3,
+      "od": "Józefa Piłsudskiego",
+      "do": "Rondo Premiera Stanisława Mikołajczyka",
+      "drogi": [],
+      "opoznienie_s": 405,
+      "dlugosc_m": 468,
+      "od_kiedy": "2026-10-26T13:13:00Z",
+      "do_kiedy": "2026-10-26T16:00:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Grzymisław (436) (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
       "drogi": [
-        "432"
+        "434"
       ],
-      "opoznienie_s": 166,
-      "dlugosc_m": 800,
-      "od_kiedy": "2026-10-26T14:41:00Z",
-      "do_kiedy": "2026-10-26T15:22:30Z"
+      "opoznienie_s": 228,
+      "dlugosc_m": 596,
+      "od_kiedy": "2026-10-26T15:27:00Z",
+      "do_kiedy": "2026-10-26T15:52:30Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Leśna",
+      "do": "Średzka",
+      "drogi": [],
+      "opoznienie_s": 161,
+      "dlugosc_m": 176,
+      "od_kiedy": "2026-10-26T15:14:30Z",
+      "do_kiedy": "2026-10-26T15:56:30Z"
     }
   ]
 }
