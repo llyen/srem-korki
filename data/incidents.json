@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-10-27T14:34:22+00:00",
-  "pobrano_lokalnie": "2026-10-27T15:34:22+01:00",
+  "pobrano_utc": "2026-10-27T15:04:23+00:00",
+  "pobrano_lokalnie": "2026-10-27T16:04:23+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 668,
+    "zapytan": 669,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,10 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 868,
-      "dlugosc_m": 3939,
+      "opoznienie_s": 1604,
+      "dlugosc_m": 3928,
       "od_kiedy": "2026-10-27T14:11:00Z",
-      "do_kiedy": "2026-10-27T15:18:31Z"
+      "do_kiedy": "2026-10-27T16:06:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -81,51 +81,36 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 736,
-      "dlugosc_m": 1611,
+      "opoznienie_s": 500,
+      "dlugosc_m": 1054,
       "od_kiedy": "2026-10-27T12:56:00Z",
-      "do_kiedy": "2026-10-27T15:00:31Z"
+      "do_kiedy": "2026-10-27T15:34:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Marszałka Józefa Piłsudskiego",
+      "od": "Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 177,
-      "dlugosc_m": 352,
-      "od_kiedy": "2026-10-27T14:22:00Z",
-      "do_kiedy": "2026-10-27T14:53:31Z"
+      "opoznienie_s": 261,
+      "dlugosc_m": 363,
+      "od_kiedy": "2026-10-27T14:51:00Z",
+      "do_kiedy": "2026-10-27T15:27:30Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Tytusa Działyńskiego",
-      "do": "Rondo Powstańców Wielkopolskich",
+      "od": "Śrem ul. Grottgera (310)",
+      "do": "Śrem ul. Kilińskiego (432) (310)",
       "drogi": [],
-      "opoznienie_s": 165,
-      "dlugosc_m": 225,
-      "od_kiedy": "2026-10-27T14:28:30Z",
-      "do_kiedy": "2026-10-27T14:52:31Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 198,
-      "dlugosc_m": 1027,
-      "od_kiedy": "2026-10-27T14:09:30Z",
-      "do_kiedy": "2026-10-27T14:52:31Z"
+      "opoznienie_s": 178,
+      "dlugosc_m": 329,
+      "od_kiedy": "2026-10-27T14:35:00Z",
+      "do_kiedy": "2026-10-27T15:22:30Z"
     },
     {
       "opis": "Korek",
@@ -137,25 +122,38 @@
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 120,
-      "dlugosc_m": 800,
-      "od_kiedy": "2026-10-27T13:58:30Z",
-      "do_kiedy": "2026-10-27T14:52:31Z"
+      "opoznienie_s": 149,
+      "dlugosc_m": 779,
+      "od_kiedy": "2026-10-27T15:00:30Z",
+      "do_kiedy": "2026-10-27T15:22:30Z"
     },
     {
-      "opis": "Powolny ruch drogowy",
+      "opis": "Korek",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 1,
+      "waga": 2,
       "od": "Śrem ul. Staszica (432)",
-      "do": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "drogi": [],
+      "opoznienie_s": 137,
+      "dlugosc_m": 702,
+      "od_kiedy": "2026-10-27T14:50:00Z",
+      "do_kiedy": "2026-10-27T15:22:30Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 140,
-      "dlugosc_m": 955,
-      "od_kiedy": "2026-10-27T14:31:30Z",
-      "do_kiedy": "2026-10-27T14:52:31Z"
+      "opoznienie_s": 124,
+      "dlugosc_m": 675,
+      "od_kiedy": "2026-10-27T15:02:30Z",
+      "do_kiedy": "2026-10-27T15:22:30Z"
     }
   ]
 }
