@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-27T14:04:21+00:00",
-  "pobrano_lokalnie": "2026-10-27T15:04:21+01:00",
+  "pobrano_utc": "2026-10-27T14:34:22+00:00",
+  "pobrano_lokalnie": "2026-10-27T15:34:22+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 10,
-  "zdarzen_przy_trasach": 7,
+  "zdarzen_w_prostokacie": 13,
+  "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 667,
+    "zapytan": 668,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -46,12 +46,12 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Józefa Piłsudskiego",
-      "do": "Księdza Jerzego Popiełuszki",
+      "od": "Księdza Jerzego Popiełuszki",
+      "do": "Józefa Piłsudskiego",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-31T08:21:30Z",
+      "od_kiedy": "2026-07-30T18:13:00Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -60,16 +60,16 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "od": "Mechlin (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 829,
-      "dlugosc_m": 3845,
-      "od_kiedy": "2026-10-27T12:56:00Z",
-      "do_kiedy": "2026-10-27T14:48:30Z"
+      "opoznienie_s": 868,
+      "dlugosc_m": 3939,
+      "od_kiedy": "2026-10-27T14:11:00Z",
+      "do_kiedy": "2026-10-27T15:18:31Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -81,40 +81,81 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 339,
-      "dlugosc_m": 799,
+      "opoznienie_s": 736,
+      "dlugosc_m": 1611,
       "od_kiedy": "2026-10-27T12:56:00Z",
-      "do_kiedy": "2026-10-27T14:22:30Z"
+      "do_kiedy": "2026-10-27T15:00:31Z"
     },
     {
-      "opis": "Powolny ruch drogowy",
+      "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 1,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Staszica (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 137,
-      "dlugosc_m": 1170,
-      "od_kiedy": "2026-10-27T13:58:30Z",
-      "do_kiedy": "2026-10-27T14:22:30Z"
+      "waga": 3,
+      "od": "Marszałka Józefa Piłsudskiego",
+      "do": "Rondo Premiera Stanisława Mikołajczyka",
+      "drogi": [],
+      "opoznienie_s": 177,
+      "dlugosc_m": 352,
+      "od_kiedy": "2026-10-27T14:22:00Z",
+      "do_kiedy": "2026-10-27T14:53:31Z"
     },
     {
-      "opis": "Powolny ruch drogowy",
+      "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 1,
+      "waga": 3,
+      "od": "Tytusa Działyńskiego",
+      "do": "Rondo Powstańców Wielkopolskich",
+      "drogi": [],
+      "opoznienie_s": 165,
+      "dlugosc_m": 225,
+      "od_kiedy": "2026-10-27T14:28:30Z",
+      "do_kiedy": "2026-10-27T14:52:31Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
       "od": "Śrem ul. Bora-Komorowskiego (432)",
       "do": "Śrem ul. 1 Maja (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 130,
-      "dlugosc_m": 876,
-      "od_kiedy": "2026-10-27T13:54:30Z",
-      "do_kiedy": "2026-10-27T14:22:30Z"
+      "opoznienie_s": 198,
+      "dlugosc_m": 1027,
+      "od_kiedy": "2026-10-27T14:09:30Z",
+      "do_kiedy": "2026-10-27T14:52:31Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Gostyńska (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 120,
+      "dlugosc_m": 800,
+      "od_kiedy": "2026-10-27T13:58:30Z",
+      "do_kiedy": "2026-10-27T14:52:31Z"
+    },
+    {
+      "opis": "Powolny ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 1,
+      "od": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Bora-Komorowskiego (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 140,
+      "dlugosc_m": 955,
+      "od_kiedy": "2026-10-27T14:31:30Z",
+      "do_kiedy": "2026-10-27T14:52:31Z"
     }
   ]
 }
