@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-10-28T11:12:17+00:00",
-  "pobrano_lokalnie": "2026-10-28T12:12:17+01:00",
+  "pobrano_utc": "2026-10-28T11:32:19+00:00",
+  "pobrano_lokalnie": "2026-10-28T12:32:19+01:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 14488,
+    "zapytan": 14496,
     "budzet": 18500
   },
   "trasy": [
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 376,
+      "czas_s": 378,
       "czas_bez_ruchu_s": 317,
-      "opoznienie_s": 59,
+      "opoznienie_s": 61,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.186,
+      "ratio": 1.192,
       "poziom": "umiarkowanie"
     },
     {
@@ -79,13 +79,13 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 839,
+      "czas_s": 922,
       "czas_bez_ruchu_s": 622,
-      "opoznienie_s": 217,
-      "opoznienie_wzgl_typowego_s": 1,
+      "opoznienie_s": 300,
+      "opoznienie_wzgl_typowego_s": 150,
       "dlugosc_m": 9670,
-      "ratio": 1.349,
-      "poziom": "umiarkowanie"
+      "ratio": 1.482,
+      "poziom": "utrudnienia"
     },
     {
       "id": "od-czempinia-rondo-ak",
@@ -111,13 +111,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 842,
+      "czas_s": 367,
       "czas_bez_ruchu_s": 278,
-      "opoznienie_s": 564,
-      "opoznienie_wzgl_typowego_s": 541,
+      "opoznienie_s": 89,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 3.029,
-      "poziom": "korek"
+      "ratio": 1.32,
+      "poziom": "umiarkowanie"
     },
     {
       "id": "wyjazd-plac20-czmon",
