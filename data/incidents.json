@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-28T15:34:24+00:00",
-  "pobrano_lokalnie": "2026-10-28T16:34:24+01:00",
+  "pobrano_utc": "2026-10-28T16:04:25+00:00",
+  "pobrano_lokalnie": "2026-10-28T17:04:25+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 8,
+  "zdarzen_w_prostokacie": 9,
+  "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 695,
+    "zapytan": 696,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,10 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1253,
+      "opoznienie_s": 706,
       "dlugosc_m": 3939,
       "od_kiedy": "2026-10-28T14:43:00Z",
-      "do_kiedy": "2026-10-28T16:23:00Z"
+      "do_kiedy": "2026-10-28T16:51:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,55 +79,25 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 559,
+      "opoznienie_s": 692,
       "dlugosc_m": 609,
       "od_kiedy": "2026-10-28T15:23:30Z",
-      "do_kiedy": "2026-10-28T16:10:00Z"
+      "do_kiedy": "2026-10-28T16:43:00Z"
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
+      "opis": "Powolny ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 369,
-      "dlugosc_m": 190,
-      "od_kiedy": "2026-10-28T15:29:30Z",
-      "do_kiedy": "2026-10-28T16:09:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Astrowa (310)",
-      "do": "Śrem ul. Chełmońskiego (310)",
-      "drogi": [
-        "310"
-      ],
-      "opoznienie_s": 176,
-      "dlugosc_m": 440,
-      "od_kiedy": "2026-10-28T15:32:30Z",
-      "do_kiedy": "2026-10-28T15:53:00Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Gostyńska (432)",
+      "waga": 1,
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 170,
-      "dlugosc_m": 784,
-      "od_kiedy": "2026-10-28T15:32:00Z",
-      "do_kiedy": "2026-10-28T15:53:00Z"
+      "opoznienie_s": 131,
+      "dlugosc_m": 907,
+      "od_kiedy": "2026-10-28T15:51:30Z",
+      "do_kiedy": "2026-10-28T16:23:00Z"
     }
   ]
 }
