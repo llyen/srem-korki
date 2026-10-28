@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-10-27T18:32:22+00:00",
-  "pobrano_lokalnie": "2026-10-27T19:32:22+01:00",
+  "pobrano_utc": "2026-10-28T05:04:21+00:00",
+  "pobrano_lokalnie": "2026-10-28T06:04:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 3,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 675,
+    "zapytan": 676,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -17,11 +17,11 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Szkolna",
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 557,
+      "dlugosc_m": 758,
       "od_kiedy": "2026-07-29T17:40:00Z",
       "do_kiedy": ""
     },
