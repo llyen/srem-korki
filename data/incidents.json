@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-30T13:34:22+00:00",
-  "pobrano_lokalnie": "2026-10-30T14:34:22+01:00",
+  "pobrano_utc": "2026-10-30T14:04:20+00:00",
+  "pobrano_lokalnie": "2026-10-30T15:04:20+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 15,
-  "zdarzen_przy_trasach": 13,
+  "zdarzen_w_prostokacie": 14,
+  "zdarzen_przy_trasach": 11,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 741,
+    "zapytan": 742,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Kilińskiego (Sikorskiego)",
-      "do": "Al. Solidarności (Sikorskiego)",
+      "od": "Al. Solidarności (Sikorskiego)",
+      "do": "Kilińskiego (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 111,
-      "od_kiedy": "2026-03-31T04:47:30Z",
+      "dlugosc_m": 94,
+      "od_kiedy": "2026-03-31T04:33:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -66,25 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1362,
+      "opoznienie_s": 1145,
       "dlugosc_m": 3939,
       "od_kiedy": "2026-10-30T10:35:00Z",
-      "do_kiedy": "2026-10-30T14:12:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Piłsudskiego (434) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 1236,
-      "dlugosc_m": 1470,
-      "od_kiedy": "2026-10-30T13:01:00Z",
-      "do_kiedy": "2026-10-30T14:44:00Z"
+      "do_kiedy": "2026-10-30T14:48:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -94,10 +79,26 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 1218,
-      "dlugosc_m": 609,
+      "opoznienie_s": 901,
+      "dlugosc_m": 843,
       "od_kiedy": "2026-10-30T12:13:00Z",
       "do_kiedy": "2026-10-30T14:41:00Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Piłsudskiego (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 871,
+      "dlugosc_m": 1506,
+      "od_kiedy": "2026-10-30T13:01:00Z",
+      "do_kiedy": "2026-10-30T14:37:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -109,10 +110,23 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 657,
-      "dlugosc_m": 586,
+      "opoznienie_s": 752,
+      "dlugosc_m": 985,
       "od_kiedy": "2026-10-30T13:10:00Z",
-      "do_kiedy": "2026-10-30T14:21:00Z"
+      "do_kiedy": "2026-10-30T14:43:00Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "do": "Rondo Premiera Stanisława Mikołajczyka",
+      "drogi": [],
+      "opoznienie_s": 672,
+      "dlugosc_m": 989,
+      "od_kiedy": "2026-10-30T13:02:30Z",
+      "do_kiedy": "2026-10-30T14:32:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -124,36 +138,10 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 548,
-      "dlugosc_m": 1054,
-      "od_kiedy": "2026-10-30T12:37:00Z",
-      "do_kiedy": "2026-10-30T13:56:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Józefa Piłsudskiego",
-      "do": "Rondo Premiera Stanisława Mikołajczyka",
-      "drogi": [],
-      "opoznienie_s": 350,
-      "dlugosc_m": 450,
-      "od_kiedy": "2026-10-30T13:02:30Z",
-      "do_kiedy": "2026-10-30T14:02:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Kilińskiego (432) (310)",
-      "do": "Śrem ul. Grottgera (310)",
-      "drogi": [],
-      "opoznienie_s": 266,
-      "dlugosc_m": 428,
-      "od_kiedy": "2026-10-30T13:30:00Z",
-      "do_kiedy": "2026-10-30T13:55:00Z"
+      "opoznienie_s": 184,
+      "dlugosc_m": 799,
+      "od_kiedy": "2026-10-30T13:56:00Z",
+      "do_kiedy": "2026-10-30T14:24:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -161,27 +149,14 @@
       "kategoria_nazwa": "korek",
       "waga": 3,
       "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
+      "do": "Śrem ul. Grunwaldzka (310) (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 261,
-      "dlugosc_m": 692,
-      "od_kiedy": "2026-10-30T13:30:00Z",
-      "do_kiedy": "2026-10-30T13:53:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Chełmońskiego (310)",
-      "do": "Śrem ul. Kilińskiego (432) (310)",
-      "drogi": [],
-      "opoznienie_s": 209,
-      "dlugosc_m": 791,
-      "od_kiedy": "2026-10-30T13:31:00Z",
-      "do_kiedy": "2026-10-30T13:53:00Z"
+      "opoznienie_s": 144,
+      "dlugosc_m": 258,
+      "od_kiedy": "2026-10-30T13:53:32Z",
+      "do_kiedy": "2026-10-30T14:23:00Z"
     },
     {
       "opis": "Korek",
@@ -193,10 +168,10 @@
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 117,
-      "dlugosc_m": 784,
-      "od_kiedy": "2026-10-30T13:10:00Z",
-      "do_kiedy": "2026-10-30T13:53:00Z"
+      "opoznienie_s": 113,
+      "dlugosc_m": 800,
+      "od_kiedy": "2026-10-30T13:49:00Z",
+      "do_kiedy": "2026-10-30T14:23:00Z"
     }
   ]
 }
