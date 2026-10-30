@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-30T11:52:21+00:00",
-  "pobrano_lokalnie": "2026-10-30T12:52:21+01:00",
+  "pobrano_utc": "2026-10-30T12:32:27+00:00",
+  "pobrano_lokalnie": "2026-10-30T13:32:27+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 7,
-  "zdarzen_przy_trasach": 5,
+  "zdarzen_w_prostokacie": 9,
+  "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 738,
+    "zapytan": 739,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -46,12 +46,12 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Józefa Piłsudskiego",
-      "do": "Księdza Jerzego Popiełuszki",
+      "od": "Księdza Jerzego Popiełuszki",
+      "do": "Józefa Piłsudskiego",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-31T08:21:30Z",
+      "od_kiedy": "2026-07-30T18:13:00Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -66,10 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 738,
+      "opoznienie_s": 546,
       "dlugosc_m": 3712,
       "od_kiedy": "2026-10-30T10:35:00Z",
-      "do_kiedy": "2026-10-30T12:25:00Z"
+      "do_kiedy": "2026-10-30T13:02:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,10 +79,36 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 254,
+      "opoznienie_s": 173,
       "dlugosc_m": 609,
-      "od_kiedy": "2026-10-30T11:31:00Z",
-      "do_kiedy": "2026-10-30T12:16:00Z"
+      "od_kiedy": "2026-10-30T12:13:00Z",
+      "do_kiedy": "2026-10-30T12:52:00Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Grottgera (310)",
+      "do": "Śrem ul. Kilińskiego (432) (310)",
+      "drogi": [],
+      "opoznienie_s": 129,
+      "dlugosc_m": 329,
+      "od_kiedy": "2026-10-30T12:30:00Z",
+      "do_kiedy": "2026-10-30T12:51:00Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "drogi": [],
+      "opoznienie_s": 168,
+      "dlugosc_m": 738,
+      "od_kiedy": "2026-10-30T12:30:00Z",
+      "do_kiedy": "2026-10-30T12:51:00Z"
     }
   ]
 }
