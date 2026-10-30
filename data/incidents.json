@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-30T06:34:21+00:00",
-  "pobrano_lokalnie": "2026-10-30T07:34:21+01:00",
+  "pobrano_utc": "2026-10-30T07:04:18+00:00",
+  "pobrano_lokalnie": "2026-10-30T08:04:18+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 7,
-  "zdarzen_przy_trasach": 5,
+  "zdarzen_w_prostokacie": 13,
+  "zdarzen_przy_trasach": 9,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 729,
+    "zapytan": 730,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,16 +60,31 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 995,
-      "dlugosc_m": 3939,
+      "opoznienie_s": 1285,
+      "dlugosc_m": 3920,
       "od_kiedy": "2026-10-30T05:48:30Z",
-      "do_kiedy": "2026-10-30T07:22:00Z"
+      "do_kiedy": "2026-10-30T07:38:00Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 606,
+      "dlugosc_m": 1089,
+      "od_kiedy": "2026-10-30T06:46:30Z",
+      "do_kiedy": "2026-10-30T07:46:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,10 +94,54 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 302,
+      "opoznienie_s": 439,
       "dlugosc_m": 609,
       "od_kiedy": "2026-10-30T06:24:30Z",
-      "do_kiedy": "2026-10-30T06:58:00Z"
+      "do_kiedy": "2026-10-30T07:30:00Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Borgowo (434)",
+      "do": "Śrem ul. Szkolna (434)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 370,
+      "dlugosc_m": 1151,
+      "od_kiedy": "2026-10-30T06:51:00Z",
+      "do_kiedy": "2026-10-30T07:30:00Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Rondo Armii Krajowej",
+      "do": "Poznańska / Księdza Jana Kajetańczyka",
+      "drogi": [],
+      "opoznienie_s": 156,
+      "dlugosc_m": 874,
+      "od_kiedy": "2026-10-30T07:03:00Z",
+      "do_kiedy": "2026-10-30T07:23:00Z"
+    },
+    {
+      "opis": "Powolny ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 1,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Staszica (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 174,
+      "dlugosc_m": 1206,
+      "od_kiedy": "2026-10-30T06:57:30Z",
+      "do_kiedy": "2026-10-30T07:23:00Z"
     }
   ]
 }
