@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-30T14:34:19+00:00",
-  "pobrano_lokalnie": "2026-10-30T15:34:19+01:00",
+  "pobrano_utc": "2026-10-30T15:04:20+00:00",
+  "pobrano_lokalnie": "2026-10-30T16:04:20+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 18,
-  "zdarzen_przy_trasach": 13,
+  "zdarzen_w_prostokacie": 12,
+  "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 743,
+    "zapytan": 744,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -61,15 +61,15 @@
       "kategoria_nazwa": "korek",
       "waga": 3,
       "od": "Mechlin (432)",
-      "do": "Śrem ul. Piłsudskiego (434) (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 1479,
-      "dlugosc_m": 1506,
-      "od_kiedy": "2026-10-30T13:01:00Z",
-      "do_kiedy": "2026-10-30T15:41:00Z"
+      "opoznienie_s": 1328,
+      "dlugosc_m": 3939,
+      "od_kiedy": "2026-10-30T14:37:00Z",
+      "do_kiedy": "2026-10-30T16:03:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -81,10 +81,10 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 1258,
+      "opoznienie_s": 900,
       "dlugosc_m": 865,
       "od_kiedy": "2026-10-30T13:10:00Z",
-      "do_kiedy": "2026-10-30T15:27:00Z"
+      "do_kiedy": "2026-10-30T15:34:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -92,15 +92,15 @@
       "kategoria_nazwa": "korek",
       "waga": 3,
       "od": "Mechlin (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Piłsudskiego (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 806,
-      "dlugosc_m": 3939,
-      "od_kiedy": "2026-10-30T10:35:00Z",
-      "do_kiedy": "2026-10-30T15:08:00Z"
+      "opoznienie_s": 557,
+      "dlugosc_m": 940,
+      "od_kiedy": "2026-10-30T13:01:00Z",
+      "do_kiedy": "2026-10-30T15:25:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -110,10 +110,10 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 747,
-      "dlugosc_m": 609,
+      "opoznienie_s": 285,
+      "dlugosc_m": 301,
       "od_kiedy": "2026-10-30T12:13:00Z",
-      "do_kiedy": "2026-10-30T15:39:00Z"
+      "do_kiedy": "2026-10-30T15:23:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -123,24 +123,25 @@
       "od": "Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 465,
-      "dlugosc_m": 468,
+      "opoznienie_s": 269,
+      "dlugosc_m": 394,
       "od_kiedy": "2026-10-30T13:02:30Z",
-      "do_kiedy": "2026-10-30T15:02:00Z"
+      "do_kiedy": "2026-10-30T15:24:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Grottgera (310)",
-      "do": "Śrem ul. Kilińskiego (432) (310)",
-      "drogi": [],
-      "opoznienie_s": 236,
-      "dlugosc_m": 335,
-      "od_kiedy": "2026-10-30T14:30:33Z",
-      "do_kiedy": "2026-10-30T14:53:00Z",
-      "obie_strony": true
+      "od": "Borgowo (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 230,
+      "dlugosc_m": 799,
+      "od_kiedy": "2026-10-30T14:53:30Z",
+      "do_kiedy": "2026-10-30T15:25:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -152,53 +153,10 @@
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 220,
+      "opoznienie_s": 225,
       "dlugosc_m": 542,
       "od_kiedy": "2026-10-30T13:53:32Z",
-      "do_kiedy": "2026-10-30T14:53:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Tadeusza Bora Komorowskiego",
-      "do": "Jana Kilińskiego",
-      "drogi": [],
-      "opoznienie_s": 184,
-      "dlugosc_m": 183,
-      "od_kiedy": "2026-10-30T14:19:00Z",
-      "do_kiedy": "2026-10-30T14:54:00Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Staszica (432)",
-      "do": "Śrem ul. Bora-Komorowskiego (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 193,
-      "dlugosc_m": 1131,
-      "od_kiedy": "2026-10-30T14:32:00Z",
-      "do_kiedy": "2026-10-30T14:53:00Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 108,
-      "dlugosc_m": 647,
-      "od_kiedy": "2026-10-30T13:56:00Z",
-      "do_kiedy": "2026-10-30T15:00:00Z"
+      "do_kiedy": "2026-10-30T15:24:00Z"
     }
   ]
 }
