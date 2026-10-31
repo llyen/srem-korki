@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-31T09:12:22+00:00",
-  "pobrano_lokalnie": "2026-10-31T10:12:22+01:00",
+  "pobrano_utc": "2026-10-31T09:52:22+00:00",
+  "pobrano_lokalnie": "2026-10-31T10:52:22+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 8,
-  "zdarzen_przy_trasach": 6,
+  "zdarzen_w_prostokacie": 10,
+  "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 759,
+    "zapytan": 760,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Kilińskiego (Sikorskiego)",
-      "do": "Al. Solidarności (Sikorskiego)",
+      "od": "Al. Solidarności (Sikorskiego)",
+      "do": "Kilińskiego (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 111,
-      "od_kiedy": "2026-03-31T04:47:30Z",
+      "dlugosc_m": 94,
+      "od_kiedy": "2026-03-31T04:33:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -60,43 +60,57 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 171,
-      "dlugosc_m": 381,
-      "od_kiedy": "2026-10-31T08:44:00Z",
-      "do_kiedy": "2026-10-31T09:31:00Z"
+      "od": "Śrem ul. Chełmońskiego (310)",
+      "do": "Śrem ul. Kilińskiego (432) (310)",
+      "drogi": [],
+      "opoznienie_s": 267,
+      "dlugosc_m": 759,
+      "od_kiedy": "2026-10-31T09:28:00Z",
+      "do_kiedy": "2026-10-31T10:13:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Kilińskiego (432) (310)",
-      "do": "Śrem ul. Grottgera (310)",
-      "drogi": [],
-      "opoznienie_s": 166,
-      "dlugosc_m": 428,
-      "od_kiedy": "2026-10-31T09:07:30Z",
-      "do_kiedy": "2026-10-31T09:31:00Z"
-    },
-    {
-      "opis": "Powolny ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 1,
-      "od": "Śrem ul. Staszica (432)",
-      "do": "Śrem ul. Bora-Komorowskiego (432)",
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 166,
-      "dlugosc_m": 1073,
-      "od_kiedy": "2026-10-31T09:08:00Z",
-      "do_kiedy": "2026-10-31T09:31:00Z"
+      "opoznienie_s": 206,
+      "dlugosc_m": 692,
+      "od_kiedy": "2026-10-31T09:48:00Z",
+      "do_kiedy": "2026-10-31T10:11:00Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Średzka",
+      "do": "Słoneczna",
+      "drogi": [],
+      "opoznienie_s": 160,
+      "dlugosc_m": 1107,
+      "od_kiedy": "2026-10-31T09:49:30Z",
+      "do_kiedy": "2026-10-31T10:11:00Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 141,
+      "dlugosc_m": 1297,
+      "od_kiedy": "2026-10-31T09:20:30Z",
+      "do_kiedy": "2026-10-31T10:12:00Z"
     }
   ]
 }
