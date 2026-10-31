@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-10-31T09:52:22+00:00",
-  "pobrano_lokalnie": "2026-10-31T10:52:22+01:00",
+  "pobrano_utc": "2026-10-31T10:32:21+00:00",
+  "pobrano_lokalnie": "2026-10-31T11:32:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 10,
+  "zdarzen_w_prostokacie": 9,
   "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-10",
-    "zapytan": 760,
+    "zapytan": 761,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,13 +60,13 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Chełmońskiego (310)",
-      "do": "Śrem ul. Kilińskiego (432) (310)",
+      "od": "Generała Władysława Sikorskiego",
+      "do": "Żwirowa",
       "drogi": [],
-      "opoznienie_s": 267,
-      "dlugosc_m": 759,
-      "od_kiedy": "2026-10-31T09:28:00Z",
-      "do_kiedy": "2026-10-31T10:13:00Z"
+      "opoznienie_s": 249,
+      "dlugosc_m": 150,
+      "od_kiedy": "2026-10-31T10:28:30Z",
+      "do_kiedy": "2026-10-31T10:51:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -78,23 +78,23 @@
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 206,
-      "dlugosc_m": 692,
-      "od_kiedy": "2026-10-31T09:48:00Z",
-      "do_kiedy": "2026-10-31T10:11:00Z"
+      "opoznienie_s": 193,
+      "dlugosc_m": 625,
+      "od_kiedy": "2026-10-31T10:27:00Z",
+      "do_kiedy": "2026-10-31T10:51:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Średzka",
-      "do": "Słoneczna",
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 160,
-      "dlugosc_m": 1107,
-      "od_kiedy": "2026-10-31T09:49:30Z",
-      "do_kiedy": "2026-10-31T10:11:00Z"
+      "opoznienie_s": 114,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-10-31T10:11:30Z",
+      "do_kiedy": "2026-10-31T10:52:00Z"
     },
     {
       "opis": "Korek",
@@ -107,10 +107,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 141,
-      "dlugosc_m": 1297,
-      "od_kiedy": "2026-10-31T09:20:30Z",
-      "do_kiedy": "2026-10-31T10:12:00Z"
+      "opoznienie_s": 155,
+      "dlugosc_m": 1220,
+      "od_kiedy": "2026-10-31T09:56:30Z",
+      "do_kiedy": "2026-10-31T10:52:00Z"
     }
   ]
 }
