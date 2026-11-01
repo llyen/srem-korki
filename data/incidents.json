@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-01T13:04:22+00:00",
-  "pobrano_lokalnie": "2026-11-01T14:04:22+01:00",
+  "pobrano_utc": "2026-11-01T13:34:19+00:00",
+  "pobrano_lokalnie": "2026-11-01T14:34:19+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 10,
-  "zdarzen_przy_trasach": 6,
+  "zdarzen_w_prostokacie": 8,
+  "zdarzen_przy_trasach": 4,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 15,
+    "zapytan": 16,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,45 +60,15 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Gostyńska (Powstańców Wielkopolskich)",
-      "do": "Kilińskiego (Powstańców Wielkopolskich)",
+      "od": "Powstańców Wielkopolskich (Kilińskiego)",
+      "do": "Grunwaldzka (Kilińskiego)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 986,
-      "dlugosc_m": 579,
-      "od_kiedy": "2026-11-01T12:31:00Z",
-      "do_kiedy": "2026-11-01T14:10:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Staszica (432)",
-      "do": "Śrem ul. Bora-Komorowskiego (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 522,
-      "dlugosc_m": 1049,
-      "od_kiedy": "2026-11-01T12:30:00Z",
-      "do_kiedy": "2026-11-01T13:39:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Grunwaldzka (Kilińskiego)",
-      "do": "Powstańców Wielkopolskich (Kilińskiego)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 516,
-      "dlugosc_m": 584,
-      "od_kiedy": "2026-11-01T12:53:00Z",
-      "do_kiedy": "2026-11-01T13:34:00Z"
+      "opoznienie_s": 329,
+      "dlugosc_m": 394,
+      "od_kiedy": "2026-11-01T13:33:00Z",
+      "do_kiedy": "2026-11-01T13:53:00Z"
     }
   ]
 }
