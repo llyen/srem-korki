@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-01T15:04:21+00:00",
-  "pobrano_lokalnie": "2026-11-01T16:04:21+01:00",
+  "pobrano_utc": "2026-11-01T15:34:23+00:00",
+  "pobrano_lokalnie": "2026-11-01T16:34:23+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 6,
+  "zdarzen_w_prostokacie": 5,
+  "zdarzen_przy_trasach": 3,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 19,
+    "zapytan": 20,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Al. Solidarności (Sikorskiego)",
-      "do": "Kilińskiego (Sikorskiego)",
+      "od": "Kilińskiego (Sikorskiego)",
+      "do": "Al. Solidarności (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 94,
-      "od_kiedy": "2026-03-31T04:33:30Z",
+      "dlugosc_m": 111,
+      "od_kiedy": "2026-03-31T04:47:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -54,49 +54,6 @@
       "od_kiedy": "2026-07-31T08:21:30Z",
       "do_kiedy": "",
       "obie_strony": true
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem Al. Solidarności (310)",
-      "do": "Śrem ul. Kilińskiego (432) (310)",
-      "drogi": [],
-      "opoznienie_s": 582,
-      "dlugosc_m": 1190,
-      "od_kiedy": "2026-11-01T14:30:30Z",
-      "do_kiedy": "2026-11-01T15:36:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 403,
-      "dlugosc_m": 542,
-      "od_kiedy": "2026-11-01T14:52:00Z",
-      "do_kiedy": "2026-11-01T15:29:00Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Powstańców Wielkopolskich (Kilińskiego)",
-      "do": "Grunwaldzka (Kilińskiego)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 146,
-      "dlugosc_m": 229,
-      "od_kiedy": "2026-11-01T14:34:30Z",
-      "do_kiedy": "2026-11-01T15:23:00Z"
     }
   ]
 }
