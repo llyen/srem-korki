@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-02T06:34:23+00:00",
-  "pobrano_lokalnie": "2026-11-02T07:34:23+01:00",
+  "pobrano_utc": "2026-11-02T07:04:20+00:00",
+  "pobrano_lokalnie": "2026-11-02T08:04:20+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 7,
-  "zdarzen_przy_trasach": 5,
+  "zdarzen_w_prostokacie": 8,
+  "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 29,
+    "zapytan": 30,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,10 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 789,
-      "dlugosc_m": 3845,
+      "opoznienie_s": 1224,
+      "dlugosc_m": 3285,
       "od_kiedy": "2026-11-02T06:20:00Z",
-      "do_kiedy": "2026-11-02T07:11:00Z"
+      "do_kiedy": "2026-11-02T07:57:00Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,10 +79,25 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 138,
+      "opoznienie_s": 318,
       "dlugosc_m": 301,
       "od_kiedy": "2026-11-02T06:29:30Z",
-      "do_kiedy": "2026-11-02T06:53:00Z"
+      "do_kiedy": "2026-11-02T07:25:00Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 201,
+      "dlugosc_m": 725,
+      "od_kiedy": "2026-11-02T06:50:30Z",
+      "do_kiedy": "2026-11-02T07:24:00Z"
     }
   ]
 }
