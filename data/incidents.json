@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-03T16:34:22+00:00",
-  "pobrano_lokalnie": "2026-11-03T17:34:22+01:00",
+  "pobrano_utc": "2026-11-03T17:12:20+00:00",
+  "pobrano_lokalnie": "2026-11-03T18:12:20+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 7,
-  "zdarzen_przy_trasach": 5,
+  "zdarzen_w_prostokacie": 8,
+  "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 72,
+    "zapytan": 73,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -17,11 +17,11 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "od": "Szkolna",
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 758,
+      "dlugosc_m": 557,
       "od_kiedy": "2026-07-29T17:39:30Z",
       "do_kiedy": ""
     },
@@ -56,20 +56,17 @@
       "obie_strony": true
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 856,
-      "dlugosc_m": 3845,
-      "od_kiedy": "2026-11-03T13:01:45Z",
-      "do_kiedy": "2026-11-03T17:10:45Z"
+      "opis": "Zamknięto",
+      "kategoria": 8,
+      "kategoria_nazwa": "zamkniecie",
+      "waga": 4,
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "do": "Szkolna",
+      "drogi": [],
+      "opoznienie_s": null,
+      "dlugosc_m": 162,
+      "od_kiedy": "2026-07-29T17:39:30Z",
+      "do_kiedy": ""
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,10 +76,26 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 412,
-      "dlugosc_m": 301,
+      "opoznienie_s": 272,
+      "dlugosc_m": 187,
       "od_kiedy": "2026-11-03T13:35:45Z",
-      "do_kiedy": "2026-11-03T16:57:45Z"
+      "do_kiedy": "2026-11-03T17:34:45Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 300,
+      "dlugosc_m": 2983,
+      "od_kiedy": "2026-11-03T13:01:45Z",
+      "do_kiedy": "2026-11-03T17:30:45Z"
     }
   ]
 }
