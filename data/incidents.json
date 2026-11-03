@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-11-03T13:04:26+00:00",
-  "pobrano_lokalnie": "2026-11-03T14:04:26+01:00",
+  "pobrano_utc": "2026-11-03T13:34:21+00:00",
+  "pobrano_lokalnie": "2026-11-03T14:34:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 65,
+    "zapytan": 66,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -21,7 +21,7 @@
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 731,
+      "dlugosc_m": 758,
       "od_kiedy": "2026-07-29T17:39:30Z",
       "do_kiedy": ""
     },
@@ -60,31 +60,31 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 299,
-      "dlugosc_m": 1054,
-      "od_kiedy": "2026-11-03T12:53:45Z",
-      "do_kiedy": "2026-11-03T13:28:15Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "od": "Mechlin (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 309,
-      "dlugosc_m": 2727,
+      "opoznienie_s": 1541,
+      "dlugosc_m": 3928,
       "od_kiedy": "2026-11-03T13:01:45Z",
-      "do_kiedy": "2026-11-03T13:25:15Z"
+      "do_kiedy": "2026-11-03T14:59:15Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Grzymisław (436) (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 125,
+      "dlugosc_m": 476,
+      "od_kiedy": "2026-11-03T12:53:45Z",
+      "do_kiedy": "2026-11-03T13:55:15Z"
     }
   ]
 }
