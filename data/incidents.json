@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-03T13:34:21+00:00",
-  "pobrano_lokalnie": "2026-11-03T14:34:21+01:00",
+  "pobrano_utc": "2026-11-03T14:04:19+00:00",
+  "pobrano_lokalnie": "2026-11-03T15:04:19+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 7,
-  "zdarzen_przy_trasach": 5,
+  "zdarzen_w_prostokacie": 10,
+  "zdarzen_przy_trasach": 8,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 66,
+    "zapytan": 67,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,31 +60,72 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 1541,
-      "dlugosc_m": 3928,
+      "opoznienie_s": 940,
+      "dlugosc_m": 3285,
       "od_kiedy": "2026-11-03T13:01:45Z",
-      "do_kiedy": "2026-11-03T14:59:15Z"
+      "do_kiedy": "2026-11-03T14:40:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Grzymisław (436) (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 632,
+      "dlugosc_m": 609,
+      "od_kiedy": "2026-11-03T13:35:45Z",
+      "do_kiedy": "2026-11-03T14:43:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Poznańska",
+      "do": "Józefa Piłsudskiego",
+      "drogi": [],
+      "opoznienie_s": 174,
+      "dlugosc_m": 151,
+      "od_kiedy": "2026-11-03T13:56:15Z",
+      "do_kiedy": "2026-11-03T14:22:45Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
       "drogi": [
-        "434"
+        "432"
       ],
-      "opoznienie_s": 125,
-      "dlugosc_m": 476,
-      "od_kiedy": "2026-11-03T12:53:45Z",
-      "do_kiedy": "2026-11-03T13:55:15Z"
+      "opoznienie_s": 167,
+      "dlugosc_m": 817,
+      "od_kiedy": "2026-11-03T14:00:15Z",
+      "do_kiedy": "2026-11-03T14:22:45Z"
+    },
+    {
+      "opis": "Powolny ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 1,
+      "od": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Bora-Komorowskiego (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 140,
+      "dlugosc_m": 1013,
+      "od_kiedy": "2026-11-03T13:43:15Z",
+      "do_kiedy": "2026-11-03T14:22:45Z"
     }
   ]
 }
