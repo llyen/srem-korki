@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-04T14:54:21+00:00",
-  "pobrano_lokalnie": "2026-11-04T15:54:21+01:00",
+  "pobrano_utc": "2026-11-04T15:24:21+00:00",
+  "pobrano_lokalnie": "2026-11-04T16:24:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 14,
-  "zdarzen_przy_trasach": 11,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 9,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 93,
+    "zapytan": 94,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,29 +60,44 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
+      "od": "Józefa Piłsudskiego",
+      "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 839,
-      "dlugosc_m": 609,
-      "od_kiedy": "2026-11-04T13:32:15Z",
-      "do_kiedy": "2026-11-04T15:24:45Z"
+      "opoznienie_s": 625,
+      "dlugosc_m": 588,
+      "od_kiedy": "2026-11-04T14:31:45Z",
+      "do_kiedy": "2026-11-04T16:00:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 825,
-      "dlugosc_m": 3939,
+      "opoznienie_s": 625,
+      "dlugosc_m": 3920,
       "od_kiedy": "2026-11-04T13:10:15Z",
-      "do_kiedy": "2026-11-04T15:27:45Z"
+      "do_kiedy": "2026-11-04T16:00:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Borgowo (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 445,
+      "dlugosc_m": 1054,
+      "od_kiedy": "2026-11-04T15:09:45Z",
+      "do_kiedy": "2026-11-04T15:58:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -94,10 +109,23 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 526,
+      "opoznienie_s": 352,
       "dlugosc_m": 586,
-      "od_kiedy": "2026-11-04T14:09:45Z",
-      "do_kiedy": "2026-11-04T15:28:45Z"
+      "od_kiedy": "2026-11-04T15:14:45Z",
+      "do_kiedy": "2026-11-04T15:47:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 323,
+      "dlugosc_m": 187,
+      "od_kiedy": "2026-11-04T13:32:15Z",
+      "do_kiedy": "2026-11-04T15:50:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -110,66 +138,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 455,
+      "opoznienie_s": 320,
       "dlugosc_m": 517,
-      "od_kiedy": "2026-11-04T14:08:45Z",
-      "do_kiedy": "2026-11-04T15:22:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Promenada",
-      "do": "Rondo Powstańców Wielkopolskich",
-      "drogi": [],
-      "opoznienie_s": 296,
-      "dlugosc_m": 507,
-      "od_kiedy": "2026-11-04T14:38:15Z",
-      "do_kiedy": "2026-11-04T15:18:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Powstańców Wielkopolskich (Kilińskiego)",
-      "do": "Grunwaldzka (Kilińskiego)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 201,
-      "dlugosc_m": 229,
-      "od_kiedy": "2026-11-04T14:47:15Z",
-      "do_kiedy": "2026-11-04T15:12:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Marszałka Józefa Piłsudskiego",
-      "do": "Rondo Premiera Stanisława Mikołajczyka",
-      "drogi": [],
-      "opoznienie_s": 198,
-      "dlugosc_m": 268,
-      "od_kiedy": "2026-11-04T14:31:45Z",
-      "do_kiedy": "2026-11-04T15:13:45Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Gostyńska (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 148,
-      "dlugosc_m": 779,
-      "od_kiedy": "2026-11-04T14:48:45Z",
-      "do_kiedy": "2026-11-04T15:12:45Z"
+      "od_kiedy": "2026-11-04T15:12:45Z",
+      "do_kiedy": "2026-11-04T15:44:45Z"
     }
   ]
 }
