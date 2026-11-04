@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-04T07:04:22+00:00",
-  "pobrano_lokalnie": "2026-11-04T08:04:22+01:00",
+  "pobrano_utc": "2026-11-04T07:34:23+00:00",
+  "pobrano_lokalnie": "2026-11-04T08:34:23+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 7,
+  "zdarzen_w_prostokacie": 6,
+  "zdarzen_przy_trasach": 4,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 80,
+    "zapytan": 81,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,57 +60,16 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "od": "Śrem ul. Szkolna (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 1044,
-      "dlugosc_m": 3712,
+      "opoznienie_s": 302,
+      "dlugosc_m": 1974,
       "od_kiedy": "2026-11-04T06:14:15Z",
-      "do_kiedy": "2026-11-04T07:49:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Tytusa Działyńskiego",
-      "do": "Rondo Powstańców Wielkopolskich",
-      "drogi": [],
-      "opoznienie_s": 270,
-      "dlugosc_m": 225,
-      "od_kiedy": "2026-11-04T06:52:45Z",
-      "do_kiedy": "2026-11-04T07:26:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 222,
-      "dlugosc_m": 692,
-      "od_kiedy": "2026-11-04T06:39:15Z",
-      "do_kiedy": "2026-11-04T07:26:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Rondo Armii Krajowej",
-      "do": "Most 23 Stycznia",
-      "drogi": [],
-      "opoznienie_s": 133,
-      "dlugosc_m": 324,
-      "od_kiedy": "2026-11-04T06:50:45Z",
-      "do_kiedy": "2026-11-04T07:22:45Z"
+      "do_kiedy": "2026-11-04T07:53:45Z"
     }
   ]
 }
