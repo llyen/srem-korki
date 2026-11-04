@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-04T15:24:21+00:00",
-  "pobrano_lokalnie": "2026-11-04T16:24:21+01:00",
+  "pobrano_utc": "2026-11-04T15:54:18+00:00",
+  "pobrano_lokalnie": "2026-11-04T16:54:18+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 9,
+  "zdarzen_w_prostokacie": 9,
+  "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 94,
+    "zapytan": 95,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -17,11 +17,11 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "od": "Szkolna",
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 758,
+      "dlugosc_m": 557,
       "od_kiedy": "2026-07-29T17:39:30Z",
       "do_kiedy": ""
     },
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Al. Solidarności (Sikorskiego)",
-      "do": "Kilińskiego (Sikorskiego)",
+      "od": "Kilińskiego (Sikorskiego)",
+      "do": "Al. Solidarności (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 94,
-      "od_kiedy": "2026-03-31T04:33:30Z",
+      "dlugosc_m": 111,
+      "od_kiedy": "2026-03-31T04:47:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -46,12 +46,12 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Józefa Piłsudskiego",
-      "do": "Księdza Jerzego Popiełuszki",
+      "od": "Księdza Jerzego Popiełuszki",
+      "do": "Józefa Piłsudskiego",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-31T08:11:30Z",
+      "od_kiedy": "2026-07-30T18:09:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -60,29 +60,16 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Józefa Piłsudskiego",
-      "do": "Rondo Premiera Stanisława Mikołajczyka",
-      "drogi": [],
-      "opoznienie_s": 625,
-      "dlugosc_m": 588,
-      "od_kiedy": "2026-11-04T14:31:45Z",
-      "do_kiedy": "2026-11-04T16:00:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "od": "Mechlin (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 625,
-      "dlugosc_m": 3920,
+      "opoznienie_s": 935,
+      "dlugosc_m": 3939,
       "od_kiedy": "2026-11-04T13:10:15Z",
-      "do_kiedy": "2026-11-04T16:00:45Z"
+      "do_kiedy": "2026-11-04T16:44:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -94,25 +81,10 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 445,
+      "opoznienie_s": 305,
       "dlugosc_m": 1054,
       "od_kiedy": "2026-11-04T15:09:45Z",
-      "do_kiedy": "2026-11-04T15:58:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 352,
-      "dlugosc_m": 586,
-      "od_kiedy": "2026-11-04T15:14:45Z",
-      "do_kiedy": "2026-11-04T15:47:45Z"
+      "do_kiedy": "2026-11-04T16:14:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -122,26 +94,10 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 323,
-      "dlugosc_m": 187,
+      "opoznienie_s": 305,
+      "dlugosc_m": 301,
       "od_kiedy": "2026-11-04T13:32:15Z",
-      "do_kiedy": "2026-11-04T15:50:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Piłsudskiego (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 320,
-      "dlugosc_m": 517,
-      "od_kiedy": "2026-11-04T15:12:45Z",
-      "do_kiedy": "2026-11-04T15:44:45Z"
+      "do_kiedy": "2026-11-04T16:15:45Z"
     }
   ]
 }
