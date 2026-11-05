@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-05T08:34:20+00:00",
-  "pobrano_lokalnie": "2026-11-05T09:34:20+01:00",
+  "pobrano_utc": "2026-11-05T09:12:23+00:00",
+  "pobrano_lokalnie": "2026-11-05T10:12:23+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
-  "zdarzen_przy_trasach": 6,
+  "zdarzen_w_prostokacie": 7,
+  "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 108,
+    "zapytan": 109,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,16 +30,31 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Kilińskiego (Sikorskiego)",
-      "do": "Al. Solidarności (Sikorskiego)",
+      "od": "Al. Solidarności (Sikorskiego)",
+      "do": "Kilińskiego (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 111,
-      "od_kiedy": "2026-03-31T04:47:30Z",
+      "dlugosc_m": 94,
+      "od_kiedy": "2026-03-31T04:33:30Z",
       "do_kiedy": "",
       "obie_strony": true
+    },
+    {
+      "opis": "Zamknięto",
+      "kategoria": 8,
+      "kategoria_nazwa": "zamkniecie",
+      "waga": 4,
+      "od": "Gostyńska (Powstańców Wielkopolskich)",
+      "do": "Kilińskiego (Powstańców Wielkopolskich)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": null,
+      "dlugosc_m": 268,
+      "od_kiedy": "2026-11-05T08:59:15Z",
+      "do_kiedy": ""
     },
     {
       "opis": "Zamknięto",
@@ -63,41 +78,10 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 243,
+      "opoznienie_s": 264,
       "dlugosc_m": 301,
-      "od_kiedy": "2026-11-05T06:18:45Z",
-      "do_kiedy": "2026-11-05T08:53:45Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Piłsudskiego (434) (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 292,
-      "dlugosc_m": 2277,
-      "od_kiedy": "2026-11-05T06:17:15Z",
-      "do_kiedy": "2026-11-05T08:52:45Z"
-    },
-    {
-      "opis": "Przeszkody na drodze",
-      "kategoria": 3,
-      "kategoria_nazwa": "niebezpieczne warunki",
-      "waga": 0,
-      "od": "Śrem ul. Gostyńska (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": null,
-      "dlugosc_m": 183,
-      "od_kiedy": "2026-11-05T08:22:15Z",
-      "do_kiedy": "2026-11-05T08:51:48Z"
+      "od_kiedy": "2026-11-05T08:55:45Z",
+      "do_kiedy": "2026-11-05T09:33:15Z"
     }
   ]
 }
