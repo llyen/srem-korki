@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-05T10:32:19+00:00",
-  "pobrano_lokalnie": "2026-11-05T11:32:19+01:00",
+  "pobrano_utc": "2026-11-05T11:12:19+00:00",
+  "pobrano_lokalnie": "2026-11-05T12:12:19+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
   "zdarzen_w_prostokacie": 7,
-  "zdarzen_przy_trasach": 4,
+  "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 111,
+    "zapytan": 112,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Al. Solidarności (Sikorskiego)",
-      "do": "Kilińskiego (Sikorskiego)",
+      "od": "Kilińskiego (Sikorskiego)",
+      "do": "Al. Solidarności (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 94,
-      "od_kiedy": "2026-03-31T04:33:30Z",
+      "dlugosc_m": 111,
+      "od_kiedy": "2026-03-31T04:47:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -63,10 +63,26 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 428,
-      "dlugosc_m": 609,
+      "opoznienie_s": 172,
+      "dlugosc_m": 301,
       "od_kiedy": "2026-11-05T08:55:45Z",
-      "do_kiedy": "2026-11-05T10:58:15Z"
+      "do_kiedy": "2026-11-05T11:31:15Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 122,
+      "dlugosc_m": 1065,
+      "od_kiedy": "2026-11-05T11:09:45Z",
+      "do_kiedy": "2026-11-05T11:31:15Z"
     }
   ]
 }
