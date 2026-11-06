@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-06T16:34:19+00:00",
-  "pobrano_lokalnie": "2026-11-06T17:34:19+01:00",
+  "pobrano_utc": "2026-11-06T17:12:19+00:00",
+  "pobrano_lokalnie": "2026-11-06T18:12:19+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 9,
+  "zdarzen_w_prostokacie": 8,
   "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 147,
+    "zapytan": 148,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,44 +60,44 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 1161,
-      "dlugosc_m": 609,
-      "od_kiedy": "2026-11-06T14:39:15Z",
-      "do_kiedy": "2026-11-06T17:26:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
       "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 607,
-      "dlugosc_m": 3920,
+      "opoznienie_s": 758,
+      "dlugosc_m": 3809,
       "od_kiedy": "2026-11-06T15:36:15Z",
-      "do_kiedy": "2026-11-06T17:00:45Z"
+      "do_kiedy": "2026-11-06T17:49:15Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 171,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-11-06T14:39:15Z",
+      "do_kiedy": "2026-11-06T17:31:15Z"
+    },
+    {
+      "opis": "Korek",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 2,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Gostyńska (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 147,
-      "dlugosc_m": 359,
-      "od_kiedy": "2026-11-06T16:30:15Z",
-      "do_kiedy": "2026-11-06T16:52:45Z"
+      "opoznienie_s": 154,
+      "dlugosc_m": 800,
+      "od_kiedy": "2026-11-06T17:08:15Z",
+      "do_kiedy": "2026-11-06T17:31:15Z"
     }
   ]
 }
