@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-07T10:32:18+00:00",
-  "pobrano_lokalnie": "2026-11-07T11:32:18+01:00",
+  "pobrano_utc": "2026-11-07T11:12:21+00:00",
+  "pobrano_lokalnie": "2026-11-07T12:12:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 7,
-  "zdarzen_przy_trasach": 5,
+  "zdarzen_w_prostokacie": 6,
+  "zdarzen_przy_trasach": 4,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 161,
+    "zapytan": 162,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -56,21 +56,6 @@
       "obie_strony": true
     },
     {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 218,
-      "dlugosc_m": 692,
-      "od_kiedy": "2026-11-07T10:29:45Z",
-      "do_kiedy": "2026-11-07T10:51:15Z"
-    },
-    {
       "opis": "Korek",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
@@ -80,10 +65,10 @@
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 157,
-      "dlugosc_m": 955,
-      "od_kiedy": "2026-11-07T10:10:45Z",
-      "do_kiedy": "2026-11-07T10:51:15Z"
+      "opoznienie_s": 237,
+      "dlugosc_m": 1049,
+      "od_kiedy": "2026-11-07T11:07:15Z",
+      "do_kiedy": "2026-11-07T11:31:15Z"
     }
   ]
 }
