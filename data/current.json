@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-11-07T12:32:29+00:00",
-  "pobrano_lokalnie": "2026-11-07T13:32:29+01:00",
+  "pobrano_utc": "2026-11-07T12:52:16+00:00",
+  "pobrano_lokalnie": "2026-11-07T13:52:16+01:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 3416,
+    "zapytan": 3424,
     "budzet": 18500
   },
   "trasy": [
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 338,
+      "czas_s": 339,
       "czas_bez_ruchu_s": 317,
-      "opoznienie_s": 21,
+      "opoznienie_s": 22,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.066,
+      "ratio": 1.069,
       "poziom": "plynnie"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 558,
+      "czas_s": 559,
       "czas_bez_ruchu_s": 497,
-      "opoznienie_s": 61,
+      "opoznienie_s": 62,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.123,
+      "ratio": 1.125,
       "poziom": "plynnie"
     },
     {
@@ -111,13 +111,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 620,
+      "czas_s": 309,
       "czas_bez_ruchu_s": 278,
-      "opoznienie_s": 342,
-      "opoznienie_wzgl_typowego_s": 322,
+      "opoznienie_s": 31,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 4853,
-      "ratio": 2.23,
-      "poziom": "korek"
+      "ratio": 1.112,
+      "poziom": "plynnie"
     },
     {
       "id": "wyjazd-plac20-czmon",
