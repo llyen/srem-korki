@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-09T16:04:20+00:00",
-  "pobrano_lokalnie": "2026-11-09T17:04:20+01:00",
+  "pobrano_utc": "2026-11-09T16:34:21+00:00",
+  "pobrano_lokalnie": "2026-11-09T17:34:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 12,
-  "zdarzen_przy_trasach": 9,
+  "zdarzen_w_prostokacie": 11,
+  "zdarzen_przy_trasach": 7,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 221,
+    "zapytan": 222,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -46,12 +46,12 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Księdza Jerzego Popiełuszki",
-      "do": "Józefa Piłsudskiego",
+      "od": "Józefa Piłsudskiego",
+      "do": "Księdza Jerzego Popiełuszki",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-30T18:09:30Z",
+      "od_kiedy": "2026-07-31T08:11:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -66,84 +66,51 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1188,
-      "dlugosc_m": 3316,
+      "opoznienie_s": 1174,
+      "dlugosc_m": 3939,
       "od_kiedy": "2026-11-09T14:50:45Z",
-      "do_kiedy": "2026-11-09T16:57:45Z"
+      "do_kiedy": "2026-11-09T17:22:15Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 881,
-      "dlugosc_m": 865,
-      "od_kiedy": "2026-11-09T13:32:15Z",
-      "do_kiedy": "2026-11-09T16:49:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Piłsudskiego (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 383,
-      "dlugosc_m": 517,
-      "od_kiedy": "2026-11-09T13:14:15Z",
-      "do_kiedy": "2026-11-09T16:34:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Borgowo (434)",
+      "od": "Grzymisław (436) (434)",
       "do": "Śrem ul. Gostyńska (432) (434)",
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 320,
-      "dlugosc_m": 719,
-      "od_kiedy": "2026-11-09T13:59:15Z",
-      "do_kiedy": "2026-11-09T16:24:45Z"
+      "opoznienie_s": 342,
+      "dlugosc_m": 555,
+      "od_kiedy": "2026-11-09T16:24:45Z",
+      "do_kiedy": "2026-11-09T16:56:15Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Józefa Piłsudskiego",
+      "od": "Tytusa Działyńskiego",
+      "do": "Rondo Powstańców Wielkopolskich",
+      "drogi": [],
+      "opoznienie_s": 262,
+      "dlugosc_m": 175,
+      "od_kiedy": "2026-11-09T16:28:45Z",
+      "do_kiedy": "2026-11-09T16:53:15Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Marszałka Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 188,
-      "dlugosc_m": 440,
+      "opoznienie_s": 115,
+      "dlugosc_m": 196,
       "od_kiedy": "2026-11-09T13:35:15Z",
-      "do_kiedy": "2026-11-09T16:26:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 110,
-      "dlugosc_m": 258,
-      "od_kiedy": "2026-11-09T15:10:45Z",
-      "do_kiedy": "2026-11-09T16:22:45Z"
+      "do_kiedy": "2026-11-09T16:53:15Z"
     }
   ]
 }
