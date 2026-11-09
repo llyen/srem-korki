@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-09T14:34:20+00:00",
-  "pobrano_lokalnie": "2026-11-09T15:34:20+01:00",
+  "pobrano_utc": "2026-11-09T15:04:23+00:00",
+  "pobrano_lokalnie": "2026-11-09T16:04:23+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 13,
-  "zdarzen_przy_trasach": 11,
+  "zdarzen_w_prostokacie": 15,
+  "zdarzen_przy_trasach": 13,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 218,
+    "zapytan": 219,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,10 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1590,
+      "opoznienie_s": 1186,
       "dlugosc_m": 940,
       "od_kiedy": "2026-11-09T13:14:15Z",
-      "do_kiedy": "2026-11-09T15:47:45Z"
+      "do_kiedy": "2026-11-09T15:48:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -81,10 +81,10 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 1133,
-      "dlugosc_m": 1256,
+      "opoznienie_s": 1087,
+      "dlugosc_m": 1332,
       "od_kiedy": "2026-11-09T13:59:15Z",
-      "do_kiedy": "2026-11-09T15:25:45Z"
+      "do_kiedy": "2026-11-09T15:58:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -96,10 +96,10 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 1129,
-      "dlugosc_m": 865,
+      "opoznienie_s": 1078,
+      "dlugosc_m": 985,
       "od_kiedy": "2026-11-09T13:32:15Z",
-      "do_kiedy": "2026-11-09T15:32:45Z"
+      "do_kiedy": "2026-11-09T15:49:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -112,10 +112,53 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 745,
-      "dlugosc_m": 2931,
-      "od_kiedy": "2026-11-09T12:25:15Z",
-      "do_kiedy": "2026-11-09T14:59:45Z"
+      "opoznienie_s": 785,
+      "dlugosc_m": 3939,
+      "od_kiedy": "2026-11-09T14:50:45Z",
+      "do_kiedy": "2026-11-09T15:37:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Leśna",
+      "do": "Średzka",
+      "drogi": [],
+      "opoznienie_s": 453,
+      "dlugosc_m": 176,
+      "od_kiedy": "2026-11-09T14:24:15Z",
+      "do_kiedy": "2026-11-09T15:23:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Gostyńska (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 188,
+      "dlugosc_m": 800,
+      "od_kiedy": "2026-11-09T14:43:15Z",
+      "do_kiedy": "2026-11-09T15:22:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Powstańców Wielkopolskich (Kilińskiego)",
+      "do": "Grunwaldzka (Kilińskiego)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 181,
+      "dlugosc_m": 394,
+      "od_kiedy": "2026-11-09T14:50:15Z",
+      "do_kiedy": "2026-11-09T15:22:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -127,10 +170,10 @@
       "drogi": [
         "436"
       ],
-      "opoznienie_s": 572,
-      "dlugosc_m": 373,
-      "od_kiedy": "2026-11-09T14:15:45Z",
-      "do_kiedy": "2026-11-09T15:00:45Z"
+      "opoznienie_s": 180,
+      "dlugosc_m": 162,
+      "od_kiedy": "2026-11-09T14:57:45Z",
+      "do_kiedy": "2026-11-09T15:22:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -140,38 +183,25 @@
       "od": "Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 403,
-      "dlugosc_m": 468,
+      "opoznienie_s": 126,
+      "dlugosc_m": 394,
       "od_kiedy": "2026-11-09T13:35:15Z",
-      "do_kiedy": "2026-11-09T15:00:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Leśna",
-      "do": "Średzka",
-      "drogi": [],
-      "opoznienie_s": 148,
-      "dlugosc_m": 233,
-      "od_kiedy": "2026-11-09T14:24:15Z",
-      "do_kiedy": "2026-11-09T14:52:45Z"
+      "do_kiedy": "2026-11-09T15:22:45Z"
     },
     {
       "opis": "Korek",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 2,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
+      "od": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Bora-Komorowskiego (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 167,
-      "dlugosc_m": 692,
-      "od_kiedy": "2026-11-09T14:32:15Z",
-      "do_kiedy": "2026-11-09T14:52:45Z"
+      "opoznienie_s": 237,
+      "dlugosc_m": 1131,
+      "od_kiedy": "2026-11-09T14:33:15Z",
+      "do_kiedy": "2026-11-09T15:25:45Z"
     }
   ]
 }
