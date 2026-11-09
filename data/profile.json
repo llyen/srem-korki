@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 35555,
+  "pomiarow_lacznie": 35563,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 4439,
-    "od-czmonia-plac20": 4434,
-    "od-srody-plac20": 4437,
-    "od-gostynia-staszica": 4437,
-    "od-leszna-most-bp": 4437,
-    "od-czempinia-rondo-ak": 4436,
-    "objazd-gostynska": 4439,
-    "wyjazd-plac20-czmon": 4434
+    "obwodnica-plac20": 4440,
+    "od-czmonia-plac20": 4435,
+    "od-srody-plac20": 4438,
+    "od-gostynia-staszica": 4438,
+    "od-leszna-most-bp": 4438,
+    "od-czempinia-rondo-ak": 4437,
+    "objazd-gostynska": 4440,
+    "wyjazd-plac20-czmon": 4435
   },
   "dni_pomiarowe": 70,
   "od": "2026-09-01",
@@ -331,7 +331,7 @@
       },
       "1-9": {
         "mediana_opoznienia_s": 18,
-        "probek": 54
+        "probek": 55
       },
       "1-10": {
         "mediana_opoznienia_s": 17,
@@ -717,7 +717,7 @@
       },
       "1-9": {
         "mediana_opoznienia_s": 51,
-        "probek": 54
+        "probek": 55
       },
       "1-10": {
         "mediana_opoznienia_s": 49,
@@ -1119,7 +1119,7 @@
       },
       "1-9": {
         "mediana_opoznienia_s": 35,
-        "probek": 54
+        "probek": 55
       },
       "1-10": {
         "mediana_opoznienia_s": 32,
@@ -1512,8 +1512,8 @@
         "probek": 60
       },
       "1-9": {
-        "mediana_opoznienia_s": 49,
-        "probek": 54
+        "mediana_opoznienia_s": 50,
+        "probek": 55
       },
       "1-10": {
         "mediana_opoznienia_s": 47,
@@ -1907,7 +1907,7 @@
       },
       "1-9": {
         "mediana_opoznienia_s": 168,
-        "probek": 54
+        "probek": 55
       },
       "1-10": {
         "mediana_opoznienia_s": 162,
@@ -2301,7 +2301,7 @@
       },
       "1-9": {
         "mediana_opoznienia_s": 90,
-        "probek": 54
+        "probek": 55
       },
       "1-10": {
         "mediana_opoznienia_s": 90,
@@ -2694,8 +2694,8 @@
         "probek": 60
       },
       "1-9": {
-        "mediana_opoznienia_s": 60,
-        "probek": 54
+        "mediana_opoznienia_s": 61,
+        "probek": 55
       },
       "1-10": {
         "mediana_opoznienia_s": 53,
@@ -3081,7 +3081,7 @@
       },
       "1-9": {
         "mediana_opoznienia_s": 37,
-        "probek": 54
+        "probek": 55
       },
       "1-10": {
         "mediana_opoznienia_s": 33,
