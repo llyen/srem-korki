@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-09T14:04:23+00:00",
-  "pobrano_lokalnie": "2026-11-09T15:04:23+01:00",
+  "pobrano_utc": "2026-11-09T14:34:20+00:00",
+  "pobrano_lokalnie": "2026-11-09T15:34:20+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 15,
-  "zdarzen_przy_trasach": 13,
+  "zdarzen_w_prostokacie": 13,
+  "zdarzen_przy_trasach": 11,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 217,
+    "zapytan": 218,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Kilińskiego (Sikorskiego)",
-      "do": "Al. Solidarności (Sikorskiego)",
+      "od": "Al. Solidarności (Sikorskiego)",
+      "do": "Kilińskiego (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 111,
-      "od_kiedy": "2026-03-31T04:47:30Z",
+      "dlugosc_m": 94,
+      "od_kiedy": "2026-03-31T04:33:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -46,29 +46,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Józefa Piłsudskiego",
-      "do": "Księdza Jerzego Popiełuszki",
+      "od": "Księdza Jerzego Popiełuszki",
+      "do": "Józefa Piłsudskiego",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-31T08:11:30Z",
+      "od_kiedy": "2026-07-30T18:09:30Z",
       "do_kiedy": "",
       "obie_strony": true
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 982,
-      "dlugosc_m": 865,
-      "od_kiedy": "2026-11-09T13:32:15Z",
-      "do_kiedy": "2026-11-09T14:59:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -81,10 +66,40 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 762,
+      "opoznienie_s": 1590,
       "dlugosc_m": 940,
       "od_kiedy": "2026-11-09T13:14:15Z",
-      "do_kiedy": "2026-11-09T14:39:45Z"
+      "do_kiedy": "2026-11-09T15:47:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Borgowo (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 1133,
+      "dlugosc_m": 1256,
+      "od_kiedy": "2026-11-09T13:59:15Z",
+      "do_kiedy": "2026-11-09T15:25:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Zbrudzewo (434)",
+      "do": "Śrem ul. Piłsudskiego (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 1129,
+      "dlugosc_m": 865,
+      "od_kiedy": "2026-11-09T13:32:15Z",
+      "do_kiedy": "2026-11-09T15:32:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -92,15 +107,30 @@
       "kategoria_nazwa": "korek",
       "waga": 3,
       "od": "Mechlin (432)",
-      "do": "Śrem ul. Szkolna (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 538,
-      "dlugosc_m": 1467,
+      "opoznienie_s": 745,
+      "dlugosc_m": 2931,
       "od_kiedy": "2026-11-09T12:25:15Z",
-      "do_kiedy": "2026-11-09T14:30:45Z"
+      "do_kiedy": "2026-11-09T14:59:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Sosnowiec (436)",
+      "do": "Grzymisław (434) (436)",
+      "drogi": [
+        "436"
+      ],
+      "opoznienie_s": 572,
+      "dlugosc_m": 373,
+      "od_kiedy": "2026-11-09T14:15:45Z",
+      "do_kiedy": "2026-11-09T15:00:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -110,10 +140,10 @@
       "od": "Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 331,
-      "dlugosc_m": 363,
+      "opoznienie_s": 403,
+      "dlugosc_m": 468,
       "od_kiedy": "2026-11-09T13:35:15Z",
-      "do_kiedy": "2026-11-09T14:37:45Z"
+      "do_kiedy": "2026-11-09T15:00:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -123,85 +153,25 @@
       "od": "Leśna",
       "do": "Średzka",
       "drogi": [],
-      "opoznienie_s": 323,
-      "dlugosc_m": 176,
-      "od_kiedy": "2026-11-09T14:00:15Z",
-      "do_kiedy": "2026-11-09T14:22:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem",
-      "do": "Józefa Piłsudskiego",
-      "drogi": [],
-      "opoznienie_s": 221,
-      "dlugosc_m": 179,
-      "od_kiedy": "2026-11-09T13:45:15Z",
-      "do_kiedy": "2026-11-09T14:22:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Grzymisław (436) (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 210,
-      "dlugosc_m": 476,
-      "od_kiedy": "2026-11-09T13:59:15Z",
-      "do_kiedy": "2026-11-09T14:25:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Szkolna (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 119,
-      "dlugosc_m": 498,
-      "od_kiedy": "2026-11-09T13:59:45Z",
-      "do_kiedy": "2026-11-09T14:22:45Z"
+      "opoznienie_s": 148,
+      "dlugosc_m": 233,
+      "od_kiedy": "2026-11-09T14:24:15Z",
+      "do_kiedy": "2026-11-09T14:52:45Z"
     },
     {
       "opis": "Korek",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 2,
-      "od": "Kadzewo (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. 1 Maja (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 156,
-      "dlugosc_m": 796,
-      "od_kiedy": "2026-11-09T13:59:45Z",
-      "do_kiedy": "2026-11-09T14:22:45Z"
-    },
-    {
-      "opis": "Powolny ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 1,
-      "od": "Śrem ul. Szkolna (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 183,
-      "dlugosc_m": 2264,
-      "od_kiedy": "2026-11-09T12:25:15Z",
-      "do_kiedy": "2026-11-09T14:30:45Z"
+      "opoznienie_s": 167,
+      "dlugosc_m": 692,
+      "od_kiedy": "2026-11-09T14:32:15Z",
+      "do_kiedy": "2026-11-09T14:52:45Z"
     }
   ]
 }
