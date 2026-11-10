@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 36451,
+  "pomiarow_lacznie": 36459,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 4551,
-    "od-czmonia-plac20": 4546,
-    "od-srody-plac20": 4549,
-    "od-gostynia-staszica": 4549,
-    "od-leszna-most-bp": 4549,
-    "od-czempinia-rondo-ak": 4548,
-    "objazd-gostynska": 4551,
-    "wyjazd-plac20-czmon": 4546
+    "obwodnica-plac20": 4552,
+    "od-czmonia-plac20": 4547,
+    "od-srody-plac20": 4550,
+    "od-gostynia-staszica": 4550,
+    "od-leszna-most-bp": 4550,
+    "od-czempinia-rondo-ak": 4549,
+    "objazd-gostynska": 4552,
+    "wyjazd-plac20-czmon": 4547
   },
   "dni_pomiarowe": 71,
   "od": "2026-09-01",
@@ -407,7 +407,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 11,
-        "probek": 29
+        "probek": 30
       }
     },
     "od-czmonia-plac20": {
@@ -801,7 +801,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 26,
-        "probek": 29
+        "probek": 30
       }
     },
     "od-srody-plac20": {
@@ -1195,7 +1195,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 19,
-        "probek": 29
+        "probek": 30
       }
     },
     "od-gostynia-staszica": {
@@ -1589,7 +1589,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 27,
-        "probek": 29
+        "probek": 30
       }
     },
     "od-leszna-most-bp": {
@@ -1983,7 +1983,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 97,
-        "probek": 29
+        "probek": 30
       }
     },
     "od-czempinia-rondo-ak": {
@@ -2377,7 +2377,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 49,
-        "probek": 29
+        "probek": 30
       }
     },
     "objazd-gostynska": {
@@ -2771,7 +2771,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 32,
-        "probek": 29
+        "probek": 30
       }
     },
     "wyjazd-plac20-czmon": {
@@ -3165,7 +3165,7 @@
       },
       "2-19": {
         "mediana_opoznienia_s": 24,
-        "probek": 29
+        "probek": 30
       }
     }
   }
