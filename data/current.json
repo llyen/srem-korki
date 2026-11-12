@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-11-12T14:24:18+00:00",
-  "pobrano_lokalnie": "2026-11-12T15:24:18+01:00",
+  "pobrano_utc": "2026-11-12T14:34:20+00:00",
+  "pobrano_lokalnie": "2026-11-12T15:34:20+01:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 6128,
+    "zapytan": 6136,
     "budzet": 18500
   },
   "trasy": [
@@ -31,13 +31,13 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 865,
+      "czas_s": 1237,
       "czas_bez_ruchu_s": 595,
-      "opoznienie_s": 270,
-      "opoznienie_wzgl_typowego_s": 221,
+      "opoznienie_s": 642,
+      "opoznienie_wzgl_typowego_s": 594,
       "dlugosc_m": 10738,
-      "ratio": 1.454,
-      "poziom": "utrudnienia"
+      "ratio": 2.079,
+      "poziom": "korek"
     },
     {
       "id": "od-srody-plac20",
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 911,
+      "czas_s": 1153,
       "czas_bez_ruchu_s": 642,
-      "opoznienie_s": 269,
-      "opoznienie_wzgl_typowego_s": 221,
+      "opoznienie_s": 511,
+      "opoznienie_wzgl_typowego_s": 465,
       "dlugosc_m": 8473,
-      "ratio": 1.419,
+      "ratio": 1.796,
       "poziom": "utrudnienia"
     },
     {
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 932,
+      "czas_s": 933,
       "czas_bez_ruchu_s": 855,
-      "opoznienie_s": 77,
+      "opoznienie_s": 78,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 13292,
-      "ratio": 1.09,
+      "ratio": 1.091,
       "poziom": "plynnie"
     },
     {
@@ -79,13 +79,13 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 1028,
+      "czas_s": 1598,
       "czas_bez_ruchu_s": 701,
-      "opoznienie_s": 327,
-      "opoznienie_wzgl_typowego_s": 73,
+      "opoznienie_s": 897,
+      "opoznienie_wzgl_typowego_s": 645,
       "dlugosc_m": 10310,
-      "ratio": 1.466,
-      "poziom": "utrudnienia"
+      "ratio": 2.28,
+      "poziom": "korek"
     },
     {
       "id": "od-czempinia-rondo-ak",
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 614,
+      "czas_s": 615,
       "czas_bez_ruchu_s": 474,
-      "opoznienie_s": 140,
+      "opoznienie_s": 141,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.295,
+      "ratio": 1.297,
       "poziom": "umiarkowanie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1480,
-      "czas_bez_ruchu_s": 361,
-      "opoznienie_s": 1119,
-      "opoznienie_wzgl_typowego_s": 1072,
-      "dlugosc_m": 5532,
-      "ratio": 4.1,
+      "czas_s": 1456,
+      "czas_bez_ruchu_s": 267,
+      "opoznienie_s": 1189,
+      "opoznienie_wzgl_typowego_s": 1142,
+      "dlugosc_m": 4853,
+      "ratio": 5.453,
       "poziom": "korek"
     },
     {
@@ -127,13 +127,13 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 721,
-      "czas_bez_ruchu_s": 631,
-      "opoznienie_s": 90,
-      "opoznienie_wzgl_typowego_s": 32,
-      "dlugosc_m": 11434,
-      "ratio": 1.143,
-      "poziom": "plynnie"
+      "czas_s": 1276,
+      "czas_bez_ruchu_s": 657,
+      "opoznienie_s": 619,
+      "opoznienie_wzgl_typowego_s": 519,
+      "dlugosc_m": 12025,
+      "ratio": 1.942,
+      "poziom": "korek"
     }
   ],
   "bledy": []
