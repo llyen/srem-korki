@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-11-12T12:32:19+00:00",
-  "pobrano_lokalnie": "2026-11-12T13:32:19+01:00",
+  "pobrano_utc": "2026-11-12T13:04:23+00:00",
+  "pobrano_lokalnie": "2026-11-12T14:04:23+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 289,
+    "zapytan": 290,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -17,11 +17,11 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "od": "Tylna",
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 758,
+      "dlugosc_m": 731,
       "od_kiedy": "2026-07-29T17:40:00Z",
       "do_kiedy": ""
     },
@@ -30,14 +30,14 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Al. Solidarności (Sikorskiego)",
-      "do": "Kilińskiego (Sikorskiego)",
+      "od": "Kilińskiego (Sikorskiego)",
+      "do": "Al. Solidarności (Sikorskiego)",
       "drogi": [
         "310"
       ],
       "opoznienie_s": null,
-      "dlugosc_m": 94,
-      "od_kiedy": "2026-03-31T04:33:30Z",
+      "dlugosc_m": 111,
+      "od_kiedy": "2026-03-31T04:47:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -46,12 +46,12 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Księdza Jerzego Popiełuszki",
-      "do": "Józefa Piłsudskiego",
+      "od": "Józefa Piłsudskiego",
+      "do": "Księdza Jerzego Popiełuszki",
       "drogi": [],
       "opoznienie_s": null,
       "dlugosc_m": 79,
-      "od_kiedy": "2026-07-30T18:13:00Z",
+      "od_kiedy": "2026-07-31T08:21:30Z",
       "do_kiedy": "",
       "obie_strony": true
     },
@@ -66,51 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 939,
+      "opoznienie_s": 1048,
       "dlugosc_m": 3939,
       "od_kiedy": "2026-11-12T12:02:15Z",
-      "do_kiedy": "2026-11-12T13:15:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 909,
-      "dlugosc_m": 609,
-      "od_kiedy": "2026-11-12T10:30:15Z",
-      "do_kiedy": "2026-11-12T13:32:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 514,
-      "dlugosc_m": 1256,
-      "od_kiedy": "2026-11-12T12:22:15Z",
-      "do_kiedy": "2026-11-12T13:02:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Poznańska / Księdza Jana Kajetańczyka",
-      "do": "Rondo Premiera Stanisława Mikołajczyka",
-      "drogi": [],
-      "opoznienie_s": 460,
-      "dlugosc_m": 989,
-      "od_kiedy": "2026-11-12T12:10:45Z",
-      "do_kiedy": "2026-11-12T13:02:45Z"
+      "do_kiedy": "2026-11-12T13:45:15Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -122,10 +81,51 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 147,
-      "dlugosc_m": 190,
+      "opoznienie_s": 890,
+      "dlugosc_m": 586,
       "od_kiedy": "2026-11-12T12:28:45Z",
-      "do_kiedy": "2026-11-12T12:53:45Z"
+      "do_kiedy": "2026-11-12T13:44:15Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 880,
+      "dlugosc_m": 623,
+      "od_kiedy": "2026-11-12T10:30:15Z",
+      "do_kiedy": "2026-11-12T14:01:15Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
+      "do": "Rondo Premiera Stanisława Mikołajczyka",
+      "drogi": [],
+      "opoznienie_s": 629,
+      "dlugosc_m": 1407,
+      "od_kiedy": "2026-11-12T12:10:45Z",
+      "do_kiedy": "2026-11-12T13:32:15Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Borgowo (434)",
+      "do": "Śrem ul. Gostyńska (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 435,
+      "dlugosc_m": 775,
+      "od_kiedy": "2026-11-12T12:22:15Z",
+      "do_kiedy": "2026-11-12T13:24:15Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -138,10 +138,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 130,
-      "dlugosc_m": 175,
-      "od_kiedy": "2026-11-12T12:29:15Z",
-      "do_kiedy": "2026-11-12T12:50:45Z"
+      "opoznienie_s": 434,
+      "dlugosc_m": 940,
+      "od_kiedy": "2026-11-12T12:53:15Z",
+      "do_kiedy": "2026-11-12T13:35:15Z"
     },
     {
       "opis": "Korek",
@@ -153,10 +153,10 @@
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 151,
-      "dlugosc_m": 800,
-      "od_kiedy": "2026-11-12T12:27:45Z",
-      "do_kiedy": "2026-11-12T12:50:45Z"
+      "opoznienie_s": 138,
+      "dlugosc_m": 779,
+      "od_kiedy": "2026-11-12T13:02:45Z",
+      "do_kiedy": "2026-11-12T13:23:15Z"
     }
   ]
 }
