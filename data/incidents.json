@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-13T13:34:20+00:00",
-  "pobrano_lokalnie": "2026-11-13T14:34:20+01:00",
+  "pobrano_utc": "2026-11-13T14:04:20+00:00",
+  "pobrano_lokalnie": "2026-11-13T15:04:20+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 12,
+  "zdarzen_w_prostokacie": 13,
   "zdarzen_przy_trasach": 10,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 316,
+    "zapytan": 317,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,13 +60,15 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 1973,
-      "dlugosc_m": 843,
-      "od_kiedy": "2026-11-13T10:53:45Z",
-      "do_kiedy": "2026-11-13T15:04:45Z"
+      "od": "Zbrudzewo (434)",
+      "do": "Śrem ul. Piłsudskiego (432) (434)",
+      "drogi": [
+        "434"
+      ],
+      "opoznienie_s": 1873,
+      "dlugosc_m": 985,
+      "od_kiedy": "2026-11-13T13:03:45Z",
+      "do_kiedy": "2026-11-13T15:48:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -79,10 +81,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1904,
+      "opoznienie_s": 1382,
       "dlugosc_m": 1506,
       "od_kiedy": "2026-11-13T13:09:15Z",
-      "do_kiedy": "2026-11-13T15:02:45Z"
+      "do_kiedy": "2026-11-13T14:39:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -95,68 +97,64 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 1664,
-      "dlugosc_m": 3639,
+      "opoznienie_s": 1231,
+      "dlugosc_m": 3177,
       "od_kiedy": "2026-11-13T12:00:45Z",
-      "do_kiedy": "2026-11-13T14:43:45Z"
+      "do_kiedy": "2026-11-13T14:56:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 896,
-      "dlugosc_m": 865,
-      "od_kiedy": "2026-11-13T13:03:45Z",
-      "do_kiedy": "2026-11-13T14:13:45Z"
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 1171,
+      "dlugosc_m": 609,
+      "od_kiedy": "2026-11-13T10:53:45Z",
+      "do_kiedy": "2026-11-13T14:47:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Józefa Piłsudskiego",
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 555,
-      "dlugosc_m": 450,
+      "opoznienie_s": 578,
+      "dlugosc_m": 1407,
       "od_kiedy": "2026-11-13T12:29:15Z",
-      "do_kiedy": "2026-11-13T13:54:45Z"
+      "do_kiedy": "2026-11-13T14:46:45Z"
     },
     {
-      "opis": "Korek",
+      "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 182,
-      "dlugosc_m": 1054,
-      "od_kiedy": "2026-11-13T12:40:15Z",
-      "do_kiedy": "2026-11-13T13:53:45Z"
+      "waga": 3,
+      "od": "Leśna",
+      "do": "Średzka",
+      "drogi": [],
+      "opoznienie_s": 263,
+      "dlugosc_m": 176,
+      "od_kiedy": "2026-11-13T13:44:45Z",
+      "do_kiedy": "2026-11-13T14:22:45Z"
     },
     {
-      "opis": "Korek",
+      "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
+      "waga": 3,
+      "od": "Śrem ul. Gostyńska (434) (432)",
+      "do": "Śrem ul. Gostyńska (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 122,
-      "dlugosc_m": 692,
-      "od_kiedy": "2026-11-13T13:32:45Z",
-      "do_kiedy": "2026-11-13T13:52:45Z"
+      "opoznienie_s": 203,
+      "dlugosc_m": 800,
+      "od_kiedy": "2026-11-13T13:57:45Z",
+      "do_kiedy": "2026-11-13T14:22:45Z"
     }
   ]
 }
