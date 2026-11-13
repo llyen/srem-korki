@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-13T11:12:20+00:00",
-  "pobrano_lokalnie": "2026-11-13T12:12:20+01:00",
+  "pobrano_utc": "2026-11-13T11:52:22+00:00",
+  "pobrano_lokalnie": "2026-11-13T12:52:22+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
   "zdarzen_w_prostokacie": 9,
-  "zdarzen_przy_trasach": 7,
+  "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 312,
+    "zapytan": 313,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,57 +60,29 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 1322,
+      "dlugosc_m": 609,
+      "od_kiedy": "2026-11-13T10:53:45Z",
+      "do_kiedy": "2026-11-13T13:23:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
       "od": "Śrem ul. Piłsudskiego (434) (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 774,
-      "dlugosc_m": 3712,
+      "opoznienie_s": 717,
+      "dlugosc_m": 2752,
       "od_kiedy": "2026-11-13T10:18:15Z",
-      "do_kiedy": "2026-11-13T11:52:15Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 372,
-      "dlugosc_m": 301,
-      "od_kiedy": "2026-11-13T10:53:45Z",
-      "do_kiedy": "2026-11-13T11:34:15Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Grzymisław (436) (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 228,
-      "dlugosc_m": 428,
-      "od_kiedy": "2026-11-13T11:10:15Z",
-      "do_kiedy": "2026-11-13T11:31:15Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Bnińska / Pasieczna",
-      "do": "Lipowa",
-      "drogi": [],
-      "opoznienie_s": 228,
-      "dlugosc_m": 180,
-      "od_kiedy": "2026-11-13T11:01:45Z",
-      "do_kiedy": "2026-11-13T11:31:15Z"
+      "do_kiedy": "2026-11-13T12:24:45Z"
     }
   ]
 }
