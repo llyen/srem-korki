@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-11-13T16:24:21+00:00",
-  "pobrano_lokalnie": "2026-11-13T17:24:21+01:00",
+  "pobrano_utc": "2026-11-13T16:34:18+00:00",
+  "pobrano_lokalnie": "2026-11-13T17:34:18+01:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 6752,
+    "zapytan": 6760,
     "budzet": 18500
   },
   "trasy": [
@@ -15,13 +15,13 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Plac 20 Października",
       "uwaga": "Trasa prowadzi mostem Majora Stefana Chosłowskiego na północy miasta, a nie remontowanym mostem Kęszyckiego. Jest krótka (ok. 2,1 km), więc zator widać na niej wyraźniej niż na trasach dojazdowych, gdzie kilka minut postoju rozkłada się na 8 km.",
-      "czas_s": 217,
+      "czas_s": 210,
       "czas_bez_ruchu_s": 184,
-      "opoznienie_s": 33,
-      "opoznienie_wzgl_typowego_s": 8,
+      "opoznienie_s": 26,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 2115,
-      "ratio": 1.179,
-      "poziom": "umiarkowanie"
+      "ratio": 1.141,
+      "poziom": "plynnie"
     },
     {
       "id": "od-czmonia-plac20",
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 654,
-      "czas_bez_ruchu_s": 595,
-      "opoznienie_s": 59,
+      "czas_s": 630,
+      "czas_bez_ruchu_s": 555,
+      "opoznienie_s": 75,
       "opoznienie_wzgl_typowego_s": 0,
-      "dlugosc_m": 10738,
-      "ratio": 1.099,
+      "dlugosc_m": 10862,
+      "ratio": 1.135,
       "poziom": "plynnie"
     },
     {
@@ -47,13 +47,13 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 571,
+      "czas_s": 453,
       "czas_bez_ruchu_s": 400,
-      "opoznienie_s": 171,
-      "opoznienie_wzgl_typowego_s": 134,
+      "opoznienie_s": 53,
+      "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.427,
-      "poziom": "utrudnienia"
+      "ratio": 1.133,
+      "poziom": "plynnie"
     },
     {
       "id": "od-gostynia-staszica",
@@ -63,13 +63,13 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 733,
+      "czas_s": 591,
       "czas_bez_ruchu_s": 305,
-      "opoznienie_s": 428,
-      "opoznienie_wzgl_typowego_s": 381,
+      "opoznienie_s": 286,
+      "opoznienie_wzgl_typowego_s": 221,
       "dlugosc_m": 5524,
-      "ratio": 2.403,
-      "poziom": "korek"
+      "ratio": 1.938,
+      "poziom": "utrudnienia"
     },
     {
       "id": "od-leszna-most-bp",
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 919,
-      "czas_bez_ruchu_s": 701,
-      "opoznienie_s": 218,
-      "opoznienie_wzgl_typowego_s": 13,
-      "dlugosc_m": 10310,
-      "ratio": 1.311,
+      "czas_s": 829,
+      "czas_bez_ruchu_s": 619,
+      "opoznienie_s": 210,
+      "opoznienie_wzgl_typowego_s": 0,
+      "dlugosc_m": 9670,
+      "ratio": 1.339,
       "poziom": "umiarkowanie"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 592,
+      "czas_s": 589,
       "czas_bez_ruchu_s": 474,
-      "opoznienie_s": 118,
+      "opoznienie_s": 115,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.249,
+      "ratio": 1.243,
       "poziom": "umiarkowanie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1289,
+      "czas_s": 1176,
       "czas_bez_ruchu_s": 267,
-      "opoznienie_s": 1022,
-      "opoznienie_wzgl_typowego_s": 998,
+      "opoznienie_s": 909,
+      "opoznienie_wzgl_typowego_s": 882,
       "dlugosc_m": 4853,
-      "ratio": 4.828,
+      "ratio": 4.404,
       "poziom": "korek"
     },
     {
@@ -127,13 +127,13 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 746,
-      "czas_bez_ruchu_s": 609,
-      "opoznienie_s": 137,
-      "opoznienie_wzgl_typowego_s": 63,
-      "dlugosc_m": 10746,
-      "ratio": 1.225,
-      "poziom": "umiarkowanie"
+      "czas_s": 640,
+      "czas_bez_ruchu_s": 562,
+      "opoznienie_s": 78,
+      "opoznienie_wzgl_typowego_s": 0,
+      "dlugosc_m": 10898,
+      "ratio": 1.139,
+      "poziom": "plynnie"
     }
   ],
   "bledy": []
