@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-11-15T14:24:18+00:00",
-  "pobrano_lokalnie": "2026-11-15T15:24:18+01:00",
+  "pobrano_utc": "2026-11-15T14:34:18+00:00",
+  "pobrano_lokalnie": "2026-11-15T15:34:18+01:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 7712,
+    "zapytan": 7720,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 563,
+      "czas_s": 564,
       "czas_bez_ruchu_s": 555,
-      "opoznienie_s": 8,
+      "opoznienie_s": 9,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.014,
+      "ratio": 1.016,
       "poziom": "plynnie"
     },
     {
@@ -48,11 +48,11 @@
       "dokad": "Plac 20 Października",
       "uwaga": "",
       "czas_s": 407,
-      "czas_bez_ruchu_s": 399,
-      "opoznienie_s": 8,
+      "czas_bez_ruchu_s": 400,
+      "opoznienie_s": 7,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7127,
-      "ratio": 1.02,
+      "ratio": 1.018,
       "poziom": "plynnie"
     },
     {
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 323,
+      "czas_s": 324,
       "czas_bez_ruchu_s": 305,
-      "opoznienie_s": 18,
+      "opoznienie_s": 19,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.059,
+      "ratio": 1.062,
       "poziom": "plynnie"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 579,
+      "czas_s": 580,
       "czas_bez_ruchu_s": 561,
-      "opoznienie_s": 18,
+      "opoznienie_s": 19,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.032,
+      "ratio": 1.034,
       "poziom": "plynnie"
     }
   ],
