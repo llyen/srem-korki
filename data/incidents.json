@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-16T15:34:32+00:00",
-  "pobrano_lokalnie": "2026-11-16T16:34:32+01:00",
+  "pobrano_utc": "2026-11-16T16:04:23+00:00",
+  "pobrano_lokalnie": "2026-11-16T17:04:23+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 14,
-  "zdarzen_przy_trasach": 11,
+  "zdarzen_w_prostokacie": 8,
+  "zdarzen_przy_trasach": 6,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 395,
+    "zapytan": 396,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,118 +60,44 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 1096,
-      "dlugosc_m": 3939,
-      "od_kiedy": "2026-11-16T14:47:15Z",
-      "do_kiedy": "2026-11-16T16:18:15Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 896,
-      "dlugosc_m": 609,
+      "opoznienie_s": 221,
+      "dlugosc_m": 301,
       "od_kiedy": "2026-11-16T12:59:45Z",
-      "do_kiedy": "2026-11-16T16:22:15Z"
+      "do_kiedy": "2026-11-16T16:23:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Borgowo (434)",
+      "od": "Grzymisław (436) (434)",
       "do": "Śrem ul. Gostyńska (432) (434)",
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 253,
-      "dlugosc_m": 799,
+      "opoznienie_s": 137,
+      "dlugosc_m": 428,
       "od_kiedy": "2026-11-16T14:27:20Z",
-      "do_kiedy": "2026-11-16T15:55:15Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Kilińskiego (432) (310)",
-      "do": "Śrem ul. Grottgera (310)",
-      "drogi": [],
-      "opoznienie_s": 236,
-      "dlugosc_m": 585,
-      "od_kiedy": "2026-11-16T15:10:45Z",
-      "do_kiedy": "2026-11-16T15:53:15Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. Grunwaldzka (310) (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 215,
-      "dlugosc_m": 359,
-      "od_kiedy": "2026-11-16T15:19:15Z",
-      "do_kiedy": "2026-11-16T15:53:15Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Piłsudskiego (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 154,
-      "dlugosc_m": 229,
-      "od_kiedy": "2026-11-16T15:30:15Z",
-      "do_kiedy": "2026-11-16T15:56:15Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Zbrudzewo (434)",
-      "do": "Śrem ul. Piłsudskiego (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 140,
-      "dlugosc_m": 190,
-      "od_kiedy": "2026-11-16T15:22:19Z",
-      "do_kiedy": "2026-11-16T15:54:15Z"
+      "do_kiedy": "2026-11-16T16:22:45Z"
     },
     {
       "opis": "Korek",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 2,
-      "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Gostyńska (432)",
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
-        "432"
+        "432",
+        "434"
       ],
-      "opoznienie_s": 122,
-      "dlugosc_m": 779,
-      "od_kiedy": "2026-11-16T15:23:45Z",
-      "do_kiedy": "2026-11-16T15:53:15Z"
+      "opoznienie_s": 413,
+      "dlugosc_m": 3928,
+      "od_kiedy": "2026-11-16T14:47:15Z",
+      "do_kiedy": "2026-11-16T16:30:45Z"
     }
   ]
 }
