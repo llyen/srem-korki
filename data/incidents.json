@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-18T14:34:29+00:00",
-  "pobrano_lokalnie": "2026-11-18T15:34:29+01:00",
+  "pobrano_utc": "2026-11-18T15:04:21+00:00",
+  "pobrano_lokalnie": "2026-11-18T16:04:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 18,
-  "zdarzen_przy_trasach": 13,
+  "zdarzen_w_prostokacie": 16,
+  "zdarzen_przy_trasach": 14,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 443,
+    "zapytan": 444,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,13 +60,29 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
+      "od": "Mechlin (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 1202,
+      "dlugosc_m": 3939,
+      "od_kiedy": "2026-11-18T13:41:45Z",
+      "do_kiedy": "2026-11-18T15:50:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 1581,
-      "dlugosc_m": 609,
+      "opoznienie_s": 875,
+      "dlugosc_m": 301,
       "od_kiedy": "2026-11-18T13:09:15Z",
-      "do_kiedy": "2026-11-18T15:59:45Z"
+      "do_kiedy": "2026-11-18T15:42:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -78,26 +94,10 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 1036,
-      "dlugosc_m": 985,
+      "opoznienie_s": 662,
+      "dlugosc_m": 586,
       "od_kiedy": "2026-11-18T13:46:15Z",
-      "do_kiedy": "2026-11-18T15:20:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 989,
-      "dlugosc_m": 3939,
-      "od_kiedy": "2026-11-18T13:41:45Z",
-      "do_kiedy": "2026-11-18T15:15:45Z"
+      "do_kiedy": "2026-11-18T15:38:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -110,10 +110,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 896,
+      "opoznienie_s": 548,
       "dlugosc_m": 940,
       "od_kiedy": "2026-11-18T14:06:45Z",
-      "do_kiedy": "2026-11-18T15:18:45Z"
+      "do_kiedy": "2026-11-18T15:31:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -125,10 +125,10 @@
       "drogi": [
         "434"
       ],
-      "opoznienie_s": 549,
-      "dlugosc_m": 1054,
+      "opoznienie_s": 428,
+      "dlugosc_m": 775,
       "od_kiedy": "2026-11-18T13:42:15Z",
-      "do_kiedy": "2026-11-18T15:02:45Z"
+      "do_kiedy": "2026-11-18T15:22:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -138,23 +138,64 @@
       "od": "Józefa Piłsudskiego",
       "do": "Rondo Premiera Stanisława Mikołajczyka",
       "drogi": [],
-      "opoznienie_s": 480,
-      "dlugosc_m": 588,
+      "opoznienie_s": 366,
+      "dlugosc_m": 468,
       "od_kiedy": "2026-11-18T13:27:15Z",
-      "do_kiedy": "2026-11-18T15:05:45Z"
+      "do_kiedy": "2026-11-18T15:29:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Śrem ul. Grottgera (310)",
-      "do": "Śrem ul. Kilińskiego (432) (310)",
+      "od": "Śrem ul. Bora-Komorowskiego (432)",
+      "do": "Śrem ul. Grunwaldzka (310) (432)",
+      "drogi": [
+        "432"
+      ],
+      "opoznienie_s": 182,
+      "dlugosc_m": 542,
+      "od_kiedy": "2026-11-18T14:25:45Z",
+      "do_kiedy": "2026-11-18T15:22:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Leśna",
+      "do": "Średzka",
       "drogi": [],
-      "opoznienie_s": 133,
-      "dlugosc_m": 335,
-      "od_kiedy": "2026-11-18T14:27:45Z",
-      "do_kiedy": "2026-11-18T14:52:45Z"
+      "opoznienie_s": 172,
+      "dlugosc_m": 176,
+      "od_kiedy": "2026-11-18T15:02:15Z",
+      "do_kiedy": "2026-11-18T15:22:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Śrem ul. Kilińskiego (432) (310)",
+      "do": "Śrem ul. Grottgera (310)",
+      "drogi": [],
+      "opoznienie_s": 131,
+      "dlugosc_m": 428,
+      "od_kiedy": "2026-11-18T14:55:45Z",
+      "do_kiedy": "2026-11-18T15:22:45Z"
+    },
+    {
+      "opis": "Zatrzymany ruch drogowy",
+      "kategoria": 6,
+      "kategoria_nazwa": "korek",
+      "waga": 3,
+      "od": "Spółdzielcza / Sosnowa",
+      "do": "Marszałka Józefa Piłsudskiego",
+      "drogi": [],
+      "opoznienie_s": 120,
+      "dlugosc_m": 137,
+      "od_kiedy": "2026-11-18T14:57:45Z",
+      "do_kiedy": "2026-11-18T15:22:45Z"
     },
     {
       "opis": "Korek",
@@ -162,44 +203,14 @@
       "kategoria_nazwa": "korek",
       "waga": 2,
       "od": "Śrem ul. Gostyńska (434) (432)",
-      "do": "Śrem ul. Staszica (432)",
+      "do": "Śrem ul. Gostyńska (432)",
       "drogi": [
         "432"
       ],
-      "opoznienie_s": 208,
-      "dlugosc_m": 1065,
-      "od_kiedy": "2026-11-18T13:54:15Z",
-      "do_kiedy": "2026-11-18T14:52:45Z"
-    },
-    {
-      "opis": "Korek",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 146,
-      "dlugosc_m": 876,
-      "od_kiedy": "2026-11-18T14:25:45Z",
-      "do_kiedy": "2026-11-18T14:52:45Z"
-    },
-    {
-      "opis": "Powolny ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 1,
-      "od": "Śrem ul. Staszica (432)",
-      "do": "Śrem ul. Bora-Komorowskiego (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 134,
-      "dlugosc_m": 1131,
-      "od_kiedy": "2026-11-18T14:12:15Z",
-      "do_kiedy": "2026-11-18T14:52:45Z"
+      "opoznienie_s": 128,
+      "dlugosc_m": 779,
+      "od_kiedy": "2026-11-18T14:39:15Z",
+      "do_kiedy": "2026-11-18T15:22:45Z"
     }
   ]
 }
