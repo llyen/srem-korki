@@ -1,16 +1,16 @@
 {
   "min_probek": 3,
-  "pomiarow_lacznie": 41683,
+  "pomiarow_lacznie": 41691,
   "pomiarow_trasy_wycofane": 62,
   "pomiarow_trasy": {
-    "obwodnica-plac20": 5205,
-    "od-czmonia-plac20": 5200,
-    "od-srody-plac20": 5203,
-    "od-gostynia-staszica": 5203,
-    "od-leszna-most-bp": 5203,
-    "od-czempinia-rondo-ak": 5202,
-    "objazd-gostynska": 5205,
-    "wyjazd-plac20-czmon": 5200
+    "obwodnica-plac20": 5206,
+    "od-czmonia-plac20": 5201,
+    "od-srody-plac20": 5204,
+    "od-gostynia-staszica": 5204,
+    "od-leszna-most-bp": 5204,
+    "od-czempinia-rondo-ak": 5203,
+    "objazd-gostynska": 5206,
+    "wyjazd-plac20-czmon": 5201
   },
   "dni_pomiarowe": 81,
   "od": "2026-09-01",
@@ -199,7 +199,7 @@
       },
       "5-18": {
         "mediana_opoznienia_s": 10,
-        "probek": 35
+        "probek": 36
       },
       "5-19": {
         "mediana_opoznienia_s": 10,
@@ -585,7 +585,7 @@
       },
       "5-18": {
         "mediana_opoznienia_s": 33,
-        "probek": 35
+        "probek": 36
       },
       "5-19": {
         "mediana_opoznienia_s": 31,
@@ -987,7 +987,7 @@
       },
       "5-18": {
         "mediana_opoznienia_s": 22,
-        "probek": 35
+        "probek": 36
       },
       "5-19": {
         "mediana_opoznienia_s": 19,
@@ -1381,7 +1381,7 @@
       },
       "5-18": {
         "mediana_opoznienia_s": 40,
-        "probek": 35
+        "probek": 36
       },
       "5-19": {
         "mediana_opoznienia_s": 33,
@@ -1775,7 +1775,7 @@
       },
       "5-18": {
         "mediana_opoznienia_s": 143,
-        "probek": 35
+        "probek": 36
       },
       "5-19": {
         "mediana_opoznienia_s": 113,
@@ -2169,7 +2169,7 @@
       },
       "5-18": {
         "mediana_opoznienia_s": 75,
-        "probek": 35
+        "probek": 36
       },
       "5-19": {
         "mediana_opoznienia_s": 58,
@@ -2562,8 +2562,8 @@
         "probek": 72
       },
       "5-18": {
-        "mediana_opoznienia_s": 363,
-        "probek": 35
+        "mediana_opoznienia_s": 353,
+        "probek": 36
       },
       "5-19": {
         "mediana_opoznienia_s": 44,
@@ -2949,7 +2949,7 @@
       },
       "5-18": {
         "mediana_opoznienia_s": 35,
-        "probek": 35
+        "probek": 36
       },
       "5-19": {
         "mediana_opoznienia_s": 28,
