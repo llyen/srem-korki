@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-11-21T14:04:22+00:00",
-  "pobrano_lokalnie": "2026-11-21T15:04:22+01:00",
+  "pobrano_utc": "2026-11-21T14:34:20+00:00",
+  "pobrano_lokalnie": "2026-11-21T15:34:20+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 4,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 517,
+    "zapytan": 518,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -56,20 +56,20 @@
       "obie_strony": true
     },
     {
-      "opis": "Korek",
+      "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 2,
+      "waga": 3,
       "od": "Śrem ul. Szkolna (432)",
       "do": "Śrem ul. Gostyńska (434) (432)",
       "drogi": [
         "432",
         "434"
       ],
-      "opoznienie_s": 255,
-      "dlugosc_m": 2197,
-      "od_kiedy": "2026-11-21T13:32:15Z",
-      "do_kiedy": "2026-11-21T14:23:45Z"
+      "opoznienie_s": 164,
+      "dlugosc_m": 994,
+      "od_kiedy": "2026-11-21T14:30:15Z",
+      "do_kiedy": "2026-11-21T14:53:15Z"
     }
   ]
 }
