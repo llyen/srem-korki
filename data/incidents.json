@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-11-21T10:32:22+00:00",
-  "pobrano_lokalnie": "2026-11-21T11:32:22+01:00",
+  "pobrano_utc": "2026-11-21T11:12:21+00:00",
+  "pobrano_lokalnie": "2026-11-21T12:12:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 4,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 511,
+    "zapytan": 512,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -60,13 +60,16 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 208,
-      "dlugosc_m": 301,
-      "od_kiedy": "2026-11-21T10:16:45Z",
-      "do_kiedy": "2026-11-21T10:52:15Z"
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 473,
+      "dlugosc_m": 2491,
+      "od_kiedy": "2026-11-21T11:01:15Z",
+      "do_kiedy": "2026-11-21T11:44:15Z"
     }
   ]
 }
