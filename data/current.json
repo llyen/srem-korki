@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-11-21T15:54:19+00:00",
-  "pobrano_lokalnie": "2026-11-21T16:54:19+01:00",
+  "pobrano_utc": "2026-11-21T16:04:20+00:00",
+  "pobrano_lokalnie": "2026-11-21T17:04:20+01:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 10928,
+    "zapytan": 10936,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 584,
+      "czas_s": 586,
       "czas_bez_ruchu_s": 555,
-      "opoznienie_s": 29,
+      "opoznienie_s": 31,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10862,
-      "ratio": 1.052,
+      "ratio": 1.056,
       "poziom": "plynnie"
     },
     {
@@ -63,12 +63,12 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 343,
+      "czas_s": 344,
       "czas_bez_ruchu_s": 305,
-      "opoznienie_s": 38,
+      "opoznienie_s": 39,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 5524,
-      "ratio": 1.125,
+      "ratio": 1.128,
       "poziom": "plynnie"
     },
     {
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 758,
+      "czas_s": 759,
       "czas_bez_ruchu_s": 619,
-      "opoznienie_s": 139,
+      "opoznienie_s": 140,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 9670,
-      "ratio": 1.225,
+      "ratio": 1.226,
       "poziom": "umiarkowanie"
     },
     {
@@ -127,12 +127,12 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 590,
+      "czas_s": 593,
       "czas_bez_ruchu_s": 561,
-      "opoznienie_s": 29,
+      "opoznienie_s": 32,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10898,
-      "ratio": 1.052,
+      "ratio": 1.057,
       "poziom": "plynnie"
     }
   ],
