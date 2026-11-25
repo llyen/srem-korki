@@ -1,6 +1,6 @@
 {
-  "pobrano_utc": "2026-11-25T10:32:21+00:00",
-  "pobrano_lokalnie": "2026-11-25T11:32:21+01:00",
+  "pobrano_utc": "2026-11-25T11:12:21+00:00",
+  "pobrano_lokalnie": "2026-11-25T12:12:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
@@ -8,7 +8,7 @@
   "zdarzen_przy_trasach": 4,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 611,
+    "zapytan": 612,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -56,19 +56,17 @@
       "obie_strony": true
     },
     {
-      "opis": "Korek",
+      "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
-      "waga": 2,
-      "od": "Śrem ul. Staszica (432)",
-      "do": "Śrem ul. Bora-Komorowskiego (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 210,
-      "dlugosc_m": 1049,
-      "od_kiedy": "2026-11-25T10:27:45Z",
-      "do_kiedy": "2026-11-25T10:51:15Z"
+      "waga": 3,
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 181,
+      "dlugosc_m": 301,
+      "od_kiedy": "2026-11-25T11:05:45Z",
+      "do_kiedy": "2026-11-25T11:31:15Z"
     }
   ]
 }
