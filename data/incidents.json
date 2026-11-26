@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-26T07:04:21+00:00",
-  "pobrano_lokalnie": "2026-11-26T08:04:21+01:00",
+  "pobrano_utc": "2026-11-26T07:34:22+00:00",
+  "pobrano_lokalnie": "2026-11-26T08:34:22+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 11,
-  "zdarzen_przy_trasach": 9,
+  "zdarzen_w_prostokacie": 7,
+  "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 630,
+    "zapytan": 631,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -66,55 +66,10 @@
         "432",
         "434"
       ],
-      "opoznienie_s": 872,
-      "dlugosc_m": 3712,
+      "opoznienie_s": 510,
+      "dlugosc_m": 2765,
       "od_kiedy": "2026-11-26T05:50:15Z",
-      "do_kiedy": "2026-11-26T07:36:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Bora-Komorowskiego (432)",
-      "do": "Śrem ul. 1 Maja (432)",
-      "drogi": [
-        "432"
-      ],
-      "opoznienie_s": 414,
-      "dlugosc_m": 876,
-      "od_kiedy": "2026-11-26T06:42:15Z",
-      "do_kiedy": "2026-11-26T07:34:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Borgowo (434)",
-      "do": "Śrem ul. Gostyńska (432) (434)",
-      "drogi": [
-        "434"
-      ],
-      "opoznienie_s": 357,
-      "dlugosc_m": 799,
-      "od_kiedy": "2026-11-26T06:27:45Z",
-      "do_kiedy": "2026-11-26T07:26:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Sosnowiec (436)",
-      "do": "Grzymisław (434) (436)",
-      "drogi": [
-        "436"
-      ],
-      "opoznienie_s": 282,
-      "dlugosc_m": 373,
-      "od_kiedy": "2026-11-26T06:34:45Z",
-      "do_kiedy": "2026-11-26T07:25:45Z"
+      "do_kiedy": "2026-11-26T08:07:15Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
@@ -124,23 +79,10 @@
       "od": "Stanisława Wojciechowskiego",
       "do": "Kawcze",
       "drogi": [],
-      "opoznienie_s": 201,
-      "dlugosc_m": 301,
+      "opoznienie_s": 145,
+      "dlugosc_m": 142,
       "od_kiedy": "2026-11-26T06:21:45Z",
-      "do_kiedy": "2026-11-26T07:22:45Z"
-    },
-    {
-      "opis": "Zatrzymany ruch drogowy",
-      "kategoria": 6,
-      "kategoria_nazwa": "korek",
-      "waga": 3,
-      "od": "Śrem ul. Grottgera (310)",
-      "do": "Śrem ul. Kilińskiego (432) (310)",
-      "drogi": [],
-      "opoznienie_s": 144,
-      "dlugosc_m": 335,
-      "od_kiedy": "2026-11-26T06:52:45Z",
-      "do_kiedy": "2026-11-26T07:22:45Z"
+      "do_kiedy": "2026-11-26T07:53:15Z"
     }
   ]
 }
