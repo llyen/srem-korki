@@ -1,9 +1,9 @@
 {
-  "pobrano_utc": "2026-11-27T14:04:21+00:00",
-  "pobrano_lokalnie": "2026-11-27T15:04:21+01:00",
+  "pobrano_utc": "2026-11-27T14:14:19+00:00",
+  "pobrano_lokalnie": "2026-11-27T15:14:19+01:00",
   "zrodlo": "TomTom Routing API (traffic=true)",
   "zuzycie_miesieczne": {
-    "zapytan": 13992,
+    "zapytan": 14000,
     "budzet": 18500
   },
   "trasy": [
@@ -31,12 +31,12 @@
       "skad": "Czmoń (DW434)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 647,
+      "czas_s": 648,
       "czas_bez_ruchu_s": 595,
-      "opoznienie_s": 52,
+      "opoznienie_s": 53,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 10738,
-      "ratio": 1.087,
+      "ratio": 1.089,
       "poziom": "plynnie"
     },
     {
@@ -47,12 +47,12 @@
       "skad": "DW432 przy Lucinach (od Środy Wlkp.)",
       "dokad": "Plac 20 Października",
       "uwaga": "",
-      "czas_s": 683,
+      "czas_s": 684,
       "czas_bez_ruchu_s": 642,
-      "opoznienie_s": 41,
+      "opoznienie_s": 42,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 8473,
-      "ratio": 1.064,
+      "ratio": 1.065,
       "poziom": "plynnie"
     },
     {
@@ -63,13 +63,13 @@
       "skad": "DW434 przy Drzonku (od Dolska i Gostynia)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "",
-      "czas_s": 423,
+      "czas_s": 771,
       "czas_bez_ruchu_s": 305,
-      "opoznienie_s": 118,
-      "opoznienie_wzgl_typowego_s": 0,
+      "opoznienie_s": 466,
+      "opoznienie_wzgl_typowego_s": 438,
       "dlugosc_m": 5524,
-      "ratio": 1.387,
-      "poziom": "umiarkowanie"
+      "ratio": 2.528,
+      "poziom": "korek"
     },
     {
       "id": "od-leszna-most-bp",
@@ -79,12 +79,12 @@
       "skad": "DW432 przy Wyrzece (od Krzywinia)",
       "dokad": "rondo Mikołajczyka (przy BP)",
       "uwaga": "Most Kęszyckiego przepuszcza ruch wyłącznie w stronę Poznania, więc to jedyny kierunek, w którym da się nim jechać. Trasa przechodzi przez oba mosty: Kęszyckiego i Chosłowskiego. Punkt pośredni na wschodnim wylocie mostu Kęszyckiego gwarantuje, że pomiar dotyczy przejazdu przez remontowany most, a nie objazdu obwodnicą.",
-      "czas_s": 1328,
-      "czas_bez_ruchu_s": 701,
-      "opoznienie_s": 627,
-      "opoznienie_wzgl_typowego_s": 420,
-      "dlugosc_m": 10310,
-      "ratio": 1.894,
+      "czas_s": 1473,
+      "czas_bez_ruchu_s": 755,
+      "opoznienie_s": 718,
+      "opoznienie_wzgl_typowego_s": 323,
+      "dlugosc_m": 10641,
+      "ratio": 1.951,
       "poziom": "korek"
     },
     {
@@ -95,12 +95,12 @@
       "skad": "DW310 przy Manieczkach (od Czempinia)",
       "dokad": "rondo Armii Krajowej (przy jednostce)",
       "uwaga": "",
-      "czas_s": 612,
+      "czas_s": 613,
       "czas_bez_ruchu_s": 475,
-      "opoznienie_s": 137,
+      "opoznienie_s": 138,
       "opoznienie_wzgl_typowego_s": 0,
       "dlugosc_m": 7368,
-      "ratio": 1.288,
+      "ratio": 1.291,
       "poziom": "umiarkowanie"
     },
     {
@@ -111,12 +111,12 @@
       "skad": "rondo Mikołajczyka (przy BP)",
       "dokad": "Gostyńska × Staszica",
       "uwaga": "To trasa, którą prowadzony jest objazd zamkniętego kierunku na moście Kęszyckiego. Z 4,8 km przypada 3,9 km na samą obwodnicę i 0,8 km na ul. Gostyńską. Punkt pośredni na obwodnicy gwarantuje, że pomiar dotyczy objazdu, a nie przejazdu przez miasto.",
-      "czas_s": 1338,
+      "czas_s": 1335,
       "czas_bez_ruchu_s": 267,
-      "opoznienie_s": 1071,
-      "opoznienie_wzgl_typowego_s": 1035,
+      "opoznienie_s": 1068,
+      "opoznienie_wzgl_typowego_s": 1028,
       "dlugosc_m": 4853,
-      "ratio": 5.011,
+      "ratio": 5.0,
       "poziom": "korek"
     },
     {
@@ -127,13 +127,13 @@
       "skad": "Plac 20 Października",
       "dokad": "Czmoń (DW434)",
       "uwaga": "",
-      "czas_s": 941,
+      "czas_s": 1168,
       "czas_bez_ruchu_s": 631,
-      "opoznienie_s": 310,
-      "opoznienie_wzgl_typowego_s": 252,
+      "opoznienie_s": 537,
+      "opoznienie_wzgl_typowego_s": 477,
       "dlugosc_m": 11434,
-      "ratio": 1.491,
-      "poziom": "utrudnienia"
+      "ratio": 1.851,
+      "poziom": "korek"
     }
   ],
   "bledy": []
