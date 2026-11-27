@@ -1,14 +1,14 @@
 {
-  "pobrano_utc": "2026-11-27T16:34:22+00:00",
-  "pobrano_lokalnie": "2026-11-27T17:34:22+01:00",
+  "pobrano_utc": "2026-11-27T17:12:21+00:00",
+  "pobrano_lokalnie": "2026-11-27T18:12:21+01:00",
   "zrodlo": "TomTom Traffic Incidents API v5 (timeValidityFilter=present)",
   "bbox": "16.9056,52.0130,17.1182,52.2026",
   "promien_dopasowania_m": 250,
-  "zdarzen_w_prostokacie": 8,
+  "zdarzen_w_prostokacie": 7,
   "zdarzen_przy_trasach": 5,
   "zuzycie_miesieczne": {
     "miesiac": "2026-11",
-    "zapytan": 672,
+    "zapytan": 673,
     "budzet": 2200
   },
   "zdarzenia": [
@@ -17,11 +17,11 @@
       "kategoria": 8,
       "kategoria_nazwa": "zamkniecie",
       "waga": 4,
-      "od": "Szkolna",
+      "od": "Poznańska / Księdza Jana Kajetańczyka",
       "do": "Rondo Powstańców Wielkopolskich",
       "drogi": [],
       "opoznienie_s": null,
-      "dlugosc_m": 557,
+      "dlugosc_m": 758,
       "od_kiedy": "2026-07-29T17:40:00Z",
       "do_kiedy": ""
     },
@@ -60,29 +60,29 @@
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Stanisława Wojciechowskiego",
-      "do": "Kawcze",
-      "drogi": [],
-      "opoznienie_s": 1540,
-      "dlugosc_m": 609,
-      "od_kiedy": "2026-11-27T10:55:45Z",
-      "do_kiedy": "2026-11-27T17:55:15Z"
+      "od": "Śrem ul. Piłsudskiego (434) (432)",
+      "do": "Śrem ul. Gostyńska (434) (432)",
+      "drogi": [
+        "432",
+        "434"
+      ],
+      "opoznienie_s": 483,
+      "dlugosc_m": 2739,
+      "od_kiedy": "2026-11-27T13:26:45Z",
+      "do_kiedy": "2026-11-27T17:40:45Z"
     },
     {
       "opis": "Zatrzymany ruch drogowy",
       "kategoria": 6,
       "kategoria_nazwa": "korek",
       "waga": 3,
-      "od": "Mechlin (432)",
-      "do": "Śrem ul. Gostyńska (434) (432)",
-      "drogi": [
-        "432",
-        "434"
-      ],
-      "opoznienie_s": 795,
-      "dlugosc_m": 3939,
-      "od_kiedy": "2026-11-27T13:26:45Z",
-      "do_kiedy": "2026-11-27T17:16:15Z"
+      "od": "Stanisława Wojciechowskiego",
+      "do": "Kawcze",
+      "drogi": [],
+      "opoznienie_s": 333,
+      "dlugosc_m": 609,
+      "od_kiedy": "2026-11-27T10:55:45Z",
+      "do_kiedy": "2026-11-27T17:33:45Z"
     }
   ]
 }
